@@ -1,11 +1,13 @@
 ---
+title: "Springer's abusive licensing demands"
+subtitle: "Springer wants to own the copyright to your research methods."
+summary: "Springer wants to own the copyright to your research methods."
+date: 2017-10-16
 authors:
 - admin
 slug: Springers-abusive-licensing-demands
-title: "Springer's abusive licensing demands"
-date: 2017-10-16
-categories: ["publishing"]
-tags: ["open access", "licensing", "academic publishing", "copyright"]
+categories: ["Publishing"]
+tags: ["Open access", "Licensing", "Academic publishing", "Copyright"]
 ---
 
 Today I posted a tweetstorm on publishing an article with  [F1000Research](https://f1000research.com/) that was originally commissioned by Springer:
@@ -15,7 +17,7 @@ Today I posted a tweetstorm on publishing an article with  [F1000Research](https
 
 I received several requests to turn this into a blog post, so here we go. The blog post consists mostly of the text of the tweets, with some minor edits and clarifications.
 
-We just published [this article](https://f1000research.com/articles/6-1845/v1) in F1000Research because of SpringerNature's abusive licensing practices. The article was originally written to become a chapter in a Springer book on methods in protein evolution, and it describes key protocols my lab uses to measure site-specific rates in proteins and correlate them with protein structure. We've published extensively on this topic in recent years, see e.g. [Jack et al., PLOS Biology 2016](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002452).
+We just published [this article](https://f1000research.com/articles/6-1845/v1) in F1000Research because of Springer's abusive licensing practices. The article was originally written to become a chapter in a Springer book on methods in protein evolution, and it describes key protocols my lab uses to measure site-specific rates in proteins and correlate them with protein structure. We've published extensively on this topic in recent years, see e.g. [Jack et al., PLOS Biology 2016](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002452).
  
 However, as a precondition of publishing, Springer wanted us to assign to them the exclusive, permanent copyright to the work (Figure \@ref(fig:figure1)). In essence, they wanted us to donate our work to them so they could lock it behind a paywall and make money off of it. I were an unpaid intern at Springer while writing the article, Springer's request would violate US labor law. But since I'm an independent agent, I guess I'm allowed to make donations to a commercial entity.
 

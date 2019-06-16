@@ -1,11 +1,13 @@
 ---
+title: "How to reject a rejection"
+subtitle: "Just because a paper has been rejected doesn't mean the journal won't publish it."
+summary: "Just because a paper has been rejected doesn't mean the journal won't publish it."
+date: 2017-01-02
 authors:
 - admin
 slug: how-to-reject-a-rejection
-title: "How to reject a rejection"
-date: 2017-01-02
-categories: ["academia"]
-tags: ["academic publishing", "peer review"]
+categories: ["Academia"]
+tags: ["Academic publishing", "Peer review"]
 aliases: [/blog/2017/1/2/how-to-reject-a-rejection]
 ---
 For a junior scientist, it can be a major blow when their manuscript is rejected. They have poured many months to years of their time into this project, have submitted the paper where they think it belongs, and the editor puts an end to their aspirations by rejecting the submission. However, more experienced scientists, in particular those with editorial roles at major journals, know very well that many a rejection is not final. Often, a rejection is only the first step in an ongoing negotiation with the journal, one that frequently ends with the eventual publication of the article. To level the playing field between the junior and the more senior scientists, here I'll reveal this secret to the world: How to reject a rejection.

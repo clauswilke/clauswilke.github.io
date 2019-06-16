@@ -14,8 +14,8 @@
   weight = 20
 
 [[main]]
-  name = "Talks"
-  url = "#talks"
+  name = "Topics"
+  url = "#tags"
   weight = 30
 
 #[[main]]
@@ -29,10 +29,9 @@
 #  weight = 50
 
 [[main]]
-  name = "Popular Topics"
-  url = "#tags"
-  weight = 58
-
+  name = "Talks"
+  url = "#talks"
+  weight = 55
 
 [[main]]
   name = "Contact"

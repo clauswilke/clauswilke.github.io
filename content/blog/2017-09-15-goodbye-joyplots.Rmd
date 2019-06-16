@@ -1,11 +1,13 @@
 ---
+title: "Goodbye joyplots"
+subtitle: "It's time to find a better name for the plots formerly known as \"joyplots.\""
+summary: "It's time to find a better name for the plots formerly known as \"joyplots.\""
+date: 2017-09-15
 authors:
 - admin
 slug: goodbye-joyplots
-title: "Goodbye Joyplots"
-date: 2017-09-15
-categories: ["dataviz"]
-tags: ["R", "ggplot2", "ggjoy", "ggridges"]
+categories: ["Visualization"]
+tags: ["R", "ggplot2", "ggjoy", "ggridges", "Data visualization"]
 aliases: [/blog/2017/9/15/goodbye-joyplots]
 ---
 

@@ -1,11 +1,13 @@
 ---
+title: "Do you have to publish papers to obtain a PhD?"
+subtitle: "Universities cannot reasonably expect published papers as a requirement for graduation."
+summary: "Universities cannot reasonably expect published papers as a requirement for graduation."
+date: 2017-01-06
 authors:
 - admin
 slug: do-you-have-to-publish-papers-for-a-phd
-title: "Do you have to publish papers to obtain a PhD?"
-date: 2017-01-06
-categories: ["academia"]
-tags: ["academic publishing", "PhD", "graduate school"]
+categories: ["Academia"]
+tags: ["Academic publishing", "PhD", "Graduate school"]
 aliases: [/blog/2017/1/6/do-you-have-to-publish-papers-for-a-phd]
 ---
 
