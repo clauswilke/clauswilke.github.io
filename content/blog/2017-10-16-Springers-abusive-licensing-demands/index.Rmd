@@ -1,4 +1,6 @@
 ---
+authors:
+- admin
 slug: Springers-abusive-licensing-demands
 title: "Springer's abusive licensing demands"
 date: 2017-10-16
@@ -7,6 +9,7 @@ tags: ["open access", "licensing", "academic publishing", "copyright"]
 ---
 
 Today I posted a tweetstorm on publishing an article with  [F1000Research](https://f1000research.com/) that was originally commissioned by Springer:
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">1. We just published this article in <a href="https://twitter.com/F1000Research?ref_src=twsrc%5Etfw">@F1000Research</a> because of <a href="https://twitter.com/SpringerNature?ref_src=twsrc%5Etfw">@SpringerNature</a>&#39;s abusive licensing practices. <a href="https://t.co/Xx88jkA3ec">https://t.co/Xx88jkA3ec</a></p>&mdash; Claus Wilke (@ClausWilke) <a href="https://twitter.com/ClausWilke/status/919958741734379520?ref_src=twsrc%5Etfw">October 16, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
