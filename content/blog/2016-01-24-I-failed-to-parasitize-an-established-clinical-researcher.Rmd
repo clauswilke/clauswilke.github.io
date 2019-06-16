@@ -1,14 +1,14 @@
 ---
-layout: post
-title: I-failed-to-parasitize-an-established-clinical-researcher
-heading: "The one time I failed to parasitize an established clinical researcher"
+title: "The one time I failed to parasitize an established clinical researcher"
+subtitle: "Eating eggs is not as bad for you as smoking."
+summary: "Eating eggs is not as bad for you as smoking."
+slug: i-failed-to-parasitize-an-established-clinical-researcher
 date: 2016-01-24
-categories: 
-    - science
+categories: ["Science"]
+tags: ["Eggs", "Heart disease", "Nutrition", "Research parasite", "Smoking"]
+aliases: [/blog/2016/1/24/I-failed-to-parasitize-an-established-clinical-researcher]
 ---
 As regular readers of this blog probably know, I'm the paragon of a [research parasite.](https://twitter.com/hashtag/researchparasite) I'm a computational biologist, and all I ever do is publish my own analyses of other people's data. Except that one time, a few years back, when a senior clinical researcher stopped me in my tracks. Thanks to his careful and guarded stewardship of his data, I have been saved from drawing incorrect conclusions from his data and from publicly embarrassing myself by claiming his analysis is complete nonsense.
-
-<!--more-->
 
 The story happened a few years back, when a senior clinical researcher (let's call him X) published a paper claiming that egg-yolk consumption is nearly as bad for cardiovascular disease (CVD) as is smoking. As an avid egg lover, I wondered whether I should be concerned. Unfortunately, the manuscript was opaque and used statistical techniques I don’t trust ([quantiling](/blog/2013/8/18/common-errors-in-statistical-analyses)), so I contacted X and asked to see the raw data. He made me state that I did not have any ties, financial or otherwise, to the egg industry (I don’t), and then he shared his raw data with me under the condition that I would keep the data confidential and that he would be a co-author on any resulting publications. I accepted these conditions and took a look at the data.
 
