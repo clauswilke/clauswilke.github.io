@@ -5,9 +5,10 @@ summary: "Springer wants to own the copyright to your research methods."
 date: 2017-10-16
 authors:
 - admin
-slug: Springers-abusive-licensing-demands
+slug: springers-abusive-licensing-demands
 categories: ["Publishing"]
 tags: ["Open access", "Licensing", "Academic publishing", "Copyright"]
+aliases: [/blog/2017/10/16/Springers-abusive-licensing-demands]
 ---
 
 Today I posted a tweetstorm on publishing an article with  [F1000Research](https://f1000research.com/) that was originally commissioned by Springer:
