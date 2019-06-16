@@ -3,6 +3,7 @@ title: "Move over Strunk and White: My all-time favorite books on writing"
 slug: move-over-Strunk-White
 date: 2017-11-12
 categories: ["writing"]
+tags: ["story telling", "copy editing", "writer's block"]
 ---
 
 "Read Strunk and White" is the near universal recommendation any student receives who needs to improve their writing. I have only two explanations for this frequent recommendation: 1. People have never actually read Strunk and White or don't remember anything about it.[^1] 2. People have never read any book on writing other than Strunk and White and hence have nothing better to recommend. To provide an alternative, here I would like to present my all-time favorite books on writing, covering three distinct topics: storytelling, copy editing, and writing productively. My recommendations are made from the perspective of the scientist as a writer. Nevertheless, the books I recommend are written for a broad audience and will likely be useful for anybody who is writing non-fiction documents.
