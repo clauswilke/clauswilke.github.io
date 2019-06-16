@@ -7,7 +7,7 @@ authors:
 - admin
 slug: springers-abusive-licensing-demands
 categories: ["Publishing"]
-tags: ["Open access", "Licensing", "Academic publishing", "Copyright"]
+tags: ["Academic publishing", "Copyright", "Licensing", "Open access"]
 aliases: [/blog/2017/10/16/Springers-abusive-licensing-demands]
 ---
 

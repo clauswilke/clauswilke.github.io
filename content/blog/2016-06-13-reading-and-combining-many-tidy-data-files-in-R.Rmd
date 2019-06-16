@@ -8,7 +8,7 @@ authors:
 - admin
 slug: reading-and-combining-many-tidy-data-files-in-r
 categories: ["R"]
-tags: ["R", "tidyverse", "dplyr", "Data wrangling"]
+tags: ["Data wrangling", "dplyr", "purrr", "R", "tidyverse"]
 aliases: [/blog/2016/6/13/reading-and-combining-many-tidy-data-files-in-R]
 ---
 

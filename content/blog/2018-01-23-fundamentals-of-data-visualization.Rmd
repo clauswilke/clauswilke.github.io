@@ -7,7 +7,7 @@ summary: "I am writing a book on data visualization."
 slug: fundamentals-of-data-visualization
 date: 2018-01-23
 categories: ["Visualization"]
-tags: ["Data visualization", "Books", "O'Reilly", "R Markdown", "ggplot2"]
+tags: ["Books", "Data visualization", "ggplot2", "O'Reilly", "R Markdown"]
 aliases: [/blog/2018/1/23/fundamentals-of-data-visualization]
 ---
 

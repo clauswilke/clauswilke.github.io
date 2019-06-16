@@ -1,0 +1,106 @@
+---
+title: "How to not mess up your bibliographies with Bibtex"
+subtitle: "Manual curation is the only reliable approach to reference management."
+summary: "Manual curation is the only reliable approach to reference management."
+slug: bibtex
+authors:
+ - admin
+date:   2015-10-02
+categories: ["Writing"]
+tags: ["Academic writing", "Bibtex", "Copy editing", "Latex", "Reference manager"]
+aliases: [/blog/2015/10/2/Bibtex]
+---
+
+
+
+<p>Bibtex is the reference manager for Latex. I have used it for 20 years, I have written over 100 papers with it, and I think it works really well. I have also rarely met anybody who could use it without messing up their bibliography in some way. Bibtex is an archaic program, written 30 years ago by a graduate student and never substantively changed or updated since. It uses an awkward database format for storing bibliographic entries and an atrocious, poorly-documented programming language for describing how bibliographic entries should be formatted. In fact, the most complete description of bibtex’s inner workings is aptly called <a href="http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST.</a> (This document is well worth the read for anybody using bibtex with some regularity.) To help ordinary mortals succeed with using Bibtex, I’m providing here a set of best practices and useful guidelines that help you steer clear of the worst pitfalls of Bibtex.</p>
+<p>My guidelines are shaped by the following two insights, which I call the first and second law of Bibtex:</p>
+<ol style="list-style-type: decimal">
+<li>Nobody really understands Bibtex.</li>
+<li>All bibliography managers that automatically generate Bibtex entries mess things up.</li>
+</ol>
+<p>A corollary of the second law is that all Bibtex entries need to be hand-curated to work correctly.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The following sections address some of the most common issues that I see in daily Bibtex use.</p>
+<div id="incorrectly-capitalized-article-titles" class="section level2">
+<h2>Incorrectly capitalized article titles</h2>
+<p>Article titles in a reference list should be capitalized in sentence case. In a nutshell, this means that all words except the first one, proper nouns, and acronyms are spelled in lower case (see e.g. <a href="http://blog.apastyle.org/apastyle/2012/03/title-case-and-sentence-case-capitalization-in-apa-style.html">here</a> for more details). Bibtex enforces this capitalization rule by automatically converting everything in the article title field to lower-case. This convention has the unfortunate side effect that proper nouns or acronyms, which should be capitalized, will be converted into lower-case as well. For example, the title “A review of HIV biology” will be typeset as “A review of hiv biology”. This conversion can be switched off by enclosing the words not to be converted into an extra pair of braces, like so:</p>
+<pre><code>title = {A review of {HIV} biology}</code></pre>
+<p>Many reference managers simply disable Bibtex’s conversion by enclosing the entire title in braces, like so:</p>
+<pre><code>title = {{A review of HIV biology}}</code></pre>
+<p>This seems like a smart idea, until you realize that the records that these reference managers pull are often capitalized in title case (all nouns capitalized), and this incorrect capitalization is then carried over to the bibliography. <strong>The only reliable solution is to manually curate all titles, enclose words with capital letters in braces, but otherwise do not use two pairs of braces around titles.</strong></p>
+</div>
+<div id="incorrectly-abbreviated-first-names-and-missing-middle-initials" class="section level2">
+<h2>Incorrectly abbreviated first names and missing middle initials</h2>
+<p>Bibtex style files are inconsistent in how they handle author names. Most style files abbreviate author names, so that “John H. Smith” becomes “J. H. Smith” or “J H Smith” or “JH Smith”. However, some don’t. They leave the author names untouched and/or only add or remove periods. Yet we generally never want first names spelled out in a bibliography, they should always be abbreviated to initials only. Therefore, always abbreviate names in your Bibtex file, <strong>and leave a space between initials,</strong> like so:</p>
+<pre><code>author = {J. H. Smith}</code></pre>
+<p>or</p>
+<pre><code>author = {Smith, J. H.}</code></pre>
+<p>If you don’t leave a space between the initials, Bibtex will interpret the initials as a name and drop the second initial. For example, <code>author = {JH Smith}</code> will for many style files be typeset as “J. Smith”.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> I also recommend to always add periods after initials, even if some styles don’t typeset periods in the final bibliography. In general, Bibtex style files are better at removing periods when they aren’t needed than at adding them when necessary.</p>
+</div>
+<div id="mangled-author-lists" class="section level2">
+<h2>Mangled author lists</h2>
+<p>In Bibtex’s author field, author names are separated by the key word <code>and</code>. It is a common mistake to use a comma instead. Bibtex will then think that all the names separated by commas are actually part of one long name, and will produce a mangled author list. Usually, what it will do is turn the entire author list into middle initials for one author, so that you end up with something like “Smith, D. M. B. K. F. L. E. O. S.” Fortunately, it will produce a warning as it does so (<code>Too many commas in name...</code>). Unfortunately, many Bibtex users ignore these warnings.</p>
+<p>Ignoring warnings comes particularly easy when you use an integrated latex environment that compiles the text as you type. An example would be the online editor <a href="https://www.overleaf.com/" class="uri">https://www.overleaf.com/</a>. However, <strong>all</strong> Latex editors do display errors and warnings when you look for them, so make it a habit to do so.</p>
+</div>
+<div id="inconsistent-journal-names" class="section level2">
+<h2>Inconsistent journal names</h2>
+<p>Bibtex will not abbreviate journal names for you. So you have to do this yourself, and do so consistently. I recommend to always add periods after abbreviated parts of journal names, even if the style you’re currently using doesn’t require periods there (i.e., write <code>journal = {Mol. Biol. Evol.}</code>, not <code>journal = {Mol Biol Evol}</code>). At some point you’ll use the Bibtex entry with a different style file that needs periods, and things will go wrong. Again, Bibtex is better at removing periods than it is at adding them.</p>
+<p>Some people define Bibtex string variables for journal names to keep them consistent. This is a reasonable practice, but I personally don’t use it. If you want to learn how this works, read the <a href="http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf">Tame the BeaST</a> document, page 21.</p>
+</div>
+<div id="superfluous-issue-numbers-publication-months-or-other-elements" class="section level2">
+<h2>Superfluous issue numbers, publication months, or other elements</h2>
+<p>Very few journals typeset issue numbers or publication months in their bibliographies. Yet reference managers like to populate the <code>number</code> or <code>month</code> fields that Bibtex provides. This leads to ugly and non-standard reference entries. Moreover, it’s rare that every entry in a Bibtex file has a completed <code>number</code> field, with the result that some entries in the final bibliography will have numbers listed and others won’t. Therefore, as a matter of principle, I always delete all <code>number</code> and <code>month</code> fields in every Bibtex entry. I also delete all other fields that I don’t explicitly want to show up in the typeset reference.</p>
+</div>
+<div id="choosing-good-bibtex-reference-keys" class="section level2">
+<h2>Choosing good Bibtex reference keys</h2>
+<p>Finally, I would like to provide some thoughts regarding how to choose keys to refer to Bibtex references. (I.e., how do you choose the identifiers you use in the <code>\cite{}</code> command in your Latex file.) Most importantly, it is a good idea to have a systematic approach to choosing keys. Ideally, you should be able to guess the key from looking at the reference. This rule protects you from accidentally duplicating a reference in the Bibtex file and referring to it under two different keys. I personally use keys that mirror a traditional author-year citation style, e.g. <code>SmithMiller2012</code> or <code>Jonesetal2014</code>. For papers with multiple authors, I would recommend against using just the first author name and the year, such as <code>Jones2014</code>, because in my experience it is not unusual to have multiple papers from the same year with the same first author, and at that point the keys become confusing. Which paper was <code>Jones2014a</code> again, and which one <code>Jones2014b</code>? By contrast, <code>JonesSmith2014</code> and <code>JonesMiller2014</code> are much easier to keep apart.</p>
+</div>
+<div id="checklist" class="section level2">
+<h2>Checklist</h2>
+<p>Here is a final checklist you should go through every time you write a manuscript using Bibtex. (Some entries in the checklist also apply to Latex more broadly.) Most importantly, always read through the entire bibliography of your paper before submitting.</p>
+<ol style="list-style-type: decimal">
+<li>Capitalization</li>
+</ol>
+<ul>
+<li>Are all article titles typeset in sentence case, or do some remain in title case?</li>
+<li>Are any proper nouns or abbreviations typeset in lower case even though they should be capitalized?</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Author initials</li>
+</ol>
+<ul>
+<li>Are all author first names replaced by initials?</li>
+<li>Are all middle initials present? (This may be cumbersome to check, but a warning sign would be the presence of multiple references in which no authors have middle initials. Most authors do have middle initials.)</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Author lists</li>
+</ol>
+<ul>
+<li>Are author names showing up properly and completely? Warning signs would be papers that appear to be written by one or two people with way too many initials (four or more; few authors have four initials).</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Journal names</li>
+</ol>
+<ul>
+<li>Are all journal names properly abbreviated?</li>
+<li>Are journals named consistently throughout the bibliography?</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Superfluous items in bibliography</li>
+</ol>
+<ul>
+<li>Do any references contain items that shouldn’t be there, such as issue numbers, months, ISSN or ISBN numbers, or article URLs?</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Compilation</li>
+</ol>
+<ul>
+<li>Do Latex and Bibtex run on your document without raising any errors or warnings?</li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Actually, the second law applies more generally to pretty much any reference manager, including Zotero, Mendeley, Endnote, and so on, but that is a topic for another blog post. If you use one of them and don’t believe me, check if your article titles are properly capitalized, using sentence case. And if you don’t know what that means, re-read the section on incorrectly capitalized article titles.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>To add insult to injury, on occasion I have encountered Bibtex style files that actually require initials to be listed <em>without</em> space. Those style files would drop the second initial when there was a space. In the end, you’ll always have to check manually that everything is working as expected, and adjust Bibtex entries as necessary.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

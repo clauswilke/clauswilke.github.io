@@ -7,7 +7,7 @@ authors:
 - admin
 slug: goodbye-joyplots
 categories: ["Visualization"]
-tags: ["R", "ggplot2", "ggjoy", "ggridges", "Data visualization"]
+tags: ["Data visualization", "ggjoy", "ggplot2", "ggridges", "R"]
 aliases: [/blog/2017/9/15/goodbye-joyplots]
 ---
 
