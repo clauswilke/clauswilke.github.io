@@ -1,48 +1,38 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-email: ""
+bio: ""
+education: ""
+email: "wilke@austin.utexas.edu"
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Nelson Bighetti
+- Molecular Evolution
+- Protein Biophysics
+- Data Science
+- Data Visualization
+name: Claus O. Wilke
 organizations:
-- name: Stanford University
+- name: The University of Texas at Austin
   url: ""
-role: Professor of Artificial Intelligence
+role: Professor of Integrative Biology
 social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/clauswilke
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.co.uk/citations?user=Nc8U6E4AAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/clauswilke
 superuser: true
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Claus O. Wilke is a professor of Integrative Biology at The University of Texas at Austin. He holds a PhD in theoretical physics from the Ruhr-University Bochum, Germany. Claus is the author or coauthor of over 170 scientific publications, covering topics in computational biology, mathematical modeling, bioinformatics, evolutionary biology, protein biochemistry, virology, and statistics. He has also authored several popular R packages used for data visualization, such as cowplot and ggridges, and he is a contributor to the package ggplot2.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Opinions expressed on this site are personal and are not meant to represent the official position of The University of Texas at Austin.
