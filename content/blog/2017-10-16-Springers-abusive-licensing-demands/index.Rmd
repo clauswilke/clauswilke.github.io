@@ -22,7 +22,7 @@ We just published [this article](https://f1000research.com/articles/6-1845/v1) i
  
 However, as a precondition of publishing, Springer wanted us to assign to them the exclusive, permanent copyright to the work (Figure \@ref(fig:figure1)). In essence, they wanted us to donate our work to them so they could lock it behind a paywall and make money off of it. I were an unpaid intern at Springer while writing the article, Springer's request would violate US labor law. But since I'm an independent agent, I guess I'm allowed to make donations to a commercial entity.
 
-(ref:figure1) The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word *exclusive*, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement." 
+(ref:figure1) The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word *exclusive*, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement. 
 
 ```{r figure1, echo = FALSE, fig.cap = '(ref:figure1)'}
 knitr::include_graphics("./figure1.png")

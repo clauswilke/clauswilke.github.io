@@ -1,0 +1,35 @@
+---
+title: "Relationship between h index and total citations count"
+subtitle: "For most scientists, the h index is approximately half times the square root of the total number of citations."
+summary: "For most scientists, the h index is approximately half times the square root of the total number of citations."
+slug: relationship-between-h-index-and-total-citations-count
+authors:
+ - admin
+date: 2014-12-08
+categories: ["Academia"]
+tags: ["Academic publishing", "Citation counts", "h index"]
+aliases: [/blog/2014/12/8/relationship-between-h-index-and-total-citations-count]
+---
+
+
+
+<p>I came across an interesting paper<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> that derives a mathematical relationship between the total number of citations a scientist has received, <span class="math inline">\(N_\text{tot}\)</span>, and the scientist’s <span class="math inline">\(h\)</span> index.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> The paper, written by Alexander Yong, argues that for typical scientists, <span class="math inline">\(h\)</span> is given simply as 0.54 times the square-root of <span class="math inline">\(N_\text{tot}\)</span>. The paper also derives confidence bounds on this estimate, and it shows that scientists who have written only a few highly-cited works will generally fall below this estimate. While the paper is set up as a critique of the <span class="math inline">\(h\)</span> index, I think it shows that the <span class="math inline">\(h\)</span> index works largely as intended. It measures the total amount of citations a researcher has received, but it adequately down-weighs the effect of a few extremely highly cited works in a researcher’s publication list.</p>
+<p>The argument of the paper goes as follows: Let’s consider all the possible ways in which a researcher’s <span class="math inline">\(N_\text{tot}\)</span> citations may be distributed over a number of publications. On one extreme, the researcher could have written a single article, which has been cited <span class="math inline">\(N_\text{tot}\)</span> times. On the other extreme, the researcher could have written <span class="math inline">\(N_\text{tot}\)</span> articles, which all have been cited exactly once. And of course, there are many possibilities between those extremes, where some articles receive more citations and others fewer. The paper then assumes that all these different ways in which <span class="math inline">\(N_\text{tot}\)</span> citations can be distributed over one or more articles are equally likely, and calculates the expected <span class="math inline">\(h\)</span> under that assumption. That value, it turns out, is approximately <span class="math inline">\(0.54 \times N_\text{tot}^{1/2}.\)</span> The paper then tests this relationship for a number of famous mathematicians (Fields-medal winners and members of the National Academy of Sciences) and finds that it generally works quite well, though typically as an upper bound. It is rare for a scientist to have <span class="math inline">\(h\)</span> exceed the predicted value of <span class="math inline">\(0.54 \times N_\text{tot}^{1/2}.\)</span> On the flip side, many scientists who have written famous, highly cited books have an <span class="math inline">\(h\)</span> quite a bit lower than the predicted value, because the books cause the total citation count to be overinflated.</p>
+<p>I wanted to know to what extent this formula worked in a different field. So I tested it on the members of my department. For each faculty member<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> of the Department of Integrative Biology, I obtained their total number of citations and their <span class="math inline">\(h\)</span> index from Google Scholar, and then I plotted the observed <span class="math inline">\(h\)</span> against the predicted <span class="math inline">\(h\)</span> using Yong’s formula (Figure <a href="#fig:figure1">1</a>). As you can see, the formula works remarkably well. Almost everybody falls right on top of the line. Importantly, this sample covers a wide range of different career stages.</p>
+
+<div class="figure"><span id="fig:figure1"></span>
+<img src="observed_v_predicted_h.png" alt="Observed vs. predicted \(h\) for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red." width="80%" />
+<p class="caption">
+Figure 1: Observed vs. predicted <span class="math inline">\(h\)</span> for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red.
+</p>
+</div>
+<p>Three faculty members are plotted in red in the figure: those are members of the National Academy, and they are the highest-cited scientists in the department. Interestingly, two have very high total citation counts but, in comparison, not that high of an <span class="math inline">\(h\)</span> index, while one has the highest overall <span class="math inline">\(h\)</span> index with comparatively fewer citations. The former two both have written famous books, and many of their citations are to these books. By contrast, the latter scientist stands out by having published a particularly large number of articles that all have been well cited. In fact, that scientist is performing slightly better than the <span class="math inline">\(h = 0.54 \times N_\text{tot}^{1/2}\)</span> prediction, a truly remarkable result at that high of a total citation count.</p>
+<p>In summary, I find that the predicted relationship between <span class="math inline">\(h\)</span> and <span class="math inline">\(N_\text{tot}\)</span> works well in my field. However, since major deviations between this relationship can be observed for scientists with a few extremely highly cited works, I prefer using <span class="math inline">\(h\)</span> instead of <span class="math inline">\(N_\text{tot}\)</span> to estimate a scientist’s total impact on their field.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A. Yong (2014). <a href="https://doi.org/10.1090/noti1164">Critique of Hirsch’s Citation Index: A Combinatorial Fermi Problem.</a> <em>Notices of the AMS</em> 61:1040-1050.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>The <span class="math inline">\(h\)</span> index is the number of papers a scientist has written that have received at least <span class="math inline">\(h\)</span> citations. For example, if you have <span class="math inline">\(h = 10\)</span>, then you have written 10 papers that have been cited 10 or more times. You may have written more than 10 papers total, but none of the other papers you may have written has received more than 10 citations yet.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>To be precise, each faculty member with a Google Scholar profile. This covers almost but not exactly the entire department.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

@@ -3,9 +3,9 @@ title: "What constitutes a citable scientific work?"
 subtitle: "A paper does not have to be peer-reviewed to be citable."
 summary: "A paper does not have to be peer-reviewed to be citable."
 slug: what-constitutes-a-citable-scientific-work
-date:   2015-01-02
 authors:
  - admin
+date:   2015-01-02
 categories: ["Academia"]
 Tags: ["Peer review", "Preprints", "Pre-publication review"]
 aliases: [/blog/2015/1/2/what-constitutes-a-citable-scientific-work]
