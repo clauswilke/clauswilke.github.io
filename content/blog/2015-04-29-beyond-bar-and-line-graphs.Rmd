@@ -7,7 +7,7 @@ authors:
  - admin
 date: 2015-04-29
 categories: ["Science"]
-tags: ["Data analysis", "Data visualizaton", "Scientific writing"]
+tags: ["Data analysis", "Data visualization", "Scientific writing"]
 aliases: [/blog/2015/4/29/beyond-bar-and-line-graphs]
 ---
 PLOS Biology recently published a nice article on data visualization:

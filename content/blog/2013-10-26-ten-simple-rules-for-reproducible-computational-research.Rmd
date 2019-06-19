@@ -1,0 +1,22 @@
+---
+title: "Ten simple rules for reproducible computational research"
+subtitle: "Avoid manual data manipulation, and record all intermediate results."
+summary: "Avoid manual data manipulation, and record all intermediate results."
+slug: ten-simple-rules-for-reproducible-computational-research
+authors:
+ - admin
+date: 2013-10-26
+categories: ["Science"]
+tags: ["Computing", "Data visualization", "Data wrangling", "Reproducible research"]
+---
+
+PLOS Computational Biology just published a new addition to their popular [“ten simple rules”](https://collections.plos.org/ten-simple-rules) series:
+
+> Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. [doi:10.1371/journal.pcbi.1003285](https://doi.org/10.1371/journal.pcbi.1003285)
+
+This article is relevant to anybody who wants to do computational research. I’ll make it required reading in my lab. For every single one of these rules, I can think of projects I’ve been involved with[^1] that ran into trouble or failed because they violated that rule.
+
+[^1]: All of these projects were run by friends of friends, of course. None of this would ever happen in my lab. :wink:
+
+While all of the rules are important, I’m particularly partial to these four: avoid manual data manipulation, record all intermediate results, always store raw data behind plots, and provide public access to scripts and results. They will prevent a lot of headaches for both you and the people coming after you who’d like to build on your results.
+

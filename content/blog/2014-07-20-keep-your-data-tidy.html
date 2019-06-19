@@ -1,0 +1,96 @@
+---
+title: "Keep your data tidy"
+subtitle: "Each variable forms a column, and each observation forms a row."
+summary: "Each variable forms a column, and each observation forms a row."
+slug: keep-your-data-tidy
+date: 2014-07-20
+authors:
+ - admin
+categories: ["Data science"]
+tags: ["Data wrangling", "R", "Tidy data"]
+---
+
+
+
+<p>I came across this nice preprint by Hadley Wickham:</p>
+<blockquote>
+<p>Hadley Wickham (2014). <a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy data.</a> Submitted.</p>
+</blockquote>
+<p>In this preprint, Wickham describes a way of organizing data he calls “tidy.” He then argues that tidy data and tidy tools (that both input and output tidy data) make data analysis much more efficient than any alternative approach can.</p>
+<p>When are data tidy? When they satisfy these three conditions:</p>
+<ol style="list-style-type: decimal">
+<li>Each variable forms a column.</li>
+<li>Each observation forms a row.</li>
+<li>Each type of observational unit forms a table.</li>
+</ol>
+<p>Every other arrangement of data is called “messy.”</p>
+<p>Let’s look at an example. Assume you’re making temperature measurements once a week in three cities (city A, city B, and city C). Instinctively, most people would probably record the data like this:</p>
+<pre><code>week    city_A    city_B    city_C
+   1        14        18        23
+   2        15        21        24
+   3        12        25        23
+   4        13        17        25
+   ...</code></pre>
+<p>Or maybe even like this:</p>
+<pre><code>week         1        2        3        4      ...
+city_A      14       15       12       13
+city_B      18       21       25       17
+city_C      23       24       23       25</code></pre>
+<p>While both options may look quite organized, neither corresponds to tidy data. In both cases, Wickham’s rules 1 and 2 are violated. For example, in the first case, the variable <code>temperature</code> appears in three columns. Consequently, multiple observations appear in each row. In the second case, multiple variables appear in each column and multiple observations appear in each row.</p>
+<p>The tidy version of this data set would look like this:</p>
+<pre><code>week    city    temperature
+   1       A             14
+   1       B             18
+   1       C             23
+   2       A             15
+   2       B             21
+   2       C             24
+   ...
+   </code></pre>
+<p>I believe that most people have an instinctive dislike towards tidy data, because tidy data sets tend to have many rows and are difficult to read with the human eye. You can clearly see this in my made-up data set. The messy<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> versions allow us to quickly compare cities’ temperatures in different weeks as well as identify trends over time. The tidy version does not. It also requires many more rows.</p>
+<p>Nevertheless, for computational analysis, having tidy data makes things way more efficient, <em>if you have the right set of tools.</em> These tools need to consistently input and output tidy data. Fortunately, these tools exist in R. (And Wickham has greatly enhanced R’s capability to keep analyses tidy by writing the packages reshape2, plyr, and ggplot2.) With the appropriate tools, even quite complicated analyses can be expressed in just a few lines of code. And most importantly, there is no need for explicit loops or other bookkeeping code. You just express the semantics of your analysis and the programming language does the rest.</p>
+<p>How does this work? In general, when we want to analyze data, we want to manipulate (specifically filter, transform, aggregate, and sort), model, and visualize. These steps require only a handful of generic tools, such as a generic data aggregation function. Let me show you a few examples, using the <code>summarize()</code> and <code>ddply()</code> functions from the plyr package. I assume we store the temperature data in tidy form in a data frame called <code>temp.data</code>:</p>
+<pre><code>&gt; temp.data
+   week city temperature
+1     1    A          14
+2     1    B          18
+3     1    C          23
+4     2    A          15
+5     2    B          21
+6     2    C          24
+7     3    A          12
+8     3    B          25
+9     3    C          23
+10    4    A          13
+11    4    B          17
+12    4    C          25</code></pre>
+<p>Let’s calculate the mean temperature in each city:</p>
+<pre><code>&gt; ddply(temp.data, &quot;city&quot;, summarize, mean=mean(temperature))
+  city  mean
+1    A 13.50
+2    B 20.25
+3    C 23.75</code></pre>
+<p>Or in each week:</p>
+<pre><code>&gt; ddply(temp.data, &quot;week&quot;, summarize, mean=mean(temperature))
+  week     mean
+1    1 18.33333
+2    2 20.00000
+3    3 20.00000
+4    4 18.33333</code></pre>
+<p>Or let’s find the city with the highest temperature each week:</p>
+<pre><code>&gt; ddply(temp.data, &quot;week&quot;, summarize, hottest.city=city[which.max(temperature)])
+  week hottest.city
+1    1            C
+2    2            C
+3    3            B
+4    4            C</code></pre>
+<p>These are just a few simple examples. For more examples, read Wickham’s paper, and also read his paper on plyr.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Does any of this matter? I’m sure somebody will tell me: Yeah, but R is an ugly and archaic programming language, and my python code will analyze the data tables that Wickham calls “messy” just fine. My answer is that it only matters if you care about how much time you spend analyzing your data. Read through the example analysis Wickham provides in his Section 5 (“Case study”). This analysis uses less than 30 lines of code, including the code for visualization, to identify and plot causes of death with unusual temporal patterns throughout the day (see his Fig. 4). How many lines of code would you have written to do a comparable analysis? And how long would it have taken you to write this code and debug it?</p>
+<p>At some point, a quantitative advantage becomes a qualitative one. While one can do the exact same analyses with tidy and messy datasets/tools, the tidy approach will generally require much less code, and hence be faster to write, easier to debug, and easier to modify/maintain. In practice, this means that the person using the tidy approach will be able to analyze more data sets, try a larger number of different analysis approaches, and/or make fewer mistakes. Aggregated over the course of several months, this advantage can easily translate into some major new findings made only by the person using the tidy approach.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Throughout this post, I’m following Wickham in using “messy” as a technical term, meaning “not tidy,” as in “not conforming to the definition of tidy data.”<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Hadley Wickham (2011) <a href="http://vita.had.co.nz/papers/plyr.html">The split-apply-combine strategy for data analysis.</a> Journal of Statistical Software 40:1–29.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
