@@ -8,6 +8,7 @@ authors:
 date: 2013-09-29
 categories: ["Miscellaneous"]
 tags: ["Android", "Facebook", "Google", "iPhone", "Linkedin"]
+aliases: [/blog/2013/9/29/mobile-appsthe-bane-of-the-modern-mobile-web-experience]
 ---
 
 Have I ever mentioned that I hate mobile apps? I’m not talking about apps in general. I think it's great that I can have a calculator on my phone, or skype. But apps that serve as replacements for websites, such as the facebook app or the linkedin app, I hate with a passion. I think they are a step backwards in web development. They degrade the mobile experience for all of us. 

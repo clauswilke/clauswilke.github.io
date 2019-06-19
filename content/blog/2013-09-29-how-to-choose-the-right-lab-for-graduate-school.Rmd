@@ -8,6 +8,7 @@ authors:
 date: 2013-09-29
 categories: ["Academia", "Professional development"]
 tags: ["Academic career", "Graduate school", "Undergraduates"]
+aliases: [/blog/2013/9/29/how-to-choose-the-right-lab-for-graduate-school]
 ---
 Choosing the right lab for graduate school can be a daunting prospect. There are so many issues to consider. So many things that could go wrong. And you have to join the most prestigious lab you can get into, don’t you? Well, let’s consider for a moment what the main point of graduate school is. Graduate school is the time when you transition from being a student to being an independent scientist. It is primarily an educational experience. While in graduate school, you should pick up some subject-matter knowledge in your field. You should become familiar with the most important experimental or computational tools of your trade. You should learn how to choose scientific questions and how to solve them. You should develop general life skills such as how to communicate, how to work with other people, and how to get stuff done on time and to spec. So how do you find the right lab in which to acquire all these skills? 
 

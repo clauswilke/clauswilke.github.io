@@ -8,6 +8,7 @@ authors:
 date: 2014-01-14
 categories: ["Academia"]
 tags: ["Graduate admissions", "Graduate school", "Undergraduates", "Recruitment weekend"]
+aliases: [/blog/2014/1/14/understanding-the-graduate-school-interview-or-recruitment-event]
 ---
 
 It’s the beginning of the new year, and with it comes graduate admissions time. If you are currently applying for graduate programs in the sciences, you hopefully have received or will soon receive one or more invitations to interviews or recruitment events. If you’re wondering what such an invitation means, how these events work, and how to best prepare yourself, read on.

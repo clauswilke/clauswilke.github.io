@@ -6,6 +6,7 @@ authors:
 date: 2013-09-22
 categories: ["Writing"]
 tags: ["Academic writing", "Content generation", "Copy editing", "Inner critic", "Writer's block"]
+aliases: [/blog/2013/9/22/silence-your-inner-critic]
 ---
 I wrote two blog posts recently that addressed the widespread issue of writer’s block. In the first, I suggested that [warming up before writing is a good idea to get you into the zone.](/blog/2013/9/16/warm-up-before-you-write) In the second, I argued that [you need to figure out what the story is before you can write productively.](/blog/2013/9/18/its-easier-to-write-when-you-know-what-you-want-to-say) There’s a third element to writing productively. Even if you have figured out your story and have warmed up properly, you may still find yourself staring at a blank page for extended periods of time. If this is the case, you are almost certainly operating with an inner critic that holds you back the moment you want to commit words to paper. You need to silence your inner critic to write effectively.
 

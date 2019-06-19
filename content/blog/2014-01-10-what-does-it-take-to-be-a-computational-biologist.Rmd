@@ -8,6 +8,7 @@ authors:
 date: 2014-01-10
 categories: ["Professional development", "Science"]
 tags: ["Computational biology", "Computing", "Experimental biology", "Graduate school", "Undergraduates"]
+aliases: [/blog/2014/1/10/what-does-it-take-to-be-a-computational-biologist]
 ---
 
 I would like to talk about what it takes to be a computational biologist, specifically in comparison to being an experimental biologist. If you’re wondering whether instead of becoming a computational biologist you should become a race-car driver, fighter pilot, or ballet dancer, this post probably won’t help you. But if you’re wondering whether a computational biology lab is a better choice for you than an experimental biology lab, this post should provide you with some useful guidelines. To cut right to the chase, here is the take-home message: To become a computational biologist, you need to *want* to become a computational biologist.

@@ -6,6 +6,7 @@ authors:
 date: 2013-09-26
 categories: ["Writing"]
 tags: ["Academic writing", "Flow", "Reader expectations", "Stress position", "Topic position"]
+aliases: [/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position]
 ---
 When you write a scientific article, you should lay out your ideas in such a way that your readers can follow them easily. Every new concept should flow directly from the previous material. Yet more often than not, scientific prose can be difficult to understand. What is going on? Readers expect certain pieces of information in certain positions in a sentence. Satisfy these expectations, and your readers will find your writing clear and convincing. Violate them, and your readers will be confused. All readers expect more or less the same things in the same places. And writers commonly violate these expectations. The two most important expectations readers have concern the kind of material that is presented at the beginning of a sentence, in the *topic position,* and at the end, in the *stress position*.[^1] Here I present my take on how to make the best use of these positions to produce clear and coherent prose.
 

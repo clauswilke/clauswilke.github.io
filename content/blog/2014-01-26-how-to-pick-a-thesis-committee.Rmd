@@ -8,6 +8,7 @@ authors:
 date: 2014-01-26
 categories: ["Academia"]
 tags: ["Graduate school", "PhD committee"]
+aliases: [/blog/2014/1/26/how-to-pick-a-thesis-committee]
 ---
 
 I was asked the other day what factors to consider when picking a thesis committee. And I realized that this is not a question I have pondered a lot. Normally, when one of my students needs to pick a committee, I just recommend people that seem a good choice. I don't have a properly thought out, systematic framework to steer the selection process. So with this post I’ll try to develop a more systematic approach to this question.

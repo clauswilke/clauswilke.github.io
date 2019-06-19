@@ -8,6 +8,7 @@ authors:
 date: 2014-06-15
 categories: ["Academia", "Professional development"]
 tags: ["Graduate school", "Postdocs", "Unknown unknowns", "Uri Alon", "Vision"]
+aliases: [/blog/2014/6/15/how-to-develop-a-research-question]
 ---
 One of the most daunting prospects for a fresh graduate student is having to develop a solid research question.[^1] In my experience, many graduate students feel like they don’t even know where to start. The literature can seem overwhelming, everything has already be done by somebody, and in any case it’s impossible to really know all the literature there is anyway. Making matters worse, almost every cohort or lab inevitably has one or two students who just seem to be fountains of good ideas, who constantly come up with new research ideas they want to pursue. As a result, students who are less inventive or less imaginative can feel like they’re not cut out for a career in research, they’re never going to have the necessary ideas to sustain a research program.
 

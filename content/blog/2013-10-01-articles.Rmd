@@ -8,6 +8,7 @@ authors:
 date: 2013-10-01
 categories: ["Writing"]
 tags: ["Articles", "Copy editing", "Grammar", "Proof reading"]
+aliases: [/blog/2013/10/1/articles]
 ---
 
 After having authored thousands of printed pages and having taught writing at the graduate level, all in English (my third language), I’ve come to this conclusion: We non-native speakers have a major advantage over native speakers when it comes to writing in the English language. We may not know how to write properly, but at least *we know* that we don’t know. Most native English speakers don’t know how to write properly either, but they *don’t know that they don’t know.* Because we’re acutely aware of our language deficiencies, we non-native speakers will generally put much more effort into learning proper English than native speakers will. 

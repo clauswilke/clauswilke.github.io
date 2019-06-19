@@ -2,22 +2,13 @@
 layout: post
 title: why-i-lift-weights-and-so-should-you
 heading: "Why I lift weights (and so should you)"
-date: 2013-10-01 01:00
+authors:
+ - admin
+date: 2013-10-01
+categories: ["Fitness"]
+tags: ["Bodyweight training", "Bone density", "Bone loss", "Resistance training", "Weight lifting", "Yoga"]
+aliases: [/blog/2013/10/1/why-i-lift-weights-and-so-should-you]
 ---
-categories: 
-    - fitness
-tags:
-    - bone loss
-    - bone density
-    - weight lifting
-    - resistance training
-    - fitness
-    - gym
-    - bodyweight training
-    - yoga
-    - bodyweight fitness
-    - barbell
-
 {% include wrapimage.html url="/assets/images/posts/2013-10-01_130721.jpg"  options="width-30" %}
 
 For the first forty years of my life, I thought lifting weights was for meatheads. If you lifted weights, my thinking went, you cared more about your looks than your health or fitness level. Actually, not looks even, just sheer size. I was convinced that my fitness regimen of endurance training (running, cycling, walking), flexibility (yoga), and basic whole-body movements (more yoga) was far superior to stupidly lifting weights in a gym. I mean, look at those guys [[1]](#note1) in the gym: they take a barbell, lift it five times, and then they take a five minute break. Do they even break a sweat? I don’t call that exercise, I call that sitting around on your lazy behind. Only when I started to read up on exercise physiology did I realize that lifting heavy is an extremely beneficial activity. Further, it is likely the most important type of exercise we can engage in, in particular as we grow older. And those five-minute breaks are absolutely necessary if you’re doing it right, in particular if you care more for strength than size. 

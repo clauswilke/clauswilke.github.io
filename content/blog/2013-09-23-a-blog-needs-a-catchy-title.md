@@ -6,6 +6,7 @@ authors:
 date: 2013-09-23
 categories: ["Miscellaneous"] 
 tags: ["Academic writing", "Blogging", "Exercise", "Nutrition", "Public speaking", "Serial Mentor"]
+aliases: [/blog/2013/9/23/a-blog-needs-a-catchy-title]
 ---
 According to Internet Marketing 101, a blog needs a catchy title, a clear brand. Something that readers can remember easily and that evokes associations and emotions. The blog author’s name will usually not serve that purpose well. Even if it’s a cool name. Even if it’s as noteworthy a name as “Claus Wilke.” Therefore, with this post, I’m relaunching my blog under a different brand. Henceforth, this blog will be called “The Serial Mentor.”
 

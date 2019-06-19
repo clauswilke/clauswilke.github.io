@@ -8,6 +8,7 @@ authors:
 date: 2013-11-03
 categories: ["Writing"]
 tags: ["Academic career", "Academic writing", "Audience", "Publication quality", "Publication quantity"]
+aliases: [/blog/2013/11/3/no-one-reads-your-paper-either]
 ---
 [Simon Goring](http://downwithtime.wordpress.com/) wrote an interesting post a few days ago arguing that [no one reads your blog.](http://downwithtime.wordpress.com/2013/10/29/no-one-reads-your-blog-reflections-on-the-middling-bottom/) In his post, he discussed reasons for why you might want to blog anyway. This post prompted me to tackle a topic I’ve been thinking about for a while: Why should you do science? Why should you publish? No one is going to read your paper either.
 
