@@ -5,7 +5,7 @@ summary: "It's time to learn R Markdown."
 slug: r-markdown-the-easiest-and-most-elegant-approach-to-writing-about-data-analysis-with-r
 date: 2014-10-04
 categories: ["Writing"]
-tags: ["Markdown", "R", "Statistics", "Writing"]
+tags: ["Markdown", "R", "R Markdown", "Statistics", "Writing"]
 aliases: [/blog/2014/10/4/r-markdown-the-easiest-and-most-elegant-approach-to-writing-about-data-analysis-with-r]
 ---
 This weekend, I finally spent some time learning [R Markdown](https://rmarkdown.rstudio.com/). I had been aware of its existence for a while, but I had never bothered to check it out. What a mistake. R Markdown rocks! It's hands down the easiest and most elegant method to creating rich documents that contain data analysis, figures, mathematical formulas, and text. And it's super easy to learn. I wager that anybody who has RStudio installed can create a useful document in 30 minutes or less. So if you use R, and you've never used R Markdown, give it a try.
