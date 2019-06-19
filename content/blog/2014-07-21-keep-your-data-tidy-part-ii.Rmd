@@ -8,6 +8,7 @@ authors:
 date: 2014-07-21
 categories: ["Data science"]
 tags: ["Data wrangling", "R", "Tidy data"]
+aliases: [/blog/2014/7/21/keep-your-data-tidy-part-ii]
 ---
 
 My previous post on [tidy data](/blog/2014/7/20/keep-your-data-tidy) didn’t at all touch on rule 3, "Each type of observational unit forms a table." The example I gave had only one observational unit, the weekly temperature measurements. Frequently, however, we have data corresponding to multiple observational units. In this case, it is important that we store them in separate tables, and that we know how to combine these tables for useful analyses.

@@ -8,6 +8,7 @@ authors:
 date: 2014-07-08
 categories: ["Professional development", "Science"]
 tags: ["Graduate school", "Postdocs", "Peer review"]
+aliases: [/blog/2014/7/8/share-your-preliminary-work-with-other-people-even-if-you-think-its-crap]
 ---
 
 It’s quite common for me to have students tell me “the analysis didn’t work out” or “the figure looks bad” or “I don’t have any useful results.” And it’s also quite common for the students to be wrong. Sometimes, students have amazing results but are all disappointed because the results aren’t what they had expected. These students fail to see the data for what they are. More commonly, the students may be right in that the data aren’t that great, but usually I can see something in the data that the student didn’t. In either case, it is important that we look at the data together, because jointly we will see more than either of us individually would have seen.

@@ -8,6 +8,7 @@ authors:
 date: 2014-07-12
 categories: ["Academia"]
 tags: ["Conference invitations", "Graduate students", "Grants", "Postdocs", "Teaching", "Tenure", "Tenure track"]
+aliases: [/blog/2014/7/12/surviving-the-pre-tenure-years-at-an-r1-university]
 ---
 
 A few days ago, Pröf-like Substance [asked for posts with suggestions on how to survive the pre-tenure years.](http://scientopia.org/blogs/proflikesubstance/2014/07/02/blog-carnival-surviving-the-pre-tenure-years/) I went over my blogging history and realized that I hadn’t really written anything on this topic yet. Most of my advice to date is targeted at more junior scientists. So here is my attempt at giving some suggestions on how to make the most out of your years on the tenure track.

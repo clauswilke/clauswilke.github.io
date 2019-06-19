@@ -8,6 +8,7 @@ authors:
 date: 2014-09-17
 categories: ["Data science"]
 tags: ["Data wrangling", "dplyr", "R", "Tidy data"]
+aliases: [/blog/2014/9/17/a-grammar-of-data-manipulation]
 ---
 
 It seems that Hadley Wickham, the author of the spectacular [ggplot2](http://ggplot2.org/) library for R, is not content with revolutionizing the world of computational data analysis just once. He keeps doing it. This spring, he released the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package, a package that proposes a grammar of data manipulation. I predict that dplyr will become as important for large-scale data analysis and manipulation as ggplot2 has become for visualization. If you like ggplot2, you will love dplyr.[^1]

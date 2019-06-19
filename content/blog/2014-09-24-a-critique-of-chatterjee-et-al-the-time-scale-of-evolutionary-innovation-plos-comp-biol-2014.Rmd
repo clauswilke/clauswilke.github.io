@@ -8,6 +8,7 @@ authors:
 date: 2014-09-24
 categories: ["Science"]
 tags: ["Evolution", "Intelligent design", "Orphan genes"]
+aliases: [/blog/2014/9/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014]
 ---
 A paper published by PLOS Comp. Biol. this month, Chatterjee et al., [The Time Scale of Evolutionary Innovation](http://www.ploscompbiol.org/article/authors/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003818), espouses ideas that are quite similar in spirit to long-standing creationist arguments. I said as much in a [few tweets.](https://twitter.com/ClausWilke/status/512774577076707328) After having made these comments, I have spent quite some time thinking this paper over. And I simply cannot convince myself that it makes an important contribution to evolutionary biology. It is possible that there’s something I’m missing, but to me the paper looks like a very convoluted and mathematically dense way of making a few tired, trivial, and maybe even tautological arguments.
 

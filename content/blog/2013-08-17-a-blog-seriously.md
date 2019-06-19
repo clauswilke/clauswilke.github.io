@@ -6,6 +6,7 @@ authors:
 date: 2013-08-17
 categories: ["Writing"]
 tags: ["Blogging", "Books"]
+aliases: [/blog/2013/8/17/a-blog-seriously]
 ---
 I've always wanted to write a book. For years, I have considered possible topics, thought about detailed contents, even drafted a first chapter or two. Yet I have never followed through. I'm right there with the millions of people who fantasize about being a great author but never do anything about it. However, unlike most of these people, I actually am an author. Writing is a major part of my job. I have published thousands of pages, mostly in the form of scientific papers. I have written winning grant proposals. I have edited journal articles and conference proceedings. I have even taught university-level classes on how to be a successful writer. Surely, if I seriously wanted to write a book, I could.
 

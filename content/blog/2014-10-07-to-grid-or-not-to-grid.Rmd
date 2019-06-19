@@ -8,6 +8,7 @@ authors:
 date: 2014-10-07
 categories: ["Visualization"]
 tags: ["Data visualization", "ggplot2", "R", "Visual noise"]
+aliases: [/blog/2014/10/7/to-grid-or-not-to-grid]
 ---
 I had a twitter discussion with ggplot2 author [Hadley Wickham](http://had.co.nz/) on whether or not to include a grid background in plots. He thinks the default should have a grid, I think the opposite. I believe we both agree that grids make sense for some plots and not for others, so this is just a question about defaults. On that issue, we remain in disagreement.
 
