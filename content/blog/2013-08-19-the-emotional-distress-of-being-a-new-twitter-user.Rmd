@@ -1,5 +1,7 @@
 ---
 title: "The emotional distress of being a new Twitter user"
+subtitle: "All this social media stuff is hard."
+summary: "All this social media stuff is hard."
 slug: the-emotional-distress-of-being-a-new-twitter-user
 authors:
  - admin

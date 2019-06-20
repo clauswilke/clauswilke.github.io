@@ -1,5 +1,7 @@
 ---
 title: "Should you as a scientist be active on LinkedIn?"
+subtitle: "Networking is important."
+summary: "Networking is important."
 slug: should-you-as-a-scientist-be-active-on-linkedin
 authors:
  - admin

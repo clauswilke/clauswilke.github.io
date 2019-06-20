@@ -1,5 +1,7 @@
 ---
 title: "The great weight-loss mystery"
+subtitle: "Short-term dieting is pointless."
+summary: "Short-term dieting is pointless."
 slug: the-great-weight-loss-mystery
 authors:
  - admin

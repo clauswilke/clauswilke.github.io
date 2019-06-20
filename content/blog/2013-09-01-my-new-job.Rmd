@@ -1,5 +1,7 @@
 ---
 title: "My new job"
+subtitle: "I'm dipping my toes into university administration."
+summary: "I'm dipping my toes into university administration."
 slug: my-new-job
 authors:
  - admin

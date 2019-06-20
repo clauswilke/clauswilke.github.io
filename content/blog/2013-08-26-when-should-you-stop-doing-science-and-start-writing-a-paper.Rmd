@@ -1,5 +1,7 @@
 ---
 title: "When should you stop doing science and start writing a paper?"
+subtitle: "Start writing as soon as you have at least one result."
+summary: "Start writing as soon as you have at least one result."
 slug: when-should-you-stop-doing-science-and-start-writing-a-paper
 authors:
  - admin

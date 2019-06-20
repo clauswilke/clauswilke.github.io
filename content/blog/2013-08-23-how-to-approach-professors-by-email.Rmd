@@ -1,5 +1,7 @@
 ---
 title: "How to approach professors by email"
+subtitle: "State clearly what you want or need."
+summary: "State clearly what you want or need."
 slug: how-to-approach-professors-by-email
 authors:
  - admin

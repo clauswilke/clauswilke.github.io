@@ -1,6 +1,8 @@
 ---
-slug: from-undergraduate-to-faculty-member-critical-decision-points-in-the-academic-career
 title: "From undergraduate to faculty member: Critical decision points in the academic career"
+subtitle: "Take things one step at a time."
+summary: "Take things one step at a time."
+slug: from-undergraduate-to-faculty-member-critical-decision-points-in-the-academic-career
 authors:
  - admin
 date: 2013-09-06

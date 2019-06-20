@@ -1,5 +1,7 @@
 ---
 title: "Common errors in statistical analyses"
+subtitle: "Does your analysis mean what you think it means?"
+summary: "Does your analysis mean what you think it means?"
 slug: common-errors-in-statistical-analyses
 authors:
  - admin
@@ -26,7 +28,7 @@ In general, to reliably assign cause and effect, one needs to carry out an *expe
 
 ## Focusing on tenth-order effects and ignoring first-order effects
 
-This issue is not so much an issue of poor statistics but rather of poor placement of emphasis. It is very well explained by Peter Attia [here](http://eatingacademy.com/nutrition/irisin-the-magic-exercise-hormone), so I'll not elaborate on it any further.
+This issue is not so much an issue of poor statistics but rather of poor placement of emphasis. It is very well explained by Peter Attia [here](http://eatingacademy.com/nutrition/irisin-the-magic-exercise-hormone), so I'll not elaborate on it any further here.
 
 ## Aggregation by quantiles erroneously amplifies trend
 
@@ -36,62 +38,77 @@ However, it is surprisingly common to see analyses where instead one of the vari
 
 Let's illustrate this issue with some simulated data, using R. First we generate two variables *x* and *y*, weakly correlated:
 
-    n = 10000 # sample size
-    x = rnorm(n) # generate first set of normal variates
-    y = 0.1*x + 0.9*rnorm(n) # generate second set, weakly correlated with first
+    n <- 10000 # sample size
+    x <- rnorm(n) # generate first set of normal variates
+    y <- 0.1*x + 0.9*rnorm(n) # generate second set, weakly correlated with first
     cor.test( x, y )
 
 This is the output from the `cor.test()` function:
 
-            Pearson's product-moment correlation
-
-    data:  x and y 
-    t = 10.485, df = 9998, p-value < 2.2e-16
-    alternative hypothesis: true correlation is not equal to 0 
-    95 percent confidence interval:
-     0.084862 0.123636 
-    sample estimates:
-          cor 
-    0.1042886 
+    #         Pearson's product-moment correlation
+    # 
+    # data:  x and y 
+    # t = 10.485, df = 9998, p-value < 2.2e-16
+    # alternative hypothesis: true correlation is not equal to 0 
+    # 95 percent confidence interval:
+    #  0.084862 0.123636 
+    # sample estimates:
+    #       cor 
+    # 0.1042886 
 
 The correlation is highly significant (*P* < 2.2e-16) but weak (*r* = 0.10). The variable *x* explains only 1% (that is the square of the correlation coefficient, *r*^2) of the variation in *y*. In terms of the birds example, this could mean that while berry consumption is indeed related to mating success, the relationship is so weak as to be virtually meaningless. (Knowing how many berries a given male bird ate tells me pretty much nothing about his specific mating success.)
 
-[Figure 1](#fig1) shows the relationship between *x* and *y*. As indicated by the correlation analysis, knowing *x* doesn't really tell us anything about *y*.
+Figure \@ref(fig:figure1) shows the relationship between *x* and *y*. As indicated by the correlation analysis, knowing *x* doesn't really tell us anything about *y*.
 
-{% include centerimage.html url="/assets/images/posts/2013-08-18-Fig1.png" note="<strong>Figure 1: Relationship between <em>x</em> and <em>y</em> in our made-up example dataset.</strong>" options="width-60" id="fig1" %}
+(ref:figure1) Relationship between *x* and *y* in our made-up example dataset.
 
+```{r figure1, echo = FALSE, out.width = "75%", fig.cap = '(ref:figure1)'}
+knitr::include_graphics("./Fig1.png")
+```
 
 Now let's aggregate the data into quantiles of *x* and plot the mean +/- the standard error of *y* within each quantile of *x*:
 
     # calculate to which quantile each x belongs
-    qn = 10 # number of quantiles
-    q = quantile(x, probs = seq(0, 1, 1/qn))
-    q[qn] = q[qn] + 1 # make sure the last quantile is larger than max(x)
-    quant.x = tapply(x, 1:n, (function(x) sum(x>=q)) )
+    qn <- 10 # number of quantiles
+    q <- quantile(x, probs = seq(0, 1, 1/qn))
+    q[qn] <- q[qn] + 1 # make sure the last quantile is larger than max(x)
+    quant.x <- tapply(x, 1:n, (function(x) sum(x>=q)))
 
     # calculate means and SEs of y per quantile
-    require( Hmisc ) # for errbar plot
-    mean.quant = tapply( y, quant.x, mean )
-    SE.quant = tapply( y, quant.x, (function(x) sd(x)/sqrt(length(x))) )
-    errbar( 1:qn, mean.quant, mean.quant+SE.quant, mean.quant-SE.quant, xlab='quantiles(x)', ylab='mean(y) for quantile' )
+    library( Hmisc ) # for errbar plot
+    mean.quant <- tapply(y, quant.x, mean)
+    SE.quant <- tapply(y, quant.x, (function(x) sd(x)/sqrt(length(x))))
+    errbar(1:qn, mean.quant, mean.quant+SE.quant, mean.quant-SE.quant, xlab='quantiles(x)', ylab='mean(y) for quantile')
                        
-In this example, we chose 10 quantiles. The resulting graph looks like this:
+In this example, we chose 10 quantiles. The resulting graph is shown in Figure \@ref(fig:figure2).
 
-{% include centerimage.html url="/assets/images/posts/2013-08-18-Fig2.png" note="<strong>Figure 2: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>.</strong>" options="width-60" id="fig2" %}
+(ref:figure2) Mean *y* (+/- standard error) as a function of quantiles of *x*.
 
+```{r figure2, echo = FALSE, out.width = "75%", fig.cap = '(ref:figure2)'}
+knitr::include_graphics("./Fig2.png")
+```
 
 Suddenly, it looks like there is a very clear and quite strong relationship between *x* and *y*. If you were given only this graph, you might think that knowing how many berries a male eats would tell you a lot about that male's mating success. Indeed, the top quantile, on average, has an approximately 200% higher y (200% higher mating success) than the bottom quantile.
 
 Also note the apparent nonlinearity. The top and bottom quantiles seem to have very much increased/reduced y relative to the middle ones. Note that we see no such feature in the scatter plot of the original *x* and *y* values.
 
-Finally, the exact same data look quite different depending on the exact number of quantiles. Here is the same data presented as 6 quantiles:
+Finally, the exact same data look quite different depending on the exact number of quantiles. Figure \@ref(fig:figure3) shows the same data presented with 6 quantiles.
 
-{% include centerimage.html url="/assets/images/posts/2013-08-18-Fig3.png" note="<strong>Figure 3: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>.</strong> Now using 6 instead of 10 quantiles." options="width-70" id="fig3" %}
+(ref:figure3) Mean *y* (+/- standard error) as a function of quantiles of *x*. Now using 6 instead of 10 quantiles.
 
-And here with 20 quantiles:
+```{r figure3, echo = FALSE, out.width = "75%", fig.cap = '(ref:figure3)'}
+knitr::include_graphics("./Fig3.png")
+```
 
-{% include centerimage.html url="/assets/images/posts/2013-08-18-Fig4.png" note="<strong>Figure 4: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>.</strong> Now using 20 instead of 10 quantiles." options="width-60" id="fig4" %}
+And Figure \@ref(fig:figure4) shows the same data presented with 20 quantiles.
+
+
+(ref:figure4) Mean *y* (+/- standard error) as a function of quantiles of *x*. Now using 20 instead of 10 quantiles.
+
+```{r figure4, echo = FALSE, out.width = "75%", fig.cap = '(ref:figure4)'}
+knitr::include_graphics("./Fig4.png")
+```
 
 As you can see, the same data look quite different depending on the exact number of quantiles we use.
 
-So, whenever somebody shows you data aggregated into quantiles, ask for an *x*-*y* scatter plot and a correlation coefficient. And then square the correlation coefficient and evaluate the % variance explained. A squared correlation coefficient below 0.1 (*r* < 0.3) means the effect is pretty much non-existent, regardless of how low the *P* value is.
+So, whenever somebody shows you data aggregated into quantiles, ask for an *x*--*y* scatter plot and a correlation coefficient. And then square the correlation coefficient and evaluate the % variance explained. A squared correlation coefficient below 0.1 (*r* < 0.3) means the effect is pretty much non-existent, regardless of how low the *P* value is.

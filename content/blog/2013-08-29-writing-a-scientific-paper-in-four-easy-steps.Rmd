@@ -1,5 +1,7 @@
 ---
 title: "Writing a scientific paper in four easy steps"
+subtitle: "Nearly all scientific papers have the same standard outline."
+summary: "Nearly all scientific papers have the same standard outline."
 slug: writing-a-scientific-paper-in-four-easy-steps
 authors:
  - admin

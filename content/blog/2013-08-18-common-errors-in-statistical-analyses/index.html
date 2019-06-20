@@ -1,0 +1,102 @@
+---
+title: "Common errors in statistical analyses"
+subtitle: "Does your analysis mean what you think it means?"
+summary: "Does your analysis mean what you think it means?"
+slug: common-errors-in-statistical-analyses
+authors:
+ - admin
+date: 2013-08-18
+categories: ["Science"]
+tags: ["Correlation", "Effect size", "Statistics"]
+aliases: [/blog/2013/8/18/common-errors-in-statistical-analyses]
+---
+
+
+
+<p>This is a post I originally wrote for my lab webpage. I’m reproducing it here (with minor edits) as an exercise in getting to know this blogging platform.</p>
+<div id="confusing-significance-and-effect-size" class="section level2">
+<h2>Confusing significance and effect size</h2>
+<p><em>Statistical significance</em> (a low <em>P</em> value) measures how certain we are that a given effect exists.</p>
+<p><em>Effect size</em> measures the magnitude of an effect. What exactly effect size is depends on the analysis, examples are a correlation coefficient, the difference in means for a t test, or the odds ratio for a contingency-table analysis.</p>
+<p>Many results we encounter in the real world are highly significant but of low magnitude. For example, if you knew with near certainty that a particular dietary supplement extended your life span, on average, by 2 weeks, would you care? Probably not. Even though the finding is highly significant (near certain), the magnitude of the effect is so low that it basically doesn’t matter. Yet it is common in scientific studies, and in press reports about them, to only emphasize the significance of a finding but not the magnitude. Sometimes authors don’t even bother to report effect sizes at all, they only report <em>P</em> values and point out how significant their results are. This is bad science. The <em>P</em> value is primarily a measure of the data set size. The larger the data set, the lower the <em>P</em> value, all else equal. To be important, an effect has to have a large magnitude; just being highly significant is not enough.</p>
+</div>
+<div id="correlation-is-not-causation" class="section level2">
+<h2>Correlation is not causation</h2>
+<p>This issue is pretty well known, yet people fall into this trap over and over again. Just because one quantity shows a statistical association (correlation) with another variable doesn’t mean that one of the two variables causes the other variable. This problem is more common in press reporting about scientific studies than in the studies themselves. For example, a study might report an association between cell-phone use and cancer. In the study, the authors might be careful to point out that they don’t know why increased cell-phone use correlates with cancer in their study population, and that the underlying cause might be unrelated to cell-phone use (e.g., for some reason exposure to a carcinogen correlates with cell-phone use in the study population). Yet, inevitably the press release about this study will read “cell-phone use causes cancer.”</p>
+<p>In general, to reliably assign cause and effect, one needs to carry out an <em>experimental study</em>. In an experimental study, a population is randomly subdivided into treatment and control groups, and the treatment group is subjected to a well-defined experimental manipulation. For example, people are divided into two groups at random, one group is made to use a cell phone for 2 hours each day, the other group is forbidden from using a cell phone ever. After 5 years, count which group developed more cancer. By contrast, studies that only show association but not causation are usually <em>observational studies</em>. In such studies, we simply observe what variables are associated with each other in a sample.</p>
+</div>
+<div id="focusing-on-tenth-order-effects-and-ignoring-first-order-effects" class="section level2">
+<h2>Focusing on tenth-order effects and ignoring first-order effects</h2>
+<p>This issue is not so much an issue of poor statistics but rather of poor placement of emphasis. It is very well explained by Peter Attia <a href="http://eatingacademy.com/nutrition/irisin-the-magic-exercise-hormone">here</a>, so I’ll not elaborate on it any further here.</p>
+</div>
+<div id="aggregation-by-quantiles-erroneously-amplifies-trend" class="section level2">
+<h2>Aggregation by quantiles erroneously amplifies trend</h2>
+<p>In many situations, one would like to know how one quantitative variable relates to another. For example, we might be studying a certain bird species and ask whether the amount of a certain berry that males of that species eat has an effect on the mating success of those males. The canonical (and correct) way to study such questions is via correlation analyses.</p>
+<p>However, it is surprisingly common to see analyses where instead one of the variables is aggregated into quantiles (groups of equal size) and the second variable is presented as an average of the quantiles of the first variable. In the above example, we might classify birds into four groups (quartiles) by their berry consumption (lowest 25%, second lowest 25%, and so on) and then plot the mean mating success within each group as a function of the quartile of berry consumption. Such an analysis is misleading, because it erroneously amplifies any relationship that may exist between the two variables.</p>
+<p>Let’s illustrate this issue with some simulated data, using R. First we generate two variables <em>x</em> and <em>y</em>, weakly correlated:</p>
+<pre><code>n &lt;- 10000 # sample size
+x &lt;- rnorm(n) # generate first set of normal variates
+y &lt;- 0.1*x + 0.9*rnorm(n) # generate second set, weakly correlated with first
+cor.test( x, y )</code></pre>
+<p>This is the output from the <code>cor.test()</code> function:</p>
+<pre><code>#         Pearson&#39;s product-moment correlation
+# 
+# data:  x and y 
+# t = 10.485, df = 9998, p-value &lt; 2.2e-16
+# alternative hypothesis: true correlation is not equal to 0 
+# 95 percent confidence interval:
+#  0.084862 0.123636 
+# sample estimates:
+#       cor 
+# 0.1042886 </code></pre>
+<p>The correlation is highly significant (<em>P</em> &lt; 2.2e-16) but weak (<em>r</em> = 0.10). The variable <em>x</em> explains only 1% (that is the square of the correlation coefficient, <em>r</em>^2) of the variation in <em>y</em>. In terms of the birds example, this could mean that while berry consumption is indeed related to mating success, the relationship is so weak as to be virtually meaningless. (Knowing how many berries a given male bird ate tells me pretty much nothing about his specific mating success.)</p>
+<p>Figure <a href="#fig:figure1">1</a> shows the relationship between <em>x</em> and <em>y</em>. As indicated by the correlation analysis, knowing <em>x</em> doesn’t really tell us anything about <em>y</em>.</p>
+
+<div class="figure"><span id="fig:figure1"></span>
+<img src="Fig1.png" alt="Relationship between x and y in our made-up example dataset." width="75%" />
+<p class="caption">
+Figure 1: Relationship between <em>x</em> and <em>y</em> in our made-up example dataset.
+</p>
+</div>
+<p>Now let’s aggregate the data into quantiles of <em>x</em> and plot the mean +/- the standard error of <em>y</em> within each quantile of <em>x</em>:</p>
+<pre><code># calculate to which quantile each x belongs
+qn &lt;- 10 # number of quantiles
+q &lt;- quantile(x, probs = seq(0, 1, 1/qn))
+q[qn] &lt;- q[qn] + 1 # make sure the last quantile is larger than max(x)
+quant.x &lt;- tapply(x, 1:n, (function(x) sum(x&gt;=q)))
+
+# calculate means and SEs of y per quantile
+library( Hmisc ) # for errbar plot
+mean.quant &lt;- tapply(y, quant.x, mean)
+SE.quant &lt;- tapply(y, quant.x, (function(x) sd(x)/sqrt(length(x))))
+errbar(1:qn, mean.quant, mean.quant+SE.quant, mean.quant-SE.quant, xlab=&#39;quantiles(x)&#39;, ylab=&#39;mean(y) for quantile&#39;)
+                   </code></pre>
+<p>In this example, we chose 10 quantiles. The resulting graph is shown in Figure <a href="#fig:figure2">2</a>.</p>
+
+<div class="figure"><span id="fig:figure2"></span>
+<img src="Fig2.png" alt="Mean y (+/- standard error) as a function of quantiles of x." width="75%" />
+<p class="caption">
+Figure 2: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>.
+</p>
+</div>
+<p>Suddenly, it looks like there is a very clear and quite strong relationship between <em>x</em> and <em>y</em>. If you were given only this graph, you might think that knowing how many berries a male eats would tell you a lot about that male’s mating success. Indeed, the top quantile, on average, has an approximately 200% higher y (200% higher mating success) than the bottom quantile.</p>
+<p>Also note the apparent nonlinearity. The top and bottom quantiles seem to have very much increased/reduced y relative to the middle ones. Note that we see no such feature in the scatter plot of the original <em>x</em> and <em>y</em> values.</p>
+<p>Finally, the exact same data look quite different depending on the exact number of quantiles. Figure <a href="#fig:figure3">3</a> shows the same data presented with 6 quantiles.</p>
+
+<div class="figure"><span id="fig:figure3"></span>
+<img src="Fig3.png" alt="Mean y (+/- standard error) as a function of quantiles of x. Now using 6 instead of 10 quantiles." width="75%" />
+<p class="caption">
+Figure 3: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>. Now using 6 instead of 10 quantiles.
+</p>
+</div>
+<p>And Figure <a href="#fig:figure4">4</a> shows the same data presented with 20 quantiles.</p>
+
+<div class="figure"><span id="fig:figure4"></span>
+<img src="Fig4.png" alt="Mean y (+/- standard error) as a function of quantiles of x. Now using 20 instead of 10 quantiles." width="75%" />
+<p class="caption">
+Figure 4: Mean <em>y</em> (+/- standard error) as a function of quantiles of <em>x</em>. Now using 20 instead of 10 quantiles.
+</p>
+</div>
+<p>As you can see, the same data look quite different depending on the exact number of quantiles we use.</p>
+<p>So, whenever somebody shows you data aggregated into quantiles, ask for an <em>x</em>–<em>y</em> scatter plot and a correlation coefficient. And then square the correlation coefficient and evaluate the % variance explained. A squared correlation coefficient below 0.1 (<em>r</em> &lt; 0.3) means the effect is pretty much non-existent, regardless of how low the <em>P</em> value is.</p>
+</div>

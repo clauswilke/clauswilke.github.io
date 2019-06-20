@@ -1,7 +1,7 @@
 ---
 title: "A call for lightning talks at scientific conferences"
-subtitle: ""
-summary: ""
+subtitle: "Short talks can be incredibly exciting. And when they're not, at least they're over soon."
+summary: "Short talks can be incredibly exciting. And when they're not, at least they're over soon."
 slug: a-call-for-lightning-talks-at-scientific-conferences
 authors:
  - admin

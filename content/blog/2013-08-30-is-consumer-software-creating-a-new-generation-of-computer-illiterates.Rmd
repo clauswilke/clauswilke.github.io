@@ -1,5 +1,7 @@
 ---
 title: "Is consumer software creating a new generation of computer illiterates?"
+subtitle: "Let's dumb down this software even further."
+summary: "Let's dumb down this software even further."
 slug: is-consumer-software-creating-a-new-generation-of-computer-illiterates
 authors:
  - admin
@@ -20,4 +22,4 @@ A conspiracy theorist might pose that this is done on purpose. If you don’t re
 
 As to Office365, I’ll file a bug report. Fat chance they’ll act on it.
 
-[^1] Metadata in this case means call and text records, but without their content. Basically a list of who did you call when, who called you, who did you text, and who texted you.
+[^1]: Metadata in this case means call and text records, but without their content. Basically a list of who did you call when, who called you, who did you text, and who texted you.

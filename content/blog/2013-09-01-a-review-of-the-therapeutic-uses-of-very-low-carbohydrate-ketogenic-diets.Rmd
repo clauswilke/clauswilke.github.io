@@ -1,6 +1,8 @@
 ---
-slug: a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets
 title: "A review of the therapeutic uses of very-low-carbohydrate (ketogenic) diets"
+subtitle: "The European Journal of Clinical Nutrition just published a fantastic article summarizing the current knowledge about ketogenic diets."
+summary: "The European Journal of Clinical Nutrition just published a fantastic article summarizing the current knowledge about ketogenic diets."
+slug: a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets
 authors:
  - admin
 date: 2013-09-01

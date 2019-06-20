@@ -1,5 +1,7 @@
 ---
 title: "Why not write a book?"
+subtitle: "My very first blog post."
+summary: "My very first blog post."
 slug: a-blog-seriously
 authors:
  - admin
