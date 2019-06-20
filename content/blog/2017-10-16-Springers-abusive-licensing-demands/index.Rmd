@@ -43,7 +43,7 @@ As if this alone weren't enough, I also found my conversations with them disinge
 knitr::include_graphics("./figure2.png")
 ```
 
-(ref:figure3) Figure 3: Rights retained under the proposed copyright agreement.
+(ref:figure3) Rights retained under the proposed copyright agreement.
 
 ```{r figure3, echo = FALSE, fig.cap = '(ref:figure3)'}
 knitr::include_graphics("./figure3.png")
