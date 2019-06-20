@@ -1,7 +1,6 @@
 ---
-layout: post
-title: why-i-lift-weights-and-so-should-you
-heading: "Why I lift weights (and so should you)"
+title: "Why I lift weights (and so should you)"
+slug: why-i-lift-weights-and-so-should-you
 authors:
  - admin
 date: 2013-10-01
@@ -11,7 +10,7 @@ aliases: [/blog/2013/10/1/why-i-lift-weights-and-so-should-you]
 ---
 {% include wrapimage.html url="/assets/images/posts/2013-10-01_130721.jpg"  options="width-30" %}
 
-For the first forty years of my life, I thought lifting weights was for meatheads. If you lifted weights, my thinking went, you cared more about your looks than your health or fitness level. Actually, not looks even, just sheer size. I was convinced that my fitness regimen of endurance training (running, cycling, walking), flexibility (yoga), and basic whole-body movements (more yoga) was far superior to stupidly lifting weights in a gym. I mean, look at those guys [[1]](#note1) in the gym: they take a barbell, lift it five times, and then they take a five minute break. Do they even break a sweat? I don’t call that exercise, I call that sitting around on your lazy behind. Only when I started to read up on exercise physiology did I realize that lifting heavy is an extremely beneficial activity. Further, it is likely the most important type of exercise we can engage in, in particular as we grow older. And those five-minute breaks are absolutely necessary if you’re doing it right, in particular if you care more for strength than size. 
+For the first forty years of my life, I thought lifting weights was for meatheads. If you lifted weights, my thinking went, you cared more about your looks than your health or fitness level. Actually, not looks even, just sheer size. I was convinced that my fitness regimen of endurance training (running, cycling, walking), flexibility (yoga), and basic whole-body movements (more yoga) was far superior to stupidly lifting weights in a gym. I mean, look at those guys[^1] in the gym: they take a barbell, lift it five times, and then they take a five minute break. Do they even break a sweat? I don’t call that exercise, I call that sitting around on your lazy behind. Only when I started to read up on exercise physiology did I realize that lifting heavy is an extremely beneficial activity. Further, it is likely the most important type of exercise we can engage in, in particular as we grow older. And those five-minute breaks are absolutely necessary if you’re doing it right, in particular if you care more for strength than size. 
 
 Before I continue, though, a word of clarification: While the title of this post says “lift weights,” what really matters is that one engages in resistance training, i.e., putting heavy loads onto the muscles, tendons, and bones. Conventional resistance training involves barbell work, e.g. the [barbell squat](http://www.youtube.com/watch?v=8JOqwynLV1w) or the [deadlift](http://www.youtube.com/watch?v=YQi8xUZ0V90). However, other forms of exercise can be resistance training as well. For example, there are many excellent bodyweight resistance exercises. If you're regularly cranking out [planche pushups](http://www.youtube.com/watch?v=kw0kXtvOpfU), [one-arm chins](http://www.youtube.com/watch?v=vlASvQCD4lY), or [one-arm handstands](http://www.youtube.com/watch?v=5orjYQupmWo), you probably don't have to pick up a barbell anytime soon. To find out whether a particular exercise can be considered resistance training *for you*, find out how many repetitions you could do at most. If you can't do more than about eight to ten repetitions, you're in the resistance range. For example, if the max number of pushups you can do in one go is four, pushups are a viable resistance exercise for you. But if you can easily crank out twenty, pushups are an endurance exercise for you and you have to move on to something harder for resistance work.
 
@@ -31,4 +30,4 @@ The only downside to heavy lifting is that you’ll look like Arnold Schwarzeneg
 
 ## Notes
 
-[1]<a id="note1"></a> For the purpose of this topic, we can safely assume that a person lifting weights in a gym is a man. There’s probably twenty guys lifting weights to one woman doing so. If you’re a woman who is seriously into lifting, I tip my hat to you, and you know what I’m talking about.
+[^1]: For the purpose of this topic, we can safely assume that a person lifting weights in a gym is a man. There’s probably twenty guys lifting weights to one woman doing so. If you’re a woman who is seriously into lifting, I tip my hat to you, and you know what I’m talking about.

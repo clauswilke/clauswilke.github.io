@@ -6,6 +6,7 @@ authors:
 date: 2013-08-31
 categories: ["Academia"]
 tags: ["Compensation", "Graduate school", "Percent effort", "Postdocs"]
+aliases: [/blog/2013/8/31/atqeelrnfeyb3e03sycsdpl7p5zc83]
 ---
 This morning, an article in the Guardian is making the rounds on the academic twitter feeds. The article is written by an anonymous graduate student, and it argues [that graduate students are underpaid and that their salaries should be doubled.](http://www.theguardian.com/higher-education-network/2013/aug/30/what-does-phd-stand-for) When reading the article, I couldn’t help but feel that it lacked the careful analysis, logical reasoning, and deep thought befitting of a graduate student. The author is either not aware of or willfully ignores how graduate students are paid and why. I am willing to give the author the benefit of the doubt, though. I recently had a conversation with a senior faculty member at my institution and she also didn’t really understand how graduate students are paid. So here’s the quick summary: per hour, graduate students are compensated better than most postdocs and lecturers. After tenure-track faculty members, graduate students probably get the best deal in academia.
 

@@ -6,6 +6,7 @@ authors:
 date: 2013-08-25
 categories: ["Fitness", "Nutrition"]
 tags: ["Fat loss", "Intermittent fasting", "Low-carb diet", "Low-fat diet", "Paleo diet", "Weight loss"]
+aliases: [/blog/2013/8/25/the-great-weight-loss-mystery]
 ---
 The scientific consensus is that [long-term weight loss and weight control is impossible.](http://www.sciencedirect.com/science/article/pii/S0031938413002448) Yet some people [seem to manage.](http://www.nwcr.ws/stories.htm) So what gives? The truth is, nobody knows. The science of nutrition and weight loss is still recovering from 40 years of [collective delusion](http://www.amazon.com/Good-Calories-Bad-Controversial-Science/dp/1400033462/), and frankly most scientific studies in this field are not that insightful. (I do have high hopes, though, that the [Nutrition Science Initiative](http://nusi.org/) is going to be a game changer. Some of the smartest people in the field, with access to very substantial private funding, should make a difference.) In the absence of solid science, I feel that I can freely speculate about why some people succeed and others don’t. So what follows below are my own opinions, poorly sourced and not scientifically proven.
 

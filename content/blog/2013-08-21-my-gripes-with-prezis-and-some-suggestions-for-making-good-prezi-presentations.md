@@ -6,6 +6,7 @@ authors:
 date: 2013-08-21
 categories: ["Professional development"]
 tags: ["Slide design", "Powerpoint", "Presentations", "Prezi", "Public speaking"]
+aliases: [/blog/2013/8/21/my-gripes-with-prezis-and-some-suggestions-for-making-good-prezi-presentations]
 ---
 Prezi is all the rage lately. It seems everybody and their dog is switching over to prezi for presentations. My twitter stream has more prezis than it has powerpoints, keynotes, openoffices, or whatever else people use to make presentations. (Latex beamer? Please don't tell me you use latex beamer.) Just last week, I gave a presentation on giving engaging presentations, and one of the first questions I received afterwards was what I thought about prezi. In my opinion, everything I said in my talk applied to prezi just the same as it did to powerpoint.
 

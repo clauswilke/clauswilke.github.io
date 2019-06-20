@@ -1,9 +1,12 @@
 ---
 title: "Do we know anything about nutrition?"
 slug: do-we-know-anything-about-nutrition
+authors:
+ - admin
 date: 2013-09-13
 categories: ["Fitness", "Nutrition"]
 tags: ["Cholesterol", "Diabetes", "Heart disease", "Nutritional epidemiology", "Superfoods"]
+aliases: [/blog/2013/9/13/do-we-know-anything-about-nutrition]
 ---
 I was pointed to this [infographic on superfoods,](http://www.informationisbeautiful.net/visualizations/snake-oil-superfoods/) which aims at summarizing the scientific information we have about the health benefits of specific foods. It ranks health claims about specific foods by the strength of scientific evidence for the claim, and provides direct links to the relevant studies. The first thing you’ll notice if you look at it is that most claims fall well below promising. However, there are a few that are listed as good or strong. Since I’m somewhat of a nutrition geek, I of course went immediately and looked at the claims that are supposed to be the strongest. I was dismayed to find that of the four claims listed as very strong, at least two are rather dubious. Those two are barley and oats. (I stopped reading after that. The other two may well be dubious as well.)
 

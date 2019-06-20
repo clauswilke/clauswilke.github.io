@@ -6,6 +6,7 @@ authors:
 date: 2013-09-06
 categories: ["Academia", "Professional development"]
 tags: ["Academic career", "Graduate school", "Postdocs", "Tenure track", "Undergraduates"]
+aliases: [/blog/2013/9/6/from-undergraduate-to-faculty-member-critical-decision-points-in-the-academic-career]
 ---
 If you’re an undergraduate contemplating an academic career or a graduate student considering the next steps, you may have the long-term goal of becoming a tenured professor at a major research university. At the same time, you may have serious doubts about whether this is the career for you. Are you good enough to be a faculty member? And if you’re not good enough, will you waste years of your life with little to show for it in the end? Even if you’re good enough, is that sufficient, or will you also need an extraordinary amount of luck? By embarking on an academic career, will you be making a high-stakes gamble that may have a catastrophic outcome if you lose? These are serious doubts, and they can make the prospects of pursuing an academic career seem overwhelming and pointless. As a substitute for these overwhelming, larger-than-life questions, I’d like to offer a set of critical decision points and simple rules about how to proceed. I hope that these suggestions will make the path to an academic position more navigable and less stressful.
 

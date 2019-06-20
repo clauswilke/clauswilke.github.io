@@ -6,6 +6,7 @@ authors:
 date: 2013-09-18
 categories: ["Writing"]
 tags: ["Academic writing", "Freewriting", "Inner critic", "Mind-mapping", "Outlining", "Story line", "Writer's block"]
+aliases: [/blog/2013/9/18/its-easier-to-write-when-you-know-what-you-want-to-say]
 ---
 It’s easier to write when you know what you want to say. “Duh,” you may say, “I could have told you that, Claus.” Yes, it’s a pretty obvious statement. But I wouldn’t dismiss its value so easily. When you’re trying to write something, and you get stuck, you need to know why you're stuck. There may be two reasons: First, you can be stuck because you don’t know *what* you want to say. Second, you can be stuck because even though you do know what you want to say, you don’t know *how to say it.* Those two are very distinct scenarios, and they require different courses of action. Can you tell when you find yourself in either? And if so, do you know how to deal with the situation effectively?
 

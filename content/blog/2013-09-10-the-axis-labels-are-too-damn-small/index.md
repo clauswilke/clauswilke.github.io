@@ -1,15 +1,12 @@
 ---
-layout: post
-title: the-axis-labels-are-too-damn-small
-heading: "The axis labels are too damn small"
+title: "The axis labels are too damn small"
+slug: the-axis-labels-are-too-damn-small
+authors:
+ - admin
 date: 2013-09-10 1:00
-categories: 
-    - misc
-tags:
-    - figures
-    - plotting
-    - visual design
-    - publication quality
+categories: ["Visualization"]
+tags: ["Data visualizaton", "Visual design"]
+aliases: [/blog/2013/9/10/the-axis-labels-are-too-damn-small]
 ---
 
 {% include wrapimage.html url="/assets/images/posts/2013-09-10-axis_labels.jpg" options="float-right width-20" %}

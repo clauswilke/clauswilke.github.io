@@ -6,6 +6,7 @@ authors:
 date: 2013-08-23
 categories: ["Professional development"]
 tags: ["Email etiquette", "Graduate school", "Postdocs", "Undergraduates"]
+aliases: [/blog/2013/8/23/how-to-approach-professors-by-email]
 ---
 Today’s advice is written specifically for undergraduates, even though graduate students and postdocs may benefit as well. (I certainly didn’t figure these things out until I was a faculty member myself.) What is the best way to approach professors by email, in particular if you want or need something from them? I’ll give you the most important advice up front: **Be absolutely clear about your intentions.** Tell me exactly what you want or need from me, and why. This will save both of us a lot of time, energy, and frustration. (Frustration would be mostly on your part, though, when I silently ignore your messages.)
 

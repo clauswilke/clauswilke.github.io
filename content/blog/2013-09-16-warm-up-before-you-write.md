@@ -6,6 +6,7 @@ authors:
 date: 2013-09-16
 categories: ["Writing"]
 tags: ["Academic writing", "Flow", "Longhand", "Warming up", "Writer's block"]
+aliases: [/blog/2013/9/16/warm-up-before-you-write]
 ---
 In most pursuits of an artistic or physical nature, warming up is standard operating procedure. An opera singer wouldn’t go out on stage without first singing some arias in the dressing room. An olympic gymnast doesn’t step on the balance beam without some serious stretching, as well as a dry-run of her routine on the ground. A sprinter will do some light jogs, stretches, and maybe jumping jacks before the big race. But writers routinely fire up the word processor (or, like in the olden days, take out pen and paper) and attempt to write award-winning prose without any sort of warm up. I don’t think that’s very smart. I believe warming up is as important for writing as it is for singing, gymnastics, or track-and-field.
 

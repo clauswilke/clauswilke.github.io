@@ -6,6 +6,7 @@ authors:
 date: 2013-08-26
 categories: ["Writing"]
 tags: ["Academic writing", "Science"]
+aliases: [/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper]
 ---
 In my experience, most graduate students and many postdocs think of science as a two-step process: First, you do science. You do experiments, collect data, write code, carry out statistical analyses. Then, once you’re done doing science, you sit down and write up your results for publication. Within this mental model, an important question arises: How do you know that you have done enough science? When should you stop collecting data and start writing a paper?
 

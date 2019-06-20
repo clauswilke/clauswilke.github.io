@@ -6,6 +6,7 @@ authors:
 date: 2013-08-29
 categories: ["Writing"]
 tags: ["Academic writing"]
+aliases: [/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps]
 ---
 Writing is hard. But writing a scientific paper? Much less so. That’s because nearly all scientific papers follow a simple, four-section outline: Introduction, Methods, Results, Discussion. Just put the required information into those four sections and you’re done.
 

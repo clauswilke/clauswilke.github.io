@@ -6,6 +6,7 @@ authors:
 date: 2013-09-10
 categories: ["Academia"]
 tags: ["Academic career", "Graduate school", "Postdocs", "Tenure track"]
+aliases: [/blog/2013/9/10/how-good-is-good-enough]
 ---
 The other day, I wrote a blog post about [critical decision points in an academic career.](/blog/2013/9/6/from-undergraduate-to-faculty-member-critical-decision-points-in-the-academic-career) [Titus](http://ivory.idyll.org/blog/) felt that I was perpetuating the belief that being “good enough” is a necessary requirement to becoming a faculty member. My intention in writing the post was actually the exact opposite, to argue that whether somebody is or is not “good enough” is largely irrelevant to their success in academia, and not something they should spend much time thinking about. Clearly I didn’t quite succeed in getting my points across, so I’ll try again.
 

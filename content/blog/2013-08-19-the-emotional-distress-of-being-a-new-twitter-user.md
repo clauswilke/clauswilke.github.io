@@ -6,6 +6,7 @@ authors:
 date: 2013-08-19
 categories: ["Miscellaneous"]
 tags: ["Facebook", "Google", "Linkedin", "Twitter", "Social networking"]
+aliases: [/blog/2013/8/19/the-emotional-distress-of-being-a-new-twitter-user]
 ---
 I’ve finally broken down. I’ve made a Twitter account. For years, I tried to hold off, thinking that Twitter was something for a younger generation, with a better stomach for cryptic text messages. The typical Twitter conversation is such a random stream of letters and special characters, made up of usernames, hashtags, and abbreviations of regular words, that it makes the winning entry of an obsfucated perl contest look outright legible. My thinking was that I gave up on perl for a reason. Why should I subject myself to Twitter? Anyway, this weekend I broke down and made a Twitter account. And I have to admit that it has its uses. While I don’t see myself doing long conversations over Twitter any time soon, I can see how it excels at disseminating and sharing information. 
 

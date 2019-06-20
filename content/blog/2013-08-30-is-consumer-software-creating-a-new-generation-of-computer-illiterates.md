@@ -6,6 +6,7 @@ authors:
 date: 2013-08-30
 categories: ["Miscellaneous"]
 tags: ["Computer illiteracy", "Computing", "Office365", "Programming", "Software"]
+aliases: [/blog/2013/8/30/is-consumer-software-creating-a-new-generation-of-computer-illiterates]
 ---
 When I was growing up, computers were a still a pretty unusual thing. As a result, people could generally be subdivided into two types: those that knew their way around computers and those that didn’t. The ones that knew their way around computers really knew things, often down to the hardware level. (I had a book listing the entire operating system of my Commodore, in machine language.) The others pretty much knew nothing, *and they knew that they knew nothing.* So the world was in order. Everybody knew their place. These days, computers are ubiquitous. Everybody and their dog knows how to fill out a web form or install an app. Yet unless we venture beyond the shiny interfaces provided by the Microsofts, Apples, and Googles of this world we remain just as illiterate as the earlier generation. We just don’t know how much we don't know.
 

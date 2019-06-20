@@ -6,6 +6,7 @@ authors:
 date: 2013-08-18
 categories: ["Science"]
 tags: ["Correlation", "Effect size", "Statistics"]
+aliases: [/blog/2013/8/18/common-errors-in-statistical-analyses]
 ---
 This is a post I originally wrote for my lab webpage. I'm reproducing it here (with minor edits) as an exercise in getting to know this blogging platform.  
 

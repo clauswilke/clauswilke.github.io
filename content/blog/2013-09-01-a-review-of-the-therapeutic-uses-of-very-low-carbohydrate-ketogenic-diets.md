@@ -6,6 +6,7 @@ authors:
 date: 2013-09-01
 categories: ["Nutrition"]
 tags: ["Cancer", "Diabetes", "Heart disease", "Ketogenic diet", "Low-carb diet"]
+aliases: [/blog/2013/9/1/a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets]
 ---
 I just learned about this review article that was published earlier this summer in the European Journal of Clinical Nutrition:
 

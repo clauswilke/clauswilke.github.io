@@ -6,6 +6,7 @@ authors:
 date: 2013-09-04
 categories: ["Fitness", "Nutrition"]
 tags: ["Breakfast", "Heart disease", "Intermittent fasting", "Low-carb diet", "Obesity"]
+aliases: [/blog/2013/9/4/a-year-without-breakfast]
 ---
 About a year ago, I gave up breakfast. The truth is, I’ve never liked breakfast. When I wake up, I’m not hungry. Why should I eat? However, breakfast is important, right? Everybody knows, breakfast is the most important meal in the day. Not eating breakfast is associated with all sorts of ills.[^1] It will [make you fat.](http://www.ncbi.nlm.nih.gov/pubmed/21448130) It will give you [heart disease.](http://www.ncbi.nlm.nih.gov/pubmed/23031568) Why would anybody in their right mind not have breakfast?
 

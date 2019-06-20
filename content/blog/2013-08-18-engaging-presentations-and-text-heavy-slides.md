@@ -8,6 +8,7 @@ authors:
 date: 2013-08-18
 categories: ["Professional development"]
 tags: ["Slide design", "Presentations", "Public speaking"]
+aliases: [/blog/2013/8/18/engaging-presentations-and-text-heavy-slides]
 ---
 At this year's BEACON conference, [Art Covert](https://www.linkedin.com/in/artcovert) and I gave a presentation on how to give engaging presentations. The slides for my part of the presentation are available [here.](http://figshare.com/articles/Giving_Effective_Presentations/775322) If you browse through the slides, you'll see that some of them are rather text-heavy. I did this on purpose, to demonstrate that text-heavy slides are not the bane of engaging talks, *if presented appropriately*. By all accounts, despite the amount of text on my slides, [my presentation was engaging](https://twitter.com/briandconnelly/status/368067764478439425/photo/1).
 
