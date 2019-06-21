@@ -1,5 +1,7 @@
 ---
 title: "A blog needs a catchy title"
+subtitle: "I'm rebranding my blog."
+summary: "I'm rebranding my blog."
 slug: a-blog-needs-a-catchy-title
 authors:
  - admin

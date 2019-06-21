@@ -1,6 +1,8 @@
 ---
-slug: writing-paragraphs-that-make-sensethe-topic-and-the-stress-position
 title: "Writing paragraphs that make sense—the topic and the stress position"
+subtitle: "Begin with something your readers know and end with a punch."
+summary: "Begin with something your readers know and end with a punch."
+slug: writing-paragraphs-that-make-sensethe-topic-and-the-stress-position
 authors:
  - admin
 date: 2013-09-26

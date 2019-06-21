@@ -1,5 +1,7 @@
 ---
 title: "Silence your inner critic"
+subtitle: "Just write first, and leave the copy-editing for later."
+summary: "Just write first, and leave the copy-editing for later."
 slug: silence-your-inner-critic
 authors:
  - admin

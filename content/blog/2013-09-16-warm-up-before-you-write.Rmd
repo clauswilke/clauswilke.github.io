@@ -1,5 +1,7 @@
 ---
 title: "Warm up before you write"
+subtitle: "Warming up is as important for writing as it is for singing, gymnastics, or track-and-field."
+summary: "Warming up is as important for writing as it is for singing, gymnastics, or track-and-field."
 slug: 2013-09-16-warm-up-before-you-write
 authors:
  - admin

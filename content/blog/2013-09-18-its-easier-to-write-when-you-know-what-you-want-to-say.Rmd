@@ -1,5 +1,7 @@
 ---
 title: "It’s easier to write when you know what you want to say"
+subtitle: "A clear story writes itself."
+summary: "A clear story writes itself."
 slug: its-easier-to-write-when-you-know-what-you-want-to-say
 authors:
  - admin
