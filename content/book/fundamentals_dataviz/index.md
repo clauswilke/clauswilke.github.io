@@ -2,20 +2,18 @@
 date: "2016-04-27T00:00:00Z"
 external_link: ""
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: ""
   focal_point: Smart
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
-slides: example
+slides: ""
 summary: An example of using the in-built project page.
 tags:
-- Deep Learning
-title: Internal Project
+- Data visualization
+title: Fundamentals of Data Visualization
 url_code: ""
-url_pdf: ""
+url_project: "https://serialmentor.com/dataviz"
+url_abc: "https://serialmentor.com/dataviz"
+url_pdf:
 url_slides: ""
 url_video: ""
 ---
