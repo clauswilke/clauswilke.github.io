@@ -4,5 +4,5 @@ rm -rf ./docs/
 mkdir ./docs
 cp -r ./public/* ./docs/
 touch ./docs/.nojekyll
-echo "serialmentor.com" > ./docs/CNAME
+echo "clauswilke.com" > ./docs/CNAME
 git add ./docs/
