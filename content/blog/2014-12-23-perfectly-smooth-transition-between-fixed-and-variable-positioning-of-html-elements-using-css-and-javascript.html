@@ -10,6 +10,7 @@ categories: ["Miscellaneous"]
 tags: ["CSS", "HTML", "Javascript", "Web design"]
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>The last couple of days I have been working on a new <a href="https://wilkelab.org">webpage.</a> In doing so, I wanted to create a design where the menu bar initially resides at the bottom of the page and moves upwards as the user scrolls down. However, once the menu bar hits the top edge of the viewport, it should remain fixed there. A bit of googling quickly revealed a solution for this problem, using a combination of CSS and Javascript. However, I wasn’t happy with the solution, because it created a visible jump in the layout every time the menu bar hit the top edge of the screen. In fact, this jump is quite common among most web pages that use this design trick. For example, check out a <a href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ&amp;hl=en">profile page on Google Scholar:</a> As you scroll down, the heading above the publication list stays fixed as soon as it hits the top edge of the screen. And if you scroll slowly, you’ll see that the layout jumps the moment the element hits the top edge. I didn’t like this effect at all, so I devised a way to work around it.</p>
