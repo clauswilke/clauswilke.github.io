@@ -1,3 +1,7 @@
+---
+# This needs to be manually assembled and updated. No updating has been done
+# since post 93, 2018/1/23.
+---
 
   <div class="container">
   <p>This is a list of all blog posts ever posted, in reverse chronological order.</p>

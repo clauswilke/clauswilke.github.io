@@ -3,17 +3,17 @@ authors:
 - admin
 bio: ""
 education: ""
-email: "wilke@austin.utexas.edu"
-interests:
-- Molecular Evolution
-- Protein Biophysics
-- Data Science
-- Data Visualization
+email: "claus.o.wilke@gmail.com"
+interests: []
+#- Molecular Evolution
+#- Protein Biophysics
+#- Data Science
+#- Data Visualization
 name: Claus O. Wilke
 organizations:
-- name: The University of Texas at Austin
+- name: "The University of Texas at Austin"
   url: ""
-role: Professor of Integrative Biology
+role: "Professor of Integrative Biology"
 social:
 - icon: envelope
   icon_pack: fas
@@ -33,6 +33,7 @@ user_groups:
 - Visitors
 ---
 
-Claus O. Wilke is a professor of Integrative Biology at The University of Texas at Austin. He holds a PhD in theoretical physics from the Ruhr-University Bochum, Germany. Claus is the author or coauthor of over 170 scientific publications, covering topics in computational biology, mathematical modeling, bioinformatics, evolutionary biology, protein biochemistry, virology, and statistics. He has also authored several popular R packages used for data visualization, such as cowplot and ggridges, and he is a contributor to the package ggplot2.
+
+Claus Wilke is the Jane and Roland Blumberg Centennial Professor in Molecular Evolution at The University of Texas at Austin. He holds a PhD in Theoretical Physics from the University of Bochum in Germany, and he received postdoctoral training in biological physics in the lab of Chris Adami at Caltech. Claus Wilke has published extensively in the areas of computational biology, evolutionary biology, protein biochemistry, and virology. He has also authored several popular R packages used for data visualization, such as cowplot, ggridges, and ggtext, and he is a regular contributor to the package ggplot2.
 
 Opinions expressed on this site are personal and are not meant to represent the official position of The University of Texas at Austin.
