@@ -15,7 +15,7 @@
 resources
 
 # final generated site
-#public
+public
 
 # knitr and R markdown default cache directories
 /*_cache/
