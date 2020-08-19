@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on Claus O. Wilke</title>
+    <link>/tags/editor/</link>
+    <description>Recent content in Editor on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to prepare an article for resubmission, Part II</title>
+      <link>/blog/2014/12/18/how-to-prepare-an-article-for-resubmission-part-ii/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/12/18/how-to-prepare-an-article-for-resubmission-part-ii/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;In my previous post on &lt;a href=&#34;/blog/2014/11/16/how-to-prepare-an-article-for-resubmission&#34;&gt;how to prepare an article for resubmission,&lt;/a&gt; I failed to mention one important point: In your response to the reviewers, quote the &lt;em&gt;entire&lt;/em&gt; referee report, even the introductory sentences. Don’t just quote the specific comments to which you are replying. This may seem unnecessary but it is in fact crucial, in particular if the introductory sentences were largely positive. (If they were highly critical, you may want to omit them, even though in this case you probably should provide a response.)&lt;/p&gt;
+&lt;p&gt;Keep in mind that when the revised manuscript goes back to the editor and the previous reviewers, neither will remember the exact thoughts they had when they previously looked at your manuscript. In addition, the reviewers may never actually have seen the comments of the other reviewers. And finally, most editors and reviewers will look at your response to the reviewer comments before they look at anything else related to your manuscript. Thus, this is your opportunity to remind the editor and the reviewers that your manuscript overall was judged to be interesting and valuable, even if there were some issues to be addressed. By not quoting these comments, you only highlight the critical aspects of the previous reviews. For the same reasons, it is often a good idea to start the response with a brief summary of the overall reviewer sentiments, such as: “Reviewers 1 and 2 thought the manuscript addressed an important topic and had only minor comments. Reviewer 3 was more critical but also acknowledged the timeliness of our work.”&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to prepare an article for resubmission</title>
+      <link>/blog/2014/11/16/how-to-prepare-an-article-for-resubmission/</link>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/11/16/how-to-prepare-an-article-for-resubmission/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;So your latest scientific masterpiece has come back from review with the most likely outcome other than rejection: major revision. The reviewers and the editor think that your work has merit, but they also have a long list of comments and criticism that they expect you to address before the article is acceptable for publication. You read the reviews and you feel like they lay out two years worth of work. How do you best deal with this situation?&lt;/p&gt;
+&lt;div id=&#34;your-life-will-be-easier-if-you-understand-everybodys-objectives&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Your life will be easier if you understand everybody’s objectives&lt;/h2&gt;
+&lt;p&gt;Let’s first consider the perspective of the three groups of people involved: the editor, the reviewers, and the authors (i.e., you). The editor wants to make sure there are no major problems with your paper, in particular problems that would potentially embarrass her&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; down the line. So the editor will pay close attention to any points the reviewers raise that look like your work might be flawed. She will generally be less worried about whether you actually do every additional analysis the reviewers suggest. A good editor knows that most reviewers will suggest more changes than are strictly necessary to get the paper publication ready.&lt;/p&gt;
+&lt;p&gt;The reviewers, primarily, will want to be recognized for their knowledge of the field. They want you to acknowledge that they noticed or knew something you didn’t. Even if it may not seem that way, most reviewer comments are written as constructive criticism, suggestions from the reviewers to you on how you could improve your work. As long as your revisions acknowledge the reviewers’ views, you should be fine. However, on occasion, a reviewer thinks that something you’re doing is fundamentally flawed. In those cases, you may have to put in some extra effort to appease the reviewer.&lt;/p&gt;
+&lt;p&gt;I assume you know what your objective is in this interaction, but in case you had doubts I’ll tell you: You want to get the paper published with as little extra work as possible. You thought your paper was done when you first submitted, so any additional work you’re asked to do amounts to pointless busywork from your perspective.&lt;/p&gt;
+&lt;p&gt;Now that we know what everybody’s objectives are in this game, let’s discuss some strategies for successful resubmission.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;start-by-drafting-a-response-to-the-reviewers&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1. Start by drafting a response to the reviewers&lt;/h2&gt;
+&lt;p&gt;The absolute worst thing you can do after having received reviewer comments is to run back into the lab and start all the additional experiments the reviewers want you to do. This will drag you down a rabbit hole that you will find difficult to come out of, and you will waste a lot of time doing unnecessary work. You need a clear plan of what to do. The best way to develop that plan is to start drafting a response to the reviewers. Copy all the reviewer comments into a file, mark them in some color other than black (I like blue), and then start adding your responses in black.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; See how many reviewer points you can dispense with by writing a response that requires only very minor edits to your manuscript.&lt;/p&gt;
+&lt;p&gt;For the reviewer points that require more extensive rewriting or additional experiments, write out a plan of what you will do to address these points. I like to highlight the parts in the response that I still have to address in the manuscript, and I remove the highlights once I have done so. In this way, I don’t lose track of which edits I have or haven’t done.&lt;/p&gt;
+&lt;p&gt;From what I have seen, the winning strategy employed by some of the most experienced and successful scientists is to write a very long, detailed response and keep the actual manuscript edits to a minimum. It’s not unusual to see a 5 page response to the reviewers accompanying very minor revisions in the actual paper, a few sentences added here and there, and a few additional references thrown in for good measure. These scientists have, over the years, developed a good sense of the minimum amount of work they can get away with and still have their revisions accepted.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;realize-that-the-reviewer-is-always-right&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2. Realize that the reviewer is always right&lt;/h2&gt;
+&lt;p&gt;Regardless of how inane a reviewer’s comments may seem, the reviewer is always right. You don’t gain anything from being upset about the reviewer’s incompetence or lack of knowledge in your area. Instead, think why the reviewer may have reacted the way he did. Maybe you didn’t explain something carefully enough, or you assumed something was widely known that actually isn’t. In your response to the reviewers, always acknowledge the validity of the reviewers’ comments, and then either try to explain the issue in the response or modify the manuscript appropriately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;take-the-reviewer-comments-seriously&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;3. Take the reviewer comments seriously&lt;/h2&gt;
+&lt;p&gt;It’s very easy to discount reviewer comments and say “the reviewer knows nothing about this topic.” Often the reviewer knows more than you may think, and you may simply not be understanding the reviewer’s point of view. (I’ve certainly reviewed more than one paper where I felt the authors were simply not getting what I was trying to tell them.) So make a serious effort and try to figure out what exactly it is the reviewer wants and how you can make it happen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cite-every-reference-the-reviewers-mention&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;4. Cite every reference the reviewers mention&lt;/h2&gt;
+&lt;p&gt;Sometimes it’s very clear that a reviewer wants you to cite a given paper while at other times it may seem like citing certain papers is optional. (Example: “In this context, the authors could consider citing Jones et al. 1975.”) Either way, cite all mentioned papers unless they are totally inappropriate. Regardless of whether the reviewer actually is Jones himself, or only is good friends with Jones, or simply thinks that the Jones et al. paper was a breakthrough for the field, the reviewer clearly cares for Jones et al. 1975. Therefore, he will have a little more respect for you if you demonstrate that you care for Jones et al. 1975 as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;openly-admit-to-your-works-limitations-and-shortcomings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;5. Openly admit to your work’s limitations and shortcomings&lt;/h2&gt;
+&lt;p&gt;When reviewers point out that the research performed has certain shortcomings and limitations, junior scientists will often think they have to overcome these limitations before the work can be published. However, more often than not, all that is needed is a clear statement that these limitations exist and should be addressed in future work. Between this strategy and #4 (cite additional papers), you can probably handle at least 60-70% of all reviewer comments without doing any additional experiments or analysis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;understand-that-reviewer-comments-are-written-as-much-for-the-editor-as-they-are-for-you&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;6. Understand that reviewer comments are written as much for the editor as they are for you&lt;/h2&gt;
+&lt;p&gt;The reviewer doesn’t just want to criticize your work, he also wants to make a good impression in front of the editor, who may be a close colleague, former advisor, or general heavyweight in the reviewer’s field of research. For this reason, the reviewer will always come up with at least a handful of points to criticize, just so he doesn’t appear lazy or incompetent. You will have to figure out which of the comments actually address crucial limitations of your paper and which were written just to impress the editor. The latter ones can always be dispatched with a combination of strategies #4 and #5.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;say-no-to-excessive-requests&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;7. Say “No” to excessive requests&lt;/h2&gt;
+&lt;p&gt;Finally, be aware that it is perfectly acceptable to not do certain things the reviewers ask for. Unless the validity of your core findings is at doubt, you always have the option of saying something like “these additional analyses are beyond the scope of the current work: or”we agree that the reviewer’s suggestion should be pursued in future work, and we now say so in the Discussion.&#34; In case of doubt, don’t do the extra work, just say “No”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 12/18/2014:&lt;/strong&gt; Also read &lt;a href=&#34;/blog/2014/12/18/how-to-prepare-an-article-for-resubmission-part-ii&#34;&gt;my follow-up post&lt;/a&gt; on this topic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;In this story, the editor is female and the reviewers are male.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;There’s a reason for the specific color choices I suggest. Your goal is to visually separate the reviewer comments from the responses. You could do this by making either the reviewer comments or the responses bold or italics. However, extended sections in italics tend to be hard to read, and extended sections in bold tend to be jarring. So colors are the best option. In your color choice, keep in mind that your responses need to be more visually present than the reviewer comments, because you want the reviewers and the editor to focus on your responses, not the reviewer comments, when they evaluate your revision. So your responses need to be in black, and the reviewer comments need to be in a color that doesn’t stand out relative to black. Blue is a good choice. Maybe green or gray would also work. Red or yellow would probably be bad choices.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

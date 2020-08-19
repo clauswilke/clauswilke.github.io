@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cowplot on Claus O. Wilke</title>
+    <link>/tags/cowplot/</link>
+    <description>Recent content in cowplot on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/cowplot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cowplot R package now available on CRAN</title>
+      <link>/blog/2015/06/04/cowplot-r-package-now-available-on-cran/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/06/04/cowplot-r-package-now-available-on-cran/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This week, I finally took the time to clean up the code for my cowplot R package and &lt;a href=&#34;http://cran.r-project.org/web/packages/cowplot/index.html&#34;&gt;submit it to CRAN.&lt;/a&gt; While the code had been up on &lt;a href=&#34;https://github.com/wilkelab/cowplot&#34;&gt;github for a while,&lt;/a&gt; and I had &lt;a href=&#34;/blog/2014/10/7/to-grid-or-not-to-grid&#34;&gt;blogged about it previously,&lt;/a&gt; nobody had really taken notice as far as I can tell. However, this time, with an official release and better documentation, people seem to like it a lot. The response on Twitter was overwhelming.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; Thank you! Thank you!
+&lt;/p&gt;
+— Shaun Jackman (&lt;span class=&#34;citation&#34;&gt;@sjackman&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sjackman/status/606215710549774336&#34;&gt;June 3, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;&lt;/a&gt; thank you, and goodbye illustrator, Photoshop, imagemagick, etc.
+&lt;/p&gt;
+— Stephen Turner (&lt;span class=&#34;citation&#34;&gt;@genetics_blog&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/genetics_blog/status/606221366736654337&#34;&gt;June 3, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;&lt;/a&gt; awesome !!! This makes making figures so easy !!
+&lt;/p&gt;
+— sahil seth (&lt;span class=&#34;citation&#34;&gt;@sethsa&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sethsa/status/606282681907691520&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+I love that the name cowplot is based on &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt;&#39;s initials. New goal: create a package named madplot some day. :)
+&lt;/p&gt;
+— Meghan Duffy (&lt;span class=&#34;citation&#34;&gt;@duffy_ma&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/duffy_ma/status/606450829604880386&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+New R pkg makes it easy to custom arrange, label ggplots on a canvas &lt;a href=&#34;http://t.co/EQGjq9rOAE&#34;&gt;http://t.co/EQGjq9rOAE&lt;/a&gt; By &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;http://t.co/Wi2kL3RnIw&#34;&gt;pic.twitter.com/Wi2kL3RnIw&lt;/a&gt;
+&lt;/p&gt;
+— Sharon Machlis (&lt;span class=&#34;citation&#34;&gt;@sharon000&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sharon000/status/606476793558614016&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+This looks awesome… I&#39;ve been struggling with this issue a lot the last week or so. &lt;a href=&#34;https://t.co/8YxNdocqMd&#34;&gt;https://t.co/8YxNdocqMd&lt;/a&gt;
+&lt;/p&gt;
+— Andrew Kniss (&lt;span class=&#34;citation&#34;&gt;@WyoWeeds&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/WyoWeeds/status/606482691433766914&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+(A big thank you to &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; for developing the cowplot package so I could make this 2-panel figure.) &lt;a href=&#34;https://twitter.com/hashtag/Rstats?src=hash&#34;&gt;#Rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/ggplot?src=hash&#34;&gt;#ggplot&lt;/a&gt;
+&lt;/p&gt;
+— Andrew Kniss (&lt;span class=&#34;citation&#34;&gt;@WyoWeeds&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/WyoWeeds/status/606572020004839424&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

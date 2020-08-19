@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data wrangling on Claus O. Wilke</title>
+    <link>/tags/data-wrangling/</link>
+    <description>Recent content in Data wrangling on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/data-wrangling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading and combining many tidy data files in R</title>
+      <link>/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update June 16, 2019:&lt;/strong&gt; &lt;em&gt;This post is now three years old, and some of the advice given is now outdated. Most importantly, it is much better to use &lt;code&gt;map_dfr()&lt;/code&gt; than &lt;code&gt;map(...) %&amp;gt;% reduce(rbind)&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Everybody who is familiar with the R libraries for processing of tidy data, such as &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt;, knows how powerful they are and how much one can get done with just a few lines of R code. However, similarly, everybody who has used them has probably spent more time bringing data into the appropriate tidy format than writing analysis and/or plotting code. In particular, one scenario that arises all the time is that even if data files are in tidy format, the entire dataset may be spread out over many individual files, and loading them all in and combining them into one large table can be cumbersome. Here, I want to demonstrate some neat tricks, using the relatively new package &lt;code&gt;purrr&lt;/code&gt; and some recent additions to the package &lt;code&gt;tidyr&lt;/code&gt;, that make loading and combining many data files a piece of cake.&lt;/p&gt;
+&lt;p&gt;The code shown here depends on the following R packages:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(readr)  # for read_csv()
+require(dplyr)  # for mutate()
+require(tidyr)  # for unnest()
+require(purrr)  # for map(), reduce()&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;reading-in-all-files-matching-a-given-name&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Reading in all files matching a given name&lt;/h2&gt;
+&lt;p&gt;As an example, we will consider a scenario where we have population census data for various cities, stored in individual csv files for each city. The data I’m using here comes from &lt;a href=&#34;http://factfinder.census.gov/&#34; class=&#34;uri&#34;&gt;http://factfinder.census.gov/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first scenario we will consider is one where we want to read all csv files in the current working directory. To achieve this goal, we first list all &lt;code&gt;*.csv&lt;/code&gt; files, using the function &lt;code&gt;dir()&lt;/code&gt;. We find that there are three, for the cities Houston, Los Angeles, and New York:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# find all file names ending in .csv 
+files &amp;lt;- dir(pattern = &amp;quot;*.csv&amp;quot;)
+files&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Houston_TX.csv&amp;quot;     &amp;quot;Los Angeles_CA.csv&amp;quot; &amp;quot;New York_NY.csv&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can then read in those files and combine them into one data frame using the &lt;code&gt;purrr&lt;/code&gt; functions &lt;code&gt;map()&lt;/code&gt; and &lt;code&gt;reduce()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- files %&amp;gt;%
+  map(read_csv) %&amp;gt;%    # read in all the files individually, using
+                       # the function read_csv() from the readr package
+  reduce(rbind)        # reduce with rbind into one dataframe
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Often, we want to read the data from a given directory rather than from the current working directory. The ability to define functions on-the-fly in &lt;code&gt;purrr&lt;/code&gt; makes this easy:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_path &amp;lt;- &amp;quot;city_data&amp;quot;   # path to the data
+files &amp;lt;- dir(data_path, pattern = &amp;quot;*.csv&amp;quot;) # get file names
+
+data &amp;lt;- files %&amp;gt;%
+  # read in all the files, appending the path before the filename
+  map(~ read_csv(file.path(data_path, .))) %&amp;gt;% 
+  reduce(rbind)
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the expression &lt;code&gt;~ read_csv(file.path(data_path, .))&lt;/code&gt; is a shortcut for the anonymous function definition &lt;code&gt;function(x) read_csv(file.path(data_path, x))&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# this code does the exact same thing as the previous code
+data &amp;lt;- files %&amp;gt;%
+  map(function(x) read_csv(file.path(data_path, x))) %&amp;gt;%  
+  reduce(rbind)
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;keeping-auxilliary-information-about-the-files-read&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Keeping auxilliary information about the files read&lt;/h2&gt;
+&lt;p&gt;One limitation of the previous approach is that we don’t keep any auxilliary information we may want to, such as the filenames of the files read. To keep the filename alongside the data, we can read the data into a nested dataframe rather than a list, using the &lt;code&gt;mutate()&lt;/code&gt; function from &lt;code&gt;dplyr&lt;/code&gt;. This gives us the following result:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- data_frame(filename = files) %&amp;gt;% # create a data frame
+                                         # holding the file names
+  mutate(file_contents = map(filename,          # read files into
+           ~ read_csv(file.path(data_path, .))) # a new data column
+        )  
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [3 x 2]
+## 
+##             filename  file_contents
+##                (chr)          (chr)
+## 1     Houston_TX.csv &amp;lt;tbl_df [5,3]&amp;gt;
+## 2 Los Angeles_CA.csv &amp;lt;tbl_df [5,3]&amp;gt;
+## 3    New York_NY.csv &amp;lt;tbl_df [5,3]&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To turn this data frame into one useful for downstream analysis, we use the function &lt;code&gt;unnest()&lt;/code&gt; from &lt;code&gt;tidyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;unnest(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 4]
+## 
+##              filename        location  year population
+##                 (chr)           (chr) (int)      (int)
+## 1      Houston_TX.csv     Houston, TX  2011    2142221
+## 2      Houston_TX.csv     Houston, TX  2012    2177376
+## 3      Houston_TX.csv     Houston, TX  2013    2216460
+## 4      Houston_TX.csv     Houston, TX  2014    2256192
+## 5      Houston_TX.csv     Houston, TX  2015    2296224
+## 6  Los Angeles_CA.csv Los Angeles, CA  2011    3828604
+## 7  Los Angeles_CA.csv Los Angeles, CA  2012    3864724
+## 8  Los Angeles_CA.csv Los Angeles, CA  2013    3902005
+## 9  Los Angeles_CA.csv Los Angeles, CA  2014    3936940
+## 10 Los Angeles_CA.csv Los Angeles, CA  2015    3971883
+## 11    New York_NY.csv    New York, NY  2011    8287000
+## 12    New York_NY.csv    New York, NY  2012    8365069
+## 13    New York_NY.csv    New York, NY  2013    8436047
+## 14    New York_NY.csv    New York, NY  2014    8495194
+## 15    New York_NY.csv    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;creating-filenames-from-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Creating filenames from data&lt;/h2&gt;
+&lt;p&gt;In the previous examples, we have read in all the data files in a given directory. Often, however, we would rather read in specific files based on other data we have. For example, let’s assume we have the following data table:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cities &amp;lt;- data_frame(city = c(&amp;quot;New York&amp;quot;, &amp;quot;Houston&amp;quot;),
+                     state = c(&amp;quot;NY&amp;quot;, &amp;quot;TX&amp;quot;),
+                     area = c(305, 599.6))
+cities&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [2 x 3]
+## 
+##       city state  area
+##      (chr) (chr) (dbl)
+## 1 New York    NY 305.0
+## 2  Houston    TX 599.6&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We want to use the city and state columns to create appropriate filenames and then load in the corresponding files. The code in its entirety looks as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- cities %&amp;gt;% # start with the cities table
+  # create filenames
+  mutate(filename = paste(city, &amp;quot;_&amp;quot;, state, &amp;quot;.csv&amp;quot;, sep=&amp;quot;&amp;quot;)) %&amp;gt;%
+  # read in data
+  mutate(file_contents = map(filename,
+           ~ read_csv(file.path(data_path, .)))
+        ) %&amp;gt;% 
+  select(-filename) %&amp;gt;% # remove filenames, not needed anynmore
+  unnest() %&amp;gt;% # unnest
+  select(-location) # remove location column, not needed
+                    # since we have city and state columns
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [10 x 5]
+## 
+##        city state  area  year population
+##       (chr) (chr) (dbl) (int)      (int)
+## 1  New York    NY 305.0  2011    8287000
+## 2  New York    NY 305.0  2012    8365069
+## 3  New York    NY 305.0  2013    8436047
+## 4  New York    NY 305.0  2014    8495194
+## 5  New York    NY 305.0  2015    8550405
+## 6   Houston    TX 599.6  2011    2142221
+## 7   Houston    TX 599.6  2012    2177376
+## 8   Houston    TX 599.6  2013    2216460
+## 9   Houston    TX 599.6  2014    2256192
+## 10  Houston    TX 599.6  2015    2296224&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I hope you have found these examples useful, and you will start loading files into nested data frames.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A grammar of data manipulation</title>
+      <link>/blog/2014/09/17/a-grammar-of-data-manipulation/</link>
+      <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/09/17/a-grammar-of-data-manipulation/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;It seems that Hadley Wickham, the author of the spectacular &lt;a href=&#34;http://ggplot2.org/&#34;&gt;ggplot2&lt;/a&gt; library for R, is not content with revolutionizing the world of computational data analysis just once. He keeps doing it. This spring, he released the &lt;a href=&#34;http://cran.r-project.org/web/packages/dplyr/index.html&#34;&gt;dplyr&lt;/a&gt; package, a package that proposes a grammar of data manipulation. I predict that dplyr will become as important for large-scale data analysis and manipulation as ggplot2 has become for visualization. If you like ggplot2, you will love dplyr.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;dplyr is the next iteration of the popular plyr package, only that it is 100 times faster and way more intuitive. It provides a clean interface to work with data sets that are “tidy.” (See also my previous two blog posts on tidy data &lt;a href=&#34;/blog/2014/7/20/keep-your-data-tidy&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;/blog/2014/7/21/keep-your-data-tidy-part-ii&#34;&gt;here.&lt;/a&gt;) Let me whet your appetite by showing you a simple analysis I did the other day.&lt;/p&gt;
+&lt;p&gt;I wanted to find out how much evolutionary divergence there is between human genes and the corresponding yeast (&lt;em&gt;S. cerevisiae&lt;/em&gt;) orthologs. Specifically, I was interested in the range of sequence identities among genes, i.e., what are the most conserved genes, the most diverged genes, what is the mean divergence, and so on. The analysis has an additional twist in that there are different types of ortholog pairs. There are one-to-one orthologs, where the human gene has exactly one counter-part in the yeast genome, there are one-to-many orthologs, where the gene in one organism has multiple counter-parts in the other organism, and there are many-to-many orthologs, where there are multiple genes in both organisms that are orthologous to each other. Thus, I wanted to carry out my analysis by orthology type.&lt;/p&gt;
+&lt;p&gt;I went to &lt;a href=&#34;http://www.ensembl.org/index.html&#34;&gt;ensembl&lt;/a&gt; and downloaded all human-to-yeast orthologs with their respective sequence identities. The resulting csv file is available &lt;a href=&#34;https://dl.dropboxusercontent.com/u/97817736/human_yeast_divergence.csv&#34;&gt;here.&lt;/a&gt; We can download this file directly into R, using the RCurl package. We’ll also load the dplyr package, since we’ll need it later:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(RCurl)  
+library(dplyr)  
+url &amp;lt;- &amp;quot;https://dl.dropboxusercontent.com/u/97817736/human_yeast_divergence.csv&amp;quot;    
+data &amp;lt;- read.csv(textConnection(getURL(url)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s take a look at the data. There are five columns, the gene id for the human gene, the gene id for the
+corresponding yeast ortholog, the homology type (one-to-one, one-to-many, many-to-many), the percent identity with respect to both the human (&lt;code&gt;perc.ident.human&lt;/code&gt;) and the yeast (&lt;code&gt;perc.ident.yeast&lt;/code&gt;) gene, and a confidence score that tells us how confident we are that the two genes are actually orthologous.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;    human.gene.ID yeast.gene.ID      homology.type perc.ident.human  
+1 ENSG00000100077       YKL126W ortholog_many2many               19  
+2 ENSG00000100077       YHR205W ortholog_many2many               18  
+3 ENSG00000100077       YMR104C ortholog_many2many               18  
+4 ENSG00000196139       YHR104W  ortholog_one2many               33  
+5 ENSG00000173213       YFL037W  ortholog_one2many               71  
+6 ENSG00000154930       YLR153C ortholog_many2many               43  
+  perc.identity.yeast confidence  
+1                  19          1  
+2                  15          1  
+3                  18          1  
+4                  33          1  
+5                  69          1  
+6                  44          1  &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we’re ready for some dplyr magic. Let’s assume we want to analyze the data by homology type, and we want to find the minimum, mean, median, and maximum sequence identity for each homology type, as well as the standard deviation of the identity distribution. All this can be achieved with the following code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data %&amp;gt;% group_by(homology.type) %&amp;gt;%  
+    summarize(  
+        min=min(perc.ident.human),  
+        mean=mean(perc.ident.human),  
+        std.dev=sd(perc.ident.human),
+        max=max(perc.ident.human))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Source: local data frame [3 x 5]
+
+       homology.type min     mean  std.dev max
+1 ortholog_many2many   1 26.36965 16.37955  92
+2  ortholog_one2many   0 27.46243 15.18146  86
+3   ortholog_one2one   1 33.04183 12.89296  80&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function &lt;code&gt;group_by()&lt;/code&gt; states that we want to carry out the analysis separately for each homology type, and the function &lt;code&gt;summarize()&lt;/code&gt; calculates the summary statistics (min, mean, etc.) for each group. The operator &lt;code&gt;%&amp;gt;%&lt;/code&gt; is a chaining operator, like a pipe in the UNIX command line. It takes the output from the previous operation and feeds it into the subsequence operation.&lt;/p&gt;
+&lt;p&gt;As you can see, dplyr syntax focuses entirely on the logical flow of the data analysis. You don’t ever have to worry about bookkeeping, looping over cases, or details of the data storage.&lt;/p&gt;
+&lt;p&gt;Let’s do another example. Let’s say we’re only interested in one-to-one orthologs, and we want to find the top 10 least diverged yeast genes and list them in descending order. The following lines achieve this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data %&amp;gt;% filter(homology.type==&amp;#39;ortholog_one2one&amp;#39;) %&amp;gt;%  
+    select(yeast.gene.ID, human.gene.ID, perc.ident.human) %&amp;gt;%  
+    top_n(10) %&amp;gt;%   
+    arrange(desc(perc.ident.human))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Selecting by perc.ident.human  
+   yeast.gene.ID   human.gene.ID perc.ident.human  
+1        YLR167W ENSG00000143947               80  
+2        YDR064W ENSG00000110700               77  
+3        YKL145W ENSG00000161057               75  
+4        YOR210W ENSG00000177700               75  
+5        YGL048C ENSG00000087191               74  
+6        YPL086C ENSG00000134014               74  
+7        YPR016C ENSG00000242372               72  
+8        YJR121W ENSG00000110955               72  
+9        YDL007W ENSG00000100764               71  
+10       YEL027W ENSG00000185883               70  &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The function &lt;code&gt;filter()&lt;/code&gt; selects all rows of the given homology type, the function &lt;code&gt;select()&lt;/code&gt; picks the specific columns we are interested in, the function &lt;code&gt;top_n()&lt;/code&gt; selects the top &lt;em&gt;n&lt;/em&gt; values in the last data column (i.e., column &lt;code&gt;perc.ident.human&lt;/code&gt; in this example), and the function &lt;code&gt;arrange()&lt;/code&gt; sorts the data.&lt;/p&gt;
+&lt;p&gt;If these examples have piqued your interest and you want to learn more, I recommend you start by reading the dplyr vignette, which you can find here: &lt;a href=&#34;http://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html&#34;&gt;http://cran.r-project.org/web/packages/dplyr/vignettes/introduction.html&lt;/a&gt;&lt;br /&gt;
+There is also an excellent introduction by Kevin Markham, with accompanying 40 minute video, available here: &lt;a href=&#34;http://rpubs.com/justmarkham/dplyr-tutorial&#34;&gt;http://rpubs.com/justmarkham/dplyr-tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And have I mentioned already that dplyr has a &lt;a href=&#34;http://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html&#34;&gt;database backend,&lt;/a&gt; so you can now easily use all the statistical sophistication that R provides on arbitrarily large, remotely stored data sets.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;And if you aren’t familiar with &lt;a href=&#34;http://ggplot2.org/&#34;&gt;ggplot2,&lt;/a&gt; spend some time with it. It is fantastic, though it may feel alien initially. If you’re used to traditional visualization approaches, you may think in terms of drawing points and lines onto a canvas. ggplot2 requires you to approach visualization in a completely different way, in terms of mapping features of the data onto aesthetic features of the graph. Once you get this way of thinking, it becomes rather powerful.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keep your data tidy, Part II</title>
+      <link>/blog/2014/07/21/keep-your-data-tidy-part-ii/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/07/21/keep-your-data-tidy-part-ii/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;My previous post on &lt;a href=&#34;/blog/2014/7/20/keep-your-data-tidy&#34;&gt;tidy data&lt;/a&gt; didn’t at all touch on rule 3, “Each type of observational unit forms a table.” The example I gave had only one observational unit, the weekly temperature measurements. Frequently, however, we have data corresponding to multiple observational units. In this case, it is important that we store them in separate tables, and that we know how to combine these tables for useful analyses.&lt;/p&gt;
+&lt;p&gt;First, we need to figure out when we’re dealing with multiple observational units and when we are not. An observational unit is the base unit on which measurements are done. Importantly, multiple measurements can be performed on the same unit. For example, if we’re studying a group of patients, and for each patient we measure height, weight, heart rate, and blood pressure, then the observational unit is the patient, and we are measuring four variables per observational unit. However, if we’re following the patients over time, and we make those four measurements once every month for a year, then the observational units are the patient-months, i.e., we have one observational unit per patient each month.&lt;/p&gt;
+&lt;p&gt;In what follows, I’m assuming you have read the &lt;a href=&#34;/blog/2014/7/20/keep-your-data-tidy&#34;&gt;previous post&lt;/a&gt; and you are familiar with the temperature example I made there. In this example, since we’re measuring temperature each week, we have one observational unit per city per week. If in addition to temperature we also measured humidity, then we’d have two measurements per observational unit but the number and type of observational units wouldn’t change. Now, however, assume that we’re also recording additional information about the cities that we’re studying, for example their altitude. The altitude will be the same every week. Therefore, altitude is a property of the city, not of the city-week that is the experimental unit for the temperature measurements. Thus, we now have two separate sets of experimental units, the city-weeks for which we measure temperature and the cities themselves for which we measure altitude.&lt;/p&gt;
+&lt;p&gt;By rule 3 for tidy data, the altitude measurements do not belong into the table that contains temperature data, they belong into a separate table. For example, this table could look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; alt.data
+  city altitude
+1    A     2300
+2    B      400
+3    C      250&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s assume that we want to know whether there is a relationship between the mean temperature for a city and the city’s altitude. How would we do this? First, we calculate the mean temperature, as before, and store it in a new data frame called &lt;code&gt;mean.temp&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; mean.temp &amp;lt;- ddply(temp.data, &amp;quot;city&amp;quot;, summarize, mean.temp=mean(temperature))
+&amp;gt; mean.temp
+  city mean.temp
+1    A     13.50
+2    B     20.25
+3    C     23.75&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we need to merge the two data frames &lt;code&gt;alt.data&lt;/code&gt; and &lt;code&gt;mean.temp&lt;/code&gt;. This can be done with the function &lt;code&gt;join()&lt;/code&gt; from the plyr package, or alternatively with the function &lt;code&gt;merge&lt;/code&gt; from base R:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; city.data &amp;lt;- join(mean.temp, alt.data)
+Joining by: city
+&amp;gt; city.data
+  city mean.temp altitude
+1    A     13.50     2300
+2    B     20.25      400
+3    C     23.75      250&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can investigate the relationship between the two variables, for example by fitting a linear model:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; summary(lm(altitude ~ mean.temp, data = city.data))
+
+Call:
+lm(formula = altitude ~ mean.temp, data = city.data)
+
+Residuals:
+     1      2      3 
+ 121.1 -354.8  233.6 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&amp;gt;|t|)
+(Intercept)  5027.01    1177.01   4.271    0.146
+mean.temp    -210.97      59.95  -3.519    0.176
+
+Residual standard error: 441.7 on 1 degrees of freedom
+Multiple R-squared:  0.9253,    Adjusted R-squared:  0.8506 
+F-statistic: 12.38 on 1 and 1 DF,  p-value: 0.1763&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Both the &lt;code&gt;join&lt;/code&gt; and the &lt;code&gt;merge&lt;/code&gt; function can handle much more complicated situations. For example, by default, both functions merge on all shared variables. Further, you can specify how you want to handle the situation when cases are missing. A “left” join keeps all rows from the first data frame and matches the corresponding ones from the second, a “right” join keeps all rows from the second data frame and matches the corresponding ones from the first, an “inner” join only keeps rows that exist in both data frames, and a “full” join keeps all observations that exist in either data frame. For more details, read the documentation of either function.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keep your data tidy</title>
+      <link>/blog/2014/07/20/keep-your-data-tidy/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/07/20/keep-your-data-tidy/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I came across this nice preprint by Hadley Wickham:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hadley Wickham (2014). &lt;a href=&#34;http://vita.had.co.nz/papers/tidy-data.pdf&#34;&gt;Tidy data.&lt;/a&gt; Submitted.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this preprint, Wickham describes a way of organizing data he calls “tidy.” He then argues that tidy data and tidy tools (that both input and output tidy data) make data analysis much more efficient than any alternative approach can.&lt;/p&gt;
+&lt;p&gt;When are data tidy? When they satisfy these three conditions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Each variable forms a column.&lt;/li&gt;
+&lt;li&gt;Each observation forms a row.&lt;/li&gt;
+&lt;li&gt;Each type of observational unit forms a table.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Every other arrangement of data is called “messy.”&lt;/p&gt;
+&lt;p&gt;Let’s look at an example. Assume you’re making temperature measurements once a week in three cities (city A, city B, and city C). Instinctively, most people would probably record the data like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;week    city_A    city_B    city_C
+   1        14        18        23
+   2        15        21        24
+   3        12        25        23
+   4        13        17        25
+   ...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or maybe even like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;week         1        2        3        4      ...
+city_A      14       15       12       13
+city_B      18       21       25       17
+city_C      23       24       23       25&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While both options may look quite organized, neither corresponds to tidy data. In both cases, Wickham’s rules 1 and 2 are violated. For example, in the first case, the variable &lt;code&gt;temperature&lt;/code&gt; appears in three columns. Consequently, multiple observations appear in each row. In the second case, multiple variables appear in each column and multiple observations appear in each row.&lt;/p&gt;
+&lt;p&gt;The tidy version of this data set would look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;week    city    temperature
+   1       A             14
+   1       B             18
+   1       C             23
+   2       A             15
+   2       B             21
+   2       C             24
+   ...
+   &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I believe that most people have an instinctive dislike towards tidy data, because tidy data sets tend to have many rows and are difficult to read with the human eye. You can clearly see this in my made-up data set. The messy&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; versions allow us to quickly compare cities’ temperatures in different weeks as well as identify trends over time. The tidy version does not. It also requires many more rows.&lt;/p&gt;
+&lt;p&gt;Nevertheless, for computational analysis, having tidy data makes things way more efficient, &lt;em&gt;if you have the right set of tools.&lt;/em&gt; These tools need to consistently input and output tidy data. Fortunately, these tools exist in R. (And Wickham has greatly enhanced R’s capability to keep analyses tidy by writing the packages reshape2, plyr, and ggplot2.) With the appropriate tools, even quite complicated analyses can be expressed in just a few lines of code. And most importantly, there is no need for explicit loops or other bookkeeping code. You just express the semantics of your analysis and the programming language does the rest.&lt;/p&gt;
+&lt;p&gt;How does this work? In general, when we want to analyze data, we want to manipulate (specifically filter, transform, aggregate, and sort), model, and visualize. These steps require only a handful of generic tools, such as a generic data aggregation function. Let me show you a few examples, using the &lt;code&gt;summarize()&lt;/code&gt; and &lt;code&gt;ddply()&lt;/code&gt; functions from the plyr package. I assume we store the temperature data in tidy form in a data frame called &lt;code&gt;temp.data&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; temp.data
+   week city temperature
+1     1    A          14
+2     1    B          18
+3     1    C          23
+4     2    A          15
+5     2    B          21
+6     2    C          24
+7     3    A          12
+8     3    B          25
+9     3    C          23
+10    4    A          13
+11    4    B          17
+12    4    C          25&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s calculate the mean temperature in each city:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; ddply(temp.data, &amp;quot;city&amp;quot;, summarize, mean=mean(temperature))
+  city  mean
+1    A 13.50
+2    B 20.25
+3    C 23.75&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or in each week:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; ddply(temp.data, &amp;quot;week&amp;quot;, summarize, mean=mean(temperature))
+  week     mean
+1    1 18.33333
+2    2 20.00000
+3    3 20.00000
+4    4 18.33333&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or let’s find the city with the highest temperature each week:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; ddply(temp.data, &amp;quot;week&amp;quot;, summarize, hottest.city=city[which.max(temperature)])
+  week hottest.city
+1    1            C
+2    2            C
+3    3            B
+4    4            C&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These are just a few simple examples. For more examples, read Wickham’s paper, and also read his paper on plyr.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Does any of this matter? I’m sure somebody will tell me: Yeah, but R is an ugly and archaic programming language, and my python code will analyze the data tables that Wickham calls “messy” just fine. My answer is that it only matters if you care about how much time you spend analyzing your data. Read through the example analysis Wickham provides in his Section 5 (“Case study”). This analysis uses less than 30 lines of code, including the code for visualization, to identify and plot causes of death with unusual temporal patterns throughout the day (see his Fig. 4). How many lines of code would you have written to do a comparable analysis? And how long would it have taken you to write this code and debug it?&lt;/p&gt;
+&lt;p&gt;At some point, a quantitative advantage becomes a qualitative one. While one can do the exact same analyses with tidy and messy datasets/tools, the tidy approach will generally require much less code, and hence be faster to write, easier to debug, and easier to modify/maintain. In practice, this means that the person using the tidy approach will be able to analyze more data sets, try a larger number of different analysis approaches, and/or make fewer mistakes. Aggregated over the course of several months, this advantage can easily translate into some major new findings made only by the person using the tidy approach.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Throughout this post, I’m following Wickham in using “messy” as a technical term, meaning “not tidy,” as in “not conforming to the definition of tidy data.”&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Hadley Wickham (2011) &lt;a href=&#34;http://vita.had.co.nz/papers/plyr.html&#34;&gt;The split-apply-combine strategy for data analysis.&lt;/a&gt; Journal of Statistical Software 40:1–29.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ten simple rules for reproducible computational research</title>
+      <link>/blog/2013/10/26/ten-simple-rules-for-reproducible-computational-research/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/26/ten-simple-rules-for-reproducible-computational-research/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;PLOS Computational Biology just published a new addition to their popular &lt;a href=&#34;https://collections.plos.org/ten-simple-rules&#34;&gt;“ten simple rules”&lt;/a&gt; series:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. &lt;a href=&#34;https://doi.org/10.1371/journal.pcbi.1003285&#34;&gt;doi:10.1371/journal.pcbi.1003285&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This article is relevant to anybody who wants to do computational research. I’ll make it required reading in my lab. For every single one of these rules, I can think of projects I’ve been involved with&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; that ran into trouble or failed because they violated that rule.&lt;/p&gt;
+&lt;p&gt;While all of the rules are important, I’m particularly partial to these four: avoid manual data manipulation, record all intermediate results, always store raw data behind plots, and provide public access to scripts and results. They will prevent a lot of headaches for both you and the people coming after you who’d like to build on your results.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;All of these projects were run by friends of friends, of course. None of this would ever happen in my lab. 😉&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

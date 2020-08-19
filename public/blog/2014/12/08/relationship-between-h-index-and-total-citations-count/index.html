@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="For most scientists, the h index is approximately half times the square root of the total number of citations.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/">
+  <meta property="og:title" content="Relationship between h index and total citations count | Claus O. Wilke">
+  <meta property="og:description" content="For most scientists, the h index is approximately half times the square root of the total number of citations."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2014-12-08T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2014-12-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Relationship between h index and total citations count | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Relationship between h index and total citations count</h1>
+
+  
+  <p class="page-subtitle">For most scientists, the h index is approximately half times the square root of the total number of citations.</p>
+  
+
+  
+    
+
+
+
+<meta content="2014-12-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2014-12-08 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Dec 8, 2014</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/academia/">Academia</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/&amp;text=Relationship%20between%20h%20index%20and%20total%20citations%20count" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/&amp;t=Relationship%20between%20h%20index%20and%20total%20citations%20count" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Relationship%20between%20h%20index%20and%20total%20citations%20count&amp;body=/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/&amp;title=Relationship%20between%20h%20index%20and%20total%20citations%20count" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Relationship%20between%20h%20index%20and%20total%20citations%20count%20/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/&amp;title=Relationship%20between%20h%20index%20and%20total%20citations%20count" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>I came across an interesting paper<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> that derives a mathematical relationship between the total number of citations a scientist has received, <span class="math inline">\(N_\text{tot}\)</span>, and the scientist’s <span class="math inline">\(h\)</span> index.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> The paper, written by Alexander Yong, argues that for typical scientists, <span class="math inline">\(h\)</span> is given simply as 0.54 times the square-root of <span class="math inline">\(N_\text{tot}\)</span>. The paper also derives confidence bounds on this estimate, and it shows that scientists who have written only a few highly-cited works will generally fall below this estimate. While the paper is set up as a critique of the <span class="math inline">\(h\)</span> index, I think it shows that the <span class="math inline">\(h\)</span> index works largely as intended. It measures the total amount of citations a researcher has received, but it adequately down-weighs the effect of a few extremely highly cited works in a researcher’s publication list.</p>
+<p>The argument of the paper goes as follows: Let’s consider all the possible ways in which a researcher’s <span class="math inline">\(N_\text{tot}\)</span> citations may be distributed over a number of publications. On one extreme, the researcher could have written a single article, which has been cited <span class="math inline">\(N_\text{tot}\)</span> times. On the other extreme, the researcher could have written <span class="math inline">\(N_\text{tot}\)</span> articles, which all have been cited exactly once. And of course, there are many possibilities between those extremes, where some articles receive more citations and others fewer. The paper then assumes that all these different ways in which <span class="math inline">\(N_\text{tot}\)</span> citations can be distributed over one or more articles are equally likely, and calculates the expected <span class="math inline">\(h\)</span> under that assumption. That value, it turns out, is approximately <span class="math inline">\(0.54 \times N_\text{tot}^{1/2}.\)</span> The paper then tests this relationship for a number of famous mathematicians (Fields-medal winners and members of the National Academy of Sciences) and finds that it generally works quite well, though typically as an upper bound. It is rare for a scientist to have <span class="math inline">\(h\)</span> exceed the predicted value of <span class="math inline">\(0.54 \times N_\text{tot}^{1/2}.\)</span> On the flip side, many scientists who have written famous, highly cited books have an <span class="math inline">\(h\)</span> quite a bit lower than the predicted value, because the books cause the total citation count to be overinflated.</p>
+<p>I wanted to know to what extent this formula worked in a different field. So I tested it on the members of my department. For each faculty member<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> of the Department of Integrative Biology, I obtained their total number of citations and their <span class="math inline">\(h\)</span> index from Google Scholar, and then I plotted the observed <span class="math inline">\(h\)</span> against the predicted <span class="math inline">\(h\)</span> using Yong’s formula (Figure <a href="#fig:figure1">1</a>). As you can see, the formula works remarkably well. Almost everybody falls right on top of the line. Importantly, this sample covers a wide range of different career stages.</p>
+
+<div class="figure"><span id="fig:figure1"></span>
+<img src="observed_v_predicted_h.png" alt="Observed vs. predicted \(h\) for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red." width="80%" />
+<p class="caption">
+Figure 1: Observed vs. predicted <span class="math inline">\(h\)</span> for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red.
+</p>
+</div>
+<p>Three faculty members are plotted in red in the figure: those are members of the National Academy, and they are the highest-cited scientists in the department. Interestingly, two have very high total citation counts but, in comparison, not that high of an <span class="math inline">\(h\)</span> index, while one has the highest overall <span class="math inline">\(h\)</span> index with comparatively fewer citations. The former two both have written famous books, and many of their citations are to these books. By contrast, the latter scientist stands out by having published a particularly large number of articles that all have been well cited. In fact, that scientist is performing slightly better than the <span class="math inline">\(h = 0.54 \times N_\text{tot}^{1/2}\)</span> prediction, a truly remarkable result at that high of a total citation count.</p>
+<p>In summary, I find that the predicted relationship between <span class="math inline">\(h\)</span> and <span class="math inline">\(N_\text{tot}\)</span> works well in my field. However, since major deviations between this relationship can be observed for scientists with a few extremely highly cited works, I prefer using <span class="math inline">\(h\)</span> instead of <span class="math inline">\(N_\text{tot}\)</span> to estimate a scientist’s total impact on their field.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A. Yong (2014). <a href="https://doi.org/10.1090/noti1164">Critique of Hirsch’s Citation Index: A Combinatorial Fermi Problem.</a> <em>Notices of the AMS</em> 61:1040-1050.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>The <span class="math inline">\(h\)</span> index is the number of papers a scientist has written that have received at least <span class="math inline">\(h\)</span> citations. For example, if you have <span class="math inline">\(h = 10\)</span>, then you have written 10 papers that have been cited 10 or more times. You may have written more than 10 papers total, but none of the other papers you may have written has received more than 10 citations yet.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>To be precise, each faculty member with a Google Scholar profile. This covers almost but not exactly the entire department.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/academic-publishing/">Academic publishing</a>
+  
+  <a class="badge badge-light" href="/tags/citation-counts/">Citation counts</a>
+  
+  <a class="badge badge-light" href="/tags/h-index/">h index</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2014/12/02/how-google-scholar-discourages-young-scientists-from-posting-preprints/">How Google Scholar discourages young scientists from posting preprints</a></li>
+          
+          <li><a href="/blog/2014/11/16/how-to-prepare-an-article-for-resubmission/">How to prepare an article for resubmission</a></li>
+          
+          <li><a href="/blog/2014/11/01/the-google-scholar-preprint-bug/">The Google Scholar preprint bug</a></li>
+          
+          <li><a href="/blog/2014/10/18/should-peer-review-be-double-blind/">Should peer-review be double-blind?</a></li>
+          
+          <li><a href="/blog/2014/09/13/double-jeopardy/">Double Jeopardy</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

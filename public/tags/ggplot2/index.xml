@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot2 on Claus O. Wilke</title>
+    <link>/tags/ggplot2/</link>
+    <description>Recent content in ggplot2 on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fundamentals of Data Visualization</title>
+      <link>/blog/2018/01/23/fundamentals-of-data-visualization/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2018/01/23/fundamentals-of-data-visualization/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I’m very excited to announce my latest project, a book on data visualization. The working title is “Fundamentals of Data Visualization”. The book will be published with O’Reilly, and a preview is &lt;a href=&#34;http://serialmentor.com/dataviz/&#34;&gt;available here.&lt;/a&gt; The entire book is written in R Markdown, and the figures are made with ggplot2. The source for the book is &lt;a href=&#34;https://github.com/clauswilke/dataviz&#34;&gt;available on github.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Even though the entire book is written in R Markdown, it is not a book on programming. The book is meant as a guide to making visualizations that accurately reflect the data, tell a story, and look professional. It has grown out of my experience of working with students and postdocs in my laboratory on thousands of data visualizations. Over the years, I have noticed that the same issues arise over and over. I have attempted to collect my accumulated knowledge from these interactions in the form of this book.&lt;/p&gt;
+&lt;p&gt;As of this writing, approximately half of the planned chapters are completed, and all completed chapters are available online. I will post future chapters as they become available. Since this is a work in progress, not everything may be completely finalized, and I may rewrite some of the posted chapters at a later date. I welcome feedback. If you see any errors or other problems, please &lt;a href=&#34;https://github.com/clauswilke/dataviz/issues&#34;&gt;open an issue on github.&lt;/a&gt; If you have suggestions for other topics to cover, or for datasets that would work well for certain chapters, please also feel free to record these suggestions as issues on github.&lt;/p&gt;
+&lt;p&gt;With very few exceptions, all figures in the book are generated straight from ggplot2, with no manual post-processing in photoshop or illustrator. (At present, the only exception is two figures in the chapter on &lt;a href=&#34;http://serialmentor.com/dataviz/image-file-formats.html&#34;&gt;image file formats.&lt;/a&gt;) Therefore, the book also serves as a showcase of what ggplot2 can do. I am using the bleeding edge of ggplot2 software development, though. To reproduce all the figures in the book, you may have to install current development versions of several R packages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Goodbye joyplots</title>
+      <link>/blog/2017/09/15/goodbye-joyplots/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/09/15/goodbye-joyplots/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Anybody who has been paying any attention to the data visualization scene knows that the summer of 2017 was the summer of joyplots. This type of visualization turned viral, probably not in small part fueled by the R package &lt;a href=&#34;https://CRAN.R-project.org/package=ggjoy&#34;&gt;ggjoy&lt;/a&gt; that I wrote in July. However, I think it’s time to retire both the name “joyplot” and the ggjoy package, and as of today the ggjoy package is officially deprecated. A replacement package &lt;a href=&#34;https://CRAN.R-project.org/package=ggridges&#34;&gt;ggridges&lt;/a&gt; is in place and provides essentially the same functionality.&lt;/p&gt;
+&lt;p&gt;The term “joyplot” was coined by Jenny Bryan in a tweet on April 24, 2017:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+I hereby propose that we call these “joy plots” &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://t.co/uuLGpQLAwY&#34;&gt;https://t.co/uuLGpQLAwY&lt;/a&gt;
+&lt;/p&gt;
+— Jenny Bryan (&lt;span class=&#34;citation&#34;&gt;@JennyBryan&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/JennyBryan/status/856674638981550080&#34;&gt;April 25, 2017&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;The idea was to honor the band Joy Division, whose 1979 album &lt;a href=&#34;https://en.wikipedia.org/wiki/Unknown_Pleasures&#34;&gt;&lt;em&gt;Unknown Pleasures&lt;/em&gt;&lt;/a&gt; features on its cover a visualization of radio waves as staggered lines, creating a 3D-like effect. This seemed like a good idea and the name caught on like wildfire.&lt;/p&gt;
+&lt;p&gt;Unfortunately, when the name “joyplot” took off, nobody in the datascience community was aware of the origin of the name “Joy Division”. As described in the book &lt;a href=&#34;https://en.wikipedia.org/wiki/House_of_Dolls&#34;&gt;&lt;em&gt;House of Dolls,&lt;/em&gt;&lt;/a&gt; joy divisions were groups of Jewish women in Nazi concentration camps kept for the sexual pleasure of soldiers. The band Joy Division took their name directly from this book and even quoted from the book in one of their early songs.&lt;/p&gt;
+&lt;p&gt;Thus, as joyful as the name “joyplot” sounds to the uninformed, its history is rather dark, and we would do better using a different name. For this reason, I have decided to now call these plots “ridgeline plots”. Indeed, from day one, the ggjoy package contained a &lt;code&gt;geom_ridgeline()&lt;/code&gt;, so I’m just keeping in this tradition. The new ggridges package uses this naming convention throughout, and all functions have been renamed accordingly. For example, &lt;code&gt;geom_joy()&lt;/code&gt; is now called &lt;code&gt;geom_density_ridges()&lt;/code&gt;. A complete list of all name replacements is provided &lt;a href=&#34;https://github.com/clauswilke/ggjoy/blob/master/README.md&#34;&gt;here&lt;/a&gt;. Porting your code from ggjoy to ggridges should be as simple as a search-and-replace for all those functions in your code. If you run into any trouble, please let me know or open an &lt;a href=&#34;https://github.com/clauswilke/ggridges/issues&#34;&gt;issue on github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cowplot R package now available on CRAN</title>
+      <link>/blog/2015/06/04/cowplot-r-package-now-available-on-cran/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/06/04/cowplot-r-package-now-available-on-cran/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This week, I finally took the time to clean up the code for my cowplot R package and &lt;a href=&#34;http://cran.r-project.org/web/packages/cowplot/index.html&#34;&gt;submit it to CRAN.&lt;/a&gt; While the code had been up on &lt;a href=&#34;https://github.com/wilkelab/cowplot&#34;&gt;github for a while,&lt;/a&gt; and I had &lt;a href=&#34;/blog/2014/10/7/to-grid-or-not-to-grid&#34;&gt;blogged about it previously,&lt;/a&gt; nobody had really taken notice as far as I can tell. However, this time, with an official release and better documentation, people seem to like it a lot. The response on Twitter was overwhelming.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; Thank you! Thank you!
+&lt;/p&gt;
+— Shaun Jackman (&lt;span class=&#34;citation&#34;&gt;@sjackman&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sjackman/status/606215710549774336&#34;&gt;June 3, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;&lt;/a&gt; thank you, and goodbye illustrator, Photoshop, imagemagick, etc.
+&lt;/p&gt;
+— Stephen Turner (&lt;span class=&#34;citation&#34;&gt;@genetics_blog&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/genetics_blog/status/606221366736654337&#34;&gt;June 3, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;&lt;/a&gt; awesome !!! This makes making figures so easy !!
+&lt;/p&gt;
+— sahil seth (&lt;span class=&#34;citation&#34;&gt;@sethsa&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sethsa/status/606282681907691520&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+I love that the name cowplot is based on &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt;&#39;s initials. New goal: create a package named madplot some day. :)
+&lt;/p&gt;
+— Meghan Duffy (&lt;span class=&#34;citation&#34;&gt;@duffy_ma&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/duffy_ma/status/606450829604880386&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+New R pkg makes it easy to custom arrange, label ggplots on a canvas &lt;a href=&#34;http://t.co/EQGjq9rOAE&#34;&gt;http://t.co/EQGjq9rOAE&lt;/a&gt; By &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;http://t.co/Wi2kL3RnIw&#34;&gt;pic.twitter.com/Wi2kL3RnIw&lt;/a&gt;
+&lt;/p&gt;
+— Sharon Machlis (&lt;span class=&#34;citation&#34;&gt;@sharon000&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/sharon000/status/606476793558614016&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+This looks awesome… I&#39;ve been struggling with this issue a lot the last week or so. &lt;a href=&#34;https://t.co/8YxNdocqMd&#34;&gt;https://t.co/8YxNdocqMd&lt;/a&gt;
+&lt;/p&gt;
+— Andrew Kniss (&lt;span class=&#34;citation&#34;&gt;@WyoWeeds&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/WyoWeeds/status/606482691433766914&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+(A big thank you to &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; for developing the cowplot package so I could make this 2-panel figure.) &lt;a href=&#34;https://twitter.com/hashtag/Rstats?src=hash&#34;&gt;#Rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/ggplot?src=hash&#34;&gt;#ggplot&lt;/a&gt;
+&lt;/p&gt;
+— Andrew Kniss (&lt;span class=&#34;citation&#34;&gt;@WyoWeeds&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/WyoWeeds/status/606572020004839424&#34;&gt;June 4, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching a new introductory class in computational biology and bioinformatics</title>
+      <link>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This semester, I’m teaching a new introductory class in computational biology and bioinformatics. The class is primarily targeted at undergraduates, and it is split approximately 50:50 between R and python. The R component emphasizes effective data analysis and visualization, using packages such as ggplot2 and dplyr. The python component will introduce students to basic programming concepts, and it will also cover some typical bioinformatics applications.&lt;/p&gt;
+&lt;p&gt;Developing a new class is a lot of work, so I’ll probably have much less time for posting here on my blog. However, on the flip side, the entire course content will be posted online, and you can &lt;a href=&#34;https://wilkelab.org/classes/SDS348_spring_2015.html&#34;&gt;follow along here.&lt;/a&gt; The core of each lecture is an in-class exercise worksheet, and I’m posting the worksheets and the solutions online. Many lectures also have a brief traditional lecture component with slides as well as additional reading materials. I’m developing the course as I go, so there will be new material posted twice a week throughout the spring.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To grid or not to grid</title>
+      <link>/blog/2014/10/07/to-grid-or-not-to-grid/</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/10/07/to-grid-or-not-to-grid/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I had a twitter discussion with ggplot2 author &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; on whether or not to include a grid background in plots. He thinks the default should have a grid, I think the opposite. I believe we both agree that grids make sense for some plots and not for others, so this is just a question about defaults. On that issue, we remain in disagreement.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; I think removing the grid lines is a bad idea. It hampers your ability to make accurate comparisons
+&lt;/p&gt;
+— Hadley Wickham (&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/hadleywickham/status/519439694413565953&#34;&gt;October 7, 2014&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; but see (e.g.) fig 3 of &lt;a href=&#34;http://t.co/m3A1XgPpCK&#34;&gt;http://t.co/m3A1XgPpCK&lt;/a&gt; - the grid is the right default, but may make sense to remove in some cases
+&lt;/p&gt;
+— Hadley Wickham (&lt;span class=&#34;citation&#34;&gt;@hadleywickham&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/hadleywickham/status/519483409911922688&#34;&gt;October 7, 2014&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;One of my preferred methods of data visualization is to take two variables that measure the same quantity in different ways or different systems and then plot one versus the other. As an example, see &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3678335/figure/RSTB20120334F3/&#34;&gt;this figure&lt;/a&gt; from a paper my lab published last year. In this kind of a plot, a grid would be highly distracting. In general, I like to add guiding lines that highlight specific features of the data. For example, if the most important feature in the data is whether &lt;em&gt;y&lt;/em&gt; values fall above or below one, then placing a horizontal line at &lt;em&gt;y&lt;/em&gt; = 1 would be a good idea, and it would likely be more helpful than a generic grid covering the entire plot. However, I do agree that if one does a lot of &lt;a href=&#34;http://www.cookbook-r.com/Graphs/Facets_(ggplot2)&#34;&gt;faceting,&lt;/a&gt; a grid may be necessary. In fact, yesterday I played around with faceted plots without background grid, and I noticed that they had a tendency to fall apart and not look very convincing. Without grid, the eye has little to go by in these plots.&lt;/p&gt;
+&lt;p&gt;So, if I can see the value of a background grid in some cases, why am I not convinced that it is the right default? When it comes to constructing plots, I fundamentally believe in an additive rather than a subtractive model. That is, start with a plot that is as empty as possible, and then add everything you need until you have a clear and informative graph. In a subtractive model, you would start with all sorts of additional visual elements of which you remove those you don’t need. While both approaches can lead to the same end result, it is my experience from ~15 years of supervising students, and from reviewing oodles of papers with poor-quality figures, that most people don’t remove visual noise from a graph unless explicitly prompted to do so. If ggplot2 places a gray background grid, then a gray background grid it is. Therefore, in my &lt;a href=&#34;https://github.com/wilkelab/cowplot&#34;&gt;own personal plotting package,&lt;/a&gt; whose intended purpose is internal use in my lab, the default is no background grid. I’d rather say on occasion “please add a background grid to this figure” than having to repeat over and over “please remove the background grid.”&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

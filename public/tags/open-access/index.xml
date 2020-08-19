@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open access on Claus O. Wilke</title>
+    <link>/tags/open-access/</link>
+    <description>Recent content in Open access on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/open-access/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Springer&#39;s abusive licensing demands</title>
+      <link>/blog/2017/10/16/springers-abusive-licensing-demands/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/10/16/springers-abusive-licensing-demands/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Today I posted a tweetstorm on publishing an article with &lt;a href=&#34;https://f1000research.com/&#34;&gt;F1000Research&lt;/a&gt; that was originally commissioned by Springer:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;We just published this article in &lt;a href=&#34;https://twitter.com/F1000Research?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@F1000Research&lt;/span&gt;&lt;/a&gt; because of &lt;a href=&#34;https://twitter.com/SpringerNature?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@SpringerNature&lt;/span&gt;&lt;/a&gt;&#39;s abusive licensing practices. &lt;a href=&#34;https://t.co/Xx88jkA3ec&#34;&gt;https://t.co/Xx88jkA3ec&lt;/a&gt;
+&lt;/p&gt;
+— Claus Wilke (&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/ClausWilke/status/919958741734379520?ref_src=twsrc%5Etfw&#34;&gt;October 16, 2017&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I received several requests to turn this into a blog post, so here we go. The blog post consists mostly of the text of the tweets, with some minor edits and clarifications.&lt;/p&gt;
+&lt;p&gt;We just published &lt;a href=&#34;https://f1000research.com/articles/6-1845/v1&#34;&gt;this article&lt;/a&gt; in F1000Research because of Springer’s abusive licensing practices. The article was originally written to become a chapter in a Springer book on methods in protein evolution, and it describes key protocols my lab uses to measure site-specific rates in proteins and correlate them with protein structure. We’ve published extensively on this topic in recent years, see e.g. &lt;a href=&#34;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002452&#34;&gt;Jack et al., PLOS Biology 2016&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, as a precondition of publishing, Springer wanted us to assign to them the exclusive, permanent copyright to the work (Figure &lt;a href=&#34;#fig:figure1&#34;&gt;1&lt;/a&gt;). In essence, they wanted us to donate our work to them so they could lock it behind a paywall and make money off of it. I were an unpaid intern at Springer while writing the article, Springer’s request would violate US labor law. But since I’m an independent agent, I guess I’m allowed to make donations to a commercial entity.&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure1.png&#34; alt=&#34;The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word exclusive, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement.&#34; width=&#34;552&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word &lt;em&gt;exclusive&lt;/em&gt;, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You might ask me: “What exactly is it you are complaining about here? People sign these agreements all the time, as have you in the past. How is this case any different?” The difference is that in this case, there’s virtually no benefit, even non-monetary, that Springer provides to in return. I understand that people might be willing to sign away their copyright in return for Nature paper that gets them their next job or grant.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; But a chapter in a methods book? That isn’t even peer reviewed? It doesn’t bring me (or my trainees) any prestige, unless the article is widely available and people use it and cite it a lot. But Springer explicitly doesn’t want that, because they make money from people buying the book to read the method.&lt;/p&gt;
+&lt;p&gt;I cannot let Springer own key protocols from my lab.&lt;/p&gt;
+&lt;p&gt;As if this alone weren’t enough, I also found my conversations with them disingenuous. In particular, when I asked for a non-exclusive agreement, they lied to me about what the agreement says (Figure &lt;a href=&#34;#fig:figure2&#34;&gt;2&lt;/a&gt;). Note the phrasing “We don’t claim copyright or ownership of the content itself” in this is response by Springer. It is blatantly false. Remember the copyright agreement is exclusive. This means the authors lose all rights except those explicitly stated as retained.&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure2.png&#34; alt=&#34;Statement by Springer representative. A Springer representative made this statement when I requested a non-exclusive copyright agreement.&#34; width=&#34;770&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Statement by Springer representative. A Springer representative made this statement when I requested a non-exclusive copyright agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure3.png&#34; alt=&#34;Rights retained under the proposed copyright agreement.&#34; width=&#34;554&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Rights retained under the proposed copyright agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Let’s take a look at the rights that we would have retained (Figure &lt;a href=&#34;#fig:figure3&#34;&gt;3&lt;/a&gt;). Pay attention to the repeated occurrence of the word “content”. The person who drafted the copyright agreement knew very well that it would cover the contents of the contribution. That’s the point of copyright. So, according to Figure &lt;a href=&#34;#fig:figure1&#34;&gt;1&lt;/a&gt;, we would have lost the right to communicate the content to non-scientists. This includes, for example, commercial entities that may want to use our protocols. We would also have lost the right to post a preprint of the work. And it is unclear whether we would have been allowed to post it on personal webpages. That depends on whether the visitors of our personal webpages can be considered to be scientists or not. We would certainly have lost the right to publish an updated version of the protocols at some future date with a different publisher. I wouldn’t even have been allowed to this paper in a future anthology of my most influential papers, assuming it would be distributed at some cost. (Unlikely that I’d want to, but that’s not the point.)&lt;/p&gt;
+&lt;p&gt;For all the above reasons, the paper is now with F1000Research, and you can read it free of charge, copy it, and build on it. Enjoy.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Andrew Rambaut &lt;a href=&#34;https://twitter.com/arambaut/status/919980657153138688&#34;&gt;pointed out&lt;/a&gt; that Nature (the journal) does not require a permanent, exclusive copyright license anymore. This statement was later disputed by &lt;a href=&#34;https://twitter.com/dhimmel/status/920168108962312192&#34;&gt;Daniel Himmelstein.&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hiding journal names from your publication list stinks</title>
+      <link>/blog/2015/12/08/hiding-journal-names-from-your-publication-list-stinks/</link>
+      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/12/08/hiding-journal-names-from-your-publication-list-stinks/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Michael Eisen recently announced his new website, which features a new publication list that doesn’t mention journal names anywhere:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+made a new lab website - completely scrubbed any mention of journal titles - &lt;a href=&#34;https://t.co/iTwYvWDwqX&#34;&gt;https://t.co/iTwYvWDwqX&lt;/a&gt;
+&lt;/p&gt;
+— Michⓐel Eisen (&lt;span class=&#34;citation&#34;&gt;@mbeisen&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/mbeisen/status/673419464633749504&#34;&gt;December 6, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;This idea was quickly picked up by others, e.g.:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+Following &lt;a href=&#34;https://twitter.com/mbeisen&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@mbeisen&lt;/span&gt;&lt;/a&gt;, removed journal names from website. But also links to cites, almetrics, &amp;amp; preprints. &lt;a href=&#34;https://t.co/bPqZgrr2iA&#34;&gt;https://t.co/bPqZgrr2iA&lt;/a&gt;
+&lt;/p&gt;
+— Jeffrey Ross-Ibarra (&lt;span class=&#34;citation&#34;&gt;@jrossibarra&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/jrossibarra/status/673680344982274048&#34;&gt;December 7, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;I spoke out against this idea, since I immediately had the gut-feeling response that something was wrong with it:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;a href=&#34;https://twitter.com/yanivbrandvain&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@yanivbrandvain&lt;/span&gt;&lt;/a&gt; Yeah, I&#39;m not on board with hiding journal names. That&#39;s &lt;a href=&#34;https://twitter.com/mbeisen&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@mbeisen&lt;/span&gt;&lt;/a&gt;&#39;s thing, and now also &lt;a href=&#34;https://twitter.com/jrossibarra&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@jrossibarra&lt;/span&gt;&lt;/a&gt;, I guess. &lt;a href=&#34;https://twitter.com/jaimedash&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@jaimedash&lt;/span&gt;&lt;/a&gt;
+&lt;/p&gt;
+— Claus Wilke (&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/ClausWilke/status/673723100379283456&#34;&gt;December 7, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;However, at the time, I couldn’t quite formulate what I thought the key issue was. I have now given this more thought, and I’ve found various reasons why I think it’s a bad idea to hide journal names. However, I’ve also realized that most of these arguments don’t even matter. As I’ll argue here, hiding journal names from the publication list is directly at odds with the principles of openness and egalitarianism that people like Michael Eisen so strongly promote. Therefore, to put it bluntly, I think this practice stinks.&lt;/p&gt;
+&lt;p&gt;We need to realize that in the current world of scientific publishing, removing journal names from the publication list has cause and effect reversed. If we had reached a point where nobody cared about journal names,&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; then removing them from the publication list and listing papers simply by author, title, and DOI would be the logical next step. But since, as of today, there are plenty of people in this world who do care about journal names, hiding them is counterproductive. We can state all we want that “people shouldn’t care about journal names,” but hiding these names from publication lists won’t make it so.&lt;/p&gt;
+&lt;p&gt;Think about it this way: If you want to move towards a world where people care more about article content than journal name, who do you need to convince? Those who already agree with you, or those who disagree? Obviously the latter. What would be a meaningful action towards that goal? In my mind, the most important action is to demonstrate that the publication venue doesn’t matter that much, by publishing your best work in journals such as PLOS ONE, PeerJ, or F1000Research, or even by just posting studies on bioRxiv without submitting them to any journal at all. These actions would demonstrate to the world that you’re putting your money where your mouth is and that you don’t care about perceived journal impact. How would the world notice that you’re doing this? They might go to your website and see that you, the esteemed scholar and noted expert in your field, publish in “low-impact” journals and on preprint servers, validating these publication venues in the process.&lt;/p&gt;
+&lt;p&gt;By contrast, if you’re hiding the journal names from your website, this important message is not conveyed. At best, people will not notice where you publish. At worst, they may wonder what you’re hiding. And that’s where things are really getting counter-productive. Because, if you are an outspoken proponent of open access, of preprints, of post-publication peer review, of publishing in non-selective journals, then any paper you publish that violates these principles will weaken your message. And if you’re not even stating on your website where you’re publishing, you may be perceived as being dishonest. For example, on &lt;a href=&#34;http://www.eisenlab.org//publications.html&#34;&gt;Michael Eisen’s publication list&lt;/a&gt;, over the last 3 years, I count one pay-walled Elsevier paper (!), two papers in the highly selective journal eLife, and several papers in the fairly selective journals Genome Research, PLOS Genetics, and PLOS Computational Biology. (These papers are easier to find on his &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=z2foFg4AAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;&gt;Google Scholar page,&lt;/a&gt; since it lists journal names, but they’re all on his web site as well, I checked.) So clearly the Eisen lab does not publish everything they do as post-pub review on F1000Research or as eternal preprint on bioRxiv.&lt;/p&gt;
+&lt;p&gt;To be clear: I have no problems with publishing at venues such as eLife, Genome Research, PLOS Computational Biology, or even Science or Nature. I think that the NIH Open Access mandate solves the majority of the access issues.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; What I have a problem with is publishing in such journals and hiding that fact from your website while blogging about the evils of peer review. As long as you participate in the traditional peer-review system, as author, reviewer, or editor, you should be honest and transparent about where you publish.&lt;/p&gt;
+&lt;p&gt;There are other reasons why I think hiding journal names is a bad idea, and I may go into them in a future blog post. For now, I’ll just present to you, without further comment, &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=GIjz5dMAAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;&gt;this Google Scholar profile.&lt;/a&gt; In summary, hide journal names once everybody agrees that they don’t matter, but not one day earlier.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 12/11/2015:&lt;/strong&gt; This discussion was featured in a &lt;a href=&#34;http://www.nature.com/news/what-s-in-a-journal-name-1.18987&#34;&gt;Nature News article.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;I doubt that time will ever come, but let’s assume it will.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;To the extent possible, I make sure that my own papers get submitted to PubMed Central. The most recent papers &lt;a href=&#34;http://wilkelab.org/publications/&#34;&gt;on my publication list&lt;/a&gt; may not have PMC numbers yet, because it always takes a while until papers make their way into PubMed Central. Also, for papers for which I’m not the corresponding author, I cannot always ensure that they get submitted there.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grammar on Claus O. Wilke</title>
+    <link>/tags/grammar/</link>
+    <description>Recent content in Grammar on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/grammar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>To write well, learn how to read</title>
+      <link>/blog/2013/10/08/to-write-well-learn-how-to-read/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/08/to-write-well-learn-how-to-read/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As far as I can tell, one of the major impediments to writing well is an inability to read. I’m not talking about basic illiteracy here. I’m talking about the following tendency that I have seen in many literate people: reading what one thinks was written rather than what was actually written. If you have this tendency, you may subconsciously fix grammatical errors, insert words that aren’t actually on the page, or even fill in larger logical gaps. You may also subconsciously delete words that shouldn’t be there in the first place. You probably do this when you read other people’s prose, and you’ll do it even more so when you read your own prose. As a result, you won’t notice when your writing has issues. And hence you won’t fix the issues. Your readers, however, may notice them, or they may simply not understand what you’re trying to say. If you are interested in writing clear and understandable prose, make sure that you’re actually reading what you wrote, not what you think you wrote.&lt;/p&gt;
+&lt;div id=&#34;can-you-read&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Can you read?&lt;/h2&gt;
+&lt;p&gt;So, how do you know whether you’re reading sufficiently well? To a first approximation, I’d assume that nobody can read. I know that’s not true, but in my experience it’s an approximation that matches reality reasonably well. However, to be more constructive, let me offer some specific self-assessments for you.&lt;/p&gt;
+&lt;p&gt;First, in my previous blog post I purposefully introduced a few grammatical mistakes, as a pun. I pointed out the respective paragraph to a couple of students. Some got my pun immediately, but others didn’t notice that anything was wrong. Even when specifically searching for issues they couldn’t find them. Why don’t you &lt;a href=&#34;/blog/2013/10/1/articles&#34;&gt;check out that post right now and see if you notice anything?&lt;/a&gt; The specific sentence I’m talking about is in the second paragraph. What’s wrong with it is explained in the notes.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Second, read the present paragraph carefully.There are several typographic mistakes here. Do you notice them?. It’s very important  to  pay close attention to even the most minute details. You may think it doesn’t matter much, but some of your readers will pay close attention, and they will notice almost anything. For them, too many little mistakes and issues will make your writing unpalatable. Again, you can find an explanation of what’s wrong with this paragraph in the notes.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Third, let’s consider situations where grammatical mistakes actually alter the meaning of a sentence. For example, consider this sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Painted in exquisite detail, you can sell this painting for a high price.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What does this sentence tell you? Did you understand that you have a painting that is painted in exquisite detail, and that therefore you can sell it at a high price? If that’s what you read, I’ve got bad news for you: You need to work on your reading comprehension. That’s not what the sentence says at all. The sentence says that &lt;em&gt;you,&lt;/em&gt; the reader, have been painted in exquisite detail, and that therefore you can sell this painting (about which we know nothing) for a high price.&lt;/p&gt;
+&lt;p&gt;Let’s consider a different example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We found that lions do not generally like to eat ice cream which agrees with our prior expectations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What did this sentence tell you? Did you understand that we had a prior expectation that lions don’t eat ice cream, and that this expectation was confirmed in our experiment feeding ice cream to lions? If that’s what you got from this sentence then you have to pay closer attention to what is actually written. What the sentence actually says is that certain ice creams agree with our prior expectations. (Whatever they are. We are not told.) &lt;em&gt;Those&lt;/em&gt; specific ice creams are not palatable to lions. Other ice creams, those that don’t agree with our prior expectations, may well be palatable to lions, but we are not told anything about them.&lt;/p&gt;
+&lt;p&gt;You might think that there is a punctuation mistake, that a comma is needed after “ice cream.” Unfortunately, even with that comma, the sentence still doesn’t make sense. It just doesn’t make sense in a different way.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-to-improve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How to improve&lt;/h2&gt;
+&lt;p&gt;There are a couple of simple techniques and exercises that you can do to improve your reading. First, get a good book or two about the intricacies of the English language.&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; Go through the examples in these books, in particular the examples of how one should &lt;em&gt;not&lt;/em&gt; write, and try to figure out what’s wrong with them and how you could fix them. With practice, you’ll get quite good at recognizing problematic writing.&lt;/p&gt;
+&lt;p&gt;Second, it’s really important that you slow down your reading speed. If you frequently read over grammatical mistakes or logical gaps then you’re reading too fast. It’s Ok to read fast when you’re reading somebody else’s words, but when you proof-read your own you need to be slow. A simple way to slow down your reading speed is to sit down and read your text aloud. It’s really difficult to do that and not notice missing pieces or logical gaps.&lt;/p&gt;
+&lt;p&gt;Third, to assess overall flow and sentence connections, it’s important to read larger units of text. If you constantly go back and forth between reading and editing, you may be so focused on individual sentences that you’ll never notice larger issues that may exist in your prose. Make sure that when you proof-read you read larger chunks of text at once.&lt;/p&gt;
+&lt;p&gt;Fourth, I find it important to read a document multiple times exactly in the same format in which it will be seen by my readers. I can’t exactly pinpoint why it makes a difference but I know it does. For example, when I write scientific papers or grant proposals, I tend to do most of my proof-reading on printouts. On printouts, I always find issues that I didn’t see while editing. In these days of high-resolution screens and tablets, maybe you feel that printing documents shouldn’t be necessary anymore. And maybe you’re right. However, at a minimum, export the document from your word processor and read it on the screen just how your readers would. For example, create a pdf, open it on your tablet, and proof-read there. Make comments in longhand onto the pdf. (There are excellent apps for this purpose.) I proof-read all my blog posts on the web site, in the final format. I always find many minor issues that I didn’t see when I was composing the post.&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Students frequently hand me documents that look like they have never been proof-read. And when I ask the students whether they printed out the document and went over it slowly with a pen, the answer is usually “no.” Don’t be that student. Proof-read your documents carefully before giving them to somebody else. Don’t rely on others to find your writing mistakes, find them yourself.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The last sentence is missing three articles. It should have read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But make one non-native mistake, such as not using &lt;strong&gt;an&lt;/strong&gt; article when &lt;strong&gt;an&lt;/strong&gt; article is needed, and you’ll immediately sound like &lt;strong&gt;a&lt;/strong&gt; person with poor English skills.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I thought that native English speakers would immediately notice the missing articles and get the impression that this sentence was written by a foreigner. Well, some did and some didn’t.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Issues in this paragraph:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Missing space after “carefully.” (1st sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Extra period in “Do you notice them?.” (3rd sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Excessive space around “to” (before and after) in “It’s very important  to  pay” (4th sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;With the comma, the sentence says that lions don’t like to eat ice cream, and that ice cream typically doesn’t agree with our prior expectations. If you don’t see that, consider the following modification of the sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We found that lions do not generally like to eat ice cream, which is cold and full of sugar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;A couple of good ones are: Lyn Dupre, &lt;em&gt;BUGS in writing;&lt;/em&gt; Claire Kehrwald Cook, &lt;em&gt;Line by line;&lt;/em&gt; Lynne Truss, &lt;em&gt;Eats, shoots &amp;amp; leaves;&lt;/em&gt; Patricia T. O’Conner; &lt;em&gt;Woe is I.&lt;/em&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;I compose my posts in google docs and upload them once they’re done. Then I spend another hour or so copy-editing in the final format.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Articles!</title>
+      <link>/blog/2013/10/01/articles/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/01/articles/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;After having authored thousands of printed pages and having taught writing at the graduate level, all in English (my third language), I’ve come to this conclusion: We non-native speakers have a major advantage over native speakers when it comes to writing in the English language. We may not know how to write properly, but at least &lt;em&gt;we know&lt;/em&gt; that we don’t know. Most native English speakers don’t know how to write properly either, but they &lt;em&gt;don’t know that they don’t know.&lt;/em&gt; Because we’re acutely aware of our language deficiencies, we non-native speakers will generally put much more effort into learning proper English than native speakers will.&lt;/p&gt;
+&lt;p&gt;However, I’ve often seen non-native speakers worry about grammatical subtleties that no (untrained) native speaker could discern while at the same time making mistakes that no native speaker would ever make. This can lead to the curious situation where a non-native speaker may actually have a pretty good command of the English grammar and yet his writing will be considered as “poor” and “full of errors.” I’ve thus concluded that it may not matter so much that we truly understand English grammar in all its subtleties.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; What matters most is that we don’t make the mistakes native English speakers &lt;em&gt;wouldn’t make.&lt;/em&gt; We can use dangling participles, missing antecedents, and comma splices all day long, and most people won’t hold it against us. But make one non-native mistake, such as not using article when article is needed, and you’ll immediately sound like person with poor English skills.&lt;/p&gt;
+&lt;p&gt;For example, consider the following atrocity of a sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a native speaker, writing grammatically correct sentences is difficult for me.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most native speakers would happily accept this sentence as correct, even though it has a glaring grammatical error.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; Now consider this sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As non-native speaker, I can write difficult sentence with only few minor errors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most native speakers would recoil in horror, yet all the second author is guilty of is omission of a few articles. Fix the articles, and the sentence is perfectly fine:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As &lt;strong&gt;a&lt;/strong&gt; non-native speaker, I can write &lt;strong&gt;a&lt;/strong&gt; difficult sentence with only &lt;strong&gt;a&lt;/strong&gt; few minor errors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This simple example shows how important it is that you master proper use of articles. In particular, if you’re from Eastern Europe or from Asia and your mother tongue doesn’t have the concept of articles, you will have to put in some serious effort into understanding articles. Otherwise, your prose will always sound like it was written by a foreigner, regardless of how grammatically correct everything else is. So let me give you a brief primer on proper use of articles in the English language.&lt;/p&gt;
+&lt;div id=&#34;definite-vs-indefinite-articles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definite vs indefinite articles&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;definite article,&lt;/em&gt; which in English is “the”, refers to a particular member of a group. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The cat is on the roof.&lt;br /&gt;
+I have to feed the dogs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The author is talking about one specific cat, one specific roof, one specific dog. By contrast, the &lt;em&gt;indefinite article,&lt;/em&gt; which in English can be “a,” “an,” or no article, refers to any member of a group. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A cat is a fierce predator.&lt;br /&gt;
+An elephant eats foliage.&lt;br /&gt;
+Dogs give us unconditional love.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The author is now talking about any possible cat, any possible predator, any possible elephant, and any possible dogs. Note that the words “foliage” and “unconditional love” fall under the rule of “things that can’t be counted,” which I’ll discuss in the next subsection.&lt;/p&gt;
+&lt;p&gt;One thing that may be confusing is that in two subsequent sentences, the same word may need an indefinite and a definite article. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Yesterday, I saw a black cat. The cat crossed the street from left to right.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first occurrence of the cat requires “a,” because we haven’t heard about the cat before. Thus, at this point in the story, we can only be talking about any arbitrary cat. By the second sentence, though, the cat has been defined. It’s the one that is black and that I saw. Hence, now I have to refer to it as “the cat.” Similarly, I wrote “the cat” throughout this paragraph because I kept referring to that same, black cat defined in the first sentence of the example.&lt;/p&gt;
+&lt;p&gt;If your native language doesn’t distinguish between definite and indefinite articles it may be difficult for you to get an intuitive sense of what it means to be talking about a specific member of a group or about any arbitrary member of a group. If you experience this problem, you will have to practice deliberately. Don’t think that you’ll just intuitively get it one day, because you won’t. You will have to analyze properly written sentences and for every noun in every sentence figure out exactly why it has the article it does. Then, in your own writing, you will have to go over every noun and determine whether it represents a specific member of a group or any arbitrary member of a group.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;names-countries-things-that-cant-be-counted&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Names, countries, things that can’t be counted&lt;/h2&gt;
+&lt;p&gt;Names, countries, and things that can’t be counted generally don’t have articles. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Martin likes ice cream.&lt;br /&gt;
+England borders Europe.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“Martin” is a name, “ice cream” cannot be counted, and “England” and “Europe” are countries. However, don’t get confused by country names that include an article, such as “The Netherlands.” The article is part of the name because the name originally referred to a geographic location, such as “the Alps” or “the Sierra Nevada.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;places-with-distinct-sets-of-social-behaviors&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Places with distinct sets of social behaviors&lt;/h2&gt;
+&lt;p&gt;Finally, here comes my favorite rule about articles. This rule is so awesome it needs to be printed in italics:&lt;br /&gt;
+&lt;em&gt;We don’t use articles in preprositional phrases referring to places that require a distinct set of social behaviors.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is such a mouthful, most people cannot even repeat it without error. Yet we all use it instinctively, when we say things like:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Where do you go to school?&lt;br /&gt;
+Hannah goes to college.&lt;br /&gt;
+I’ll see you in court.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here, “school,” “college,” and “court” are all places that require a distinct set of social behaviors. When you want to refer to the specific building, you might say “the school down the road,” but when you want to refer to the social construct of “school” you would always say that you “go to school down the road.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;concluding-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Concluding thoughts&lt;/h2&gt;
+&lt;p&gt;If you’re a non-native speaker and your mother tongue doesn’t use articles, you’ll almost certainly have difficulty with using articles properly. Invest some time and energy into getting articles right, because incorrect or missing articles will make your writing stick out like a sore thumb. Any native speaker will immediately notice issues with articles and will conclude that the text she’s reading is written poorly. (Even if, by absolute standards of grammatical correctness, that’s not the case.)&lt;/p&gt;
+&lt;p&gt;I’d also recommend that you, if you have any issues with articles, always do a proof-reading step dedicated specifically to articles. Read your entire document from cover to cover and verify that every single noun has whatever article it may need. It’s generally a good habit to do multiple proof-reading passes. Each pass should check for one specific mistake you tend to make. Just add that one more pass and check for articles. When following this recommendation, I expect that you’ll write documents in which all articles are right all the time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Of course, I’d still recommend that you write sentences that are largely free of grammatical errors. Just aim first for eliminating errors native speakers wouldn’t make. Then eliminate the errors that native speakers make all the time.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;If you don’t know what the error is you’re just demonstrating my point.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Undergraduate education on Claus O. Wilke</title>
+    <link>/tags/undergraduate-education/</link>
+    <description>Recent content in Undergraduate education on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Feb 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/undergraduate-education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching a new introductory class in computational biology and bioinformatics</title>
+      <link>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This semester, I’m teaching a new introductory class in computational biology and bioinformatics. The class is primarily targeted at undergraduates, and it is split approximately 50:50 between R and python. The R component emphasizes effective data analysis and visualization, using packages such as ggplot2 and dplyr. The python component will introduce students to basic programming concepts, and it will also cover some typical bioinformatics applications.&lt;/p&gt;
+&lt;p&gt;Developing a new class is a lot of work, so I’ll probably have much less time for posting here on my blog. However, on the flip side, the entire course content will be posted online, and you can &lt;a href=&#34;https://wilkelab.org/classes/SDS348_spring_2015.html&#34;&gt;follow along here.&lt;/a&gt; The core of each lecture is an in-class exercise worksheet, and I’m posting the worksheets and the solutions online. Many lectures also have a brief traditional lecture component with slides as well as additional reading materials. I’m developing the course as I go, so there will be new material posted twice a week throughout the spring.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My new job</title>
+      <link>/blog/2013/09/01/my-new-job/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/01/my-new-job/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Today is the first day that I am officially Associate Chair of the newly formed Department of Integrative Biology. As I am finding out now, this is the worst calamity that has befallen me in my entire not-so-short life. I have never received that many condolences, that many pitiful looks, or that many expressions of sympathy. After I accepted the position, my predecessor, who is a close collaborator of mine and a mentor to me, told me he was torn between warning me of my impending doom and staying silent so he could be free. He ultimately chose his freedom. Most of the colleagues to whom I mention my new position assume I was coerced, likely at gunpoint. Alas, I actually volunteered for the job. Am I delusional or simply masochistic?&lt;/p&gt;
+&lt;p&gt;I may well be delusional, but I’m not masochistic. Fundamentally, I’m curious. I need to understand how things are and how they work. After seven years of teaching undergraduates at a major public university, I still had no clue about the inner workings of undergraduate education. Every year, I was teaching my main undergraduate course, the course I had originally been hired to teach. On top of that, I was teaching a few other things, mostly whatever struck my fancy. I had no idea if that was what was expected of me or not; I had no idea if what I was doing was best for the university or the students; and I certainly had no idea what anybody else was doing. Now, the person who should know all of this is the Associate Chair. It’s his job to coordinate all the teaching, all curriculum-related work, and all budgetary issues related to teaching, with the exception of salaries for tenured and tenure-track faculty members. Therefore, when the opportunity opened up for me to volunteer for that position, I decided to go for it. What better way to learn about a system than being in charge of it?&lt;/p&gt;
+&lt;p&gt;Now the thing is, even though my first official day is today, I’ve been de-facto Associate Chair since May. The reason is related to the two innocent words in the first sentence of this post, “newly formed.” We didn’t have a Department until today, we had a Section. The Section was part of the larger School of Biological Sciences, which took care of all teaching-related matters. The reorganization of the School into separate departments has been ongoing since late spring, and all the people who will have leadership roles in the new departments have been hard at work, mostly behind the scenes, to make sure things keep running smoothly. By now, I’ve got a pretty good idea of what it means to be Associate Chair. And I’m not yet ready to shoot myself. We’re good for now. Honestly.&lt;/p&gt;
+&lt;p&gt;The first few months as acting Associate Chair have certainly been interesting. I have learned a lot. For example, much of the upper university administration runs on emailing spreadsheets back and forth. As a strong supporter of version control and online repositories for everything, that was a bit of a shock to me. However, as part of the reorganization we’re trying to put better processes in place wherever we can. We now store the spreadsheets in shared folders.&lt;/p&gt;
+&lt;p&gt;I think this is going to be an exciting adventure. The reorganization gives us the opportunity to evaluate every single practice we have followed in the past and ask whether the practice truly serves the students and the college or whether we could do better. By dismantling the behemoth School of Biological Sciences, we’re giving curriculum-related decision making back to the individual departments, closer to the faculty members who are actually standing in the classroom and interacting with students. Yes, this will mean more administrative work for some faculty members. But it should also mean a better experience for the students, who ultimately are the reason we exist in the first place. I’m looking forward to this process, and I’m glad I’ll play a significant role in it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

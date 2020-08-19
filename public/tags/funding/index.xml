@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Funding on Claus O. Wilke</title>
+    <link>/tags/funding/</link>
+    <description>Recent content in Funding on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/funding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PLOS ONE publishes analysis of grant writing costs and benefits</title>
+      <link>/blog/2015/03/24/plos-one-publishes-analysis-of-grant-writing-costs-and-benefitssafety-projects/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/03/24/plos-one-publishes-analysis-of-grant-writing-costs-and-benefitssafety-projects/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;PLOS ONE just published an article providing a cost-benefit analysis of grant writing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;von Hippel T, von Hippel C (2015) &lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118494&#34;&gt;To Apply or Not to Apply: A Survey Analysis of Grant Writing Costs and Benefits.&lt;/a&gt; PLoS ONE 10(3): e0118494.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One of the main take-home messages: If you write more grants you will get more funding. Also, at current funding rates, unless you’re writing 2-3 proposals a year, you have a reasonable chance of going unfunded over a three-year period. The authors suggest that investigators should avoid programs with funding rates at 20% or less unless they are willing to write multiple proposals a year and/or have a particularly compelling research program. However, in biology practically all funding rates are 20% or less these days, so that advice isn’t very helpful. Instead, we just need to keep writing proposals. If you’re after NIH funding, you should probably write at least one proposal per cycle, unless you’ve been recently funded. If you’re primarily after NSF funding, with yearly cycles, you’ll have to diversify and find at least two programs to which you can send your proposals.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preprints on Claus O. Wilke</title>
+    <link>/tags/preprints/</link>
+    <description>Recent content in Preprints on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/preprints/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Google Scholar preprint bug redux</title>
+      <link>/blog/2015/10/08/google-scholar-bug-redux/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/10/08/google-scholar-bug-redux/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Regular readers of my blog will know that I regularly complain about Google Scholar’s handling of preprints, see e.g. &lt;a href=&#34;/blog/2014/11/1/the-google-scholar-preprint-bug&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;/blog/2014/12/2/how-google-scholar-discourages-young-scientists-from-posting-preprints&#34;&gt;here.&lt;/a&gt; Well, this week, I had the opportunity to &lt;a href=&#34;http://scholarlykitchen.sspnet.org/2015/10/05/guest-post-highwires-john-sack-on-online-indexing-of-scholarly-publications-part-1-what-we-all-have-accomplished/#comment-155912&#34;&gt;raise my concerns&lt;/a&gt; to Anurag Acharya, the co-founder of Google Scholar. &lt;a href=&#34;http://scholarlykitchen.sspnet.org/2015/10/05/guest-post-highwires-john-sack-on-online-indexing-of-scholarly-publications-part-1-what-we-all-have-accomplished/#comment-155918&#34;&gt;His initial response&lt;/a&gt; and the subsequent discussion have clarified several things. We now know:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The bug exists&lt;/li&gt;
+&lt;li&gt;The Scholar team is aware of it&lt;/li&gt;
+&lt;li&gt;They don’t know how to fix it&lt;/li&gt;
+&lt;li&gt;They don’t think it’s a particularly pressing problem&lt;/li&gt;
+&lt;li&gt;For any given paper, the problem will go away eventually, after several months or more&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;so-what-is-this-bug-youre-talking-about&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;So what is this bug you’re talking about?&lt;/h2&gt;
+&lt;p&gt;In a nutshell, for papers with a preprint, the bug will prevent the final, official journal publication to appear in the Scholar database, often for many months. If you search for the article by title, only the preprint version will show. If you search by DOI, nothing will show. Importantly, other articles from the same issue of the journal will all be properly indexed in Scholar, but the one article that happened to have a preprint will be missing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;why-should-i-care-if-the-problem-will-fix-itself-eventually&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Why should I care if the problem will fix itself eventually?&lt;/h2&gt;
+&lt;p&gt;Anybody who would like to encourage more scientists to post preprints should care. And any junior scientist should care twice. This bug can have a very real effect on the career of junior scientists, by limiting their visibility or making them appear much less successful or competent than they actually are. Here are a few very real scenarios the bug can cause:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You know that John Smith posted an interesting preprint 2 years ago, and you wonder if that work was ever published. You search Google Scholar and only find the preprint. So you conclude the paper never saw the light of day or maybe is embattled in review. In truth, the paper came out 8 months ago in PNAS, but Google Scholar will hide that version from you.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You consider hiring a promising young scientist as a postdoc or maybe even a faculty member. However, as you pull up their Google Scholar profile, you notice that over the last two years they seem to have published only preprints. And several of the articles they list on their cv don’t show up in the Scholar database at all. You conclude the scientist is dishonest and you decline the application.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You post a preprint that contains an error. Thankfully, the error gets noticed in review and you fix it for the final publication (and/or post a new version of the preprint). However, Google Scholar keeps showing the old, erroneous version of the preprint, many months after the fix has been made. People keep reading the erroneous version and keep giving you grief over it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;An important paper in your field is published, and you would like to know about it. However, since the paper had a preprint, the official article is hidden from Scholar, and Scholar won’t notify you that it came out.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;but-it-happens-only-very-rarely-right&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;But it happens only very rarely, right?&lt;/h2&gt;
+&lt;p&gt;That’s the stance of the Scholar team. It doesn’t mesh with my experience, though. Everybody I know who regularly posts preprints has been bitten by the bug. I cross my fingers every time I post one. And whenever I bring up this issue, some random person mentions that they have experienced the same. Also, my colleague Chris Adami just posted the following:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-conversation=&#34;none&#34; lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+. &lt;a href=&#34;https://twitter.com/ClausWilke&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;&lt;/a&gt; A cursory look at just the first page of my Google Scholar shows that about half of my articles are affected by this bug.
+&lt;/p&gt;
+— Christoph Adami (&lt;span class=&#34;citation&#34;&gt;@ChristophAdami&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/ChristophAdami/status/652126221254397952&#34;&gt;October 8, 2015&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;While this bug may be rare in some sense of the word “rare,” it happens frequently enough to be a real issue for real scientists and every-day users of Google Scholar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;is-there-a-workaround&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Is there a workaround?&lt;/h2&gt;
+&lt;p&gt;Not really. You can add papers manually to your Google Scholar profile, but that won’t make them show up in the search results. And they will also not be linked to the actual journal publications, a major drawback in my opinion. If you know of a preprint and are wondering whether it has been published or not, don’t check with Scholar. Check with some other data base, such as PubMed. Or just do a regular Google search. The preprint bug does not affect regular Google, which will find the papers that Google Scholar doesn’t know about.&lt;/p&gt;
+&lt;p&gt;I hope that the Google Scholar team will eventually realize that this is an important issue to get right. In the mean time, if you have been bitten by the bug, please let me know, so we can build a record of cases and demonstrate this is an important issue. And, if you’re looking for the official publications of long-standing preprints, look for them using regular Google, not Google Scholar.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What constitutes a citable scientific work?</title>
+      <link>/blog/2015/01/02/what-constitutes-a-citable-scientific-work/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/01/02/what-constitutes-a-citable-scientific-work/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;There was a lively discussion on Twitter the other day regarding what constitutes a citable piece of scientific work. In particular, Matthew Hahn was concerned about where to draw the line, and he felt that unless something is traditionally published there’s &lt;a href=&#34;https://twitter.com/3rdreviewer/status/549365313331290112&#34;&gt;no need to cite it.&lt;/a&gt; When reading this dicussion, I felt it was muddled by the lack of clear criteria separating citable works from other forms of scientific communication. In my mind, there is a clear distinction between preprints, which I consider to be citable works, and presentation slides or tweets, which are not. To formalize this distinction, I would like to propose four conditions that need to be satisfied for a document to be considered a citable piece of scientific work. The document needs to be: (i) uniquely and unambiguously citable; (ii) available in perpetuity, in unchanged form; (iii) accessible to the public; (iv) self-contained and complete.&lt;/p&gt;
+&lt;div id=&#34;uniquely-and-unambiguously-citable&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1. Uniquely and unambiguously citable&lt;/h2&gt;
+&lt;p&gt;It must be possible to uniquely and unambiguously refer to the particular work in question. This condition may seem trivial, but that’s not necessarily the case. For example, during the aforementioned Twitter conversation, Matthew Hahn brought up the case where somebody might &lt;a href=&#34;https://twitter.com/3rdreviewer/status/549381166722469888&#34;&gt;tweet an entire paper or talk.&lt;/a&gt; Such a series of tweets would not be unambigously citable: One can cite an individual tweet but not a collection of tweets. While one could cite the first tweet in a series, assuming subsequent tweets were posted as replies, it would still remain ambiguous which specific tweets should be considered to comprise the entirety of the work. What if other users replied to the first tweet as well? And what if the original author then responded to them? The very nature of Twitter is such that the unique, citable unit is a single tweet, 140 characters or less, and that is not sufficient to convey a self-contained and complete scientific work. (Note that tweets also fail condition 2, since they can be deleted.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;available-in-perpetuity-in-unchanged-form&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2. Available in perpetuity, in unchanged form&lt;/h2&gt;
+&lt;p&gt;There needs to be some guarantee that the referenced document will not change and will be available in perpetuity. While nothing is truly forever, and works tend to get lost over time, documents hosted according to industry standards by large and established non-profit or for-profit publishing operations are not likely to disappear any time soon. This certainly includes documents posted on the preprint server &lt;a href=&#34;https://arxiv.org/&#34;&gt;arxiv.org,&lt;/a&gt; and probably also on the &lt;a href=&#34;https://biorxiv.org/&#34;&gt;biorxiv&lt;/a&gt; server. Moreover, professional publishing operations generally do not allow changes to once-published documents, though they may allow for the publication of updates or revised article versions.&lt;/p&gt;
+&lt;p&gt;Importantly, most privately hosted web sites and blogs do not satisfy this requirement.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; If I stop paying my web-hosting bill, this blog will disappear rather quickly. Similarly, any day I could decide that I didn’t like a particular post and rewrite or delete it, or I could delete the entire blog. And the same is true for institutionally hosted pages or lab web pages. Only those publishing platforms that are built with the express purpose of allowing perpetual access provide some amount of certainty that documents won’t just disappear or change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;accessible-to-the-public&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;3. Accessible to the public&lt;/h2&gt;
+&lt;p&gt;The document needs to be accessible to the public. This condition doesn’t necessarily require that access be free (though I personally would prefer it to be this way), since we have traditionally accepted that certain scientific works are only available after payment of a fee. However, anybody willing to pay the fee must be able to access the work, without any other conditions imposed. Also, libraries must be allowed to carry the work, and any library patrons must be able to peruse the work for free.&lt;/p&gt;
+&lt;p&gt;The point of this condition is to exclude internal technical documents of companies or other organizations, in particular, documents that might require signing a non-disclosure agreement. Such documents may be useful but they do not belong into the scientific record.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;self-contained-and-complete&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;4. Self-contained and complete&lt;/h2&gt;
+&lt;p&gt;The document needs to be self-contained and complete. In other words, whatever the novel contribution is of a given piece of work, that contribution needs to be fully and clearly explained within the document. Many forms of scientific communication violate this condition. Consider for example the slides of a scientific presentation. They are meant merely as support to the oral presentation, and usually they cannot be fully understood without the accompanying talk. Now, if one wanted to, one could certainly write slides that are self-contained and complete. However, those slides would make for a poor talk and also would be nothing more than an awkwardly formatted preprint.&lt;/p&gt;
+&lt;p&gt;Even if a recording of the talk is provided alongside the slides, the completeness condition will usually remain violated. For example, methodological details are frequently glossed over in presentations, as are parts of mathematical derivations in theoretical talks. However, this doesn’t mean that only written works can be scientific documents. For example, the &lt;a href=&#34;http://www.jove.com/&#34;&gt;Journal of Visualized Experiments (JoVE)&lt;/a&gt; publishes self-contained and complete video articles.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;but-if-it-hasnt-been-reviewed&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;But if it hasn’t been reviewed?&lt;/h2&gt;
+&lt;p&gt;I am a strong proponent of pre-publication review. &lt;a href=&#34;/blog/2013/12/21/the-value-of-pre-publication-peer-review&#34;&gt;I have said so before.&lt;/a&gt; At the same time, I am wary of what I’d like to call “the review fetish,” the attitude that scientific works can’t be trusted until they have been reviewed, at which point they become valid contributions to the scientific literature. Whether something has been reviewed has no bearing on its validity. A work is valid or it is not, period. We all know that flawed works pass peer review and valid works get rejected. In fact, the most influential and highly cited articles often get rejected initially.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; As working scientists, we need to personally judge the validity of each and every article we read, regardless of the article’s origin or review status.&lt;/p&gt;
+&lt;p&gt;Also, the only logical reason to require citable works to be peer reviewed would be as a means of quality control, so that bad science doesn’t get cited. However, it then immediately follows that we would have to assess the quality of peer review at each journal. What if some journals carry out sub-standard review and basically print everything? Should they be put on a blacklist of journals we can’t cite? What about contributed papers to PNAS, many of which likely haven’t received the same kind of scrutiny as articles that get edited by independent third parties? What about journals that employ professional editors, who may make decisions that aren’t always entirely driven by scientific considerations? Should we put those journals on the blacklist? In my mind, insisting on peer review for quality control reasons opens a can of worms that simply can’t be dealt with in any reasonable manner.&lt;/p&gt;
+&lt;p&gt;Further, while the current scientific culture expects that we submit all our articles to journals for review, I think scientists should be allowed to choose not to be subjected to this process. If some scientists prefer to skip peer review and simply post their work on a preprint server, it should be their prerogative to do so. And we should take their work seriously as long as it is worthwhile and of high quality. Clearly mathematicians do so. Consider the case of &lt;a href=&#34;http://en.wikipedia.org/wiki/Grigori_Perelman&#34;&gt;Grigori Perelman,&lt;/a&gt; who was awarded a Fields Medal, the highest honor bestowed upon mathematicians, for work he had posted on a preprint server but never formally published.&lt;/p&gt;
+&lt;p&gt;Finally, I would like to point out that there are document types that have traditionally been considered part of the scholarly literature, such as monographs or dissertations, that are not necessarily reviewed. &lt;a href=&#34;http://haldanessieve.org/2013/08/26/thoughts-on-mbes-preprint-citation-policy/&#34;&gt;Journals that forbid citations to preprints&lt;/a&gt; do not usually impose similar restrictions on the citation of books or theses.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;concluding-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Concluding thoughts&lt;/h2&gt;
+&lt;p&gt;With the four conditions I have outlined, we can easily test whether specific documents or works should be considered to be citable resources or not. Strings of tweets clearly fail the test, as do slides, recordings of talks, posters, tweets of photos of posters, or blog posts. Documents that pass the test are articles in traditional print journals, articles in most professionally operated online journals, books, book chapters, dissertations, and preprints deposited on professionally operated preprint servers. Interestingly, websites hosting scientific software will usually fail at least conditions 2 and 3, and thus would not be citable by my criteria. In fact, it is my opinion that scientific software should always be accompanied by an article introducing and explaining the software, and what we should cite is the article, not the website where the software is housed.&lt;/p&gt;
+&lt;p&gt;Importantly, I can think of no principled test that would cleanly separate preprints from the rest of the scientific literature. The only such test I can think of is “has it been posted on a preprint server,” but it would be difficult to provide a logical reason for why this test should be applied to determine the citability of a document,&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; other than personal preference. I might just as well not cite articles published in journals that don’t use at least 3 reviewers, or in journals where editorial decisions are made by professional editors and not by working scientists, or in journals that typeset their articles in a sans-serif font.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 01/02/2015:&lt;/strong&gt; Rafael Najmanovich &lt;a href=&#34;https://twitter.com/RNajmanovich/status/551155998350901248&#34;&gt;suggested an additional condition:&lt;/a&gt; Attributable authorship. It should be clear who has written a specific document. While I agree with this condition in principle, I’m not sure yet whether I would go so far as arguing that anonymous documents should never be cited. If a document is anonymous but otherwise a valid contribution to science, should we ignore it? Probably not.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Klein et al. (2014) Scholarly context not found: One in five articles suffers from reference rot. PLoS ONE 9: e115253. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0115253&#34;&gt;doi:10.1371/journal.pone.0115253&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Siler et al. (2014) Measuring the effectiveness of scientific gatekeeping. PNAS, in press. &lt;a href=&#34;https://doi.org/10.1073/pnas.1418218112&#34;&gt;doi:10.1073/pnas.1418218112&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Keep in mind that this entire post is about the conditions that make a document a &lt;em&gt;citable&lt;/em&gt; contribution to the scientific literature. This is different from the question of whether a document is a preprint or a formally published article. The main services that journals provide are (i) quality control, in the form of editorial and peer review, (ii) prestige, in proportion to how selective they are, and (iii) professional typesetting, though the quality of this service has declined in recent years. In return, journals demand exclusivity. Thus, it is natural for a journal to determine whether a document has been previously published by asking whether the document has previously undergone editorial and peer review and has been professionally typeset. Importantly, when journals make this assessment, they are not concerned with the quality of peer review. Any document that has been reviewed and accepted for publication elsewhere, no matter how low the standards, would violate the exclusivity clause and hence is going to be considered published.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Google Scholar discourages young scientists from posting preprints</title>
+      <link>/blog/2014/12/02/how-google-scholar-discourages-young-scientists-from-posting-preprints/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/12/02/how-google-scholar-discourages-young-scientists-from-posting-preprints/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I have previously blogged about the issues that &lt;a href=&#34;/blog/2014/11/1/the-google-scholar-preprint-bug&#34;&gt;preprints can cause on Google Scholar.&lt;/a&gt; Today I was reminded that these issues have real-world implication for junior scientists, and that they may discourage junior scientists from posting preprints.&lt;/p&gt;
+&lt;p&gt;I had the following conversation with one of my students (paraphrased):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Me:&lt;/em&gt; So, do you want to post the paper we just submitted as a preprint?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Student:&lt;/em&gt; No, not really.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Me:&lt;/em&gt; Are you concerned about keeping your competitive advantage, so you can finish a second paper on the topic before we reveal to the world what we’re up to?&lt;br /&gt;
+&lt;em&gt;(With this particular paper, I had wondered whether we should submit it as a preprint or not. There are a number of obvious follow-up works we can do relatively quickly, and so could others.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Student:&lt;/em&gt; No, I’m not particularly worried about that. I just don’t want Google Scholar to list my paper as bioRxiv for the next few years, way past the time the paper has actually come out. Several of my current papers are still listed as their preprint version even though they’ve appeared ages ago. Maybe once I have 100 papers and 10,000 citations I won’t care anymore, but at my current stage I can’t afford having Google Scholar obscure my record by listing all my papers in their preprint version only.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update #1, 12/03/2014:&lt;/strong&gt; I’m getting a lot of comments to the effect that one can edit the Google Scholar profile. A couple to responses to that:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Yes, there are manual workarounds for most issues. That doesn’t mean the default behavior of Scholar is not &lt;em&gt;discouraging&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Merging of articles doesn’t work when the &lt;a href=&#34;/blog/2014/11/1/the-google-scholar-preprint-bug&#34;&gt;preprint shadows the final article,&lt;/a&gt; because the final article is simply not visible in the Scholar database.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Even if you fix your own profile, that doesn’t fix how the article appears on your co-authors’ profile or in a general search for the article, e.g. by title.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It is not clear what happens to citations of shadowed articles. Are they or are they not counted? We don’t know. There’s certainly the worry that they are not.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The only way I know to fix shadowed articles &lt;em&gt;on your own profile&lt;/em&gt; is to manually add the reference, then merge, and then undo all of that a year later when Scholar has finally caught up to the existence of your article. It’s cumbersome, prone to errors, and certainly &lt;em&gt;discouraging.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I will not stop posting preprints. But I will also not pretend everything is fine with Google Scholar and preprints when there are some glaring issues. Google Scholar is being used increasingly by departments in hiring and promotion decisions. Scientists should rightfully worry about how their work does or does not appear on Scholar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update #2, 12/03/2014:&lt;/strong&gt; So it turns out manually editing entries doesn’t work as expected when articles are shadowed by their preprint. You can add the reference, but you cannot make it link to the correct article. Check out &lt;a href=&#34;https://scholar.google.com/citations?view_op=view_citation&amp;amp;hl=en&amp;amp;user=Vssu9d0AAAAJ&amp;amp;sortby=pubdate&amp;amp;citation_for_view=Vssu9d0AAAAJ:nrtMV_XWKgEC&#34;&gt;this entry.&lt;/a&gt; The title is not clickable, and the Scholar articles listed at the bottom do not include any links to the actual journal version of the article (or even the latest preprint version).&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;My statements are correct as of 12/03/2014. Eventually Google Scholar will catch up and the links will appear.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Google Scholar preprint bug</title>
+      <link>/blog/2014/11/01/the-google-scholar-preprint-bug/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/11/01/the-google-scholar-preprint-bug/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Google Scholar has a serious bug when it comes to preprints. If you have published a preprint of your paper, the later journal publication can be completely invisible to Google Scholar, seemingly absent from their entire database. Even a search for the exact article title will not find the article. And this condition remains for months. (It will eventually fix itself, though. After about a year.) I have now seen this bug in action for several of my papers, and I am confident it’s a reproducible flaw and not a one-off. I reported the issue to the Google Scholar team about a year ago (or at least, I filled in some web form that seemed to be designed to send them feedback) but I have received no response and the bug clearly still exists. I hope that with this blog-post I can draw some attention to this serious issue, so we can have it fixed. Thousands of scientists rely on Google Scholar every day. For many recent articles, this bug will steer these scientists towards outdated, early versions and make the authoritative article versions completely inaccessible.&lt;/p&gt;
+&lt;p&gt;As far as I can tell, what triggers the bug for sure is the publication of an updated version of the same article with a changed title or author list. It is possible that the same bug occurs even when title or author list hasn’t changed, but I haven’t noticed it under those conditions. Here is an example of this bug in action. My lab published the following article on BioRxiv on April 24, 2014:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Amir Shahmoradi, Dariya K. Sydykova, Stephanie J. Spielman, Eleisha L. Jackson, Eric T. Dawson, Austin G.Meyer, Claus O. Wilke. Predicting evolutionary site variability from structure in viral proteins: buriedness, flexibility, and design. &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/004481v1&#34;&gt;doi:10.1101/004481&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you click on the link, you’ll see that BioRxiv encourages you to check out the latest version of the article, with slightly different title, posted on July 21, 2014:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Amir Shahmoradi, Dariya K. Sydykova, Stephanie J. Spielman, Eleisha L. Jackson, Eric T. Dawson, Austin G.Meyer, Claus O. Wilke. Predicting evolutionary site variability from structure in viral proteins: buriedness, packing, flexibility, and design. &lt;a href=&#34;https://doi.org/10.1101/004481&#34;&gt;doi:10.1101/004481&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The doi is the same, so clearly those are two subsequent versions of the same article. BioRxiv also knows that the article was published in its final form by the Journal of Molecular Evolution under &lt;a href=&#34;https://doi.org/10.1007/s00239-014-9644-x&#34;&gt;doi:10.1007/s00239-014-9644-x&lt;/a&gt; on September 13, 2014. Finally, the article has a PubMed entry (&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/25217382&#34;&gt;PMID: 25217382&lt;/a&gt;) and if you do a normal Google search using the complete, final article title the &lt;a href=&#34;https://www.google.com/search?q=Predicting+evolutionary+site+variability+from+structure+in+viral+proteins%3A+buriedness%2C+packing%2C+flexibility%2C+and+design&amp;amp;oq=Predicting+evolutionary+site+variability+from+structure+in+viral+proteins%3A+buriedness%2C+packing%2C+flexibility%2C+and+design&amp;amp;aqs=chrome..69i57j69i59j69i60l3.549j0j1&amp;amp;sourceid=chrome&amp;amp;es_sm=91&amp;amp;ie=UTF-8&#34;&gt;top three hits&lt;/a&gt; are two different preprint postings and the final journal article.&lt;/p&gt;
+&lt;p&gt;Now that we have established that the article clearly exists, has been published in its final form for over three months (since July 21, 2014), and is known to regular Google, let’s try to find it on Google Scholar. First, we search for the exact title. Here is the result:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Google_Scholar_screen_shot.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Yes, Google Scholar suggests to me that I misspelled the title and meant to type “busineses” instead of “buriedness.” Importantly, it doesn’t find the correct, latest article! It does find the preprint, though, as the second hit. If I click on “all 8 versions” for the preprint, I get all sorts of different versions of the preprint, but the &lt;a href=&#34;https://scholar.google.com/scholar?cluster=1799163645855055780&#34;&gt;final, published article is not found&lt;/a&gt; as of this writing (Nov. 1, 2014). The latest version also doesn’t show up among my 2014 publications in my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;amp;user=Nc8U6E4AAAAJ&amp;amp;view_op=list_works&amp;amp;sortby=pubdate&#34;&gt;Google Scholar profile,&lt;/a&gt; only the first preprint version is shown. For all intents and purposes, the July 21 and September 13 versions of the article are completely missing from the Scholar database. I cannot retrieve them in any way through Scholar. Let me say this one more time: We’re not simply talking about Google Scholar creating multiple redundant entries and not noticing that two articles are just different versions of the same article. &lt;strong&gt;We’re talking about an earlier article completely hiding all later versions.&lt;/strong&gt; Note that, as I said at the beginning of the post, this issue will correct itself eventually. The paper for which I first noticed this is now, after a year, correctly indexed in Google Scholar.&lt;/p&gt;
+&lt;p&gt;To demonstrate that this is not a one-off, consider &lt;a href=&#34;https://doi.org/10.1101/002287&#34;&gt;this article,&lt;/a&gt; posted in revised version on October 14. I’ll leave it as an exercise to the reader to verify that this article exists, is known to regular Google, and is completely invisible in Google Scholar.&lt;/p&gt;
+&lt;p&gt;In my mind, this is a serious bug that severely interferes with efficient scientific communication. It also is a huge embarrassment for a company that prides itself of being the world’s leading expert in information retrieval. I hope this post will give this bug more visibility, and will eventually lead the Scholar Team to fix the problem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; In case you’re wondering if this is just an issue of Google Scholar not having indexed the latest issues of J. Mol. Evol. and/or BiorRxiv yet, that is clearly not the case. Other articles from the &lt;a href=&#34;https://link.springer.com/journal/239/79/3/page/1&#34;&gt;same J. Mol. Evol. issue&lt;/a&gt; can be found by a search for their title, e.g. &lt;a href=&#34;https://scholar.google.com/scholar?hl=en&amp;amp;q=Limits+of+Neutral+Drift%3A+Lessons+From+the+In+Vitro+Evolution+of+Two+Ribozymes&#34;&gt;this one&lt;/a&gt; or &lt;a href=&#34;https://scholar.google.com/scholar?hl=en&amp;amp;q=One+origin+for+metallo-%CE%B2-lactamase+activity%2C+or+two%3F+An+investigation+assessing+a+diverse+set+of+reconstructed+ancestral+sequences+based+on+a+sample+of+phylogenetic+trees&#34;&gt;this one&lt;/a&gt; or &lt;a href=&#34;https://scholar.google.com/scholar?q=Essential+is+Not+Irreplaceable%3A+Fitness+Dynamics+of+Experimental+E.+coli+RNase+P+RNA+Heterologous+Replacement&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

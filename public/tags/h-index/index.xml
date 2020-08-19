@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>h index on Claus O. Wilke</title>
+    <link>/tags/h-index/</link>
+    <description>Recent content in h index on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/h-index/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Relationship between h index and total citations count</title>
+      <link>/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/12/08/relationship-between-h-index-and-total-citations-count/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I came across an interesting paper&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; that derives a mathematical relationship between the total number of citations a scientist has received, &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt;, and the scientist’s &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; The paper, written by Alexander Yong, argues that for typical scientists, &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; is given simply as 0.54 times the square-root of &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt;. The paper also derives confidence bounds on this estimate, and it shows that scientists who have written only a few highly-cited works will generally fall below this estimate. While the paper is set up as a critique of the &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index, I think it shows that the &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index works largely as intended. It measures the total amount of citations a researcher has received, but it adequately down-weighs the effect of a few extremely highly cited works in a researcher’s publication list.&lt;/p&gt;
+&lt;p&gt;The argument of the paper goes as follows: Let’s consider all the possible ways in which a researcher’s &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; citations may be distributed over a number of publications. On one extreme, the researcher could have written a single article, which has been cited &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; times. On the other extreme, the researcher could have written &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; articles, which all have been cited exactly once. And of course, there are many possibilities between those extremes, where some articles receive more citations and others fewer. The paper then assumes that all these different ways in which &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; citations can be distributed over one or more articles are equally likely, and calculates the expected &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; under that assumption. That value, it turns out, is approximately &lt;span class=&#34;math inline&#34;&gt;\(0.54 \times N_\text{tot}^{1/2}.\)&lt;/span&gt; The paper then tests this relationship for a number of famous mathematicians (Fields-medal winners and members of the National Academy of Sciences) and finds that it generally works quite well, though typically as an upper bound. It is rare for a scientist to have &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; exceed the predicted value of &lt;span class=&#34;math inline&#34;&gt;\(0.54 \times N_\text{tot}^{1/2}.\)&lt;/span&gt; On the flip side, many scientists who have written famous, highly cited books have an &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; quite a bit lower than the predicted value, because the books cause the total citation count to be overinflated.&lt;/p&gt;
+&lt;p&gt;I wanted to know to what extent this formula worked in a different field. So I tested it on the members of my department. For each faculty member&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; of the Department of Integrative Biology, I obtained their total number of citations and their &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index from Google Scholar, and then I plotted the observed &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; against the predicted &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; using Yong’s formula (Figure &lt;a href=&#34;#fig:figure1&#34;&gt;1&lt;/a&gt;). As you can see, the formula works remarkably well. Almost everybody falls right on top of the line. Importantly, this sample covers a wide range of different career stages.&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;observed_v_predicted_h.png&#34; alt=&#34;Observed vs. predicted \(h\) for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red.&#34; width=&#34;80%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Observed vs. predicted &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; for 29 faculty members in Integrative Biology. Members of the National Academy are plotted in red.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Three faculty members are plotted in red in the figure: those are members of the National Academy, and they are the highest-cited scientists in the department. Interestingly, two have very high total citation counts but, in comparison, not that high of an &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index, while one has the highest overall &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index with comparatively fewer citations. The former two both have written famous books, and many of their citations are to these books. By contrast, the latter scientist stands out by having published a particularly large number of articles that all have been well cited. In fact, that scientist is performing slightly better than the &lt;span class=&#34;math inline&#34;&gt;\(h = 0.54 \times N_\text{tot}^{1/2}\)&lt;/span&gt; prediction, a truly remarkable result at that high of a total citation count.&lt;/p&gt;
+&lt;p&gt;In summary, I find that the predicted relationship between &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; works well in my field. However, since major deviations between this relationship can be observed for scientists with a few extremely highly cited works, I prefer using &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; instead of &lt;span class=&#34;math inline&#34;&gt;\(N_\text{tot}\)&lt;/span&gt; to estimate a scientist’s total impact on their field.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;A. Yong (2014). &lt;a href=&#34;https://doi.org/10.1090/noti1164&#34;&gt;Critique of Hirsch’s Citation Index: A Combinatorial Fermi Problem.&lt;/a&gt; &lt;em&gt;Notices of the AMS&lt;/em&gt; 61:1040-1050.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; index is the number of papers a scientist has written that have received at least &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; citations. For example, if you have &lt;span class=&#34;math inline&#34;&gt;\(h = 10\)&lt;/span&gt;, then you have written 10 papers that have been cited 10 or more times. You may have written more than 10 papers total, but none of the other papers you may have written has received more than 10 citations yet.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;To be precise, each faculty member with a Google Scholar profile. This covers almost but not exactly the entire department.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

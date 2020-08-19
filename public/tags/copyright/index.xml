@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Copyright on Claus O. Wilke</title>
+    <link>/tags/copyright/</link>
+    <description>Recent content in Copyright on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Springer&#39;s abusive licensing demands</title>
+      <link>/blog/2017/10/16/springers-abusive-licensing-demands/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/10/16/springers-abusive-licensing-demands/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Today I posted a tweetstorm on publishing an article with &lt;a href=&#34;https://f1000research.com/&#34;&gt;F1000Research&lt;/a&gt; that was originally commissioned by Springer:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;We just published this article in &lt;a href=&#34;https://twitter.com/F1000Research?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@F1000Research&lt;/span&gt;&lt;/a&gt; because of &lt;a href=&#34;https://twitter.com/SpringerNature?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@SpringerNature&lt;/span&gt;&lt;/a&gt;&#39;s abusive licensing practices. &lt;a href=&#34;https://t.co/Xx88jkA3ec&#34;&gt;https://t.co/Xx88jkA3ec&lt;/a&gt;
+&lt;/p&gt;
+— Claus Wilke (&lt;span class=&#34;citation&#34;&gt;@ClausWilke&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/ClausWilke/status/919958741734379520?ref_src=twsrc%5Etfw&#34;&gt;October 16, 2017&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I received several requests to turn this into a blog post, so here we go. The blog post consists mostly of the text of the tweets, with some minor edits and clarifications.&lt;/p&gt;
+&lt;p&gt;We just published &lt;a href=&#34;https://f1000research.com/articles/6-1845/v1&#34;&gt;this article&lt;/a&gt; in F1000Research because of Springer’s abusive licensing practices. The article was originally written to become a chapter in a Springer book on methods in protein evolution, and it describes key protocols my lab uses to measure site-specific rates in proteins and correlate them with protein structure. We’ve published extensively on this topic in recent years, see e.g. &lt;a href=&#34;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002452&#34;&gt;Jack et al., PLOS Biology 2016&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, as a precondition of publishing, Springer wanted us to assign to them the exclusive, permanent copyright to the work (Figure &lt;a href=&#34;#fig:figure1&#34;&gt;1&lt;/a&gt;). In essence, they wanted us to donate our work to them so they could lock it behind a paywall and make money off of it. I were an unpaid intern at Springer while writing the article, Springer’s request would violate US labor law. But since I’m an independent agent, I guess I’m allowed to make donations to a commercial entity.&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure1.png&#34; alt=&#34;The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word exclusive, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement.&#34; width=&#34;552&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: The copyright agreement I was asked to sign. Key phrases of the agreement are underlined in red. Most important is the word &lt;em&gt;exclusive&lt;/em&gt;, which implies that the authors (us) lose any rights not explicitly enumerated in the remainder of the agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You might ask me: “What exactly is it you are complaining about here? People sign these agreements all the time, as have you in the past. How is this case any different?” The difference is that in this case, there’s virtually no benefit, even non-monetary, that Springer provides to in return. I understand that people might be willing to sign away their copyright in return for Nature paper that gets them their next job or grant.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; But a chapter in a methods book? That isn’t even peer reviewed? It doesn’t bring me (or my trainees) any prestige, unless the article is widely available and people use it and cite it a lot. But Springer explicitly doesn’t want that, because they make money from people buying the book to read the method.&lt;/p&gt;
+&lt;p&gt;I cannot let Springer own key protocols from my lab.&lt;/p&gt;
+&lt;p&gt;As if this alone weren’t enough, I also found my conversations with them disingenuous. In particular, when I asked for a non-exclusive agreement, they lied to me about what the agreement says (Figure &lt;a href=&#34;#fig:figure2&#34;&gt;2&lt;/a&gt;). Note the phrasing “We don’t claim copyright or ownership of the content itself” in this is response by Springer. It is blatantly false. Remember the copyright agreement is exclusive. This means the authors lose all rights except those explicitly stated as retained.&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure2.png&#34; alt=&#34;Statement by Springer representative. A Springer representative made this statement when I requested a non-exclusive copyright agreement.&#34; width=&#34;770&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Statement by Springer representative. A Springer representative made this statement when I requested a non-exclusive copyright agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure3.png&#34; alt=&#34;Rights retained under the proposed copyright agreement.&#34; width=&#34;554&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Rights retained under the proposed copyright agreement.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Let’s take a look at the rights that we would have retained (Figure &lt;a href=&#34;#fig:figure3&#34;&gt;3&lt;/a&gt;). Pay attention to the repeated occurrence of the word “content”. The person who drafted the copyright agreement knew very well that it would cover the contents of the contribution. That’s the point of copyright. So, according to Figure &lt;a href=&#34;#fig:figure1&#34;&gt;1&lt;/a&gt;, we would have lost the right to communicate the content to non-scientists. This includes, for example, commercial entities that may want to use our protocols. We would also have lost the right to post a preprint of the work. And it is unclear whether we would have been allowed to post it on personal webpages. That depends on whether the visitors of our personal webpages can be considered to be scientists or not. We would certainly have lost the right to publish an updated version of the protocols at some future date with a different publisher. I wouldn’t even have been allowed to this paper in a future anthology of my most influential papers, assuming it would be distributed at some cost. (Unlikely that I’d want to, but that’s not the point.)&lt;/p&gt;
+&lt;p&gt;For all the above reasons, the paper is now with F1000Research, and you can read it free of charge, copy it, and build on it. Enjoy.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Andrew Rambaut &lt;a href=&#34;https://twitter.com/arambaut/status/919980657153138688&#34;&gt;pointed out&lt;/a&gt; that Nature (the journal) does not require a permanent, exclusive copyright license anymore. This statement was later disputed by &lt;a href=&#34;https://twitter.com/dhimmel/status/920168108962312192&#34;&gt;Daniel Himmelstein.&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

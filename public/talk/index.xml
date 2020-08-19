@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selected Talks on Claus O. Wilke</title>
+    <link>/talk/</link>
+    <description>Recent content in Selected Talks on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 13:23:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spruce up your ggplot2 visualizations with formatted text</title>
+      <link>/talk/rstudio_conf_2020/</link>
+      <pubDate>Thu, 30 Jan 2020 13:23:00 +0000</pubDate>
+      
+      <guid>/talk/rstudio_conf_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing uncertainty with hypothetical outcomes plots</title>
+      <link>/talk/rstudio_conf_2019/</link>
+      <pubDate>Thu, 17 Jan 2019 17:00:00 +0000</pubDate>
+      
+      <guid>/talk/rstudio_conf_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

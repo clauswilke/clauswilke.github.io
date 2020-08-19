@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Claus O. Wilke</title>
+    <link>/tags/research/</link>
+    <description>Recent content in Research on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Safety projects</title>
+      <link>/blog/2015/07/01/safety-projects/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/07/01/safety-projects/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;If you’ve been in science long enough, eventually you’ll have reached a point where you needed a safety project, either for yourself or for a student. A safety project is a project whose success is all but guaranteed, that doesn’t require much in terms of critical thinking or properly aligned stars. All that is required to complete a safety project is proper execution of the work.&lt;/p&gt;
+&lt;p&gt;The most common example I see is the graduate student in year four or five who doesn’t have a single completed project but needs to graduate in a year. Alternatively, maybe tenure is looming and your cv looks thin, you need some papers on a given topic before you can submit a grant on that topic, or you’re a postdoc looking for a job and you don’t have that many papers yet. In all these cases, it’s a good idea to pursue a safety project. More generally, it’s a good idea to have a portfolio of different projects where some are high-risk, high-reward and some are low-risk safety projects that you know will give you some sort of publication at the end. So let’s take a look at a couple of generic types of safety projects that can be pursued in almost any research field you may be working in.&lt;/p&gt;
+&lt;div id=&#34;repeat-previous-study-with-larger-sample-size-or-expanded-conditions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Repeat previous study with larger sample size or expanded conditions&lt;/h2&gt;
+&lt;p&gt;It is always possible to just redo an earlier study but to increase the scope somewhat. Choose a larger sample size, add experimental conditions, or use more recent raw data (if you’re doing bioinformatics). As long as your lab has the technical capability to carry out the study in the first place, there is really nothing that can go wrong here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;benchmark-or-compare-competing-methods&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Benchmark or compare competing methods&lt;/h2&gt;
+&lt;p&gt;For virtually any problem one might want to investigate, there are competing approaches to carry out the analysis. And it is rarely the case that we completely understand which approach is better, and under which conditions. So compare a couple of competing approaches in your area. Test them under a couple of different, carefully controlled conditions, and see how they perform.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;write-a-methods-or-software-paper&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Write a methods or software paper&lt;/h2&gt;
+&lt;p&gt;If you have been working on some research topic for a while, chances are you have found some new ways of doing certain experiments, or you have written some software to do certain analyses. Thus, even if the actual experiments you have done don’t tell an interesting story, you may be able to just flesh out the methods or software you have developed and publish those.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;review-the-literature-on-a-topic&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Review the literature on a topic&lt;/h2&gt;
+&lt;p&gt;Literature reviews are often overlooked as serious scholarly contributions, in particular by graduate students and postdocs. And while scientists who only ever write reviews will likely develop the reputation of never having an original thought, there’s nothing wrong with writing the occasional review to bolster your resume, in particular early in your career. If you’re a graduate student or postdoc and your original research hasn’t been that successful lately, you can at least write a review on the area you’re working on. Publishing a review demonstrates both your understanding of the field and your ability to complete a project. I’d rather hire a scientist who has published one original research article and one review than one who has published only one original research article.&lt;/p&gt;
+&lt;p&gt;Can you think of other types of projects that are generally safe and rely only on careful execution? If so, please let me know in the comments.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

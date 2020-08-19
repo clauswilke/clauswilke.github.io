@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific writing on Claus O. Wilke</title>
+    <link>/tags/scientific-writing/</link>
+    <description>Recent content in Scientific writing on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Apr 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/scientific-writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beyond bar and line graphs</title>
+      <link>/blog/2015/04/29/beyond-bar-and-line-graphs/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/04/29/beyond-bar-and-line-graphs/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;PLOS Biology recently published a nice article on data visualization:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Weissgerber TL, Milic NM, Winham SJ, Garovic VD (2015) Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biol 13(4): e1002128. &lt;a href=&#34;https://doi.org/10.1371/journal.pbio.1002128&#34;&gt;doi:10.1371/journal.pbio.1002128&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It argues that we can do better than showing data as bars of mean height with error bars indicating standard deviations. In my lab, we use many of the proposed techniques already, see e.g. Fig. 4 in &lt;a href=&#34;https://peerj.com/articles/211/&#34;&gt;this paper.&lt;/a&gt; However, I’m glad that I now have a simple reference I can point people to when I want them to reconsider their figures.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

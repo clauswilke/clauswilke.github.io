@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linkedin on Claus O. Wilke</title>
+    <link>/tags/linkedin/</link>
+    <description>Recent content in Linkedin on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/linkedin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mobile apps—the bane of the modern mobile web experience</title>
+      <link>/blog/2013/09/29/mobile-appsthe-bane-of-the-modern-mobile-web-experience/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/29/mobile-appsthe-bane-of-the-modern-mobile-web-experience/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Have I ever mentioned that I hate mobile apps? I’m not talking about apps in general. I think it’s great that I can have a calculator on my phone, or skype. But apps that serve as replacements for websites, such as the facebook app or the linkedin app, I hate with a passion. I think they are a step backwards in web development. They degrade the mobile experience for all of us.&lt;/p&gt;
+&lt;p&gt;I encourage you to try the following experiment. Go to your favorite app store and read the reviews of a few mobile apps. What are the most common complaints? “This app lacks features.” “I can’t do with the app what I can do on the website.” “The iphone [android] app has feature X, why does the android [iphone] app lack this feature?” I have yet to encounter a mobile app that can be considered feature complete.&lt;/p&gt;
+&lt;p&gt;The original promise of web 2.0 was that we would never ever again have to worry about software installation, operating systems, or device type. As long as we had a network connection and a browser, we’d be able to use our favorite products and tools. And software developers should be able to deliver a better product, since they wouldn’t have to worry about implementing the same features over multiple architectures. On the desktop, this promise has actually played out. For example, whatever you think about facebook the product, you can’t argue that facebook the web platform isn’t a spectacular piece of web engineering. Similarly with google products, such as drive, gmail, or maps. Squarespace, my webhost, has a fantastic online content management system that allows you to develop both the content and the visual appearance of your website in an intuitive and interactive way right in your browser. In the mobile world, however, we haven’t made much progress. Mobile sites frequently don’t work that well or lack features. And mobile apps, the purported replacement for the mobile sites, also frequently don’t work that well or lack features. More often than not, I find myself requesting the desktop version of a page from my phone or tablet because only the desktop version lets me do what I want to do.&lt;/p&gt;
+&lt;p&gt;A particularly egregious case is squarespace, which—as I just said—is great on the desktop. On a mobile device, their content manager is utterly useless. In fact, squarespace in their infinite wisdom have decided that I shouldn’t even be allowed to log into their site if I’m on any type of “mobile” device.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; (What exactly is the difference between a macbook air and an ipad? That the latter needs an external keyboard?) The only option I have is their squarespace app, which, pardon my french, is utter crap. Thus, I have a tablet with computational power that would have been considered worthy of a supercomputer 15 years ago, but I still can’t use it for seemingly simple things such as maintaining my website.&lt;/p&gt;
+&lt;p&gt;Another things that bugs me is that most apps don’t synchronize their state across devices and platforms. Consider twitter. Let’s say I’m browsing twitter from my laptop and I get a new tweet. Great. I read it and I move on. An hour later I open the twitter app on my phone, and the app tells me proudly that I have a new tweet. Great! Let’s see what it is. Oh, it’s the same tweet I read already. A few hours later I open the twitter app on my tablet, and it also tells me proudly that I have a new tweet. Guess what. Yep, it’s the same tweet from before, which I’m now seeing for the third time.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; The twitter app is an interesting case because it looks almost identical to the twitter mobile web interface, with the main difference being that the number of followers I have properly updates on the web interface but not in the app. I’m still not quite sure what the point of the twitter app is.&lt;/p&gt;
+&lt;p&gt;The only app I’m pretty happy with is the gmail app, with the one caveat that it doesn’t allow me to create new labels. I’ve got to go to the gmail website for that purpose. The other app I’m quite happy with is the google drive app. In fact, I wrote part of this post using the google drive app on my phone. But that app also has important limitations. For example, while I can change fonts or font size, and can make things bold or italics, I can’t assign styles. Why?&lt;/p&gt;
+&lt;p&gt;Clearly, even the largest web corporations don’t have the manpower or capability to keep feature parity among their main website, their mobile site, and their mobile apps. I submit that we’d all be better off if mobile apps disappeared and the googles and facebooks of this world put all their energy into improving mobile web technology and mobile versions of their web sites.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Their argument is that their content manager might not fully work on a mobile device, and thus they’re trying to protect me from messing up my site. I’d prefer to be treated as an adult and allowed to mess up my site with my tablet if I so wish. I mean, how hard would it be to display a warning screen saying: “This might not work fully. Are you sure you want to proceed?”&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Of course I’ll see the message a fourth time when I open my email inbox. But I can’t fault Twitter for that, I chose to switch on email notifications. The take-home message for you, my reader, is that if you send me a tweet you can be sure I see it. A lot.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Should you as a scientist be active on LinkedIn?</title>
+      <link>/blog/2013/08/20/should-you-as-a-scientist-be-active-on-linkedin/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/20/should-you-as-a-scientist-be-active-on-linkedin/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Mention &lt;a href=&#34;https://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt;, and you generally get two types of responses. Either you will hear that LinkedIn is the most important invention in the search for jobs since the invention of the printed resume, or you will hear that LinkedIn is completely irrelevant and that you shouldn’t waste your time with it. In my mind, there is no doubt that LinkedIn plays an important role in connecting people with new employment opportunities in the business world. For example, I know some people here in Austin who run a successful recruiting company, and they operate almost entirely on LinkedIn. If you don’t have a LinkedIn profile, you’re basically invisible to them. (Did I mention that they generally look for candidates with advanced knowledge in data analysis, visualization, and statistics, basically the exact kind of person my lab trains?) However, things are different in academia. I don’t know of a single faculty member who got her job through LinkedIn, and I doubt I’ll hear about such a case any time soon.&lt;/p&gt;
+&lt;p&gt;So should you, as a scientist, spend valuable time polishing your LinkedIn profile and connecting with people on the site? In my opinion, the answer is absolutely “yes”, and I’ll explain below why I think so. I will separately address two different groups of people, scientists in training (undergraduate, graduate student, postdoc) and faculty members.&lt;/p&gt;
+&lt;div id=&#34;scientists-in-training&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Scientists in training&lt;/h2&gt;
+&lt;p&gt;As a scientist in training, the most important thing you have to realize is that it is by no means certain that you will end up in academia. In fact, most graduate students and even many postdocs will never become faculty members. And that is not a problem, in and of itself. Not everybody needs to become a professor. As long as our graduates find appropriate, satisfying, and well compensated employment, the world is in order. But what this means to you, as scientist in training, is that until you sign that offer letter for a tenure track position, you need to be open to alternative options. Building a solid LinkedIn profile and network may just provide you with the ticket to alternative career options.&lt;/p&gt;
+&lt;p&gt;Also, do not underestimate the value of the connections you build early in your career. If you go to a top university and/or generally hang out with smart kids, I can guarantee you that the majority of your current friends, however inconspicuous they may appear, will go on and make something of themselves. Check back where they are ten to fifteen years from now, and you’ll be impressed. (If you don’t generally hang out with smart kids: what’s wrong with you?) The dude from across the hall that you always met in the gym may just have gotten tenure at Harvard. The girl who was two years ahead of you in graduate school may just have gone through the IPO of the company she founded after graduating. And the hottie you had a fleeting crush on when you attended your first conference as an undergraduate may now be on the committee that is considering hiring you for your next job. So take networking seriously, even as a lowly undergraduate. You never know who you will want to contact again ten years down the road, or who will become important to your career at some point in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;faculty-members&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Faculty members&lt;/h2&gt;
+&lt;p&gt;For faculty members, using LinkedIn is probably less about the next job opportunity. Notwithstanding people who don’t get tenure, and notwithstanding people who leave academia to work at Google or at &lt;a href=&#34;http://www.deshawresearch.com/&#34;&gt;D. E. Shaw&lt;/a&gt;, or to &lt;a href=&#34;http://www.linkedin.com/pub/matt-winkler/7/156/830&#34;&gt;found their own company,&lt;/a&gt; the general rule is “once a faculty member, always a faculty member.” For faculty members, I believe the value of LinkedIn is in the network which they can provide their students access to. As a faculty member, if you have done your job right, you should have a solid network of influential and successful people, not all in academia. You should be connected to former students or colleagues who have left academia to work in industry. You should also be connected to people in industry you have met at social events. So when one of your students approaches you about alternative career paths, you should be able to put that student in contact with the right people.&lt;/p&gt;
+&lt;p&gt;As an example, I recently had a student in my lab who was interested in consulting. Through LinkedIn, I was able to connect that student to two people who have successful careers in consulting. One of the two was a graduate student at Caltech while I was a postdoc there. The other was the husband of a former coworker of my wife. Without LinkedIn, I would not have known how to get in touch with either of them. (An observation that may come as a bit of a surprise to academics: not everybody can be found through a simple Google search of their name. In fact, most people &lt;strong&gt;can not&lt;/strong&gt; be found through a Google search.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;concluding-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Concluding thoughts&lt;/h2&gt;
+&lt;p&gt;Is LinkedIn the be all of professional networking? Probably not. Do you absolutely need to have an active, up-to-date LinkedIn profile to be successful as a scientist? Almost certainly not. Nevertheless, there are tangible benefits to keeping your LinkedIn profile active, so I think it’s worth it. And let’s be real, updating your LinkedIn profile doesn’t take a lot of time. With the time it took me to write this blog post, I can keep my LinkedIn profile updated for the next several years.&lt;/p&gt;
+&lt;p&gt;Finally, because we academics need contacts outside academia, and because people move back and forth (maybe more forth than back) between academia and industry, I think that social networking sites geared specifically to scientists, such as &lt;a href=&#34;http://www.researchgate.net/&#34;&gt;ResearchGate&lt;/a&gt;, are not particularly attractive. These sites generate an artificial distinction between scientists and other people when reality is more fluid.&lt;/p&gt;
+&lt;p&gt;You can find my LinkedIn profile here: &lt;a href=&#34;https://www.linkedin.com/in/clauswilke&#34;&gt;Claus Wilke on LinkedIn.&lt;/a&gt; Connect with me if we’ve ever had a meaningful professional (or social) interaction.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The emotional distress of being a new Twitter user</title>
+      <link>/blog/2013/08/19/the-emotional-distress-of-being-a-new-twitter-user/</link>
+      <pubDate>Mon, 19 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/19/the-emotional-distress-of-being-a-new-twitter-user/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I’ve finally broken down. I’ve made a Twitter account. For years, I tried to hold off, thinking that Twitter was something for a younger generation, with a better stomach for cryptic text messages. The typical Twitter conversation is such a random stream of letters and special characters, made up of usernames, hashtags, and abbreviations of regular words, that it makes the winning entry of an obsfucated perl contest look outright legible. My thinking was that I gave up on perl for a reason. Why should I subject myself to Twitter? Anyway, this weekend I broke down and made a Twitter account. And I have to admit that it has its uses. While I don’t see myself doing long conversations over Twitter any time soon, I can see how it excels at disseminating and sharing information.&lt;/p&gt;
+&lt;p&gt;However, now that I’m exploring Twitter, I’m experiencing an entirely novel form of emotional social-networking distress: Who do you follow? And, more importantly, if people you know in real life follow you on Twitter, do you have to follow them back? Nothing I’ve learned from my experience on other social networking sites has prepared me for this dilemma. LinkedIn is easy. I treat it as a professional address book. If I’ve met you in person or had a professional interaction with you, I’ll connect with you on LinkedIn. Facebook is the same but for purely social interactions. If I’ve met you in a social setting, I’ll connect with you on Facebook. Of all the services I know, Google+ is the closest to Twitter, since it doesn’t enforce reciprocal befriending. However, Google+ is easy too, because nobody uses it anyway, as far as I can tell. And in any case, Google+ always gives you the option to put people into the circle for “people I know but don’t really care about.”&lt;/p&gt;
+&lt;p&gt;So here are my Twitter rules, for now: If you’re a student in my lab, I’ll follow you, because I want to get to know you better. If you’re a family member, I’ll follow you, because it would be embarrassing not to. If I’m genuinely curious about you or your work, I’ll follow you. If I’m unsure if I should follow you or not, I’ll hold off for now. Since I’m still figuring all of this out, I’d rather have the list of people I’m following grow slowly than add a bunch of people right away and have to later remove them when I realize I wasn’t interested in them afterall.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

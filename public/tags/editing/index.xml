@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editing on Claus O. Wilke</title>
+    <link>/tags/editing/</link>
+    <description>Recent content in Editing on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/editing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Double Jeopardy</title>
+      <link>/blog/2014/09/13/double-jeopardy/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/09/13/double-jeopardy/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Lately it keeps happening to me that I try to invite somebody to review a paper and they decline, giving as reason that they have reviewed the paper already for a different journal&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; and reviewing the paper again would put the authors into a situation of double jeopardy. This got me thinking. Should reviewers really decline for that reason? As reviewer, I’ve always thought the opposite. For a paper I have reviewed already, if the authors have made a reasonable effort to address my comments and have now chosen a more adequate journal, I can keep my review short and recommend acceptance. Thus, I’m actually preventing a situation of double jeopardy. I keep the authors from facing yet another reviewer with new opinions and requests. So, which is right? Should reviewers recuse themselves if they are asked to review again for a different journal, or should they instead leap at the opportunity and give the authors a break? I’d be interested in your thoughts.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Where the paper was rejected, presumably.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

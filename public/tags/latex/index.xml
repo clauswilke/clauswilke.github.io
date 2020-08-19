@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on Claus O. Wilke</title>
+    <link>/tags/latex/</link>
+    <description>Recent content in Latex on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to not mess up your bibliographies with Bibtex</title>
+      <link>/blog/2015/10/02/bibtex/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/10/02/bibtex/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Bibtex is the reference manager for Latex. I have used it for 20 years, I have written over 100 papers with it, and I think it works really well. I have also rarely met anybody who could use it without messing up their bibliography in some way. Bibtex is an archaic program, written 30 years ago by a graduate student and never substantively changed or updated since. It uses an awkward database format for storing bibliographic entries and an atrocious, poorly-documented programming language for describing how bibliographic entries should be formatted. In fact, the most complete description of bibtex’s inner workings is aptly called &lt;a href=&#34;http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf&#34;&gt;Tame the BeaST.&lt;/a&gt; (This document is well worth the read for anybody using bibtex with some regularity.) To help ordinary mortals succeed with using Bibtex, I’m providing here a set of best practices and useful guidelines that help you steer clear of the worst pitfalls of Bibtex.&lt;/p&gt;
+&lt;p&gt;My guidelines are shaped by the following two insights, which I call the first and second law of Bibtex:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Nobody really understands Bibtex.&lt;/li&gt;
+&lt;li&gt;All bibliography managers that automatically generate Bibtex entries mess things up.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A corollary of the second law is that all Bibtex entries need to be hand-curated to work correctly.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; The following sections address some of the most common issues that I see in daily Bibtex use.&lt;/p&gt;
+&lt;div id=&#34;incorrectly-capitalized-article-titles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Incorrectly capitalized article titles&lt;/h2&gt;
+&lt;p&gt;Article titles in a reference list should be capitalized in sentence case. In a nutshell, this means that all words except the first one, proper nouns, and acronyms are spelled in lower case (see e.g. &lt;a href=&#34;http://blog.apastyle.org/apastyle/2012/03/title-case-and-sentence-case-capitalization-in-apa-style.html&#34;&gt;here&lt;/a&gt; for more details). Bibtex enforces this capitalization rule by automatically converting everything in the article title field to lower-case. This convention has the unfortunate side effect that proper nouns or acronyms, which should be capitalized, will be converted into lower-case as well. For example, the title “A review of HIV biology” will be typeset as “A review of hiv biology”. This conversion can be switched off by enclosing the words not to be converted into an extra pair of braces, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = {A review of {HIV} biology}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Many reference managers simply disable Bibtex’s conversion by enclosing the entire title in braces, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = {{A review of HIV biology}}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This seems like a smart idea, until you realize that the records that these reference managers pull are often capitalized in title case (all nouns capitalized), and this incorrect capitalization is then carried over to the bibliography. &lt;strong&gt;The only reliable solution is to manually curate all titles, enclose words with capital letters in braces, but otherwise do not use two pairs of braces around titles.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;incorrectly-abbreviated-first-names-and-missing-middle-initials&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Incorrectly abbreviated first names and missing middle initials&lt;/h2&gt;
+&lt;p&gt;Bibtex style files are inconsistent in how they handle author names. Most style files abbreviate author names, so that “John H. Smith” becomes “J. H. Smith” or “J H Smith” or “JH Smith”. However, some don’t. They leave the author names untouched and/or only add or remove periods. Yet we generally never want first names spelled out in a bibliography, they should always be abbreviated to initials only. Therefore, always abbreviate names in your Bibtex file, &lt;strong&gt;and leave a space between initials,&lt;/strong&gt; like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;author = {J. H. Smith}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;author = {Smith, J. H.}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you don’t leave a space between the initials, Bibtex will interpret the initials as a name and drop the second initial. For example, &lt;code&gt;author = {JH Smith}&lt;/code&gt; will for many style files be typeset as “J. Smith”.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; I also recommend to always add periods after initials, even if some styles don’t typeset periods in the final bibliography. In general, Bibtex style files are better at removing periods when they aren’t needed than at adding them when necessary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mangled-author-lists&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Mangled author lists&lt;/h2&gt;
+&lt;p&gt;In Bibtex’s author field, author names are separated by the key word &lt;code&gt;and&lt;/code&gt;. It is a common mistake to use a comma instead. Bibtex will then think that all the names separated by commas are actually part of one long name, and will produce a mangled author list. Usually, what it will do is turn the entire author list into middle initials for one author, so that you end up with something like “Smith, D. M. B. K. F. L. E. O. S.” Fortunately, it will produce a warning as it does so (&lt;code&gt;Too many commas in name...&lt;/code&gt;). Unfortunately, many Bibtex users ignore these warnings.&lt;/p&gt;
+&lt;p&gt;Ignoring warnings comes particularly easy when you use an integrated latex environment that compiles the text as you type. An example would be the online editor &lt;a href=&#34;https://www.overleaf.com/&#34; class=&#34;uri&#34;&gt;https://www.overleaf.com/&lt;/a&gt;. However, &lt;strong&gt;all&lt;/strong&gt; Latex editors do display errors and warnings when you look for them, so make it a habit to do so.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inconsistent-journal-names&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inconsistent journal names&lt;/h2&gt;
+&lt;p&gt;Bibtex will not abbreviate journal names for you. So you have to do this yourself, and do so consistently. I recommend to always add periods after abbreviated parts of journal names, even if the style you’re currently using doesn’t require periods there (i.e., write &lt;code&gt;journal = {Mol. Biol. Evol.}&lt;/code&gt;, not &lt;code&gt;journal = {Mol Biol Evol}&lt;/code&gt;). At some point you’ll use the Bibtex entry with a different style file that needs periods, and things will go wrong. Again, Bibtex is better at removing periods than it is at adding them.&lt;/p&gt;
+&lt;p&gt;Some people define Bibtex string variables for journal names to keep them consistent. This is a reasonable practice, but I personally don’t use it. If you want to learn how this works, read the &lt;a href=&#34;http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf&#34;&gt;Tame the BeaST&lt;/a&gt; document, page 21.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;superfluous-issue-numbers-publication-months-or-other-elements&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Superfluous issue numbers, publication months, or other elements&lt;/h2&gt;
+&lt;p&gt;Very few journals typeset issue numbers or publication months in their bibliographies. Yet reference managers like to populate the &lt;code&gt;number&lt;/code&gt; or &lt;code&gt;month&lt;/code&gt; fields that Bibtex provides. This leads to ugly and non-standard reference entries. Moreover, it’s rare that every entry in a Bibtex file has a completed &lt;code&gt;number&lt;/code&gt; field, with the result that some entries in the final bibliography will have numbers listed and others won’t. Therefore, as a matter of principle, I always delete all &lt;code&gt;number&lt;/code&gt; and &lt;code&gt;month&lt;/code&gt; fields in every Bibtex entry. I also delete all other fields that I don’t explicitly want to show up in the typeset reference.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;choosing-good-bibtex-reference-keys&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Choosing good Bibtex reference keys&lt;/h2&gt;
+&lt;p&gt;Finally, I would like to provide some thoughts regarding how to choose keys to refer to Bibtex references. (I.e., how do you choose the identifiers you use in the &lt;code&gt;\cite{}&lt;/code&gt; command in your Latex file.) Most importantly, it is a good idea to have a systematic approach to choosing keys. Ideally, you should be able to guess the key from looking at the reference. This rule protects you from accidentally duplicating a reference in the Bibtex file and referring to it under two different keys. I personally use keys that mirror a traditional author-year citation style, e.g. &lt;code&gt;SmithMiller2012&lt;/code&gt; or &lt;code&gt;Jonesetal2014&lt;/code&gt;. For papers with multiple authors, I would recommend against using just the first author name and the year, such as &lt;code&gt;Jones2014&lt;/code&gt;, because in my experience it is not unusual to have multiple papers from the same year with the same first author, and at that point the keys become confusing. Which paper was &lt;code&gt;Jones2014a&lt;/code&gt; again, and which one &lt;code&gt;Jones2014b&lt;/code&gt;? By contrast, &lt;code&gt;JonesSmith2014&lt;/code&gt; and &lt;code&gt;JonesMiller2014&lt;/code&gt; are much easier to keep apart.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;checklist&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Checklist&lt;/h2&gt;
+&lt;p&gt;Here is a final checklist you should go through every time you write a manuscript using Bibtex. (Some entries in the checklist also apply to Latex more broadly.) Most importantly, always read through the entire bibliography of your paper before submitting.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Capitalization&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all article titles typeset in sentence case, or do some remain in title case?&lt;/li&gt;
+&lt;li&gt;Are any proper nouns or abbreviations typeset in lower case even though they should be capitalized?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Author initials&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all author first names replaced by initials?&lt;/li&gt;
+&lt;li&gt;Are all middle initials present? (This may be cumbersome to check, but a warning sign would be the presence of multiple references in which no authors have middle initials. Most authors do have middle initials.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Author lists&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are author names showing up properly and completely? Warning signs would be papers that appear to be written by one or two people with way too many initials (four or more; few authors have four initials).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Journal names&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all journal names properly abbreviated?&lt;/li&gt;
+&lt;li&gt;Are journals named consistently throughout the bibliography?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Superfluous items in bibliography&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Do any references contain items that shouldn’t be there, such as issue numbers, months, ISSN or ISBN numbers, or article URLs?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Compilation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Do Latex and Bibtex run on your document without raising any errors or warnings?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Actually, the second law applies more generally to pretty much any reference manager, including Zotero, Mendeley, Endnote, and so on, but that is a topic for another blog post. If you use one of them and don’t believe me, check if your article titles are properly capitalized, using sentence case. And if you don’t know what that means, re-read the section on incorrectly capitalized article titles.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;To add insult to injury, on occasion I have encountered Bibtex style files that actually require initials to be listed &lt;em&gt;without&lt;/em&gt; space. Those style files would drop the second initial when there was a space. In the end, you’ll always have to check manually that everything is working as expected, and adjust Bibtex entries as necessary.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post-publication review of the PLOS ONE paper comparing MS Word and LaTeX: How not to compare document preparation</title>
+      <link>/blog/2014/12/27/post-publication-review-of-the-plos-one-paper-comparing-ms-word-and-latex-how-not-to-compare-document-preparation/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/12/27/post-publication-review-of-the-plos-one-paper-comparing-ms-word-and-latex-how-not-to-compare-document-preparation/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;PLOS ONE just published a paper comparing MS Word with LaTeX, which argues that LaTeX has little benefits over MS Word and should not be allowed by scientific journals:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Knauff M, Nejasmic J (2014) &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0115069&#34;&gt;An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development.&lt;/a&gt; PLoS ONE 9(12): e115069.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In my mind, this paper makes extremely strong claims based on a rather flawed and thin analysis. I am sure there are useful things to be said about MS Word vs. LaTeX. However, this paper does not make much of a contribution to this question.&lt;/p&gt;
+&lt;p&gt;To give you some background: I have been using LaTeX for over 20 years, I have written tens of thousands of pages with LaTeX, and I am extremely familiar with its pros and cons. I am also using MS Word on a regular basis, and I regularly make the choice between using LaTeX or MS Word, on a document-by-document case. There are documents I’d rather write in LaTeX, and there are other documents I’d rather write in MS Word. There are also documents (increasingly many, in fact) for which I prefer entirely different approaches, such as Markdown. With that said, let me list the main objections I have to the Knauff and Nejasmic paper.&lt;/p&gt;
+&lt;div id=&#34;apples-and-oranges&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Apples and oranges&lt;/h2&gt;
+&lt;p&gt;The entire premise of the paper is flawed: MS Word is a text editor, LaTeX is a file format. Those two things are inherently not comparable. There is no technical reason why MS Word cannot save documents to LaTeX, only the creators of MS Word chose not to implement this option. A simple work-around exists, however: Save the document as .docx and convert it to LaTeX with &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;. Incidentally, you can also go the other way round, write the document in LaTeX and convert to .docx. Fundamentally, file formats describing the same kind of data can be converted into each other. Therefore, people should be allowed to use the software and file formats they prefer (within reason, and preferably non-proprietary ones). Computers can sort out the differences.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-rigged-comparison&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A rigged comparison&lt;/h2&gt;
+&lt;p&gt;The comparison the authors set up, the reproduction of three relatively simple, one-page documents, is entirely artificial and rigged to favor MS Word. This is particularly the case (and this is not really explained well in the paper) if the LaTeX users were tasked to reproduce the visual layout of the documents. LaTeX is meant to separate contents from layout, and the people who use it regularly tend to value that separation. However, this separation implies that it can sometimes be a bit difficult to achieve a particular physical layout. The correct, LaTeX way to solve this problem would be to prepare an appropriate style file. Yet I doubt the users in this test were given such a style file for the &lt;em&gt;continuous text&lt;/em&gt; example (which poses some tricky formatting issues with the title, author list, and address line).&lt;/p&gt;
+&lt;p&gt;For anybody who has experience with both systems, it would be trivial to set up examples where MS Word utterly fails and LaTeX shines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Set up 50 numbered equations, refer to them throughout the text, then change the equation order.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Have figures and their captions float to appropriate locations at the top or bottom of pages.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Change the order of figures in a document and fix all references to those figures.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;its-not-surprising-that-latex-users-are-highly-satisfied&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;It’s not surprising that LaTeX users are highly satisfied&lt;/h2&gt;
+&lt;p&gt;Throughout the paper, the authors state (somewhat surprised, it seems to me) that LaTeX users are highly satisfied with their document preparation software. The authors seem to have no explanation for this observation, other than cognitive dissonance. In effect, the authors are saying that LaTeX is so awful that the only way to use it regularly is to convince yourself it is great even though it is not.&lt;/p&gt;
+&lt;p&gt;There’s a simple alternative explanation, though: Even though LaTeX can be cumbersome and has its quirks, LaTeX is highly predictable. Once you have figured out how something works, it always works that way. LaTeX never crashes. Documents don’t suddenly change layout or font. Tables don’t jump around. By contrast, none of this can be said about MS Word. Everybody who uses MS Word knows that it sometimes does things that simply can’t be explained. Things that should work don’t. Formatting changes randomly.&lt;/p&gt;
+&lt;p&gt;In my own experience, to produce a final document, I fiddle around about as much with MS Word as I do with LaTeX, only that the issues with LaTeX are usually the same three predictable things (proper formatting of the cover page, some table issues, getting all the references into BibTeX). By contrast, with MS Word I always fight against some random, unexplainable stuff.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;state-of-the-art-in-document-preparation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;State of the art in document preparation&lt;/h2&gt;
+&lt;p&gt;What I find most amazing about the Knauff and Nejasmic paper, considering that it is a study on document preparation, is that the authors seem to be completely out of touch with the state-of-the-art developments in that field. The authors barely even mention the important distinction between document structure and document layout, and they don’t discuss at all why one might want to separate the two. They also don’t consider automatic document conversions for different media (e.g. web versus print). Finally, they don’t discuss the increasingly important issue, at least for scientific documents, of integrating the text of a paper with the code used for data analysis and figure generation.&lt;/p&gt;
+&lt;p&gt;In fact, there is plenty of room for improvement over LaTeX when it comes to document preparation. Most heavy LaTeX users would agree that the language can be cumbersome, and I haven’t met anybody who wouldn’t rather not type out all the LaTeX commands required to prepare a finished document. Extensive efforts are currently underway to address these and other issues, but these efforts are not happening in the world of MS Word.&lt;/p&gt;
+&lt;p&gt;The most exciting current developments, in my mind, are happening with &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;Markdown.&lt;/a&gt; Markdown is an extremely simplified markup language that can be learned in half an hour or less. Markdown documents can be read easily in their source form (unlike LaTeX documents), and they can also be converted into HTML or PDF documents. (The PDF conversion usually goes via LaTeX as intermediate.) Moreover, through extensions such as &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown,&lt;/a&gt; one can easily combine the document text, the code for data analysis and figure preparation, and the final figures, all in a single file. The result is a publication-quality document that is easy to produce, self contained, and allows for complete reproducibility of the analysis and figure generation. I bet that if the comparison in the PLOS ONE paper had been MS Word vs. LaTeX vs. Markdown, Markdown would have won hands down.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;does-any-of-this-matter&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Does any of this matter?&lt;/h2&gt;
+&lt;p&gt;Why quibble over file formats and editors at all? As I said in the beginning, I use various tools, depending on the task at hand. As long as we can all agree that there are different use cases and that people can make informed decisions on which tool to use when, I’m fine. However, this is where the authors of the PLOS ONE paper go off the deep end. After presenting their relatively thin, somewhat rigged, and definitely not comprehensive comparison of one text editor to one file format, they then make incredibly strong claims, including that LaTeX users may be suffering from cognitive dissonance and that vast amounts of money could be saved if people were forced to switch over from LaTeX to MS Word. These statements are simply not warranted, they do not follow logically from the analysis presented, and they entirely disregard that the future of scientific document preparation may lay elsewhere (e.g., Markdown). If there is one thing this paper doesn’t make is a strong argument &lt;em&gt;in favor&lt;/em&gt; of MS Word, and we must be careful not to allow journal editors or other policy makers to use arguments such as the ones made in this paper to force us into a single mode of document preparation.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The real key to success is to formulate the question after you&#39;ve found the answer.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2014/06/18/how-to-develop-a-research-question-part-ii/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2014/06/18/how-to-develop-a-research-question-part-ii/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2014/06/18/how-to-develop-a-research-question-part-ii/">
+  <meta property="og:title" content="How to develop a research question, Part II | Claus O. Wilke">
+  <meta property="og:description" content="The real key to success is to formulate the question after you&#39;ve found the answer."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2014-06-18T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2014-06-18T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>How to develop a research question, Part II | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">How to develop a research question, Part II</h1>
+
+  
+  <p class="page-subtitle">The real key to success is to formulate the question after you&rsquo;ve found the answer.</p>
+  
+
+  
+    
+
+
+
+<meta content="2014-06-18 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2014-06-18 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jun 18, 2014</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2014/06/18/how-to-develop-a-research-question-part-ii/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/academia/">Academia</a>, <a href="/categories/professional-development/">Professional development</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2014/06/18/how-to-develop-a-research-question-part-ii/&amp;text=How%20to%20develop%20a%20research%20question,%20Part%20II" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2014/06/18/how-to-develop-a-research-question-part-ii/&amp;t=How%20to%20develop%20a%20research%20question,%20Part%20II" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=How%20to%20develop%20a%20research%20question,%20Part%20II&amp;body=/blog/2014/06/18/how-to-develop-a-research-question-part-ii/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2014/06/18/how-to-develop-a-research-question-part-ii/&amp;title=How%20to%20develop%20a%20research%20question,%20Part%20II" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=How%20to%20develop%20a%20research%20question,%20Part%20II%20/blog/2014/06/18/how-to-develop-a-research-question-part-ii/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2014/06/18/how-to-develop-a-research-question-part-ii/&amp;title=How%20to%20develop%20a%20research%20question,%20Part%20II" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>After my last post discussing <a href="/blog/2014/6/15/how-to-develop-a-research-question">how to develop a research question</a>, Sergey Kryazhimskiy asked me to write about how to find the rare good research idea among the many mediocre ones.</p>
+<blockquote class="twitter-tweet" lang="en">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/ClausWilke"><span class="citation">@ClausWilke</span></a> After 2 successful projects the problem shifts to choosing a rare good research idea among many mediocre ones. Next post? 2/2
+</p>
+— Sergey Kryazhimskiy (<span class="citation">@skryazhi</span>) <a href="https://twitter.com/skryazhi/status/478349857540042753">June 16, 2014</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The truth is that I don’t really know how to do this. If you do, please tell me. I’m sure I could strengthen my research program by picking better problems. Nevertheless, despite my ignorance, I’ve had a reasonably successful career to date. And it was probably not entirely due to sheer luck. So this should give you hope. Even if you don’t know how to pick good problems, you may succeed in science nonetheless. Just work on the problems that seem important to you and hope for the best.</p>
+<p>Because I don’t know how to answer Sergey’s question, at first I thought that I wouldn’t have much to say on this topic. However, not knowing something hasn’t kept me from writing a 1500-word blog post about it. After some pondering, I thought it might be useful to review what other people have said on this topic. If you spend some time with Google, you’ll find expert advice on how to choose a good research problem. For example, in Uri Alon’s paper <a href="http://wws.weizmann.ac.il/mcb/UriAlon/sites/mcb.UriAlon/files/uploads/nurturing/howtochoosegoodproblem.pdf">“How To Choose a Good Scientiﬁc Problem”</a>,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> there is a nice graphic (here reproduced as Figure <a href="#fig:figure1">1</a>) ranking potential problems according to their difficulty (hard to easy) and according to the gain in knowledge their solution would provide (small to large). Easy problems with a small gain in knowledge are good beginner problems, hard problems with a large gain in knowledge are good long-term goals for an established researcher, and easy problems with a large gain in knowledge are perfect for a postdoc. And nobody should work on hard problems that lead to small gains in knowledge.</p>
+
+<div class="figure"><span id="fig:figure1"></span>
+<img src="Fig1.png" alt="Pareto front of worthwhile research questions. Research questions can be ranked according to difficulty (hard to easy) and gain in knowledge (small to large). The best problems are those that provide the maximum gain of knowledge for the chosen difficulty level. One should never work on hard problems that provide little gain in knowledge. After U. Alon (2009)." width="80%" />
+<p class="caption">
+Figure 1: Pareto front of worthwhile research questions. Research questions can be ranked according to difficulty (hard to easy) and gain in knowledge (small to large). The best problems are those that provide the maximum gain of knowledge for the chosen difficulty level. One should never work on hard problems that provide little gain in knowledge. After U. Alon (2009).
+</p>
+</div>
+<p>This is all nice and well, until you realize that it is basically impossible to rank problems <em>a priori</em> along either dimension. Uri Alon’s paper explains why. Science does not normally progress in a direct path from A to B. We may intend to work towards B, but on our way there we get stuck in “the cloud,” where every attempt to get closer to B fails, until eventually we give up and go for C, a problem that we hadn’t even considered beforehand (Figure <a href="#fig:figure2">2</a>). The two immediate consequences of this process are that (i) we don’t know how hard it will be to get from A to C, and (ii) we don’t know how much of a gain in knowledge C will provide, in both cases because we don’t even know C exists when we start. Thus, even though Uri Alon’s ranking of problems along difficulty and gain in knowledge is beautiful and convincing, it is also quite useless.</p>
+
+<div class="figure"><span id="fig:figure2"></span>
+<img src="Fig2.png" alt="How we would like to do science (left) and how it actually works (right). Here, A represents what we currently know and B represents what we would like to know. Our desire is to move from A to B in as direct a line as possible. However, we usually get stuck as we are approaching B, things don’t work out, and we keep taking detours and going in circles. Uri Alon calls this state the cloud. Eventually, we give up on reaching B and instead head for C, a new insight that we found while wandering in the cloud. Usually, C represents the solution to a problem we weren’t even aware of when we started. After U. Alon (2009)." width="80%" />
+<p class="caption">
+Figure 2: How we would like to do science (left) and how it actually works (right). Here, A represents what we currently know and B represents what we would like to know. Our desire is to move from A to B in as direct a line as possible. However, we usually get stuck as we are approaching B, things don’t work out, and we keep taking detours and going in circles. Uri Alon calls this state <em>the cloud.</em> Eventually, we give up on reaching B and instead head for C, a new insight that we found while wandering in the cloud. Usually, C represents the solution to a problem we weren’t even aware of when we started. After U. Alon (2009).
+</p>
+</div>
+<p>So, what can be done? If we keep reading Uri Alon’s article, we find that he makes some useful suggestions on how to pick important problems. He writes:</p>
+<blockquote>
+<p>One of the fundamental aspects of science is that the interest of a problem is subjective and personal. (…) Ranking problems with consideration to the inner voice makes you more likely to choose problems that will satisfy you in the long term. (…) One way to help listening to the inner voice is to ask: ‘‘If I was the only person on earth, which of these problems would I work on?’’ (…) Another good sign of the inner voice are ideas and questions that come back again and again to your mind for months or years. (…) It is remarkable that listening to our own idiosyncratic voice leads to better science. It makes research self-motivated and the routine of research more rewarding. In science, the more you interest yourself, the larger the probability that you will interest your audience.</p>
+</blockquote>
+<p>So, if you’re not sure which problems to work on, work on the ones that excite you!<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Uri Alon is not the only one who has commented on this topic. The famous computer-science pioneer Richard Hamming (of the Hamming distance and Hamming codes) used to give a talk entitled “You and Your Research,” which touches on this issue among other things. You can read a transcript <a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">here</a>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> The whole thing is worth reading. Here, I’ll just cite a few relevant paragraphs. First this one:</p>
+<blockquote>
+<p>When you are famous it is hard to work on small problems. This is what did Shannon in. After information theory, what do you do for an encore? The great scientists often make this error. They fail to continue to plant the little acorns from which the mighty oak trees grow. They try to get the big thing right off. And that isn’t the way things go. So that is another reason why you find that when you get early recognition it seems to sterilize you. In fact I will give you my favorite quotation of many years. The Institute for Advanced Study in Princeton, in my opinion, has ruined more good scientists than any institution has created, judged by what they did before they came and judged by what they did after. Not that they weren’t good afterwards, but they were superb before they got there and were only good afterwards.</p>
+</blockquote>
+<p>In other words, don’t try too hard to make a big splash. Just keep working on a variety of problems and see which ones turn out to be useful. While you do so, take notice of things that repeatedly don’t work. Those may be hints that can lead to major insights:</p>
+<blockquote>
+<p>I think that if you look carefully you will see that often the great scientists, by turning the problem around a bit, changed a defect to an asset. For example, many scientists when they found they couldn’t do a problem finally began to study why not. They then turned it around the other way and said, “But of course, this is what it is” and got an important result.</p>
+</blockquote>
+<p>And finally, keep an eye out for great opportunities:</p>
+<blockquote>
+<p>The great scientists, when an opportunity opens up, get after it and they pursue it. They drop all other things. They get rid of other things and they get after an idea because they had already thought the thing through. Their minds are prepared; they see the opportunity and they go after it. Now of course lots of times it doesn’t work out, but you don’t have to hit many of them to do some great science. It’s kind of easy. One of the chief tricks is to live a long time!</p>
+</blockquote>
+<p>What can you do to increase the chance that opportunities come your way? Here is Feynman’s suggestion, <a href="http://www.ams.org/notices/199701/comm-rota.pdf">as recounted by Gian-Carlo Rota</a>:<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<blockquote>
+<p>You have to keep a dozen of your favorite problems constantly present in your mind, although by and large they will lay in a dormant state. Every time you hear or read a new trick or a new result, test it against each of your twelve problems to see whether it helps. Every once in a while there will be a hit, and people will say, “How did he do it? He must be a genius!”</p>
+</blockquote>
+<p>The goal is thus to wander around in the cloud and always keep an eye out for exciting opportunities that may open up. While you’re in the cloud, aiming for B, there may be many C’s that come your way that you could pursue, but most of them will not be worthwhile (Figure <a href="#fig:figure3">3</a>). However, on occasion, you stumble upon something that is really neat (C<sub>6</sub> in the Figure), and when that happens you should drop everything else and pursue that opportunity. I would recommend applying the following test: Do you personally think you’ve stumbled upon an exciting opportunity? If yes, go for it. If no, keep looking for something else to work on.</p>
+
+<div class="figure"><span id="fig:figure3"></span>
+<img src="Fig3.png" alt="Scientific opportunities in the cloud. While we are stuck in the cloud, we encounter all sorts of new insights. Most of them are boring, however, and we shouldn’t pursue them further. But, on occasion, we stumble upon an exciting new insight. When this happens, great scientists drop everything else and seize the opportunity." width="80%" />
+<p class="caption">
+Figure 3: Scientific opportunities in the cloud. While we are stuck in the cloud, we encounter all sorts of new insights. Most of them are boring, however, and we shouldn’t pursue them further. But, on occasion, we stumble upon an exciting new insight. When this happens, great scientists drop everything else and seize the opportunity.
+</p>
+</div>
+<p>In this whole process, you might wonder what’s the point of B. If we never get to B, do we need it in the first place? I think we do. B gives us a broad sense of direction while we’re not sure where we’re going in the cloud. Until we have identified an exciting opportunity C, we might as well keep chasing B. Who knows, with luck, we might even manage to get to B at some point. It happens on occasion.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>U. Alon (2009) <a href="http://wws.weizmann.ac.il/mcb/UriAlon/sites/mcb.UriAlon/files/uploads/nurturing/howtochoosegoodproblem.pdf">How To Choose a Good Scientiﬁc Problem.</a> Mol. Cell 35:726-728.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>It should be noted here that the degree to which a problem is of interest to the broader scientific community depends also on how well it is marketed. You can pick problems you know the community finds interesting, or alternatively you can convince the community that they should find interesting what you are working on. Many of the very successful scientists do the latter. In fact, fame and recognition often go to the person who convinced the community that a problem was worthwhile, not to the person who actually solved the problem in the first place.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Hamming gave this talk many times. The <a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">transcript available here</a> is from March 7, 1986. There is also a <a href="https://www.youtube.com/watch?v=a1zDuOPkMSw">video recording,</a> from June 6, 1995. The transcript and the video are largely identical, but I found that the video added a few interesting points that weren’t in the transcript.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>G.-C. Rota (1997) <a href="http://www.ams.org/notices/199701/comm-rota.pdf">Ten Lessons I Wish I Had Been Taught.</a> Notices of the AMS 44:22-25.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/graduate-school/">Graduate school</a>
+  
+  <a class="badge badge-light" href="/tags/postdocs/">Postdocs</a>
+  
+  <a class="badge badge-light" href="/tags/uri-alon/">Uri Alon</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2014/06/15/how-to-develop-a-research-question/">How to develop a research question</a></li>
+          
+          <li><a href="/blog/2014/06/14/uri-alon-on-creativity-and-staying-sane-in-science-yes-and/">Uri Alon on creativity and staying sane in science: &#34;Yes and ...&#34;</a></li>
+          
+          <li><a href="/blog/2014/01/25/6-reasons-to-do-your-graduate-work-in-the-lab-of-a-junior-pi-and-6-reasons-not-to/">6 reasons to do your graduate work in the lab of a junior PI, and 6 reasons not to</a></li>
+          
+          <li><a href="/blog/2013/09/10/how-good-is-good-enough/">How good is good enough?</a></li>
+          
+          <li><a href="/blog/2013/09/06/from-undergraduate-to-faculty-member-critical-decision-points-in-the-academic-career/">From undergraduate to faculty member: Critical decision points in the academic career</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

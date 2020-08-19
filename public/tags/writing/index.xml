@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Claus O. Wilke</title>
+    <link>/tags/writing/</link>
+    <description>Recent content in Writing on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Markdown, the easiest and most elegant approach to writing about data analysis with R</title>
+      <link>/blog/2014/10/04/r-markdown-the-easiest-and-most-elegant-approach-to-writing-about-data-analysis-with-r/</link>
+      <pubDate>Sat, 04 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/10/04/r-markdown-the-easiest-and-most-elegant-approach-to-writing-about-data-analysis-with-r/</guid>
+      <description>&lt;p&gt;This weekend, I finally spent some time learning &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34;&gt;R Markdown&lt;/a&gt;. I had been aware of its existence for a while, but I had never bothered to check it out. What a mistake. R Markdown rocks! It&amp;rsquo;s hands down the easiest and most elegant method to creating rich documents that contain data analysis, figures, mathematical formulas, and text. And it&amp;rsquo;s super easy to learn. I wager that anybody who has RStudio installed can create a useful document in 30 minutes or less. So if you use R, and you&amp;rsquo;ve never used R Markdown, give it a try.&lt;/p&gt;
+
+&lt;p&gt;R Markdown provides a literate programming platform for the R language. Literate programming, &lt;a href=&#34;https://en.wikipedia.org/wiki/Literate_programming&#34; target=&#34;_blank&#34;&gt;invented by Donald Knuth,&lt;/a&gt; allows users to write both a program and a document describing the program, at the same time. In the case of R, this means that you can write a document that contains R code, the output that is generated when the R code is run (including graphs), and prose describing the R code and its output. To give you an example, I started writing a tutorial for R&amp;rsquo;s ggplot2 library this weekend, and the original R Markdown file as well as the HTML output generated from that file are &lt;a href=&#34;https://github.com/wilkelab/ggplot2_cookbook/blob/master/README.md&#34; target=&#34;_blank&#34;&gt;available here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What does the word &lt;em&gt;Markdown&lt;/em&gt; stand for? &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; is a minimalist approach to writing strutured documents. It consists of plain text with a few simple directives to mark sections, turn text bold or italics, or insert quotes. If you have ever edited a wikipedia article, you have used Markdown.&lt;/p&gt;
+
+&lt;p&gt;To give you an example, this is Markdown text:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;We can make text **bold**, *italics*, or `look like code.`
+We can also insert links, [e.g. to wikipedia,](http://www.wikipedia.org/)
+we can quote things:  
+
+&amp;gt; It is time to eat &amp;amp;#8212; Hungry John
+
+or make lists:
+
+1. Item 1
+2. Item 2
+3. Item 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It will be rendered like this:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We can make text &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italics&lt;/em&gt;, or &lt;code&gt;look like code.&lt;/code&gt; We can also insert links, &lt;a href=&#34;http://www.wikipedia.org/&#34; target=&#34;_blank&#34;&gt;e.g. to wikipedia,&lt;/a&gt; we can quote things:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is time to eat &amp;#8212; Hungry John&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or make lists:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;R Markdown works the same, only that it adds the option to insert R code  blocks. An R code block could look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```{r}  
+# place R code here, e.g. to make a plot:  
+library(ggplot2)  
+x &amp;lt;- 1:10; y &amp;lt;- x^2  
+qplot(x, y)  
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you convert the R Markdown file to HTML, the R code gets executed, the R output captured and inserted into the document, and you&amp;rsquo;ve got everything nicely together, with very little work.&lt;/p&gt;
+
+&lt;p&gt;To create an R Markdown document in RStudio, all you have to do is go to &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;New File&lt;/code&gt;, and then select &lt;code&gt;R Markdown&lt;/code&gt;. Accept the default settings, and R Studio will generate a new R Markdown file with a few lines of example content. To convert the file into HTML, simply click on the &amp;ldquo;Knit HTML&amp;rdquo; button. If you have previously stored your R Markdown file somewhere on your harddisk (with suffix &lt;code&gt;.Rmd&lt;/code&gt;), RStudio will automatically save the generated HTML file in the same location, with the same name and suffix &lt;code&gt;.html&lt;/code&gt;. The HTML file is self-contained, including all images, so it&amp;rsquo;s easy to publish it on a web page or share it with people. RStudio also provides you with the option to publish the document online on the &lt;a href=&#34;http://rpubs.com/&#34; target=&#34;_blank&#34;&gt;RPubs&lt;/a&gt; website. Just click on the &amp;ldquo;Publish&amp;rdquo; button in the HTML view.&lt;/p&gt;
+
+&lt;p&gt;To learn more about R Markdown, go to:  &lt;a href=&#34;https://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34;&gt;https://rmarkdown.rstudio.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

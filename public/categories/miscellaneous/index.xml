@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellaneous on Claus O. Wilke</title>
+    <link>/categories/miscellaneous/</link>
+    <description>Recent content in Miscellaneous on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/categories/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goodbye Squarespace, Hello Github</title>
+      <link>/blog/2015/08/06/goodbye-squarespace/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/08/06/goodbye-squarespace/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;After having hosted my blog on Squarespace for about two years, I have decided to move it over to Github pages. Squarespace was a reasonable and easy solution for me two years ago when I knew nothing about web hosting and web design, but I’ve increasingly grown frustrated and feel that I’m constantly having to fight with Squarespace to get it to do what I want it to do. I originally chose Squarespace because I didn’t want to maintain my own article database and I didn’t like the design and feature set of most popular blogging platforms such as WordPress or Blogger. In the mean time, I have learned about static page generators, and I now think that they are superior to most other options for basic blogs and other simple web pages. So I’ve redesigned my site using &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; for page generation, &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; as CSS and JS framework, &lt;a href=&#34;https://www.google.com/fonts&#34;&gt;Google fonts&lt;/a&gt; and &lt;a href=&#34;http://fontawesome.io/&#34;&gt;Font Awesome&lt;/a&gt; for typograpy and icons, and &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; for comments.&lt;/p&gt;
+&lt;p&gt;As of this writing, the Squarespace site is still visible at &lt;a href=&#34;http://clauswilke.com&#34;&gt;http://clauswilke.com&lt;/a&gt;, but I’ll probably take it offline soon. In porting my site over, I have made sure that the direct links to posts remain the same, so that any bookmarks or direct links to posts should continue to work as before. The only difference may be the RSS feed, so if you’re subscribing through an RSS reader you may have to resubscribe to the new page. I have also ported all the comments, so the comments that were made on the Squarespace site are still visible on the new site.&lt;/p&gt;
+&lt;p&gt;So what were the things that bugged me about Squarespace? Most importantly, it felt like a huge black box, and I was worried that at some point all the work I was putting into my blog might just go up in flames if I wasn’t moving my data out in time. More specifically, here are six concrete issues I had:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;All the site data are in a big, proprietary database. While Squarespace has an export function, that function exports only text. Any images or other files uploaded to Squarespace cannot easily be exported.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Related to the previous point, there is no way to manage all the media files that one uploads to Squarespace. They live in some mysterious data store that Squarespace customers are not given access to. As a corollary of this set up, if one wants to use the same image in multiple posts one has to upload the image multiple times.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;While Squarespace posts can in principle be written in Markdown, Squarespace’s Markdown capabilities are limited and buggy. In particular:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Code blocks are buggy. Specifically, Squarespace doesn’t properly escape special characters in code blocks. This can make embedding code into Markdown posts a big headache.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Images cannot be inserted directly from the Markdown.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To insert images, one has to break the Markdown into two parts and insert an image block in between. As one does so, Squarespace rewrites the Markdown and turns all inline links into reference-style links. While this doesn’t alter the page output in any way, I prefer to use software that doesn’t randomly rewrite my source code.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The online Markdown editor Squarespace provides is slow and buggy. For longer pieces of text, the cursor is often displayed at the wrong location, so that it becomes difficult to edit the text at all.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It is not possible to extract excerpts of articles automatically. They need to be manually retyped. And excerpts cannot be entered in Markdown. And the formatting options for excerpts are limited. Excerpts simply don’t work very well in Squarespace at all.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The Squarespace user interface seems slow and cumbersome to me. Anything I want to do requires a lot of clicks.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Modifying the page design with Squarespace can be difficult. Certain superficial changes, such as colors or spacings, are generally easy. But other changes are difficult or even impossible. I frequently wanted to modify aspects of the design that I couldn’t. In theory, one can always inject custom CSS and modify the page that way. However, in practice it is often not clear how exactly the CSS would have to look, and which classes would need to be modified.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It took me about a day to set up the new web page on Github, and another two days to port all the posts over and fine-tune the page design. Since I had already written all my Squarespace posts in Markdown, copying them over to the new site was relatively straightforward. However, I took the opportunity to clean up some issues in most posts, so every post required 5-10 minutes of manual editing until it was properly ported.&lt;/p&gt;
+&lt;p&gt;Porting comments was a little more difficult, but by following &lt;a href=&#34;http://www.kenyagjohnson.com/techbytes/2013/5/19/import-squarespace-comments-into-disqus&#34;&gt;this guide&lt;/a&gt; I more or less made it work. It’s not perfect, and in particular the formatting is sometimes mangled, but at least the text is there. In general, I’m not too excited about having to use Disqus, since their business model relies on tracking users and selling ads, but the reality is that currently there is no viable competitor offering a comparable service, even for a fee. I have switched on guest posting in Disqus, so you can post comments here without having to sign up for a Disqus account.&lt;/p&gt;
+&lt;p&gt;I am still fiddling with the page design on the new blog. I feel the current design is Ok but not great. However, now that everything is collected in simple Markdown files, I feel I’m operating from a much more robust base and can work on the page design as I go forward. Also, the entire blog source is now openly available at &lt;a href=&#34;https://github.com/clauswilke/clauswilke.github.io&#34;&gt;https://github.com/clauswilke/clauswilke.github.io.&lt;/a&gt; Feel free to check it out or use as the base for your own page. Also feel free to share or re-host any of my posts. All code (CSS, HTML, JS) is licensed under the MIT license, and all posts are licensed (individually) under the &lt;a href=&#34;https://creativecommons.org/licenses/by-nd/4.0/&#34;&gt;CC BY-ND license.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Perfectly smooth transition between fixed and variable positioning of HTML elements using CSS and Javascript</title>
+      <link>/blog/2014/12/23/perfectly-smooth-transition-between-fixed-and-variable-positioning-of-html-elements-using-css-and-javascript/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/12/23/perfectly-smooth-transition-between-fixed-and-variable-positioning-of-html-elements-using-css-and-javascript/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The last couple of days I have been working on a new &lt;a href=&#34;https://wilkelab.org&#34;&gt;webpage.&lt;/a&gt; In doing so, I wanted to create a design where the menu bar initially resides at the bottom of the page and moves upwards as the user scrolls down. However, once the menu bar hits the top edge of the viewport, it should remain fixed there. A bit of googling quickly revealed a solution for this problem, using a combination of CSS and Javascript. However, I wasn’t happy with the solution, because it created a visible jump in the layout every time the menu bar hit the top edge of the screen. In fact, this jump is quite common among most web pages that use this design trick. For example, check out a &lt;a href=&#34;https://scholar.google.com/citations?user=Nc8U6E4AAAAJ&amp;amp;hl=en&#34;&gt;profile page on Google Scholar:&lt;/a&gt; As you scroll down, the heading above the publication list stays fixed as soon as it hits the top edge of the screen. And if you scroll slowly, you’ll see that the layout jumps the moment the element hits the top edge. I didn’t like this effect at all, so I devised a way to work around it.&lt;/p&gt;
+&lt;p&gt;Let’s first discuss how we implement this kind of effect in general. They key idea is to use a little bit of Javascript to monitor where on the screen the element of interest resides. The moment it hits the top edge of the viewport, we set it’s &lt;code&gt;position&lt;/code&gt; property to &lt;code&gt;fixed&lt;/code&gt; so it can’t move any further. If we scroll back down, we revert the setting so the element can move downwards again.&lt;/p&gt;
+&lt;p&gt;The following code will generate this effect:&lt;br /&gt;
+HTML:&lt;/p&gt;
+&lt;pre class=&#34;html&#34;&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;content-anchor&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sticky&amp;quot;&amp;gt;This turns sticky&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(The &lt;code&gt;content-anchor&lt;/code&gt; id is needed so the Javascript code can monitor where the sticky element should be on the page relative to the rest of the document. See the code below.)&lt;/p&gt;
+&lt;p&gt;CSS:&lt;/p&gt;
+&lt;pre class=&#34;css&#34;&gt;&lt;code&gt;#sticky {
+}
+
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Javascript (using the jQuery framework):&lt;/p&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;function sticky_relocate() {  
+    var window_top = $(window).scrollTop();  
+    var div_top = $(&amp;#39;#content-anchor&amp;#39;).offset().top;  
+    if (window_top &amp;gt; div_top) {  
+        $(&amp;#39;#sticky&amp;#39;).addClass(&amp;#39;stick&amp;#39;);  
+    } else {  
+        $(&amp;#39;#sticky&amp;#39;).removeClass(&amp;#39;stick&amp;#39;);  
+    }  
+}  
+
+$(function () {  
+    $(window).scroll(sticky_relocate);  
+    sticky_relocate();  
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check out a working example of this idea &lt;a href=&#34;https://jsfiddle.net/0zxxrjqj/&#34;&gt;here.&lt;/a&gt; What you will notice, if you scroll slowly, is that just as the sticky element hits the top edge of the viewport, the bottom element (“Main document”) jumps upwards. In fact, at the moment at which the sticky property is turned on, the sticky element covers most of the heading of the main document. This is exactly the same effect that you can see on the Google Scholar page and on countless other pages around the web.&lt;/p&gt;
+&lt;p&gt;What is going on here? What is happening is that as the sticky property is turned on, the sticky box is removed from the layout and displayed on top of the rest of the document. Hence, the height of that box is now missing from the layout, causing the visible jump. The solution is simple, of course: As we take out an element from the layout, we need to insert an alternative one of exactly the same size. The simple solution is to add a copy of the sticky element that we can show or hide as needed. The corresponding code looks as follows:&lt;/p&gt;
+&lt;p&gt;HTML:&lt;/p&gt;
+&lt;pre class=&#34;html&#34;&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;content-anchor&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sticky-phantom&amp;quot;&amp;gt;This turns sticky&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sticky&amp;quot;&amp;gt;This turns sticky&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;CSS:&lt;/p&gt;
+&lt;pre class=&#34;css&#34;&gt;&lt;code&gt;#sticky {
+}
+
+#sticky-phantom {
+    visibility: hidden;
+}
+
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Javascript:&lt;/p&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $(&amp;#39;#content-anchor&amp;#39;).offset().top;
+    if (window_top &amp;gt; div_top) {
+        $(&amp;#39;#sticky&amp;#39;).addClass(&amp;#39;stick&amp;#39;);
+        $(&amp;#39;#sticky-phantom&amp;#39;).show();
+    } else {
+        $(&amp;#39;#sticky&amp;#39;).removeClass(&amp;#39;stick&amp;#39;);
+        $(&amp;#39;#sticky-phantom&amp;#39;).hide();
+    }
+}
+
+$(function () {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I have provided a working implementation of this idea &lt;a href=&#34;https://jsfiddle.net/ju9ay0y7/&#34;&gt;here.&lt;/a&gt; As you can see, in this example the layout doesn’t jump at all. The scrolling is smooth the whole time.&lt;/p&gt;
+&lt;p&gt;This is such a simple trick that I’m surprised it is not used more often. Maybe now that I have posted it here, more people will use it, and we’ll see fewer jarring layout jumps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Virtual Books</title>
+      <link>/blog/2013/10/13/virtual-books/</link>
+      <pubDate>Sun, 13 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/13/virtual-books/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Blogs tend to be ephemeral. They are usually presented as a constant stream of novel contents, where the most recent posts are easily seen but the older posts can be difficult to discover. Even when blogs have excellent archive and search functions, I often wonder whether I have seen all the relevant posts on a topic. And the larger and more active a blog, the more of an issue it becomes. For example, one of my favorite blogs, &lt;a href=&#34;https://www.marksdailyapple.com/&#34;&gt;Mark’s Daily Apple,&lt;/a&gt; updates daily and contains thousands of interesting posts. Its archive lists posts by a variety of different criteria, and its search function generally returns relevant hits. Nevertheless, I often have difficulty finding my way around that blog. I’m never really sure that I’ve read the most important articles on a given topic, in the right order.&lt;/p&gt;
+&lt;p&gt;I would like my blog to have more permanence, and over time to develop into a useful resource that covers in depth a variety of important topics. As a first step towards this goal, I’m introducing a new section to the blog, &lt;a href=&#34;/virtualbooks&#34;&gt;Virtual Books.&lt;/a&gt; In this section, I am collecting blog posts into chapters of related topics, and the chapters into books. Think of the whole experiment as books that you can read as they are being written. As of today, there are two such virtual books in that section, &lt;em&gt;Scientific Writing&lt;/em&gt; and &lt;em&gt;Professional Development as a Scientist.&lt;/em&gt; For these two, I feel that I now have sufficient material online that organizing it more systematically makes sense. Over time, as I keep blogging on different topics, I’ll probably add a few more virtual books on different topics.&lt;/p&gt;
+&lt;p&gt;We’ll see how it goes. Let me know what you think. And also, let me know if you’d like me to post on a specific topic.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mobile apps—the bane of the modern mobile web experience</title>
+      <link>/blog/2013/09/29/mobile-appsthe-bane-of-the-modern-mobile-web-experience/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/29/mobile-appsthe-bane-of-the-modern-mobile-web-experience/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Have I ever mentioned that I hate mobile apps? I’m not talking about apps in general. I think it’s great that I can have a calculator on my phone, or skype. But apps that serve as replacements for websites, such as the facebook app or the linkedin app, I hate with a passion. I think they are a step backwards in web development. They degrade the mobile experience for all of us.&lt;/p&gt;
+&lt;p&gt;I encourage you to try the following experiment. Go to your favorite app store and read the reviews of a few mobile apps. What are the most common complaints? “This app lacks features.” “I can’t do with the app what I can do on the website.” “The iphone [android] app has feature X, why does the android [iphone] app lack this feature?” I have yet to encounter a mobile app that can be considered feature complete.&lt;/p&gt;
+&lt;p&gt;The original promise of web 2.0 was that we would never ever again have to worry about software installation, operating systems, or device type. As long as we had a network connection and a browser, we’d be able to use our favorite products and tools. And software developers should be able to deliver a better product, since they wouldn’t have to worry about implementing the same features over multiple architectures. On the desktop, this promise has actually played out. For example, whatever you think about facebook the product, you can’t argue that facebook the web platform isn’t a spectacular piece of web engineering. Similarly with google products, such as drive, gmail, or maps. Squarespace, my webhost, has a fantastic online content management system that allows you to develop both the content and the visual appearance of your website in an intuitive and interactive way right in your browser. In the mobile world, however, we haven’t made much progress. Mobile sites frequently don’t work that well or lack features. And mobile apps, the purported replacement for the mobile sites, also frequently don’t work that well or lack features. More often than not, I find myself requesting the desktop version of a page from my phone or tablet because only the desktop version lets me do what I want to do.&lt;/p&gt;
+&lt;p&gt;A particularly egregious case is squarespace, which—as I just said—is great on the desktop. On a mobile device, their content manager is utterly useless. In fact, squarespace in their infinite wisdom have decided that I shouldn’t even be allowed to log into their site if I’m on any type of “mobile” device.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; (What exactly is the difference between a macbook air and an ipad? That the latter needs an external keyboard?) The only option I have is their squarespace app, which, pardon my french, is utter crap. Thus, I have a tablet with computational power that would have been considered worthy of a supercomputer 15 years ago, but I still can’t use it for seemingly simple things such as maintaining my website.&lt;/p&gt;
+&lt;p&gt;Another things that bugs me is that most apps don’t synchronize their state across devices and platforms. Consider twitter. Let’s say I’m browsing twitter from my laptop and I get a new tweet. Great. I read it and I move on. An hour later I open the twitter app on my phone, and the app tells me proudly that I have a new tweet. Great! Let’s see what it is. Oh, it’s the same tweet I read already. A few hours later I open the twitter app on my tablet, and it also tells me proudly that I have a new tweet. Guess what. Yep, it’s the same tweet from before, which I’m now seeing for the third time.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; The twitter app is an interesting case because it looks almost identical to the twitter mobile web interface, with the main difference being that the number of followers I have properly updates on the web interface but not in the app. I’m still not quite sure what the point of the twitter app is.&lt;/p&gt;
+&lt;p&gt;The only app I’m pretty happy with is the gmail app, with the one caveat that it doesn’t allow me to create new labels. I’ve got to go to the gmail website for that purpose. The other app I’m quite happy with is the google drive app. In fact, I wrote part of this post using the google drive app on my phone. But that app also has important limitations. For example, while I can change fonts or font size, and can make things bold or italics, I can’t assign styles. Why?&lt;/p&gt;
+&lt;p&gt;Clearly, even the largest web corporations don’t have the manpower or capability to keep feature parity among their main website, their mobile site, and their mobile apps. I submit that we’d all be better off if mobile apps disappeared and the googles and facebooks of this world put all their energy into improving mobile web technology and mobile versions of their web sites.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Their argument is that their content manager might not fully work on a mobile device, and thus they’re trying to protect me from messing up my site. I’d prefer to be treated as an adult and allowed to mess up my site with my tablet if I so wish. I mean, how hard would it be to display a warning screen saying: “This might not work fully. Are you sure you want to proceed?”&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Of course I’ll see the message a fourth time when I open my email inbox. But I can’t fault Twitter for that, I chose to switch on email notifications. The take-home message for you, my reader, is that if you send me a tweet you can be sure I see it. A lot.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A blog needs a catchy title</title>
+      <link>/blog/2013/09/23/a-blog-needs-a-catchy-title/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/23/a-blog-needs-a-catchy-title/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;According to Internet Marketing 101, a blog needs a catchy title, a clear brand. Something that readers can remember easily and that evokes associations and emotions. The blog author’s name will usually not serve that purpose well. Even if it’s a cool name. Even if it’s as noteworthy a name as “Claus Wilke.” Therefore, with this post, I’m relaunching my blog under a different brand. Henceforth, this blog will be called “The Serial Mentor.”&lt;/p&gt;
+&lt;p&gt;I thought a lot about branding my blog, because I don’t want to box myself into a narrow niche. I’m never really sure what I’m going to be passionate about six months down the road. And I don’t really want to start a new blog every few months just so the blog’s brand can match my current fancy. However, I think there is a pretty strong constant in my life, something that has never gone away and hopefully never will. It’s my passion for mentoring people, for helping them perform to the best of their abilities. It’s what ultimately makes me get out of bed in the morning and go to work. I just really like to tell people what to do and how to live their lifes.&lt;/p&gt;
+&lt;p&gt;I think that the concept of the “Serial Mentor” captures this constant quite well. I may change the topic of my mentoring; I may even do a 180 on some of the advice I’m giving. But I’ll always try to give the best advice I can, to my best knowledge and judgement at the time. In my day job I’m a tenured professor, and academia is really the only thing I know anything about. Therefore, the target audience for my blog will be primarily young academics, from undergraduates to fledgling faculty members. But hopefully, even if you don’t fall into this group, you may discover some interesting material here.&lt;/p&gt;
+&lt;p&gt;Because of my target audience, many blog posts will revolve around topics of interest to academics, such as writing, public speaking, analyzing and presenting data, and so on. However, I will not limit myself to these topics. I take a broad view of mentoring; anything that makes my mentees perform better is fair game. Thus, for example, my interest in nutrition and fitness. We need to be in optimal physical condition to perform at our best mentally.&lt;/p&gt;
+&lt;p&gt;In particular, the food you eat needs to be healthy and enjoyable. If either element is missing, you won’t be happy and you can’t function at your optimum. Similarly, exercise needs to be invigorating and fun. If you hate going to the gym, or if your exercise wears you down so much that you’re constantly tired and in a bad mood, then you’re not getting sufficient return on your exercise investment. Ideally, exercise should be a small to moderate time investment (~3–6h/week) that keeps you feeling strong and awake the rest of the week.&lt;/p&gt;
+&lt;p&gt;For the next few weeks, I have more blog posts planned about writing and about public speaking, and I’ll also do a few posts on nutrition and exercise. Beyond that, who knows. Maybe I’ll blog about body language, or about building rapport with people, or about choosing the right lab or research project. I might even blog about blogging. If you have a specific topic you’d want me to write about, please ask me about it in the comments.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My new job</title>
+      <link>/blog/2013/09/01/my-new-job/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/01/my-new-job/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Today is the first day that I am officially Associate Chair of the newly formed Department of Integrative Biology. As I am finding out now, this is the worst calamity that has befallen me in my entire not-so-short life. I have never received that many condolences, that many pitiful looks, or that many expressions of sympathy. After I accepted the position, my predecessor, who is a close collaborator of mine and a mentor to me, told me he was torn between warning me of my impending doom and staying silent so he could be free. He ultimately chose his freedom. Most of the colleagues to whom I mention my new position assume I was coerced, likely at gunpoint. Alas, I actually volunteered for the job. Am I delusional or simply masochistic?&lt;/p&gt;
+&lt;p&gt;I may well be delusional, but I’m not masochistic. Fundamentally, I’m curious. I need to understand how things are and how they work. After seven years of teaching undergraduates at a major public university, I still had no clue about the inner workings of undergraduate education. Every year, I was teaching my main undergraduate course, the course I had originally been hired to teach. On top of that, I was teaching a few other things, mostly whatever struck my fancy. I had no idea if that was what was expected of me or not; I had no idea if what I was doing was best for the university or the students; and I certainly had no idea what anybody else was doing. Now, the person who should know all of this is the Associate Chair. It’s his job to coordinate all the teaching, all curriculum-related work, and all budgetary issues related to teaching, with the exception of salaries for tenured and tenure-track faculty members. Therefore, when the opportunity opened up for me to volunteer for that position, I decided to go for it. What better way to learn about a system than being in charge of it?&lt;/p&gt;
+&lt;p&gt;Now the thing is, even though my first official day is today, I’ve been de-facto Associate Chair since May. The reason is related to the two innocent words in the first sentence of this post, “newly formed.” We didn’t have a Department until today, we had a Section. The Section was part of the larger School of Biological Sciences, which took care of all teaching-related matters. The reorganization of the School into separate departments has been ongoing since late spring, and all the people who will have leadership roles in the new departments have been hard at work, mostly behind the scenes, to make sure things keep running smoothly. By now, I’ve got a pretty good idea of what it means to be Associate Chair. And I’m not yet ready to shoot myself. We’re good for now. Honestly.&lt;/p&gt;
+&lt;p&gt;The first few months as acting Associate Chair have certainly been interesting. I have learned a lot. For example, much of the upper university administration runs on emailing spreadsheets back and forth. As a strong supporter of version control and online repositories for everything, that was a bit of a shock to me. However, as part of the reorganization we’re trying to put better processes in place wherever we can. We now store the spreadsheets in shared folders.&lt;/p&gt;
+&lt;p&gt;I think this is going to be an exciting adventure. The reorganization gives us the opportunity to evaluate every single practice we have followed in the past and ask whether the practice truly serves the students and the college or whether we could do better. By dismantling the behemoth School of Biological Sciences, we’re giving curriculum-related decision making back to the individual departments, closer to the faculty members who are actually standing in the classroom and interacting with students. Yes, this will mean more administrative work for some faculty members. But it should also mean a better experience for the students, who ultimately are the reason we exist in the first place. I’m looking forward to this process, and I’m glad I’ll play a significant role in it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is consumer software creating a new generation of computer illiterates?</title>
+      <link>/blog/2013/08/30/is-consumer-software-creating-a-new-generation-of-computer-illiterates/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/30/is-consumer-software-creating-a-new-generation-of-computer-illiterates/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;When I was growing up, computers were a still a pretty unusual thing. As a result, people could generally be subdivided into two types: those that knew their way around computers and those that didn’t. The ones that knew their way around computers really knew things, often down to the hardware level. (I had a book listing the entire operating system of my Commodore, in machine language.) The others pretty much knew nothing, &lt;em&gt;and they knew that they knew nothing.&lt;/em&gt; So the world was in order. Everybody knew their place. These days, computers are ubiquitous. Everybody and their dog knows how to fill out a web form or install an app. Yet unless we venture beyond the shiny interfaces provided by the Microsofts, Apples, and Googles of this world we remain just as illiterate as the earlier generation. We just don’t know how much we don’t know.&lt;/p&gt;
+&lt;p&gt;What prompted me to write this post? At my university, I have the pleasure of using email service provided through Microsoft’s new Office365. And yesterday, I made the mistake of trying their email filtering solution. My goal was a simple one: Set up an email filter that takes all replies (but not original posts!) to a certain mailing list and moves those messages into a special folder. You should know that all messages to the list are tagged with a unique identifier, something like “[list-X]”, so it’s easy enough to find those messages. But how do we know a message is a reply, not an original post? Well, for original posts, “[list-X]” appears at the beginning of the subject line. For replies, the subject line usually begins with “Re: [list-X]” or “RE: [list-X]” or maybe even “Aw: [list-X]” (the latter happens if somebody is using an email program in the German language). So original posts and replies are easy enough to tell apart. All we have to do is create a filter rule that captures all posts whose subject contains, &lt;em&gt;but doesn’t begin with,&lt;/em&gt; the tag “[list-X]”. How hard could that be?&lt;/p&gt;
+&lt;p&gt;Well, in Office365, this is a problem of infinite difficulty. It cannot be done. You can filter by sender, you can filter by receiver, you can filter by keywords in the subject line, but you cannot filter for specific sequences of words, and you cannot filter for words that do appear in the subject line but not at the beginning. Now, if you’re a modern-day computer illiterate, you may think: “Well, of course Microsoft programmers couldn’t include a separate option for any random combination of conditions somebody could come up with. They have to make reasonable selection among common cases, and there’s just no way around that.” If this is your thinking, then what you do not know is that computer scientists have long had a simple solution to this problem, a solution called “regular expression.” (If you’ve never heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expressions&lt;/a&gt;, look them up. They are super powerful. They are the computing equivalent of a swiss army knife, a chain saw, and a pickup truck all in one.) All Microsoft would have to do is add one more option, “filter by regular expression,” and I could create the most spectacular filtering rules. And this option is trivial to implement. It would take a skilled programmer about an afternoon to add. Likely, the underlying filtering software in Office365 already employs regular expressions, so all that Microsoft programmers would have to do is allow me to access that software layer directly. But they don’t, and so I can’t.&lt;/p&gt;
+&lt;p&gt;Now, why don’t they add an option that would be tremendously useful and trivial to add? There are two possible interpretation. It’s either because they don’t want to scare us (benign interpretation) or because they don’t want us to be in control of our computers (malicious interpretation). Whatever the reason, the outcome is the same. If all you know is the polished user interface of consumer software, you’ll know computers as magical contraptions that can do incredible things, as long as somebody has thought of the things you might want to do. If you want to do something different, though, something unconventional, then that’s usually not possible, as far as you know. I suspect that if you have grown up in this environment, you don’t even know what it is you can’t do. You have no good mental model of the underlying technology, so you don’t know what should be easy and what might be difficult. Dumbed-down consumer software keeps you ignorant of the true power of computing technology.&lt;/p&gt;
+&lt;p&gt;A conspiracy theorist might pose that this is done on purpose. If you don’t really understand how computers work and what they are capable of, you don’t realize how easy it would be to, for example, take the metadata&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; of your phone and text messages and figure out with whom you’re likely having an affair. I don’t really believe in massive conspiracies, though, so I think the more likely explanation is that in the effort of making software simple and accessible to all, it’s often easier and less work to simply hide the true underlying capabilities. Either way, the end result is the same. Plenty of people who think they know how to use computers but really they don’t.&lt;/p&gt;
+&lt;p&gt;As to Office365, I’ll file a bug report. Fat chance they’ll act on it.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Metadata in this case means call and text records, but without their content. Basically a list of who did you call when, who called you, who did you text, and who texted you.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The emotional distress of being a new Twitter user</title>
+      <link>/blog/2013/08/19/the-emotional-distress-of-being-a-new-twitter-user/</link>
+      <pubDate>Mon, 19 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/19/the-emotional-distress-of-being-a-new-twitter-user/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I’ve finally broken down. I’ve made a Twitter account. For years, I tried to hold off, thinking that Twitter was something for a younger generation, with a better stomach for cryptic text messages. The typical Twitter conversation is such a random stream of letters and special characters, made up of usernames, hashtags, and abbreviations of regular words, that it makes the winning entry of an obsfucated perl contest look outright legible. My thinking was that I gave up on perl for a reason. Why should I subject myself to Twitter? Anyway, this weekend I broke down and made a Twitter account. And I have to admit that it has its uses. While I don’t see myself doing long conversations over Twitter any time soon, I can see how it excels at disseminating and sharing information.&lt;/p&gt;
+&lt;p&gt;However, now that I’m exploring Twitter, I’m experiencing an entirely novel form of emotional social-networking distress: Who do you follow? And, more importantly, if people you know in real life follow you on Twitter, do you have to follow them back? Nothing I’ve learned from my experience on other social networking sites has prepared me for this dilemma. LinkedIn is easy. I treat it as a professional address book. If I’ve met you in person or had a professional interaction with you, I’ll connect with you on LinkedIn. Facebook is the same but for purely social interactions. If I’ve met you in a social setting, I’ll connect with you on Facebook. Of all the services I know, Google+ is the closest to Twitter, since it doesn’t enforce reciprocal befriending. However, Google+ is easy too, because nobody uses it anyway, as far as I can tell. And in any case, Google+ always gives you the option to put people into the circle for “people I know but don’t really care about.”&lt;/p&gt;
+&lt;p&gt;So here are my Twitter rules, for now: If you’re a student in my lab, I’ll follow you, because I want to get to know you better. If you’re a family member, I’ll follow you, because it would be embarrassing not to. If I’m genuinely curious about you or your work, I’ll follow you. If I’m unsure if I should follow you or not, I’ll hold off for now. Since I’m still figuring all of this out, I’d rather have the list of people I’m following grow slowly than add a bunch of people right away and have to later remove them when I realize I wasn’t interested in them afterall.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

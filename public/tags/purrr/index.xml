@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>purrr on Claus O. Wilke</title>
+    <link>/tags/purrr/</link>
+    <description>Recent content in purrr on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/purrr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading and combining many tidy data files in R</title>
+      <link>/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2016/06/13/reading-and-combining-many-tidy-data-files-in-r/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update June 16, 2019:&lt;/strong&gt; &lt;em&gt;This post is now three years old, and some of the advice given is now outdated. Most importantly, it is much better to use &lt;code&gt;map_dfr()&lt;/code&gt; than &lt;code&gt;map(...) %&amp;gt;% reduce(rbind)&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Everybody who is familiar with the R libraries for processing of tidy data, such as &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt;, knows how powerful they are and how much one can get done with just a few lines of R code. However, similarly, everybody who has used them has probably spent more time bringing data into the appropriate tidy format than writing analysis and/or plotting code. In particular, one scenario that arises all the time is that even if data files are in tidy format, the entire dataset may be spread out over many individual files, and loading them all in and combining them into one large table can be cumbersome. Here, I want to demonstrate some neat tricks, using the relatively new package &lt;code&gt;purrr&lt;/code&gt; and some recent additions to the package &lt;code&gt;tidyr&lt;/code&gt;, that make loading and combining many data files a piece of cake.&lt;/p&gt;
+&lt;p&gt;The code shown here depends on the following R packages:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(readr)  # for read_csv()
+require(dplyr)  # for mutate()
+require(tidyr)  # for unnest()
+require(purrr)  # for map(), reduce()&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;reading-in-all-files-matching-a-given-name&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Reading in all files matching a given name&lt;/h2&gt;
+&lt;p&gt;As an example, we will consider a scenario where we have population census data for various cities, stored in individual csv files for each city. The data I’m using here comes from &lt;a href=&#34;http://factfinder.census.gov/&#34; class=&#34;uri&#34;&gt;http://factfinder.census.gov/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first scenario we will consider is one where we want to read all csv files in the current working directory. To achieve this goal, we first list all &lt;code&gt;*.csv&lt;/code&gt; files, using the function &lt;code&gt;dir()&lt;/code&gt;. We find that there are three, for the cities Houston, Los Angeles, and New York:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# find all file names ending in .csv 
+files &amp;lt;- dir(pattern = &amp;quot;*.csv&amp;quot;)
+files&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Houston_TX.csv&amp;quot;     &amp;quot;Los Angeles_CA.csv&amp;quot; &amp;quot;New York_NY.csv&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can then read in those files and combine them into one data frame using the &lt;code&gt;purrr&lt;/code&gt; functions &lt;code&gt;map()&lt;/code&gt; and &lt;code&gt;reduce()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- files %&amp;gt;%
+  map(read_csv) %&amp;gt;%    # read in all the files individually, using
+                       # the function read_csv() from the readr package
+  reduce(rbind)        # reduce with rbind into one dataframe
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Often, we want to read the data from a given directory rather than from the current working directory. The ability to define functions on-the-fly in &lt;code&gt;purrr&lt;/code&gt; makes this easy:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_path &amp;lt;- &amp;quot;city_data&amp;quot;   # path to the data
+files &amp;lt;- dir(data_path, pattern = &amp;quot;*.csv&amp;quot;) # get file names
+
+data &amp;lt;- files %&amp;gt;%
+  # read in all the files, appending the path before the filename
+  map(~ read_csv(file.path(data_path, .))) %&amp;gt;% 
+  reduce(rbind)
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the expression &lt;code&gt;~ read_csv(file.path(data_path, .))&lt;/code&gt; is a shortcut for the anonymous function definition &lt;code&gt;function(x) read_csv(file.path(data_path, x))&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# this code does the exact same thing as the previous code
+data &amp;lt;- files %&amp;gt;%
+  map(function(x) read_csv(file.path(data_path, x))) %&amp;gt;%  
+  reduce(rbind)
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 3]
+## 
+##           location  year population
+##              (chr) (int)      (int)
+## 1      Houston, TX  2011    2142221
+## 2      Houston, TX  2012    2177376
+## 3      Houston, TX  2013    2216460
+## 4      Houston, TX  2014    2256192
+## 5      Houston, TX  2015    2296224
+## 6  Los Angeles, CA  2011    3828604
+## 7  Los Angeles, CA  2012    3864724
+## 8  Los Angeles, CA  2013    3902005
+## 9  Los Angeles, CA  2014    3936940
+## 10 Los Angeles, CA  2015    3971883
+## 11    New York, NY  2011    8287000
+## 12    New York, NY  2012    8365069
+## 13    New York, NY  2013    8436047
+## 14    New York, NY  2014    8495194
+## 15    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;keeping-auxilliary-information-about-the-files-read&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Keeping auxilliary information about the files read&lt;/h2&gt;
+&lt;p&gt;One limitation of the previous approach is that we don’t keep any auxilliary information we may want to, such as the filenames of the files read. To keep the filename alongside the data, we can read the data into a nested dataframe rather than a list, using the &lt;code&gt;mutate()&lt;/code&gt; function from &lt;code&gt;dplyr&lt;/code&gt;. This gives us the following result:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- data_frame(filename = files) %&amp;gt;% # create a data frame
+                                         # holding the file names
+  mutate(file_contents = map(filename,          # read files into
+           ~ read_csv(file.path(data_path, .))) # a new data column
+        )  
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [3 x 2]
+## 
+##             filename  file_contents
+##                (chr)          (chr)
+## 1     Houston_TX.csv &amp;lt;tbl_df [5,3]&amp;gt;
+## 2 Los Angeles_CA.csv &amp;lt;tbl_df [5,3]&amp;gt;
+## 3    New York_NY.csv &amp;lt;tbl_df [5,3]&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To turn this data frame into one useful for downstream analysis, we use the function &lt;code&gt;unnest()&lt;/code&gt; from &lt;code&gt;tidyr&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;unnest(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [15 x 4]
+## 
+##              filename        location  year population
+##                 (chr)           (chr) (int)      (int)
+## 1      Houston_TX.csv     Houston, TX  2011    2142221
+## 2      Houston_TX.csv     Houston, TX  2012    2177376
+## 3      Houston_TX.csv     Houston, TX  2013    2216460
+## 4      Houston_TX.csv     Houston, TX  2014    2256192
+## 5      Houston_TX.csv     Houston, TX  2015    2296224
+## 6  Los Angeles_CA.csv Los Angeles, CA  2011    3828604
+## 7  Los Angeles_CA.csv Los Angeles, CA  2012    3864724
+## 8  Los Angeles_CA.csv Los Angeles, CA  2013    3902005
+## 9  Los Angeles_CA.csv Los Angeles, CA  2014    3936940
+## 10 Los Angeles_CA.csv Los Angeles, CA  2015    3971883
+## 11    New York_NY.csv    New York, NY  2011    8287000
+## 12    New York_NY.csv    New York, NY  2012    8365069
+## 13    New York_NY.csv    New York, NY  2013    8436047
+## 14    New York_NY.csv    New York, NY  2014    8495194
+## 15    New York_NY.csv    New York, NY  2015    8550405&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;creating-filenames-from-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Creating filenames from data&lt;/h2&gt;
+&lt;p&gt;In the previous examples, we have read in all the data files in a given directory. Often, however, we would rather read in specific files based on other data we have. For example, let’s assume we have the following data table:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cities &amp;lt;- data_frame(city = c(&amp;quot;New York&amp;quot;, &amp;quot;Houston&amp;quot;),
+                     state = c(&amp;quot;NY&amp;quot;, &amp;quot;TX&amp;quot;),
+                     area = c(305, 599.6))
+cities&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [2 x 3]
+## 
+##       city state  area
+##      (chr) (chr) (dbl)
+## 1 New York    NY 305.0
+## 2  Houston    TX 599.6&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We want to use the city and state columns to create appropriate filenames and then load in the corresponding files. The code in its entirety looks as follows:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data &amp;lt;- cities %&amp;gt;% # start with the cities table
+  # create filenames
+  mutate(filename = paste(city, &amp;quot;_&amp;quot;, state, &amp;quot;.csv&amp;quot;, sep=&amp;quot;&amp;quot;)) %&amp;gt;%
+  # read in data
+  mutate(file_contents = map(filename,
+           ~ read_csv(file.path(data_path, .)))
+        ) %&amp;gt;% 
+  select(-filename) %&amp;gt;% # remove filenames, not needed anynmore
+  unnest() %&amp;gt;% # unnest
+  select(-location) # remove location column, not needed
+                    # since we have city and state columns
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Source: local data frame [10 x 5]
+## 
+##        city state  area  year population
+##       (chr) (chr) (dbl) (int)      (int)
+## 1  New York    NY 305.0  2011    8287000
+## 2  New York    NY 305.0  2012    8365069
+## 3  New York    NY 305.0  2013    8436047
+## 4  New York    NY 305.0  2014    8495194
+## 5  New York    NY 305.0  2015    8550405
+## 6   Houston    TX 599.6  2011    2142221
+## 7   Houston    TX 599.6  2012    2177376
+## 8   Houston    TX 599.6  2013    2216460
+## 9   Houston    TX 599.6  2014    2256192
+## 10  Houston    TX 599.6  2015    2296224&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I hope you have found these examples useful, and you will start loading files into nested data frames.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

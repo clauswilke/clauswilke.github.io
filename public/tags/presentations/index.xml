@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Claus O. Wilke</title>
+    <link>/tags/presentations/</link>
+    <description>Recent content in Presentations on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Giving effective presentations</title>
+      <link>/blog/2013/10/20/giving-effective-presentations/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/20/giving-effective-presentations/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Today, I gave a talk in our weekly departmental seminar about giving effective presentations. Here are the slides I used. Not all of them may make sense without the accompanying oral presentation. (There’s one slide in particular where I purposefully tell a different story than the slide does.) However, most of the material should make sense as is.&lt;/p&gt;
+&lt;p&gt;If anything is unclear, please ask questions in the comments!&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/cYcOAnmJQPQwbJ&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/wilkelab/giving-effective-presentations-oct-2013&#34;&gt;Giving effective presentations&lt;/a&gt; – Claus Wilke, Oct. 2013&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update July 3, 2018:&lt;/strong&gt; An updated and expanded version of this presentation &lt;a href=&#34;https://www.slideshare.net/ClausWilke/giving-effective-presentations-oct-2016&#34;&gt;is available here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A call for lightning talks at scientific conferences</title>
+      <link>/blog/2013/08/22/a-call-for-lightning-talks-at-scientific-conferences/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/22/a-call-for-lightning-talks-at-scientific-conferences/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;At this year’s BEACON Congress, we had undergraduate lightning talks. One student, three slides, five minutes. Next. I rather enjoyed this session. In my mind, some of the most engaging talks of that conference happened in that session. (And I’m not saying this just because my student Dariya won an award for best science presented.) This got me thinking. Maybe we should institute lightning talks more commonly at conferences. And not just for undergraduates, for everybody.&lt;/p&gt;
+&lt;p&gt;The beauty of the lighting talk is that presenters have to focus meticulously on the most relevant aspects of their work. And the good presenters absolutely manage to do that. They get their story across in three slides no problems. As expected, the bad presenters don’t. However, they wouldn’t do well with more time either, and at least a bad lightning talk is over quickly. Normally, a talk that bores you to death would continue on for twenty minutes or more, up to, God forbid, an entire hour if it’s a keynote speaker.&lt;/p&gt;
+&lt;p&gt;So here is my proposition: We should make lightning talks a more common feature of scientific conferences. Don’t just have lightning-talk sessions for undergraduates, also have them for more senior scientists (yes, up to and including established principal investigators). This would allow more people to present their work, and at the same time it would generate more opportunities for one-on-one interactions.&lt;/p&gt;
+&lt;p&gt;Specifically, I’d like to suggest the following. Consider a regular afternoon session at a conference, 2pm to 6pm, with two parallel tracks. Let’s assume 10 talks per track (approx. 20 minutes per talk plus one or two short coffee breaks). That’s 20 talks during the afternoon, of which any given conference attendee can see at most 10. I’d replace those two parallel tracks with a single track of lightning talks combined with associated poster sessions for the people who just presented. E.g., 2pm–2:50pm, 10 speakers give their lightning talks. 2:50pm–4pm, the same 10 speakers present their posters. 4pm–4:50pm, another 10 speakers give their lightning talks. 4:50pm–6pm, the second 10 speakers present their posters.&lt;/p&gt;
+&lt;p&gt;Do I think that all talks at conferences should be replaced by lightning talks? Probably not. (Even though I’m tempted to say yes, my tolerance for boring or poorly presented talks is pretty low.) However, a good mix of invited keynote talks, regular 20 minute talks, and lightning talks would probably make for a very exciting and dynamic conference. I hope somebody tries this out. If you do, please invite me!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My gripes with prezi, and some suggestions for making good prezi presentations</title>
+      <link>/blog/2013/08/21/my-gripes-with-prezis-and-some-suggestions-for-making-good-prezi-presentations/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/21/my-gripes-with-prezis-and-some-suggestions-for-making-good-prezi-presentations/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Prezi is all the rage lately. It seems everybody and their dog is switching over to prezi for presentations. My twitter stream has more prezis than it has powerpoints, keynotes, openoffices, or whatever else people use to make presentations. (Latex beamer? Please don’t tell me you use latex beamer.) Just last week, I gave a presentation on giving engaging presentations, and one of the first questions I received afterwards was what I thought about prezi. In my opinion, everything I said in my talk applied to prezi just the same as it did to powerpoint.&lt;/p&gt;
+&lt;p&gt;It seems that people think prezi will magically make their presentations wonderful. Well, I’ve got news for you: it won’t. If you don’t have a story, prezi won’t help you. If you tell your story backwards, prezi won’t help you. If you have no stage presence, prezi won’t help you. If your slide design is atrocious, prezi won’t help you. &lt;a href=&#34;/blog/2013/8/18/engaging-presentations-and-text-heavy-slides&#34;&gt;If you fill your slides with text you don’t read out aloud&lt;/a&gt;, prezi won’t help you. Moreover, prezi gives you the unique new power of &lt;a href=&#34;https://twitter.com/ClausWilke/status/370037036633182208&#34;&gt;making your audience seasick.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So what’s the deal with prezi, what problems does it cause, and how could we use the prezi paradigm to make great presentations? The unique feature that distinguishes prezi from most other presentation software is that instead of individual slides that you flip through you have one large canvas on which you can pan, rotate, and zoom. This allows for some really cool effects that are not possible with any other presentation software, but it also adds a whole new level of complexity. Essentially, to make the most of prezi, you need to have some knowledge about videography. Very few people fit that bill and are sought-after public speakers.&lt;/p&gt;
+&lt;p&gt;Specifically, the two main issues with the prezis I’ve seen are:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Unexpected and excessive camera movement. The whole presentation can feel like a roller-coaster ride. You never know what’s next, but for sure it’s going to be some serious flying over the canvas. Experienced videographers know that &lt;a href=&#34;http://blogs.cisco.com/channels/five_tips_for_filming_your_next_or_first_video/&#34;&gt;excessive panning and zooming is disturbing,&lt;/a&gt; but apparently this info has not yet filtered through to the typical prezi user.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Distracting and mysterious previews of the material to come. Prezi encourages a slide design where the contents of the next slide is visible in the present slide, albeit scaled down to a really small size. I think that’s a bad idea, because it distracts the audience. Every time I see a prezi, I start wondering which element of the current slide we’ll zoom to next. Can I find the hidden text in the current slide? Needless to say, while I’m having these thoughts, I’ve stopped listening to the speaker, and I’ll probably miss most of the salient points in the presentation.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I’ve thought a bit about how one could work around those issues, and I’ve come up with the following design concepts. This list is not exclusive; there are almost certainly other really cool ways to make prezi work. I just don’t have enough imagination to dream them up myself.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infinite pan:&lt;/strong&gt; Just choose one direction (up, down, left, right, whatever you prefer) and keep panning in that direction. Simple, predictable, boring. But it will not detract from your presentation. And that’s a good thing! Astute readers will of course have noticed that the infinite pan effect can also be achieved with transition effects in powerpoint or keynote.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infinite zoom out:&lt;/strong&gt; Start at the highest zoom level and add new material by zooming out further and further. The previous material will appear as a trail of little specks after a while. This might be a pretty cool effect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infinite zoom in:&lt;/strong&gt; Like the infinite zoom out but in reverse. Start at the lowest zoom level (where you can see the entire canvas at once) and keep zooming in. This effect has the disadvantage that it can cause the audience to speculate about what’s going to come next, so I wouldn’t use it. But otherwise it’s sufficiently predictable that’s it’s probably a reasonable choice.&lt;/p&gt;
+&lt;p&gt;In general, just choose a consistent movement pattern for your camera and stick to it. Also, make use of prezi’s ability to make things appear in the current viewport. If you have a slide with a title and three bullet points, I think you should zoom/pan/rotate to the appropriate viewport containing only the title. Then, the bullet points should appear one by one as you go over them, but without further movement of the camera.&lt;/p&gt;
+&lt;p&gt;Finally, I wish prezi added the possibility to swap canvases during the presentation. If it had that feature, it would have the best of both worlds. One could do regular powerpoint presentations (each new slide is a new canvas), pure prezi-style presentations (each new slide is just a different viewport on the same canvas), and hybrids (e.g., a different canvas is used for different major parts of the presentation). I suspect that some clever people could make really cool presentations with a system that allows for the hybrid design.&lt;/p&gt;
+&lt;p&gt;If you have a prezi that you think makes intelligent use of prezi’s paradigm, and that doesn’t have the issues I outlined above (disorienting movements and/or mysterious previews of things to come), please share that prezi with me. I’d like to be able to say that I’ve seen a great prezi.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Engaging presentations and text-heavy slides</title>
+      <link>/blog/2013/08/18/engaging-presentations-and-text-heavy-slides/</link>
+      <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/08/18/engaging-presentations-and-text-heavy-slides/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;At this year’s BEACON conference, &lt;a href=&#34;https://www.linkedin.com/in/artcovert&#34;&gt;Art Covert&lt;/a&gt; and I gave a presentation on how to give engaging presentations. The slides for my part of the presentation are available &lt;a href=&#34;http://figshare.com/articles/Giving_Effective_Presentations/775322&#34;&gt;here.&lt;/a&gt; If you browse through the slides, you’ll see that some of them are rather text-heavy. I did this on purpose, to demonstrate that text-heavy slides are not the bane of engaging talks, &lt;em&gt;if presented appropriately&lt;/em&gt;. By all accounts, despite the amount of text on my slides, &lt;a href=&#34;https://twitter.com/briandconnelly/status/368067764478439425/photo/1&#34;&gt;my presentation was engaging&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the first recommendations that we usually give our students is to put less text on their slides, and instead use images, drawings, and diagrams. I wholeheartedly agree with this recommendation in principle, and for most of my presentations I spend a lot of time developing graphics instead of text. However, I think that there are other recommendations that we should emphasize first; the text-heavyness of slides really is a minor issue. After all, one can absolutely give an excellent presentation using text-heavy slides, and one can also give a terrible presentation using slides with very little text.&lt;/p&gt;
+&lt;p&gt;Thus, I propose to replace the advice of using less text with the following advice, which I call &lt;em&gt;Claus’ 1st law of giving presentations&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All text on slides needs to be read aloud, word for word.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Similarly, all visual elements need to be pointed out and explained.) The problem with text-heavy slides arises when the presenter paraphrases the text or, even worse, talks about something completely different while displaying the text-heavy slide. The audience members cannot process two different streams of information, one visual and one auditory, at the same time. Hence, they have to make the decision of either listening or reading. Whatever decision they make, they will likely feel that they missed something, and they will be more likely to disengage from the presentation altogether. I believe in particular that when audience members start reading instead of listening to the presenter, the presenter has lost them at that point and will likely not get them back for the remainder of the talk.&lt;/p&gt;
+&lt;p&gt;By contrast, if the presenter reads the text word for word, the visual and the auditory cues reinforce each other. The audience will be more engaged and less likely to drift mentally. For the same reason, I like text to appear line by line, as I read it, rather than all in one block. Again, this increases the synchronicity between the visual and auditory cues and gives the audience members less opportunity to drift. If you ever get the chance to see a talk by Steven Pinker, observe how he reinforces auditory and visual cues. Nearly his entire talk is spelled out word for word on his slides. His slides basically serve as sub-titles to his voice. (You can probably find an example of this on YouTube. If you do, please post the link in the comments below.)&lt;/p&gt;
+&lt;p&gt;Note that an additional benefit of my 1st law is that you can never make slides &lt;em&gt;too&lt;/em&gt; text-heavy, because there is a limit to how much text you can read during the time alotted for your presentation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Claus O. Wilke</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Source Themes</title>
+      <link>/tags/source-themes/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/source-themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>/tags/books/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data visualization</title>
+      <link>/tags/data-visualization/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>O&#39;Reilly</title>
+      <link>/tags/oreilly/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/oreilly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/tags/r-markdown/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic writing</title>
+      <link>/tags/academic-writing/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/academic-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copy editing</title>
+      <link>/tags/copy-editing/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/copy-editing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story telling</title>
+      <link>/tags/story-telling/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/story-telling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writer&#39;s block</title>
+      <link>/tags/writers-block/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/writers-block/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic publishing</title>
+      <link>/tags/academic-publishing/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/academic-publishing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copyright</title>
+      <link>/tags/copyright/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/copyright/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Licensing</title>
+      <link>/tags/licensing/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/licensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open access</title>
+      <link>/tags/open-access/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/open-access/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggjoy</title>
+      <link>/tags/ggjoy/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggjoy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggridges</title>
+      <link>/tags/ggridges/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggridges/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graduate school</title>
+      <link>/tags/graduate-school/</link>
+      <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graduate-school/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD</title>
+      <link>/tags/phd/</link>
+      <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Peer review</title>
+      <link>/tags/peer-review/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/peer-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data wrangling</title>
+      <link>/tags/data-wrangling/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-wrangling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dplyr</title>
+      <link>/tags/dplyr/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dplyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>purrr</title>
+      <link>/tags/purrr/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/purrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eggs</title>
+      <link>/tags/eggs/</link>
+      <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/eggs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heart disease</title>
+      <link>/tags/heart-disease/</link>
+      <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/heart-disease/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research parasite</title>
+      <link>/tags/research-parasite/</link>
+      <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research-parasite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smoking</title>
+      <link>/tags/smoking/</link>
+      <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/smoking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active voice</title>
+      <link>/tags/active-voice/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/active-voice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passive voice</title>
+      <link>/tags/passive-voice/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/passive-voice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Figure captions</title>
+      <link>/tags/figure-captions/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/figure-captions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>/tags/tables/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Scholar</title>
+      <link>/tags/google-scholar/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google-scholar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preprints</title>
+      <link>/tags/preprints/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/preprints/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bibtex</title>
+      <link>/tags/bibtex/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bibtex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>/tags/latex/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reference manager</title>
+      <link>/tags/reference-manager/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reference-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Official style</title>
+      <link>/tags/official-style/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/official-style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>/tags/jekyll/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Squarespace</title>
+      <link>/tags/squarespace/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/squarespace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web hosting</title>
+      <link>/tags/web-hosting/</link>
+      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postdocs</title>
+      <link>/tags/postdocs/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/postdocs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>/tags/research/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CRAN</title>
+      <link>/tags/cran/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cowplot</title>
+      <link>/tags/cowplot/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cowplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data analysis</title>
+      <link>/tags/data-analysis/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scientific writing</title>
+      <link>/tags/scientific-writing/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/scientific-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funding</title>
+      <link>/tags/funding/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/funding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grants</title>
+      <link>/tags/grants/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/grants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NIH</title>
+      <link>/tags/nih/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nih/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NSF</title>
+      <link>/tags/nsf/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nsf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Undergraduate education</title>
+      <link>/tags/undergraduate-education/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/undergraduate-education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pre-publication review</title>
+      <link>/tags/pre-publication-review/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pre-publication-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MS Word</title>
+      <link>/tags/ms-word/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ms-word/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post-publication review</title>
+      <link>/tags/post-publication-review/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/post-publication-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>/tags/css/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>/tags/html/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web design</title>
+      <link>/tags/web-design/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editor</title>
+      <link>/tags/editor/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Revision</title>
+      <link>/tags/revision/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/revision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Citation counts</title>
+      <link>/tags/citation-counts/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/citation-counts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h index</title>
+      <link>/tags/h-index/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/h-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Double-blind review</title>
+      <link>/tags/double-blind-review/</link>
+      <pubDate>Sat, 18 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/double-blind-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Committee meeting</title>
+      <link>/tags/committee-meeting/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/committee-meeting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD committee</title>
+      <link>/tags/phd-committee/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/phd-committee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graduate students</title>
+      <link>/tags/graduate-students/</link>
+      <pubDate>Sun, 12 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graduate-students/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junior scientists</title>
+      <link>/tags/junior-scientists/</link>
+      <pubDate>Sun, 12 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/junior-scientists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual noise</title>
+      <link>/tags/visual-noise/</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/visual-noise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>/tags/statistics/</link>
+      <pubDate>Sat, 04 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>/tags/writing/</link>
+      <pubDate>Sat, 04 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolution</title>
+      <link>/tags/evolution/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/evolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intelligent design</title>
+      <link>/tags/intelligent-design/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/intelligent-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orphan genes</title>
+      <link>/tags/orphan-genes/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/orphan-genes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidy data</title>
+      <link>/tags/tidy-data/</link>
+      <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidy-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editing</title>
+      <link>/tags/editing/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/editing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference invitations</title>
+      <link>/tags/conference-invitations/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/conference-invitations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>/tags/teaching/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tenure</title>
+      <link>/tags/tenure/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tenure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tenure track</title>
+      <link>/tags/tenure-track/</link>
+      <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tenure-track/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fad diet</title>
+      <link>/tags/fad-diet/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fad-diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gluten</title>
+      <link>/tags/gluten/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gluten/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processed food</title>
+      <link>/tags/processed-food/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/processed-food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wheat</title>
+      <link>/tags/wheat/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wheat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uri Alon</title>
+      <link>/tags/uri-alon/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uri-alon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unknown unknowns</title>
+      <link>/tags/unknown-unknowns/</link>
+      <pubDate>Sun, 15 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unknown-unknowns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vision</title>
+      <link>/tags/vision/</link>
+      <pubDate>Sun, 15 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anxiety</title>
+      <link>/tags/anxiety/</link>
+      <pubDate>Sat, 14 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/anxiety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creativity</title>
+      <link>/tags/creativity/</link>
+      <pubDate>Sat, 14 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/creativity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discovery</title>
+      <link>/tags/discovery/</link>
+      <pubDate>Sat, 14 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/discovery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic career</title>
+      <link>/tags/academic-career/</link>
+      <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/academic-career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junior PI</title>
+      <link>/tags/junior-pi/</link>
+      <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/junior-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Senior PI</title>
+      <link>/tags/senior-pi/</link>
+      <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/senior-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graduate admissions</title>
+      <link>/tags/graduate-admissions/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graduate-admissions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recruitment weekend</title>
+      <link>/tags/recruitment-weekend/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/recruitment-weekend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Undergraduates</title>
+      <link>/tags/undergraduates/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/undergraduates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational biology</title>
+      <link>/tags/computational-biology/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computational-biology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing</title>
+      <link>/tags/computing/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental biology</title>
+      <link>/tags/experimental-biology/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/experimental-biology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glamour journals</title>
+      <link>/tags/glamour-journals/</link>
+      <pubDate>Sat, 04 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/glamour-journals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact factor</title>
+      <link>/tags/impact-factor/</link>
+      <pubDate>Sat, 21 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/impact-factor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ambition</title>
+      <link>/tags/ambition/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ambition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fear</title>
+      <link>/tags/fear/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specific Aims</title>
+      <link>/tags/specific-aims/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/specific-aims/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thesis proposal</title>
+      <link>/tags/thesis-proposal/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thesis-proposal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Audience</title>
+      <link>/tags/audience/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/audience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publication quality</title>
+      <link>/tags/publication-quality/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/publication-quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publication quantity</title>
+      <link>/tags/publication-quantity/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/publication-quantity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obesity</title>
+      <link>/tags/obesity/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/obesity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overfat</title>
+      <link>/tags/overfat/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/overfat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overweight</title>
+      <link>/tags/overweight/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/overweight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weight lifting</title>
+      <link>/tags/weight-lifting/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/weight-lifting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weight loss</title>
+      <link>/tags/weight-loss/</link>
+      <pubDate>Wed, 30 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/weight-loss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Critical need</title>
+      <link>/tags/critical-need/</link>
+      <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/critical-need/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/tags/twitter/</link>
+      <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducible research</title>
+      <link>/tags/reproducible-research/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reproducible-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assertion-evidence format</title>
+      <link>/tags/assertion-evidence-format/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/assertion-evidence-format/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentations</title>
+      <link>/tags/presentations/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/presentations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public speaking</title>
+      <link>/tags/public-speaking/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/public-speaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide design</title>
+      <link>/tags/slide-design/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/slide-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coach</title>
+      <link>/tags/coach/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/coach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Counselor</title>
+      <link>/tags/counselor/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/counselor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impostor syndrome</title>
+      <link>/tags/impostor-syndrome/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/impostor-syndrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mentoring</title>
+      <link>/tags/mentoring/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mentoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sponsor</title>
+      <link>/tags/sponsor/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sponsor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funding rates</title>
+      <link>/tags/funding-rates/</link>
+      <pubDate>Thu, 17 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/funding-rates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grammar</title>
+      <link>/tags/grammar/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/grammar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proof reading</title>
+      <link>/tags/proof-reading/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/proof-reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading comprehension</title>
+      <link>/tags/reading-comprehension/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reading-comprehension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>/tags/articles/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bodyweight training</title>
+      <link>/tags/bodyweight-training/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bodyweight-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bone density</title>
+      <link>/tags/bone-density/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bone-density/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bone loss</title>
+      <link>/tags/bone-loss/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bone-loss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resistance training</title>
+      <link>/tags/resistance-training/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/resistance-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yoga</title>
+      <link>/tags/yoga/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/yoga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>/tags/android/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Facebook</title>
+      <link>/tags/facebook/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/facebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linkedin</title>
+      <link>/tags/linkedin/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/linkedin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPhone</title>
+      <link>/tags/iphone/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/iphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flow</title>
+      <link>/tags/flow/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/flow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reader expectations</title>
+      <link>/tags/reader-expectations/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reader-expectations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stress position</title>
+      <link>/tags/stress-position/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stress-position/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic position</title>
+      <link>/tags/topic-position/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/topic-position/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogging</title>
+      <link>/tags/blogging/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exercise</title>
+      <link>/tags/exercise/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/exercise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nutrition</title>
+      <link>/tags/nutrition/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nutrition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serial Mentor</title>
+      <link>/tags/serial-mentor/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/serial-mentor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content generation</title>
+      <link>/tags/content-generation/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/content-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inner critic</title>
+      <link>/tags/inner-critic/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/inner-critic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freewriting</title>
+      <link>/tags/freewriting/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/freewriting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mind-mapping</title>
+      <link>/tags/mind-mapping/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mind-mapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Outlining</title>
+      <link>/tags/outlining/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/outlining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story line</title>
+      <link>/tags/story-line/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/story-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Longhand</title>
+      <link>/tags/longhand/</link>
+      <pubDate>Mon, 16 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/longhand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Warming up</title>
+      <link>/tags/warming-up/</link>
+      <pubDate>Mon, 16 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/warming-up/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cholesterol</title>
+      <link>/tags/cholesterol/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cholesterol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diabetes</title>
+      <link>/tags/diabetes/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/diabetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nutritional epidemiology</title>
+      <link>/tags/nutritional-epidemiology/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nutritional-epidemiology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Superfoods</title>
+      <link>/tags/superfoods/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/superfoods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>/tags/cv/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual design</title>
+      <link>/tags/visual-design/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/visual-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breakfast</title>
+      <link>/tags/breakfast/</link>
+      <pubDate>Wed, 04 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/breakfast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intermittent fasting</title>
+      <link>/tags/intermittent-fasting/</link>
+      <pubDate>Wed, 04 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/intermittent-fasting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-carb diet</title>
+      <link>/tags/low-carb-diet/</link>
+      <pubDate>Wed, 04 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/low-carb-diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Associate Chair</title>
+      <link>/tags/associate-chair/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/associate-chair/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cancer</title>
+      <link>/tags/cancer/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrative Biology</title>
+      <link>/tags/integrative-biology/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/integrative-biology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ketogenic diet</title>
+      <link>/tags/ketogenic-diet/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ketogenic-diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compensation</title>
+      <link>/tags/compensation/</link>
+      <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/compensation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Percent effort</title>
+      <link>/tags/percent-effort/</link>
+      <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/percent-effort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer illiteracy</title>
+      <link>/tags/computer-illiteracy/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computer-illiteracy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Office365</title>
+      <link>/tags/office365/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/office365/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/tags/software/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Science</title>
+      <link>/tags/science/</link>
+      <pubDate>Mon, 26 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fat loss</title>
+      <link>/tags/fat-loss/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fat-loss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-fat diet</title>
+      <link>/tags/low-fat-diet/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/low-fat-diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paleo diet</title>
+      <link>/tags/paleo-diet/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/paleo-diet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Email etiquette</title>
+      <link>/tags/email-etiquette/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/email-etiquette/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conferences</title>
+      <link>/tags/conferences/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powerpoint</title>
+      <link>/tags/powerpoint/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/powerpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prezi</title>
+      <link>/tags/prezi/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/prezi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Industry</title>
+      <link>/tags/industry/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/industry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Professional networking</title>
+      <link>/tags/professional-networking/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/professional-networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social networking</title>
+      <link>/tags/social-networking/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/social-networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Correlation</title>
+      <link>/tags/correlation/</link>
+      <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/correlation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect size</title>
+      <link>/tags/effect-size/</link>
+      <pubDate>Sun, 18 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/effect-size/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>/tags/academic/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

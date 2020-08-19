@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Figure captions on Claus O. Wilke</title>
+    <link>/tags/figure-captions/</link>
+    <description>Recent content in Figure captions on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/figure-captions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formatting figure captions and tables</title>
+      <link>/blog/2015/11/24/formatting-figure-captions-and-tables/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/11/24/formatting-figure-captions-and-tables/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Every scientist should know how to properly write and format figure captions and tables, yet this topic is rarely taught properly. We just hope that students and postdocs pick up this skill by osmosis. However, in my experience, this doesn’t necessarily happen or it may take a long time. To speed up this process, I gave a brief lecture on this topic in my graduate class today. Here are the slides I used. I hope you will find them useful.&lt;/p&gt;
+&lt;p&gt;If anything is unclear, please ask questions in the comments!&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/jpHipDowm0Mk20&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/ClausWilke/writing-and-formatting-figure-captions-and-tables&#34;&gt;Writing and formatting figure captions and tables&lt;/a&gt; – Claus Wilke, Nov. 2015&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

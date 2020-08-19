@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flow on Claus O. Wilke</title>
+    <link>/tags/flow/</link>
+    <description>Recent content in Flow on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/flow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing paragraphs that make sense—the topic and the stress position</title>
+      <link>/blog/2013/09/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;When you write a scientific article, you should lay out your ideas in such a way that your readers can follow them easily. Every new concept should flow directly from the previous material. Yet more often than not, scientific prose can be difficult to understand. What is going on? Readers expect certain pieces of information in certain positions in a sentence. Satisfy these expectations, and your readers will find your writing clear and convincing. Violate them, and your readers will be confused. All readers expect more or less the same things in the same places. And writers commonly violate these expectations. The two most important expectations readers have concern the kind of material that is presented at the beginning of a sentence, in the &lt;em&gt;topic position,&lt;/em&gt; and at the end, in the &lt;em&gt;stress position&lt;/em&gt;.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; Here I present my take on how to make the best use of these positions to produce clear and coherent prose.&lt;/p&gt;
+&lt;div id=&#34;the-topic-position&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The topic position&lt;/h2&gt;
+&lt;p&gt;The beginning of a sentence defines the topic the sentence will cover. Therefore, we refer to the beginning of a sentence as the &lt;em&gt;topic position.&lt;/em&gt; Your reader expects two things from the beginning of a sentence: (i) to get a sense of where the sentence (or paragraph, section, entire document) is heading; and (ii) to find a connection to something she knows already. The latter of the two expectations is the more important one. Fail to establish a good connection and you will almost certainly lose your reader’s interest and attention.&lt;/p&gt;
+&lt;p&gt;In the middle of a paragraph, you shouldn’t find it difficult to (re-)establish connection with new every sentence. Just start every sentence with a concept, thing, or person you have already mentioned. At the beginning of a paragraph, however, it can be much harder to get the topic position right. You have to make assumptions about what kinds of concepts, things, or persons your reader will likely be familiar with. Then, you can begin your sentence with one of those things. Don’t start off with something you don’t expect your reader to know. In case of doubt, assume your reader doesn’t know much about anything.&lt;/p&gt;
+&lt;p&gt;As an example of poor management of readers’ expectations, consider the opening sentence of an article on an alternative power source:&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;First proposed more than 30 years ago, systems to harvest utility-scale electrical power from ocean waves have recently been gaining momentum as a viable technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The very first phrase you read, “First proposed more than 30 years ago,” is a participle phrase referring to a noun (“systems to harvest […] power”) that we haven’t seen yet. Thus, as you start reading the sentence, you have absolutely no context into which to place the participle phrase. I suspect you were confused when you read this sentence.&lt;/p&gt;
+&lt;p&gt;We can try to fix this problem by moving the participle phrase to a different location:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Systems to harvest utility-scale electrical power from ocean waves, first proposed more than 30 years ago, have recently been gaining momentum as a viable technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The revised version is better but still has problems. First, by moving the participle phrase, we have created a new problem, the long distance between the subject (“systems to harvest […] power) and the predicate (“have […] been gaining momentum”). I will ignore this problem here because it doesn’t relate to the topic at hand. Second, the sentence has now in its topic position a relatively obscure technology that will not be familiar to the majority of readers. If the article had been written for a trade journal aimed at experts in wave-energy harvesting, this opening would be fine. But the article appeared in the journal &lt;em&gt;Science,&lt;/em&gt; and its diverse audience needs a different starting point. To find the right starting point, we have to determine which part of the sentence will be most familiar to the reader. At the same time, we have to decide which part of the sentence should receive the most emphasis, because the revised sentence should flow naturally from familiar material to important material. I haven’t yet discussed how we can write sentences that emphasize the right piece of information. So let me do this first, and then I’ll come back to this example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-stress-position&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The stress position&lt;/h2&gt;
+&lt;p&gt;The end of a sentence is perceived as the position of most emphasis. Therefore, we refer to it as the &lt;em&gt;stress position.&lt;/em&gt; The end of a self-contained part of a sentence, such as a clause, will also be perceived as having more emphasis, and we may refer to it as a stress position as well. You achieve maximum impact in your writing when you place the most important part of your sentence into the stress position.&lt;/p&gt;
+&lt;p&gt;The following two sentences demonstrate how meaning can change depending on what is put into the stress position:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Bears eat salmon in the summer.&lt;/li&gt;
+&lt;li&gt;In the summer, bears eat salmon.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first sentence emphasizes “summer.” This sentence tells us that while bears eat salmon in the summer they probably don’t do so during the rest of the year.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; Further, the sentence doesn’t tell us how much salmon the bears eat. If all you have is this sentence, you don’t know whether bears eat salmon only occasionally or as a staple. The second sentence, on the other hand, emphasizes “salmon.” It tells us that in the summer, bears eat primarily salmon and not something else. Yet this sentence does not make a strong statement about other times of the year. In spring, bears might well be eating the occasional salmon as well.&lt;/p&gt;
+&lt;p&gt;Seemingly minor differences in word order will make a huge difference in how your sentences are interpreted. Even if your readers don’t notice these differences consciously, they will be affected by them. If you place the least important part of a sentence into the stress position, your readers will probably perceive your sentence as weak and not convincing. For example, does the following sentence convey big news?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paul finally won after buying over 100 lottery tickets at the store.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When reading this sentence, you probably wondered what is so special about the store where Paul bought the tickets. Now consider an alternative version:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paul had to buy over 100 lottery tickets before he finally won.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This sentence has two stress positions. The primary one is at the end of the sentence and contains the most important piece of information, “finally won.” The second one is right before the “before” phrase and contains the second-most important piece of information, “over 100 lottery tickets.” The store is not even mentioned, because it doesn’t contribute anything useful to the story.&lt;/p&gt;
+&lt;p&gt;Now let’s go back to our example from the previous section:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;First proposed more than 30 years ago, systems to harvest utility-scale electrical power from ocean waves have recently been gaining momentum as a viable technology.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This sentence has two stress positions. They are occupied by “30 years ago” and by “viable technology.” The phrase “30 years ago” doesn’t seem to deserve much emphasis at all and is thus misplaced. The phrase “viable technology” deserves emphasis. Unfortunately, in this sentence it pushes the energy-harvesting technology into the background. For a reader who has never heard of this technology, that it exists at all might be more important than its increasing viability.&lt;/p&gt;
+&lt;p&gt;I propose the following revision:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A thirty-year old technology is gaining momentum as a viable source of alternative energy. This technology harvests utility-scale electrical power from ocean waves.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This revision places reasonable elements into both topic and stress positions. “A thirty-year old technology” in the topic position of the first sentence prepares the reader to learn something new about an old technology. Any reader with a broad interest in science and technology can relate to this opening. In the stress position of the first sentence, we have “a viable source of alternative energy.” This choice indicates to the reader that the article contains exciting news about alternative energy sources. The topic position of the second sentence repeats the topic of the first sentence, thus establishing connection. In the stress position of the second sentence, the reader learns about the nature of the technology. Somebody who has never before heard of energy harvesting from ocean waves will be surprised to learn that such a technology even exists. The stress position strengthens this experience of surprise.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-paragraphs-flow&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Making paragraphs flow&lt;/h2&gt;
+&lt;p&gt;When students hear about the topic and stress positions for the first time, they sometimes conclude that in a series of sentences the topic position of every sentence should contain what was in the stress position of the previous sentence. This is a misconception. The topic position should contain something that is familiar to the reader. Anything that has been mentioned in previous sentences will be familiar to the reader and can fill the topic position. So how do you decide what to put into the topic position? Think about which concept, thing, or person best defines the context of the sentence you intend to write and is most likely going to be familiar to the reader. That concept, thing, or person should be in the topic position.&lt;/p&gt;
+&lt;p&gt;Often, multiple subsequent sentences in a paragraph will have the same topic. In this case, the same person, thing, or concept will occupy the topic position of all these sentences. Consider the following two sentences from a news article on a research paper:&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shiqiang Wan and his collaborators at the Chinese Academy of Sciences’ Institute of Botany in Beijing set up 36 experimental plots on an Inner Mongolian steppe. They warmed some plots only during the day, others during night-time hours only, and yet others around the clock.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Both sentences tell us about the research S. Wan and his colleagues carried out. Therefore, both sentences have the researchers in the topic position, once by name and once in the form of a pronoun (“they”).&lt;/p&gt;
+&lt;p&gt;In the stress position of the first sentence, we have “experimental plots on an Inner Mongolian steppe.” Notice that these plots are mentioned again in the next sentence, but neither in the topic nor in the stress position. The stress position of the second sentence contains the various experimental treatments used. These treatments and their resulting consequences are the topic of the entire next paragraph:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Plots warmed only at night turned the steppe from a net carbon source to a net carbon sink; the extra warming overnight stimulated respiration rates, boosting the plants’ daytime rate of photosynthesis and so their uptake of carbon dioxide. The effects of separate day- or night-time warming did not add up to equal the effects observed at constantly warmed plots.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Notice how in this paragraph, experimental treatments (and their effects) are in the topic position of every sentence.&lt;/p&gt;
+&lt;p&gt;In other cases, the topic of each sentence varies as the paragraph unfolds. In this case, the topic positions should be occupied either by something mentioned previously or by something the reader can be expected to be familiar with. Consider this opening paragraph from a &lt;em&gt;Nature&lt;/em&gt; Editorial:&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On the 30th anniversary of the first description of AIDS, there is much progress to celebrate, but still much work to be done. Research breakthroughs continue to improve treatments and to provide evidence for newer, better strategies that could help people to protect themselves from infection and prevent those infected from spreading the virus. Just last month, researchers reported a study […] showing that when patients are treated early it reduces the chance that they will pass the virus on to uninfected partners by 96% […]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The beginning of the first sentence sets the stage for the entire paragraph: “the 30th anniversary of the first description of AIDS.” In the topic position of the second sentence, the author put “research breakthroughs.” This term implicitly links back to the phrase “much progress to celebrate” in the previous sentence. The third sentence begins with “just last month, researchers reported.” This phrase links back to “research breakthroughs” and prepares the reader to expect that the third sentence will give specific details about one of these breakthroughs. As you can see, each sentence has a different topic, but all sentences are logically connected to each other.&lt;/p&gt;
+&lt;p&gt;The concepts of topic and stress positions apply not only to individual sentences but also to larger syntactical units. For example, consider two sentences separated by a semicolon; the end of the first sentence serves as a secondary stress position while the end of the second sentence receives most emphasis. Similarly, the first sentence in a paragraph defines the topic for the entire paragraph, and the last sentence in the paragraph receives the most stress. The concept remains valid for even larger units of discourse. The first paragraph in a section should set the stage for the topic of the section, and, even though there will be many positions of emphasis throughout the section, the last paragraph in the section will hold the most emphasis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;one-paragraph-one-topic&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;One paragraph, one topic&lt;/h2&gt;
+&lt;p&gt;Because the material in the topic position defines the context of what is to come, it is important that each unit of discourse address only a single topic. At the level of individual sentences, most writers get this intuitively right. It is unlikely that anybody would write a single sentence about two separate topics. However, at the level of paragraphs, it is surprisingly common to see this principle violated. We have all read paragraphs that seem to have no clear point, or that just go on and on drifting from one topic to the next. In your own writing, make sure that every paragraph talks about exactly one specific topic. If you have written a paragraph and you wonder whether it might talk about more than one topic, split the paragraph in two. Repeat as necessary. Short and clear paragraphs are better than long and rambling ones. Likewise, subsections, sections, and chapters should also talk about a single, clearly defined topic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;This blog post is my personal take on the material presented in: Gopen and Swan. &lt;a href=&#34;http://www.americanscientist.org/issues/pub/the-science-of-scientific-writing&#34;&gt;The Science of Scientific Writing.&lt;/a&gt; American Scientist Nov. 1990.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;J. Scruggs and P. Jacob. &lt;a href=&#34;http://www.sciencemag.org/content/323/5918/1176.full&#34;&gt;Harvesting Ocean Wave Energy.&lt;/a&gt; &lt;em&gt;Science&lt;/em&gt; 323:1176-1178, 2009.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Note that I don’t actually know anything about the natural history of bears except that they hibernate in winter. I assume they eat salmon in the summer, but I may very well be wrong.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Research Highlight, August 12. &lt;a href=&#34;http://www.nature.com/nature/journal/v460/n7257/full/460783c.html&#34;&gt;Soil ecology: As different as day and night.&lt;/a&gt; &lt;em&gt;Nature&lt;/em&gt; 460:783, 2009.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Editorial, June 1. &lt;a href=&#34;http://www.nature.com/nature/journal/v474/n7349/full/474005a.html&#34;&gt;A big disease with a little name.&lt;/a&gt; &lt;em&gt;Nature&lt;/em&gt; 474:5, 2011.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Warm up before you write</title>
+      <link>/blog/2013/09/16/2013-09-16-warm-up-before-you-write/</link>
+      <pubDate>Mon, 16 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/16/2013-09-16-warm-up-before-you-write/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;In most pursuits of an artistic or physical nature, warming up is standard operating procedure. An opera singer wouldn’t go out on stage without first singing some arias in the dressing room. An olympic gymnast doesn’t step on the balance beam without some serious stretching, as well as a dry-run of her routine on the ground. A sprinter will do some light jogs, stretches, and maybe jumping jacks before the big race. But writers routinely fire up the word processor (or, like in the olden days, take out pen and paper) and attempt to write award-winning prose without any sort of warm up. I don’t think that’s very smart. I believe warming up is as important for writing as it is for singing, gymnastics, or track-and-field.&lt;/p&gt;
+&lt;p&gt;You do your best writing when you’re in the zone, when the words just flow out of your mind onto the paper. When you’re writing without pause for an hour or more, and then, when you finally take a break and look at what you’ve just done, you see that you’ve finished two pages of excellent, coherent material. How often do you, my reader, experience this state of flow? If this is your normal state of writing, then keep doing what you’re doing, you’re doing fine. My experience, though, from having talked to numerous students, and having taught a writing class for a couple of semesters, is that most people do not describe their regular writing experience in those terms. Much more common descriptions are: “I agonize over every word.” “I stare at a blank page/screen for hours.” “I write a sentence, only to immediately delete it and write it again, over and over.” “Writing is like drawing blood with a blunt needle.” If these latter sentences describe your experience while writing, then try to incorporate some warm-up exercises into your writing routine.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; I bet you it’s going to help.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How do you warm up? It’s easy. Just take an empty sheet of paper and a pen (or open a new document on your computer) and write down any thought that comes to your mind, for about 10-15 minutes. In this exercise, it doesn’t matter so much that you formulate complete sentences, or anything coherent at all. The only thing that matters is that you put words on paper, period. You might think: “But what if I have nothing to say? What if I run out of ideas?” The truth is your mind is never completely empty. However, there may be thoughts you may feel uncomfortable putting on paper, thoughts that are too incoherent, too embarrassing, too silly, to inappropriate. For the purpose of the warm-up, none of this matters. Just write it down anyway. You can always plan to burn the piece of paper afterwards, or to close the document without saving.&lt;/p&gt;
+&lt;p&gt;And if you truly don’t know what to write, just write that. It is fine to just write “I really have no idea what to write now. I’m supposed to write without pause, but my mind is empty. What can I write when I have nothing to write? I guess I have to write nothing then. Nothing is also words, though. Just words that say nothing.” and so on. &lt;strong&gt;The one thing you must not do is stop.&lt;/strong&gt; The goal of the exercise is to become familiar with the state of flow while writing. The more you experience the flow when writing inconsequential things, the more you’ll be able to recreate the same experience while writing something useful.&lt;/p&gt;
+&lt;p&gt;Does it matter whether you warm up on a computer or with pen and paper? It depends on your typing and thinking speed. I find that I can type faster than I can think. The result is that when I write on a computer, my hands frequently have to wait for my brain to catch up. This is not good for flow. If I write in longhand on paper, by contrast, my writing is slower than my thinking, and I never have to interrupt the constant flow of writing. I think that’s the better approach. It is much easier to reach a state of flow if you’re engaging in an activity that has absolutely no interruption. One that just hums along for 15-20 minutes. However, if you’re a slower typist, or if you can think faster than I can, then warming up on a computer may work for you. Also, if you’re less than 30 years old, you may never have written much in longhand in the first place, and doing so may feel so awkward that it disrupts the flow. I would say try it out and see what works best for you. There isn’t necessarily a one-size-fits-all solution.&lt;/p&gt;
+&lt;p&gt;If you’re already warming up before writing, or if you are going to try it out after reading about it here, please share your experience with me in the comments. I’d like to hear about how warming up for writing works for you.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you don’t have a writing routine, that’s a serious issue in itself. A topic for another post.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Warming-up by itself may not be sufficient, if you’re a severe case. There are other important techniques, such as silencing your inner critic. I’ll blog about that at some point in the future.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

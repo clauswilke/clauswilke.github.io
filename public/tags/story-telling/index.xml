@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Story telling on Claus O. Wilke</title>
+    <link>/tags/story-telling/</link>
+    <description>Recent content in Story telling on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/story-telling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Move over Strunk and White</title>
+      <link>/blog/2017/11/12/move-over-strunk-white/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/11/12/move-over-strunk-white/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;“Read Strunk and White” is the near universal recommendation any student receives who needs to improve their writing. I have only two explanations for this frequent recommendation: 1. People have never actually read Strunk and White or don’t remember anything about it.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 2. People have never read any book on writing other than Strunk and White and hence have nothing better to recommend. To provide an alternative, here I would like to present my all-time favorite books on writing, covering three distinct topics: storytelling, copy editing, and writing productively. My recommendations are made from the perspective of the scientist as a writer. Nevertheless, the books I recommend are written for a broad audience and will likely be useful for anybody who is writing non-fiction documents.&lt;/p&gt;
+&lt;div id=&#34;storytelling&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Storytelling&lt;/h2&gt;
+&lt;p&gt;Storytelling is probably the most important and least appreciated aspect of scientific writing. Every time you’re writing a scientific paper or a research grant, you need to tell a compelling story. Yet not many books on the market cover this aspect of writing. The one book that I’m aware of that does an outstanding job is &lt;em&gt;Writing Science&lt;/em&gt; by Schimel:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Joshua Schimel. &lt;em&gt;Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded.&lt;/em&gt; Oxford University Press, 2011.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Schimel explains what makes a story exciting and interesting, how to turn your scientific findings into a compelling story without compromising scientific accuracy, and how to structure sentences, paragraphs, sections, and entire documents such that your readers remain interested and engaged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;copy-editing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Copy editing&lt;/h2&gt;
+&lt;p&gt;The best story arc doesn’t get you very far if your individual sentences are incoherent, awkward, or confusing. There are many books on the market that teach you how to write grammatically correct and clear English sentences. Most of them are quite good. My all-time favorite among them is &lt;em&gt;Line by Line&lt;/em&gt; by Cook:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Claire Kehrwald Cook. &lt;em&gt;Line by Line: How to Edit Your Own Writing.&lt;/em&gt; Houghton Mifflin Harcourt, 1985.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This book does an amazing job of systematically covering the grammatical and stylistic issues every writer should be aware of, and all the while the book remains quite readable. Unlike most texts with an emphasis on grammar you can actually read the book cover to cover.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;writing-productively&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Writing productively&lt;/h2&gt;
+&lt;p&gt;The last area where many writers struggle is productivity. Despite extensive knowledge of storytelling and grammar, your writing sessions may well consist of hours of staring at a blank piece of paper or an empty computer screen, with the occasional writing and subsequent deletion of a single awkward sentence. How to overcome this struggle is covered well in &lt;em&gt;How to Write a Lot&lt;/em&gt; by Silvia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paul J. Silvia. &lt;em&gt;How to Write a Lot: A Practical Guide to Productive Academic Writing.&lt;/em&gt; American Psychological Association, 2007.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It turns out that there isn’t that much to be said about how to write a lot, other than that you have to write a lot. Silvia’s book makes no pretense otherwise, and that’s why I like it. Silvia covers the key concepts in a few short and highly readable chapters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bonus&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bonus&lt;/h2&gt;
+&lt;p&gt;As a bonus book, I want to recommend:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Richard L. Lanham. &lt;em&gt;The Longman Guide to Revising Prose.&lt;/em&gt; Person Longman, 2006.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have previously &lt;a href=&#34;/blog/2015/8/26/avoiding-the-official-style&#34;&gt;blogged about this book.&lt;/a&gt; While everything it contains is in some form also covered in Cook 1985 and in Schimel 2011, Lanham’s book shines in its brevity. It will teach you some key writing skills by laying out a small number of highly effective editing techniques.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;I’ll challenge anybody to read Strunk and White cover-to-cover without falling asleep, and to summarize afterwards what they have learned. The book is available online &lt;a href=&#34;http://www.jlakes.org/ch/web/The-elements-of-style.pdf&#34;&gt;in its entirety&lt;/a&gt;, so feel free to take this challenge right now.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Don’t use the passive voice?</title>
+      <link>/blog/2015/12/19/dont-use-the-passive-voice/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/12/19/dont-use-the-passive-voice/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I came across &lt;a href=&#34;https://www.youtube.com/watch?v=OV5J6BfToSw&#34;&gt;a talk by Steven Pinker&lt;/a&gt; on “Linguistics, Style and Writing in the 21st Century.” The talk is excellent and covers several important areas of writing advice. One of them is the topic of active and passive voice. I was pleased to see Pinker give the same advice I have been teaching for a while: The adage “don’t use the passive voice” is nonsensical. Clearly, passive voice cannot be categorically the wrong choice. If it were, then why should it even exist in the English language? There must be a valid use for this grammatical construct. Pinker provides one, and I agree with him. Here I’ll present this perspective in my own words.&lt;/p&gt;
+&lt;p&gt;To fully understand when to use active or passive voice, we need to first grasp the concepts of the topic and the stress position. I have previously written a &lt;a href=&#34;/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position&#34;&gt;blog post about this topic.&lt;/a&gt; Please go ahead and read it now. I’ll wait.&lt;/p&gt;
+&lt;p&gt;Now that we’re all on the same page, let’s proceed. The simple rule is this: Topic and stress trump active and passive. If the topic is the actor, use active voice. If the topic is being acted upon, use passive voice. Examples:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maria read a book.&lt;br /&gt;
+The book was read by Maria.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first is a story about Maria. The second is a story about a book.&lt;/p&gt;
+&lt;p&gt;As we construct a story, it is natural to move back and forth between active and passive while keeping the story focused on one protagonist:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;John woke up with a splitting headache. Grudgingly, he got out of bed, brushed his teeth, and put on some clothes. As he walked down the stairs, he dreaded another boring day at the office. Yet, as he opened the door, he was greeted with the most amazing sight he’d ever seen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Notice how everything is active voice until we reach “he was greeted” in the last sentence. This sentence needs to be in passive voice, so that John can remain in the topic position and “the most amazing sight he’d ever seen” takes on the stress position. Any attempt to use active voice here would result in a much weaker sentence.&lt;/p&gt;
+&lt;p&gt;Thus, it is best not to worry too much about active or passive voice. Instead, focus on telling a clear story by placing the the correct elements into the topic and stress positions of each sentence.&lt;/p&gt;
+&lt;div id=&#34;whats-the-problem-with-passive-voice-then&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What’s the problem with passive voice, then?&lt;/h2&gt;
+&lt;p&gt;If things are so simple, why do we keep hearing the advice to avoid passive voice? Because there are concrete issues that can arise when passive voice is used to excess, and I’ll briefly highlight the most important ones.&lt;/p&gt;
+&lt;p&gt;First, passive voice doesn’t convey action as strongly as active voice does. For example, consider these two sentences:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thomas baked a cake.&lt;br /&gt;
+The cake was baked.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first evokes the image of a person being active in the kitchen, mixing ingredients together, putting serious effort into the creation of a cake. The second evokes the image of a cake sitting in the oven.&lt;/p&gt;
+&lt;p&gt;Second, passive voice makes it easy to hide the actor. For example, compare:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I made a mistake.&lt;br /&gt;
+Mistakes were made.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first clearly assigns blame, the second doesn’t. Some writers deliberately use passive voice to hide the actor.&lt;/p&gt;
+&lt;p&gt;In scientific writing, though, I think it’s more common that the actor is omitted not with ill intentions but merely due to a lack of writing skills, or maybe because of a false sense of modesty. The result, however, can be rather confusing. In particular, whenever I read an abstract written in the passive voice, I start to wonder whether the authors are providing background information from earlier work or telling me what they have done. For a recent example, consider the beginning of the abstract from &lt;a href=&#34;http://www.nature.com/articles/srep18503&#34;&gt;this paper&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A fluorinated silyl functionalized zirconia was synthesized by the sol-gel method to fabricate an extremely durable superhydrophobic coating on cotton fabrics by simple immersion technique. The fabric surfaces firmly attached with the coating material through covalent bonding, possessed superhydrophobicity with high water contact angle ≈163 ± 1°, low hysteresis ≈3.5° and superoleophilicity. The coated fabrics were effective to separate oil/water mixture with a considerably high separation efficiency of 98.8 wt% through ordinary filtering. [. . .]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finally, passive voice encourages complex sentences with low content-to-word ratio, with long prepositional phrases, and with nouns attempting to carry the action—in a word, the &lt;a href=&#34;/blog/2015/8/26/avoiding-the-official-style&#34;&gt;official style.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In summary, pay more attention to topic and stress positions than to active and passive voice. However, in case of doubt, choose active over passive constructs.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

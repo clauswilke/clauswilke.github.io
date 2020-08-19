@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Short-term dieting is pointless.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2013/08/25/the-great-weight-loss-mystery/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2013/08/25/the-great-weight-loss-mystery/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2013/08/25/the-great-weight-loss-mystery/">
+  <meta property="og:title" content="The great weight-loss mystery | Claus O. Wilke">
+  <meta property="og:description" content="Short-term dieting is pointless."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2013-08-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2013-08-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>The great weight-loss mystery | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">The great weight-loss mystery</h1>
+
+  
+  <p class="page-subtitle">Short-term dieting is pointless.</p>
+  
+
+  
+    
+
+
+
+<meta content="2013-08-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2013-08-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Aug 25, 2013</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2013/08/25/the-great-weight-loss-mystery/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/fitness/">Fitness</a>, <a href="/categories/nutrition/">Nutrition</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2013/08/25/the-great-weight-loss-mystery/&amp;text=The%20great%20weight-loss%20mystery" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2013/08/25/the-great-weight-loss-mystery/&amp;t=The%20great%20weight-loss%20mystery" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=The%20great%20weight-loss%20mystery&amp;body=/blog/2013/08/25/the-great-weight-loss-mystery/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2013/08/25/the-great-weight-loss-mystery/&amp;title=The%20great%20weight-loss%20mystery" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=The%20great%20weight-loss%20mystery%20/blog/2013/08/25/the-great-weight-loss-mystery/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2013/08/25/the-great-weight-loss-mystery/&amp;title=The%20great%20weight-loss%20mystery" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The scientific consensus is that <a href="http://www.sciencedirect.com/science/article/pii/S0031938413002448">long-term weight loss and weight control is impossible.</a> Yet some people <a href="http://www.nwcr.ws/stories.htm">seem to manage.</a> So what gives? The truth is, nobody knows. The science of nutrition and weight loss is still recovering from 40 years of <a href="http://www.amazon.com/Good-Calories-Bad-Controversial-Science/dp/1400033462/">collective delusion</a>, and frankly most scientific studies in this field are not that insightful. (I do have high hopes, though, that the <a href="http://nusi.org/">Nutrition Science Initiative</a> is going to be a game changer. Some of the smartest people in the field, with access to very substantial private funding, should make a difference.) In the absence of solid science, I feel that I can freely speculate about why some people succeed and others don’t. So what follows below are my own opinions, poorly sourced and not scientifically proven.</p>
+<p>There are about six distinct approaches to weight loss (not necessarily mutually exclusive), and people have succeeded and failed on all of them: calorie counting, exercise, low-fat diets, low-carb diets, ancestral diets (paleo, primal), and intermittent fasting. The only thing that everybody seems to be able to agree on is that a low-protein diet (less than 0.7 grams of protein per pound of lean body mass per day) is not a good idea.</p>
+<p>Note that I’m following general convention here and talk about weight loss, even though we should really be talking about fat loss. There’s no reason to believe that muscle loss is good for anybody under any circumstances. Also note that I’m not considering surgery or drug-assisted methods for weight loss. (Yes, you can get ripped on <a href="http://en.wikipedia.org/wiki/Trenbolone">tren</a> and <a href="http://en.wikipedia.org/wiki/Clenbuterol">clen</a>. And no, I wouldn’t do it.) I’m also not discussing serious medical issues that would prevent weight loss, such as <a href="http://www.nlm.nih.gov/medlineplus/ency/article/000387.htm">insulinoma</a> or <a href="http://www.ncbi.nlm.nih.gov/pubmed/19730134">leptin deficiency</a>.</p>
+<p>So let’s consider the advantages and disadvantages of the six weight-loss approaches:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Calorie counting.</strong> Calorie counting absolutely works. If you meticulously keep track of everything you eat, and you make sure you eat at a consistent deficit of at least a few hundred calories a day, you will lose weight. However, there are a number of downsides: First, you have to be meticulous about keeping track, to the extent of weighing all your food. This requires an OCD-level of attention to your food intake. Second, as you restrict your food intake, you may feel low on energy, moody, or develop headaches. Third, long-term caloric restriction can mess up your leptin levels and your thyroid, and then you’ll need regular diet breaks to fix these issues, another level of complication.</p></li>
+<li><p><strong>Exercise.</strong> Conventional wisdom says that you need to exercise to lose weight. Yet the consensus these days, both among scientists and among fitness experts, is that exercise is a poor tool for weight loss. You generally can’t out-exercise a poor diet. I’ve seen estimates that maybe 5% of the population will be able to lose weight primarily through exercise and the remaining 95% will not. This statistic is easily verified in any gym, where you’ll find plenty of people that are fit, strong, and also overweight. My heart breaks everytime I see an obese person struggling on the treadmill or the elliptical. These people have seriously gotten the wrong advice. They’d be much better off fixing their diet and hanging out on the sofa in front of the TV than wasting their willpower on pointless exercise while keeping poor dietary habits.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p></li>
+<li><p><strong>Low-fat diets.</strong> Low-fat diets are the diets we’ve been told for years we should follow to lose weight. They are supported by people like Ornish, who has demonstrated remarkable health improvements in people on his diet. (In this context, it’s important to realize that Ornish has only ever compared his diet to the standard American diet full of refined carbohydrates and soft-drinks. There’s no evidence whatsoever that Ornish’s diet performs better than other well-formulated, healthy diets.) There can be no doubt that low-fat diets can work. Some people do really well on those diets. Yet many others do not. And if you’re an adult male, and care about your testosterone levels, you might stay clear of these diets because <a href="http://www.ncbi.nlm.nih.gov/pubmed/15741266">they lower testosterone levels.</a></p></li>
+<li><p><strong>Low-carb diets.</strong> Low-carb diets, aka the Atkins diet, have been extremely polarizing ever since Atkins wrote his first book. For the longest time, we’ve heard that the Atkins diet will clog your arteries and cause heart disease. At the same time, a few daring individuals tried it out and found they lost a lot of weight. Careful review of the scientific evidence shows that <a href="http://www.amazon.com/The-Art-Science-Carbohydrate-Living/dp/0983490708/">well-formulated low-carb diets are perfectly healthy,</a> and I suspect that most obese people will do very well on low-carb diets. Major downsides of low-carb diets are (i) poor societal acceptance; you’re constantly swimming against the stream; (ii) a 3-4 week induction phase during which you may feel miserable; (iii) reduced thyroid function and low leptin, which may require targeted carbohydrate refeeds to address. Also, while low-carb diets sometimes seem to work like miracles for very obese people, they are not a weight-loss panacea. In particular, to reach extreme levels of leanness it may be necessary to up the carbohydrate intake.</p></li>
+<li><p><strong>Ancestral diets (paleo, primal).</strong> Ancestral diets are primarily about food quality. While many people are hung up on the name “paleo,” these diets fundamentally boil down to the recommendation to avoid highly processed foods and foods that make you sick. I don’t see how anybody can take issue with these recommendations. I personally am a big fan of paleo diets, in particular Mark Sisson’s <a href="http://www.marksdailyapple.com/definitive-guide-to-the-primal-eating-plan/">primal approach to food</a>. At the same time, it must be said that just going paleo does not guarantee weight loss. In particular, if you knock yourself out on paleo desserts (e.g. banana-coconut smoothie, blueberry paleo ice cream, paleo muffins) you may find that the scales don’t move quite as much as you might have hoped.</p></li>
+<li><p><strong>Intermittent fasting.</strong> Intermittent fasting is the latest weight-loss craze. What it boils down to is skipping meals on a regular basis. For example, you could never eat breakfast, or you could eat only one meal a day, or you could eat only every other day. At this time, it’s not very well understood how to best fast intermittently, and whether the exact fasting schedule makes a difference. However, there can be no doubt that some people derive <a href="http://bradpilon.com/weight-loss/my-birthday-dexa-results/">impressive results from intermittent fasting.</a> The science on intermittent fasting is still in its infancy, and we don’t really know whether the results are mostly due to inadvertend caloric restriction (it’s hard to overeat if you eat only 1-2 times a day) or due to actual hormonal changes, e.g. improved insulin sensitivity. But one thing seems pretty clear: <a href="http://www.leangains.com/2010/10/top-ten-fasting-myths-debunked.html">skipping breakfast is not bad for you</a>, despite what you will read in <a href="http://www.cosmopolitan.com/celebrity/news/skipping-meals">Cosmopolitan</a> or <a href="http://eatthis.menshealth.com/node/77644">Men’s Health.</a></p></li>
+</ol>
+<p>The one thing I’m absolutely convinced of is that there’s not one best approach to weight loss. We all have different genetics, different personalities, and different societal pressures, that all affect which approaches may or may not work for us. Some people may do really well on calorie counting while others could never maintain the required discipline. Some people are really happy on low-carb, high-fat diets while others get grossed out by the amount of fat you have to consume on such diets. However, all approaches have in common that they require some amount of discipline; I’m not aware of any diet on which you can eat unlimited amounts of cookies. So it’s important to find an approach that works for you, and that you can stick with in the long run, with relative ease and consistency.</p>
+<p>I’m also convinced that short-term dieting is pretty pointless, unless you’re a bodybuilder or figure model getting ready for stage. You need to find an approach to eating (i.e., a diet) that you can maintain long-term, without thinking much about it. You should never think of diet as something you do for a few weeks to lose weight and then you stop. Diet is how you eat, every day, for the rest of your life. And if your diet doesn’t give you satisfaction, see if you can change it to something better. If I had to be on the Ornish diet, I’d feel like I’m eating sadness every day. By contrast, on my mostly low-carb, mostly paleo diet, I’m eating plenty of meat, eggs, fish, butter, cream, spinach (I love spinach), nuts, and dark chocolate, and I rarely if ever eat anything I’m not absolutely excited about.</p>
+<p>Finally, I believe that diet success largely depends on how well we can access the fuel stored as fat on our bodies. Approaches such as low-carb dieting, paleo, and intermittent fasting all create hormonal environments that increase metabolic flexibility and make it easier to use body fat for energy. The same hormonal changes may happen for those people who are successful on calorie-counting diets or extensive exercise, but not for those who fail on those approaches. Think about it as follows: Why is anybody ever hungry? One pound of fat contains roughly 3600 Calories, more than sufficient fuel for an entire day for most people. And very few people don’t carry at least a few pounds of extra fat on them. So why would they be hungry multiple times a day, clearly before those energy reserves have been used up? When we’re hungry, there is hormonal signaling that tells us we need to refuel, even though objectively we don’t. The more we can manipulate our body to suppress this hormonal signaling, the leaner we will be without experiencing discomfort.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>I’m not saying here that exercise is pointless. Exercise has a lot of benefits, it’s just not very useful for weight loss. Also, an obese person already gets plenty of exercise just by carrying around all the extra weight they do. Immagine strapping a backpack weighing 50 or 100 lb onto your back and walking around with it all day. That would be plenty of exercise, wouldn’t it? I think that for any person who is seriously overweight, the right strategy has to be to first lose weight purely by diet, and then start exercising once a normal weight range has been reached.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/fat-loss/">Fat loss</a>
+  
+  <a class="badge badge-light" href="/tags/intermittent-fasting/">Intermittent fasting</a>
+  
+  <a class="badge badge-light" href="/tags/low-carb-diet/">Low-carb diet</a>
+  
+  <a class="badge badge-light" href="/tags/low-fat-diet/">Low-fat diet</a>
+  
+  <a class="badge badge-light" href="/tags/paleo-diet/">Paleo diet</a>
+  
+  <a class="badge badge-light" href="/tags/weight-loss/">Weight loss</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

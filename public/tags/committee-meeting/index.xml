@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Committee meeting on Claus O. Wilke</title>
+    <link>/tags/committee-meeting/</link>
+    <description>Recent content in Committee meeting on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/committee-meeting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to schedule a committee meeting</title>
+      <link>/blog/2014/10/14/how-to-schedule-a-committee-meeting/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014/10/14/how-to-schedule-a-committee-meeting/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;One of the key challenges in obtaining a PhD is scheduling a committee meeting. In fact, I think that anybody who has managed to successfully schedule three or four committee meetings probably deserves a PhD just for that feat. After all, getting five professors into the same room at the same time is a tall order. Since scheduling committee meetings is such an integral part of graduate education, there should probably be a class on how to do this successfully. However, I don’t think any such class exists. So maybe this blog post can serve as a substitute.&lt;/p&gt;
+&lt;p&gt;We faculty members understand that we have to do committee meetings, as a service to the department and to help the students. Nearly all faculty members I know are strongly committed to serving on thesis committees. At the same time, we don’t really want to be in these meetings. Committee meetings take up a lot of time. In fact, just fielding questions related to scheduling committee meetings takes up a lot of time. So please try to keep this in mind, and make things as easy on us as possible. We want to help you, but you need to help us in return.&lt;/p&gt;
+&lt;p&gt;Now, how do you actually go about scheduling a meeting? First, let’s talk about some things that would best be avoided:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Don’t ask me to list all my availabilities between March 15 and June 1st. I’m not going to replicate my entire calendar into an email to you.&lt;/li&gt;
+&lt;li&gt;Don’t give me a list of 120 possible date/time combinations and ask me to check off all the ones that don’t work. See the previous point.&lt;/li&gt;
+&lt;li&gt;Don’t assume my availabilities remain unchanged for more than a couple of days. I once had a student ask me if my afternoon was open on a given Monday. I said yes. Six weeks later, and about a week before that Monday, he informed me that the committee meeting was going to be at 3pm. By that time I had already scheduled something else into that time slot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, I’d like to propose a scheduling strategy that generally works:&lt;/p&gt;
+&lt;p&gt;First, discuss possible dates and times with your adviser. Any times your adviser can’t make are a no-go, obviously. Then, ask your committee members to outline broadly which days/times generally do or don’t work. You can do this in an email or in person. You can also try to figure this out for yourself, by checking their teaching schedule, office hours, lab-meeting schedule, and so on. But I think asking is better.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; Also, you should ask the committee members whether they are going to be out of town any specific days/weeks during the time window in which you’d like to hold your meeting.&lt;/p&gt;
+&lt;p&gt;Once you’ve got a rough sense of everybody’s availability, find a few times that seem to work for everybody and propose a few variants of those times. For example, if it looks like everybody is mostly free on Tuesday afternoons, propose 2pm, 3pm, and 4pm on three successive Tuesdays. At this stage, I would recommend using a system such as &lt;a href=&#34;http://doodle.com/&#34;&gt;Doodle&lt;/a&gt; to quickly poll availability. The nice thing about Doodle is that I can see my colleagues’ answers, so if it looks like nobody can make Mon. afternoon then I don’t even have to check my calendar for that slot, I can just click “no” as well.&lt;/p&gt;
+&lt;p&gt;Importantly, limit the number of options you propose. If you’re proposing more than about 10 options you’re doing it wrong. Remember from point 3 of the list of things best avoided that quick turn-around is key. You want your committee members to read your message, click on the Doodle link, and quickly answer the poll. You don’t want them to read your message, click on the Doodle link, then recoil in horror and move on to do something else. In a perfect scenario, if you’ve done your leg-work properly, you can propose three to five possible times and one will work.&lt;/p&gt;
+&lt;p&gt;I strongly believe that proposing a small number of time slots is important even if you don’t have complete information about who is or is not available when. Quick turn-around always beats out having more complete information when it comes to scheduling. So, if you’re not sure what times would be good, just pick a few time slots at random and see what happens. Worst case scenario, none will work, and you do another round of Doodle. From your perspective, this may seem like an awful outcome, but it’s actually fine. Failed scheduling attempts happen all the time and we’re used to them. I’d rather complete two or even three Doodle polls with 10 options each than one with 100.&lt;/p&gt;
+&lt;p&gt;Finally, even if you make things really easy on your committee members, some may not respond to your email requests. In this case, the best strategy is just to show up in their office unannounced and ask them whether they’re available for a meeting on Thurs May 7 at 3pm. And of course, I hope you didn’t put anybody onto your committee who &lt;a href=&#34;/blog/2014/1/26/how-to-pick-a-thesis-committee&#34;&gt;is notoriously difficult to schedule.&lt;/a&gt; That would just be asking for trouble.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;You may wonder what the difference is between asking people about their general availability and asking them specifically when they can or cannot meet. The difference is efficiency. If you send me an email such as this one:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dear Claus,&lt;/p&gt;
+&lt;p&gt;I’d like to schedule a committee meeting for late May or early June. Are there any days that you are out of town during that time? Also, are there days/times that generally do or do not work for you?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I can respond:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’m around. MWF is usually bad, but I’m free most times TTH.&lt;br /&gt;
+Claus&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Writing this kind of a response will take me all of 2 minutes, and I’ll likely do it the moment I get your message. As a result, this exchange has saved you from proposing numerous times I would have declined, and it has saved me the time and effort it would have taken me to enter my entire calendar into Doodle.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Double-blind review sounds good in theory but runs into various obstacles in practice.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2014/10/18/should-peer-review-be-double-blind/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2014/10/18/should-peer-review-be-double-blind/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2014/10/18/should-peer-review-be-double-blind/">
+  <meta property="og:title" content="Should peer-review be double-blind? | Claus O. Wilke">
+  <meta property="og:description" content="Double-blind review sounds good in theory but runs into various obstacles in practice."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2014-10-18T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2014-10-18T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Should peer-review be double-blind? | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Should peer-review be double-blind?</h1>
+
+  
+  <p class="page-subtitle">Double-blind review sounds good in theory but runs into various obstacles in practice.</p>
+  
+
+  
+    
+
+
+
+<meta content="2014-10-18 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2014-10-18 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Oct 18, 2014</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2014/10/18/should-peer-review-be-double-blind/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/academia/">Academia</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2014/10/18/should-peer-review-be-double-blind/&amp;text=Should%20peer-review%20be%20double-blind?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2014/10/18/should-peer-review-be-double-blind/&amp;t=Should%20peer-review%20be%20double-blind?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Should%20peer-review%20be%20double-blind?&amp;body=/blog/2014/10/18/should-peer-review-be-double-blind/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2014/10/18/should-peer-review-be-double-blind/&amp;title=Should%20peer-review%20be%20double-blind?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Should%20peer-review%20be%20double-blind?%20/blog/2014/10/18/should-peer-review-be-double-blind/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2014/10/18/should-peer-review-be-double-blind/&amp;title=Should%20peer-review%20be%20double-blind?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>As part of the <a href="/blog/2014/10/12/in-defense-of-anonymous-peer-review">recent discussion on anonymous peer review,</a> several people spoke out in favor of double-blind peer review, where neither the authors nor the reviewers know who the others are. I have thought a lot about double-blind peer review, and I’m not entirely convinced, in particular when it comes to grant applications. While double-blind review might solve certain problems and remove certain biases, it would almost certainly amplify other issues, and whether the net effect would be good or bad is unclear. It would also give more power to people such as editors and program managers who operate outside the blinded process.</p>
+<p>So let’s discuss. I’ll first cover journal articles and then grant proposals. The two are very different, and what applies to one does not necessarily apply to the other.</p>
+<div id="journal-articles" class="section level2">
+<h2>Journal articles</h2>
+<p>On the face of it, double-blind peer review for journal articles seems like a no-brainer. It allows junior scientists to be judged on the merit of their work alone, and it prevents senior scientists from coasting through peer review on the basis of their good name. However, as always, the devil is in the detail. There are at least three reasons I can think of why double-blind review may not be such a great idea after all.</p>
+<p>First, the real power is with the editors, not the reviewers. It’s the editors who make the final decisions. And this power tends to increase with the perceived rank of the journal; editors of more prestigious journals are more likely to reject papers without review or because of a perceived lack of interest. We all know that you won’t publish in <em>Nature</em> if the <em>Nature</em> editors don’t like your work. And we also know that you can survive quite harsh reviewer criticisms if the <em>Nature</em> editors really want to publish your work.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Thus, one could make an argument that author names should be blinded to both reviewers and editors. But how would the editors invite unbiased reviewers if they don’t know who has a potential conflict of interest? The only practical way would be to have one editor invite the reviewers and another make the decision. This would be an interesting experiment, but I doubt any journal will go for it any time soon. Thus, as long as author names remain known to the handling editor, I doubt that double-blind review will make much of a difference.</p>
+<p>Second, blinding the authors of an article is incredibly hard. Just removing the author names from the first page of a paper will frequently not do. If the authors work on a unique study system, or make extensive use of their prior work, or have developed a specific software package, or have posted their data on a public repository, reviewers will likely be able to find out who they are. I once reviewed a paper where the authors had not only removed their names from the title page but also from citations to their own work in the reference list. I’m still amazed that somebody would (i) go to these lengths to conceal their identity and (ii) not realize that this action completely obliterated any anonymity they might otherwise have had. Double-blinding may create an illusion of anonymity where none actually exists.</p>
+<p>Third, double-blind review gives more power to scientists who are intent on submitting fraudulent work, because it is going to be harder for reviewers to identify patterns in the perpetrators’ activities. For example, I have my list of crooks with a solid portfolio on <a href="http://retractionwatch.com/">Retraction Watch,</a> and when I get to review one of their papers I’ll be extra careful. These are usually scientists whose activities slipped by me the first time I reviewed one of their papers, because everything looked fine on the surface. If I regularly had to review their papers in a double-blind fashion, they would probably manage to slip by me more frequently.</p>
+<p>One benefit of double-blind peer review, however, could be that even if the reviewers have a sense of which lab(s) may have been involved in a given study, they still won’t be able to guess the exact author list. For example, I don’t know to what extent reviewers are biased by the gender of the first author if a paper comes from an established lab, but if they are, that bias would likely disappear in double-blind review. Reviewers may guess correctly that the paper comes out of my lab, but they won’t know which of my students wrote it. Evidence in favor of this notion comes from one experiment in which double-blind peer review <a href="http://blogs.nature.com/peer-to-peer/2008/01/doubleblind_peer_review_reveal.html">increased the number of female first authors.</a> Similarly, when junior PIs continue working on research they begun in an established person’s lab, reviewers won’t be able to tell whether the paper comes from the established lab or the junior PI. This could work to the advantage of junior PIs.</p>
+<p>In summary, the positive and the negative aspects of double-blind review are about even, in my opinion. I have no major concerns about double-blind review, as long as I as an author am not expected to do anything more than remove my name from the author list. I’m not interested in going through my entire paper and making sure not a single sentence (e.g. “We have previously investigated…”) could give a hint at who I am. Also, we now frequently make all our data and code available in a github repository, and I’m not going to go through extra effort to conceal who I am there. Other than that, I’d be happy to support more experiments in double-blind peer review, and I’ll also be happy to support double-blind peer review more strongly if evidence in its favor continues to accumulate.</p>
+</div>
+<div id="grant-proposals" class="section level2">
+<h2>Grant proposals</h2>
+<p>Grant proposals are an entirely different beast than journal articles, and I do not think that double-blind proposal review is a good idea. There is a fundamental difference between a journal article and a proposal. An article is the finished product. A grant proposal, by contrast, is only the promise of a future product. If one scientist writes ten times more high-profile papers than another, then she should publish ten times more frequently in high-profile journals, without question. However, just because one scientist is ten times better at writing grant proposals than another doesn’t mean he deserves ten times the funds. In fact, only if that scientist can write ten times as many papers or write papers that are ten times as important (however measured) would he deserve ten times the grant funding.</p>
+<p>I strongly believe that the track record of past performance needs to be considered in proposal review. If you had to hand one person a check over a million dollars, would you rather give the money to somebody who consistently delivers interesting results, even if that person’s grant application doesn’t sound overly exciting, or would you prefer to give the money to somebody who can tell a great story but about whom you know nothing beyond that story. This thought is related to the idea (<a href="http://loop.nigms.nih.gov/2014/07/comment-on-proposed-pilot-to-support-nigms-investigators-overall-research-programs/">which is slowly sinking in with the NIH as well</a>) that it is generally better to fund people than projects, or at least to have a healthy mix of people-based and project-based funding. By definition, if you’re evaluating people, you cannot blind the evaluators to their identity.</p>
+<p>Now you could argue that the scientific review should be done blinded and the final funding decision be made by the program officer, who can take into account all the other relevant factors, such as track record, current funding of the applicant, etc. However, this would simply put more power into the hands of program officers, who might or might not use that power wisely. It’s certainly not unheard of for program officers in some agencies to preferentially fund their good buddies. The more power a program officer has to override a panel decision the more likely those situations are going to arise.</p>
+<p>Double-blind grant review is also open to several sorts of manipulation by applicants. First, it would be easier than it already is to base an application on dubious, sketchy, or even entirely made-up data, because nobody would ever know.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Second, applicants could pack their proposals with prior results obtained by the biggest shot in the field, causing the reviewers to think they’re reviewing an application by that lab and rank it higher because of that. You might say that that’s exactly the point, only ideas matter, but I’ve seen too many scientists with great ideas and poor execution to feel comfortable with funding decisions based exclusively on ideas.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>In conclusion, I don’t think that double-blind grant applications are the way to go. There are other ways to minimize biases in the review process. For example, panels could be given statistics on how many women and junior scientists submitted applications to a given competition, and if the composition of the top-ranked applicants deviates substantially from the overall composition of applicants then the panel could be asked to reconsider their rankings. In general, just paying attention to these kinds of biases and monitoring whether certain groups of applicants are disproportionally affected by either positive or negative decisions should prevent the most egregious biases.</p>
+<p><strong>Update (10/19/2014):</strong> The article I quoted <a href="http://blogs.nature.com/peer-to-peer/2008/01/doubleblind_peer_review_reveal.html">claiming an increased number of female first authors</a> under double-blind review has later <a href="http://www.nature.com/news/2008/080604/full/453711c.html">been called into question,</a> as comparable journals have similarly seen an increase in the number of female first authors during the same time period, without instituting double-blind review. Thanks to <a href="https://twitter.com/mattjhodgkinson">Matt Hodgkinson</a> for pointing this out.</p>
+<p><strong>Update #2 (10/19/2014):</strong> <a href="http://onlinelibrary.wiley.com/doi/10.1002/asi.22784/full">This paper,</a> pointed out to me by Matt Hodgkinson, provides a thorough review of what is currently known about biases in peer review. It shows mixed evidence on gender bias. In particular with respect to journal articles, current evidence suggests bias isn’t that pronounced (female and male authors have comparable acceptance rates).</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>I certainly have reviewed papers for <em>Nature</em> that I thought should not be published there and the editors overruled me. And this is fine; editors should have the ultimate decision power. I’m an editor myself, and on occasion I accept papers that reviewers say should be rejected. The point remains, though, that an editor who really wants to publish a paper will rarely be deterred by negative reviews, in particular if the reviews don’t call out egregious errors in the work.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Even under the current system of non-blinded review, grant applicants can include sketchy or made-up data with little risk to their career or reputation. While such activity is obviously fraudulent and will have severe consequences if discovered, the likelihood of discovery is low. First, only three to five other scientists ever see the application, and only for a short period of time. So if an applicant, for example, reuses the same data set in subsequent applications but labels the resulting figure differently, it’s very unlikely anybody would notice. Similarly, if an applicant claims preliminary data support one hypothesis and later publishes a paper supporting a different hypothesis, he could always argue that that is indeed how discovery went: first things looked one way but after more careful study it became clear the other way was right. Only the most blatantly obvious fraud, such as publishing fraudulent data in a paper and then using that paper as preliminary results in an application, has any likelihood of being discovered. For these reasons, a colleague of mine here at UT thinks that results that aren’t published or maybe at least deposited on a public archive should not be allowed in grant applications at all.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>As with everything in life, I think some balance is required here. Grant applicants should have to demonstrate some amount of prior expertise in the work they propose, but they should also be given the benefit of the doubt that some things can be worked out as the research is done.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/academic-publishing/">Academic publishing</a>
+  
+  <a class="badge badge-light" href="/tags/double-blind-review/">Double-blind review</a>
+  
+  <a class="badge badge-light" href="/tags/grants/">Grants</a>
+  
+  <a class="badge badge-light" href="/tags/peer-review/">Peer review</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2014/09/13/double-jeopardy/">Double Jeopardy</a></li>
+          
+          <li><a href="/blog/2014/01/04/how-glamour-journals-rose-to-prominence-and-why-they-may-not-be-needed-anymore/">How glamour journals rose to prominence, and why they may not be needed anymore</a></li>
+          
+          <li><a href="/blog/2013/12/21/is-there-an-avalanche-of-low-quality-research-and-if-so-must-we-stop-it/">Is there an avalanche of low-quality research, and if so, must we stop it?</a></li>
+          
+          <li><a href="/blog/2013/12/21/the-value-of-pre-publication-peer-review/">The value of pre-publication peer review</a></li>
+          
+          <li><a href="/blog/2014/10/12/in-defense-of-anonymous-peer-review/">In defense of anonymous peer review</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Claus O. Wilke</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fundamentals of Data Visualization</title>
+      <link>/project/fundamentals_dataviz/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/fundamentals_dataviz/</guid>
+      <description>&lt;p&gt;Read the book for free here: &lt;a href=&#34;https://serialmentor.com/dataviz&#34; target=&#34;_blank&#34;&gt;https://serialmentor.com/dataviz&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Purchase the book on Amazon here: &lt;a href=&#34;https://www.amazon.com/gp/product/1492031089&#34; target=&#34;_blank&#34;&gt;https://www.amazon.com/gp/product/1492031089&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Look at the book source here: &lt;a href=&#34;https://github.com/clauswilke/dataviz&#34; target=&#34;_blank&#34;&gt;https://github.com/clauswilke/dataviz&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Virtual Books</title>
+      <link>/project/virtual_books/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/virtual_books/</guid>
+      <description>&lt;p&gt;Many of my blog posts can be considered sections in books that I might have written &lt;a href=&#34;/blog/2013/8/17/a-blog-seriously&#34;&gt;but probably never would have.&lt;/a&gt; So, I&amp;rsquo;ve assembled &lt;a href=&#34;/blog/2013/10/13/virtual-books&#34;&gt;some of these books as they get written.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

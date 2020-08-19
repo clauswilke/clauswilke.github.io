@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This paper uses lots of math to say little of consequence.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/">
+  <meta property="og:title" content="A critique of Chatterjee et al., The Time Scale of Evolutionary Innovation, PLOS Comp. Biol. 2014. | Claus O. Wilke">
+  <meta property="og:description" content="This paper uses lots of math to say little of consequence."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2014-09-24T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2014-09-24T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>A critique of Chatterjee et al., The Time Scale of Evolutionary Innovation, PLOS Comp. Biol. 2014. | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">A critique of Chatterjee et al., The Time Scale of Evolutionary Innovation, PLOS Comp. Biol. 2014.</h1>
+
+  
+  <p class="page-subtitle">This paper uses lots of math to say little of consequence.</p>
+  
+
+  
+    
+
+
+
+<meta content="2014-09-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2014-09-24 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sep 24, 2014</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/science/">Science</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/&amp;text=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014." target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/&amp;t=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014." target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014.&amp;body=/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/&amp;title=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014." target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014.%20/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2014/09/24/a-critique-of-chatterjee-et-al-the-time-scale-of-evolutionary-innovation-plos-comp-biol-2014/&amp;title=A%20critique%20of%20Chatterjee%20et%20al.,%20The%20Time%20Scale%20of%20Evolutionary%20Innovation,%20PLOS%20Comp.%20Biol.%202014." target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>A paper published by PLOS Comp. Biol. this month, Chatterjee et al., <a href="http://www.ploscompbiol.org/article/authors/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003818">The Time Scale of Evolutionary Innovation</a>, espouses ideas that are quite similar in spirit to long-standing creationist arguments. I said as much in a <a href="https://twitter.com/ClausWilke/status/512774577076707328">few tweets.</a> After having made these comments, I have spent quite some time thinking this paper over. And I simply cannot convince myself that it makes an important contribution to evolutionary biology. It is possible that there’s something I’m missing, but to me the paper looks like a very convoluted and mathematically dense way of making a few tired, trivial, and maybe even tautological arguments.</p>
+<p>The paper, written by Krishnendu Chatterjee and Andreas Pavlogiannis of IST Austria and Ben Adlam and Martin Nowak from Harvard University, makes two fundamental claims: 1. Evolutionary adaptation needs exponential time to discover novel phenotypes. 2. An alternative process, the “regeneration process,” can discover novel phenotypes in polynomial time. Further, the paper claims that the regeneration process provides fundamental new insight into the process of evolutionary adaptation.</p>
+<p>I will break down my discussion of this paper into three parts: First, I’ll discuss the claim that evolutionary adaptation needs exponential time. Second, I’ll discuss the regeneration process. Third, I’ll ask whether this paper provides any novel biological insight. Let me also state upfront that this paper contains many pages of dense math, and I have not checked every equation in detail. In fact, I don’t think that’s necessary. I am happy to take the authors’ mathematical derivations at face value. What I’m discussing here are the assumptions the authors make going into their derivations and the conclusions they draw coming out.</p>
+<div id="does-evolutionary-adaptation-need-exponential-time" class="section level2">
+<h2>Does evolutionary adaptation need exponential time?</h2>
+<p>Whether or not evolutionary adaptation needs exponential time has been discussed since forever, because, in fact, this is one of the favorite topics of intelligent design creationists. Apparently, Chatterjee et al. are not aware of this discussion, because they cite neither the creationist arguments nor the counter-arguments by evolutionary biologists. I don’t really want to delve into the depths of this long-standing dispute. I’ll just point out the some of the key players and arguments. Then I’ll give a brief argument for why papers such as the current Chatterjee paper make no useful contribution to the question of whether or not evolution has had sufficient time to generate the life forms we see today.</p>
+<p>The exponential-time argument in its essence goes back to the “junkyard tornado” metaphor originally <a href="http://en.wikipedia.org/wiki/Junkyard_tornado">coined by Hoyle</a>:</p>
+<blockquote>
+<p>The chance that higher life forms might have emerged in this way is comparable to the chance that a tornado sweeping through a junkyard might assemble a Boeing 747 from the materials therein.</p>
+</blockquote>
+<p>The argument was subsequently made more sophisticated by Dembski in his book “No Free Lunch.” In this book, Dembski employs so-called “No-Free-Lunch” (NFL) theorems to argue that evolutionary search cannot be more efficient than just trying solutions at random. NFL theorems were discovered in the field of machine learning, and they state that all search algorithms perform equally poorly when averaged over all possible search spaces (i.e., fitness landscapes). When applied to evolution, the argument becomes that evolutionary adaptation is just as efficient (or rather, inefficient) at finding solutions as is the junkyard tornado. The main counter argument is that <a href="http://www.talkorigins.org/design/faqs/nfl/#irrel">evolution does not operate on all possible fitness landscapes but specifically on biological ones, which tend to be sufficiently smooth.</a> On a perfectly smooth, single-peaked fitness landscape, evolutionary adaptation finds the peak in logarithmic time (Wilf and Ewens, 2010). On a more rugged peak with some epistasis, search time can be slower, depending on the exact type and amount of epistasis (Ewert et al. 2012). Yet Covert et al. (2013) showed in simulations that certain types of epistasis can actually speed up evolution. (Disclaimer: I’m an author on the Covert paper.)</p>
+<p>I hope you can see where this is going. It is possible to construct mathematical models that produce any number of search times, from very rapid (logarithmic) to extremely slow (exponential or worse). The specific model that Chatterjee et al. propose is that of a fitness landscape in which peaks are surrounded by extended, flat valleys. On such a landscape, evolutionary search does indeed take exponentially long, because there are insufficient fitness gradients that can guide the population towards the fitness peaks. Instead, the population simply drifts randomly until it hits on a peak by accident.</p>
+<p>However, whether any of these mathematical models are actually relevant to the process of evolution as it happens in the natural world is ultimately an empirical question. No amount of mathematical theorizing can produce more insight than we already have. We have pretty good experimental evidence (e.g. Blount et al. 2012) and evidence from non-trivial computer simulations (e.g. Lenski et al. 2003) that evolution can produce quite sophisticated, non-obvious, and non-trivial novel functions within a few thousand generations. We also have increasingly good evidence that protein-coding genes can arise <em>de-novo</em> from non-coding DNA, through the accumulation of point mutations. For example, Knowles and McLysaght (2009) estimate that 18 such genes have arisen in humans since the human-chimpanzee divergence. Thus, in summary, the available empirical evidence is clearly at odds with the exponential-time argument.</p>
+</div>
+<div id="is-the-proposed-regeneration-process-a-viable-alternative" class="section level2">
+<h2>Is the proposed regeneration process a viable alternative?</h2>
+<p>Now, Chatterjee et al. would argue (I assume) that the empirical evidence is at odds with the exponential-time argument because evolution is actually more accurately described by their “regeneration process.” They define the regeneration process as an iterated evolutionary search, where the search starts over and over in a relatively small sphere around the target solution. And, surprise surprise, under this assumption the search does not take exponentially long.</p>
+<p>What is the cause of the regeneration process? The authors mention gene duplications and recombination. Ok, I can see how these processes could keep producing sequences in a particular region of the sequence space, and this region might be within a small sphere of the target. But note that this argument assumes the target happens to be near where these processes produce new sequence variants in the first place. Further, point mutations can similarly be the cause of the regeneration process: If the population happens to sit on a local peak next to the sphere of interest, it will also feed the regeneration process. In other words, the regeneration process simply describes evolution on a fitness landscape that violates the assumptions made in the first part of Chatterjee et al.’s paper. In fact, the whole thing seems tautological. The paper basically says: Evolution can only succeed on fitness landscapes that are structured such that evolution can succeed.</p>
+<p>There’s another issue I have with the way the authors present the regeneration process. They state that “evolution can be seen as a tinkerer playing around with small modifications of existing sequences rather than creating entirely new ones.” This phrasing makes me uncomfortable, because it reminds me of the <a href="http://www.talkorigins.org/indexcc/CH/CH350.html">discussion of “kinds”</a> in the creationist literature. What exactly is an “entirely new sequence”? I’d argue that this concept is vague to the point of being useless. We know of examples where homologous protein sequences share less similarity (below 1%) than would be expected from two randomly chosen sequences (Kinch and Grishin, 2002). If a sequence has diverged so much that nearly every position has changed, is it entirely new relative to its ancestor? We also know of examples where protein sequences that are clearly evolutionarily related fold into entirely distinct structures, structures that seem to have absolutely no relationship with each other (Grishin 2001). Would this count as a case where an entirely new protein evolved? Finally, we know of cases where a functional, protein-coding sequence arose through a few point mutations from a non-coding sequence (Knowles and McLysaght, 2009). Again, is this an entirely new protein? Evolution, which proceeds by descent with modification, is necessarily a stepwise, local search process. Thus, anything that evolves can be traced back to something that previously existed, and nothing “entirely new” can ever evolve, if we define “entirely new” as “not connected by a number of small modifications to something that existed before.” If by contrast “entirely new” is simply to mean “something that doesn’t obviously, to the human eye, look like something that existed before,” then we have plenty of examples where entirely new things have evolved, and the papers I quote in this paragraph provide some of these examples.</p>
+</div>
+<div id="does-this-paper-provide-novel-biological-insight" class="section level2">
+<h2>Does this paper provide novel biological insight?</h2>
+<p>What are the biological insights we can draw from this study? There is no doubt that the authors have done a lot of math, and that this math deserves to be published somewhere. But for publication in PLOS Computational Biology, the stated requirement is that the paper <a href="http://www.ploscompbiol.org/static/information">“provide profound new biological insights.”</a></p>
+<p>To be frank, there is little biology in this paper. However, one sentence drew my attention. In the first paragraph of the discussion, Chatterjee et al. state that their “process can also explain the emergence of orphan genes arising from non-coding regions [45].” This sentence got me excited. I’m quite interested in the origin of novel protein structures, and as I mentioned above, there is now pretty solid evidence that proteins can evolve from non-coding sequences. So I expected to find a section somewhere in the paper where they estimated the rate of such occurrences. Presumably, one could estimate the amount and sequence variation of non-coding DNA in a typical genome, and, assuming some model about the density of viable protein structures within that amount of random sequence, estimate the number of novel protein structures expected to evolve from non-coding DNA per genome and number of generations. Hopefully, that estimate would roughly agree with estimates from genomics data, such as the one provided by Knowles and McLysaght (2009).</p>
+<p>Alas, I was sorely disappointed. I searched both the main body of the text and the supporting materials for the word “orphan” and got a total of two hits, one in the sentence I just quoted and one in the title of their reference 45, a review of orphan genes (Tautz and Domazet-Lošo, 2011). To be absolutely sure I hadn’t missed any relevant passages, I also searched for the words “protein,” “peptide,” and “coding,” both in the main text and in the supplement, but couldn’t find any meaningful discussion about the evolution of novel coding sequences through these terms either. I don’t think there is a single piece of evidence in the entire paper to support Chatterjee et al.’s one claim of biological significance, that the proposed regeneration process can explain the origin of orphan genes.</p>
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
+<p>In summary:</p>
+<ol style="list-style-type: decimal">
+<li><p>Chatterjee et al.’s exponential time calculation seems similar in spirit to long-standing arguments raised by intelligent-design creationists such as Dembski and colleagues. Considering that these arguments have been raised and rebutted since forever, I don’t see that Chatterjee et al. make a particularly novel or useful contribution. They also fail to place their work into the context of these earlier arguments.</p></li>
+<li><p>The primary open problem in evolutionary biology remains a detailed characterization of the genotype-phenotype map, and, in particular, the question of how close in genotype are distinct high-fitness phenotypes. The Chatterjee et al. paper makes no attempt at answering this question. Instead it offers the tautology that evolution succeeds on fitness landscapes that are structured such that evolution can succeed.</p></li>
+<li><p>The paper makes the bold claim that it can explain the origin of orphan genes, without actually providing any concrete evidence. I am puzzled how this entirely unsupported claim made it past review.</p></li>
+</ol>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>Z. D. Blount, J. E. Barrick, C. J. Davidson, R. E. Lenski (2012). <a href="http://www.nature.com/nature/journal/v489/n7417/abs/nature11514.html">Genomic analysis of a key innovation in an experimental <em>Escherichia coli</em> population.</a> Nature 489:513–518.<br />
+A. W. Covert, R. E. Lenski, C. O. Wilke, C. Ofria (2013). <a href="http://www.pnas.org/content/110/34/E3171.full">Experiments on the role of deleterious mutations as stepping stones in adaptive evolution.</a> PNAS 110:E3171–E3178.<br />
+K. Chatterjee, A. Pavlogiannis, B. Adlam, M. A. Nowak (2014). <a href="http://www.ploscompbiol.org/article/authors/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003818">The time scale of evolutionary innovation.</a> PLoS Comput. Biol. 10:e1003818.<br />
+W. A. Dembski (2007). No Free Lunch: Why Specified Complexity Cannot Be Purchased without Intelligence. Rowman &amp; Littlefield.<br />
+W. Ewert W, W. A. Dembski, A. K. Gauger, R. J. Marks II (2012). <a href="http://www.bio-complexity.org/ojs/index.php/main/article/view/BIO-C.2012.4/BIO-C.2012.4">Time and information in evolution.</a> BIO-Complexity 4:1–7.<br />
+N. V. Grishin (2001). <a href="http://www.sciencedirect.com/science/article/pii/S1047847701943357">Fold change in evolution of protein structures.</a> J. Struct. Biol. 134:167–185.<br />
+L. N. Kinch and N. V. Grishin (2002). <a href="http://onlinelibrary.wiley.com/doi/10.1002/prot.10110/full">Expanding the nitrogen regulatory protein superfamily: Homology detection at below random sequence identity.</a> Proteins: Structure, Function, and Bioinformatics 48:75–84.<br />
+D. G. Knowles and A. McLysaght (2009). <a href="http://genome.cshlp.org/content/19/10/1752.full">Recent de novo origin of human protein-coding genes.</a> Genome Res. 19:1752–1759.
+R. E. Lenski, C. Ofria, R. T. Pennock, C. Adami (2003). <a href="http://www.nature.com/nature/journal/v423/n6936/abs/nature01568.html">The evolutionary origin of complex features.</a> Nature 423:139–144.<br />
+D. Tautz and T. Domazet-Lošo (2011). <a href="http://www.nature.com/nrg/journal/v12/n10/full/nrg3053.html">The evolutionary origin of orphan genes.</a> Nature Reviews Genetics 12:692–702.<br />
+H. S. Wilf and W. J. Ewens (2010). <a href="http://www.pnas.org/content/107/52/22454.full">There’s plenty of time for evolution.</a> PNAS 107:22454–22456.</p>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/evolution/">Evolution</a>
+  
+  <a class="badge badge-light" href="/tags/intelligent-design/">Intelligent design</a>
+  
+  <a class="badge badge-light" href="/tags/orphan-genes/">Orphan genes</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

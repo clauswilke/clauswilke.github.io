@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Claus O. Wilke</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Feb 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching a new introductory class in computational biology and bioinformatics</title>
+      <link>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/02/04/teaching-a-new-introductory-class-in-computational-biology-and-bioinformatics/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This semester, I’m teaching a new introductory class in computational biology and bioinformatics. The class is primarily targeted at undergraduates, and it is split approximately 50:50 between R and python. The R component emphasizes effective data analysis and visualization, using packages such as ggplot2 and dplyr. The python component will introduce students to basic programming concepts, and it will also cover some typical bioinformatics applications.&lt;/p&gt;
+&lt;p&gt;Developing a new class is a lot of work, so I’ll probably have much less time for posting here on my blog. However, on the flip side, the entire course content will be posted online, and you can &lt;a href=&#34;https://wilkelab.org/classes/SDS348_spring_2015.html&#34;&gt;follow along here.&lt;/a&gt; The core of each lecture is an in-class exercise worksheet, and I’m posting the worksheets and the solutions online. Many lectures also have a brief traditional lecture component with slides as well as additional reading materials. I’m developing the course as I go, so there will be new material posted twice a week throughout the spring.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

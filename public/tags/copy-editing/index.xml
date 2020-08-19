@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Copy editing on Claus O. Wilke</title>
+    <link>/tags/copy-editing/</link>
+    <description>Recent content in Copy editing on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/copy-editing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Move over Strunk and White</title>
+      <link>/blog/2017/11/12/move-over-strunk-white/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/11/12/move-over-strunk-white/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;“Read Strunk and White” is the near universal recommendation any student receives who needs to improve their writing. I have only two explanations for this frequent recommendation: 1. People have never actually read Strunk and White or don’t remember anything about it.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; 2. People have never read any book on writing other than Strunk and White and hence have nothing better to recommend. To provide an alternative, here I would like to present my all-time favorite books on writing, covering three distinct topics: storytelling, copy editing, and writing productively. My recommendations are made from the perspective of the scientist as a writer. Nevertheless, the books I recommend are written for a broad audience and will likely be useful for anybody who is writing non-fiction documents.&lt;/p&gt;
+&lt;div id=&#34;storytelling&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Storytelling&lt;/h2&gt;
+&lt;p&gt;Storytelling is probably the most important and least appreciated aspect of scientific writing. Every time you’re writing a scientific paper or a research grant, you need to tell a compelling story. Yet not many books on the market cover this aspect of writing. The one book that I’m aware of that does an outstanding job is &lt;em&gt;Writing Science&lt;/em&gt; by Schimel:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Joshua Schimel. &lt;em&gt;Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded.&lt;/em&gt; Oxford University Press, 2011.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Schimel explains what makes a story exciting and interesting, how to turn your scientific findings into a compelling story without compromising scientific accuracy, and how to structure sentences, paragraphs, sections, and entire documents such that your readers remain interested and engaged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;copy-editing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Copy editing&lt;/h2&gt;
+&lt;p&gt;The best story arc doesn’t get you very far if your individual sentences are incoherent, awkward, or confusing. There are many books on the market that teach you how to write grammatically correct and clear English sentences. Most of them are quite good. My all-time favorite among them is &lt;em&gt;Line by Line&lt;/em&gt; by Cook:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Claire Kehrwald Cook. &lt;em&gt;Line by Line: How to Edit Your Own Writing.&lt;/em&gt; Houghton Mifflin Harcourt, 1985.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This book does an amazing job of systematically covering the grammatical and stylistic issues every writer should be aware of, and all the while the book remains quite readable. Unlike most texts with an emphasis on grammar you can actually read the book cover to cover.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;writing-productively&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Writing productively&lt;/h2&gt;
+&lt;p&gt;The last area where many writers struggle is productivity. Despite extensive knowledge of storytelling and grammar, your writing sessions may well consist of hours of staring at a blank piece of paper or an empty computer screen, with the occasional writing and subsequent deletion of a single awkward sentence. How to overcome this struggle is covered well in &lt;em&gt;How to Write a Lot&lt;/em&gt; by Silvia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paul J. Silvia. &lt;em&gt;How to Write a Lot: A Practical Guide to Productive Academic Writing.&lt;/em&gt; American Psychological Association, 2007.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It turns out that there isn’t that much to be said about how to write a lot, other than that you have to write a lot. Silvia’s book makes no pretense otherwise, and that’s why I like it. Silvia covers the key concepts in a few short and highly readable chapters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bonus&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bonus&lt;/h2&gt;
+&lt;p&gt;As a bonus book, I want to recommend:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Richard L. Lanham. &lt;em&gt;The Longman Guide to Revising Prose.&lt;/em&gt; Person Longman, 2006.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have previously &lt;a href=&#34;/blog/2015/8/26/avoiding-the-official-style&#34;&gt;blogged about this book.&lt;/a&gt; While everything it contains is in some form also covered in Cook 1985 and in Schimel 2011, Lanham’s book shines in its brevity. It will teach you some key writing skills by laying out a small number of highly effective editing techniques.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;I’ll challenge anybody to read Strunk and White cover-to-cover without falling asleep, and to summarize afterwards what they have learned. The book is available online &lt;a href=&#34;http://www.jlakes.org/ch/web/The-elements-of-style.pdf&#34;&gt;in its entirety&lt;/a&gt;, so feel free to take this challenge right now.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Don’t use the passive voice?</title>
+      <link>/blog/2015/12/19/dont-use-the-passive-voice/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/12/19/dont-use-the-passive-voice/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I came across &lt;a href=&#34;https://www.youtube.com/watch?v=OV5J6BfToSw&#34;&gt;a talk by Steven Pinker&lt;/a&gt; on “Linguistics, Style and Writing in the 21st Century.” The talk is excellent and covers several important areas of writing advice. One of them is the topic of active and passive voice. I was pleased to see Pinker give the same advice I have been teaching for a while: The adage “don’t use the passive voice” is nonsensical. Clearly, passive voice cannot be categorically the wrong choice. If it were, then why should it even exist in the English language? There must be a valid use for this grammatical construct. Pinker provides one, and I agree with him. Here I’ll present this perspective in my own words.&lt;/p&gt;
+&lt;p&gt;To fully understand when to use active or passive voice, we need to first grasp the concepts of the topic and the stress position. I have previously written a &lt;a href=&#34;/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position&#34;&gt;blog post about this topic.&lt;/a&gt; Please go ahead and read it now. I’ll wait.&lt;/p&gt;
+&lt;p&gt;Now that we’re all on the same page, let’s proceed. The simple rule is this: Topic and stress trump active and passive. If the topic is the actor, use active voice. If the topic is being acted upon, use passive voice. Examples:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maria read a book.&lt;br /&gt;
+The book was read by Maria.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first is a story about Maria. The second is a story about a book.&lt;/p&gt;
+&lt;p&gt;As we construct a story, it is natural to move back and forth between active and passive while keeping the story focused on one protagonist:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;John woke up with a splitting headache. Grudgingly, he got out of bed, brushed his teeth, and put on some clothes. As he walked down the stairs, he dreaded another boring day at the office. Yet, as he opened the door, he was greeted with the most amazing sight he’d ever seen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Notice how everything is active voice until we reach “he was greeted” in the last sentence. This sentence needs to be in passive voice, so that John can remain in the topic position and “the most amazing sight he’d ever seen” takes on the stress position. Any attempt to use active voice here would result in a much weaker sentence.&lt;/p&gt;
+&lt;p&gt;Thus, it is best not to worry too much about active or passive voice. Instead, focus on telling a clear story by placing the the correct elements into the topic and stress positions of each sentence.&lt;/p&gt;
+&lt;div id=&#34;whats-the-problem-with-passive-voice-then&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What’s the problem with passive voice, then?&lt;/h2&gt;
+&lt;p&gt;If things are so simple, why do we keep hearing the advice to avoid passive voice? Because there are concrete issues that can arise when passive voice is used to excess, and I’ll briefly highlight the most important ones.&lt;/p&gt;
+&lt;p&gt;First, passive voice doesn’t convey action as strongly as active voice does. For example, consider these two sentences:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thomas baked a cake.&lt;br /&gt;
+The cake was baked.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first evokes the image of a person being active in the kitchen, mixing ingredients together, putting serious effort into the creation of a cake. The second evokes the image of a cake sitting in the oven.&lt;/p&gt;
+&lt;p&gt;Second, passive voice makes it easy to hide the actor. For example, compare:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I made a mistake.&lt;br /&gt;
+Mistakes were made.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first clearly assigns blame, the second doesn’t. Some writers deliberately use passive voice to hide the actor.&lt;/p&gt;
+&lt;p&gt;In scientific writing, though, I think it’s more common that the actor is omitted not with ill intentions but merely due to a lack of writing skills, or maybe because of a false sense of modesty. The result, however, can be rather confusing. In particular, whenever I read an abstract written in the passive voice, I start to wonder whether the authors are providing background information from earlier work or telling me what they have done. For a recent example, consider the beginning of the abstract from &lt;a href=&#34;http://www.nature.com/articles/srep18503&#34;&gt;this paper&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A fluorinated silyl functionalized zirconia was synthesized by the sol-gel method to fabricate an extremely durable superhydrophobic coating on cotton fabrics by simple immersion technique. The fabric surfaces firmly attached with the coating material through covalent bonding, possessed superhydrophobicity with high water contact angle ≈163 ± 1°, low hysteresis ≈3.5° and superoleophilicity. The coated fabrics were effective to separate oil/water mixture with a considerably high separation efficiency of 98.8 wt% through ordinary filtering. [. . .]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finally, passive voice encourages complex sentences with low content-to-word ratio, with long prepositional phrases, and with nouns attempting to carry the action—in a word, the &lt;a href=&#34;/blog/2015/8/26/avoiding-the-official-style&#34;&gt;official style.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In summary, pay more attention to topic and stress positions than to active and passive voice. However, in case of doubt, choose active over passive constructs.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatting figure captions and tables</title>
+      <link>/blog/2015/11/24/formatting-figure-captions-and-tables/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/11/24/formatting-figure-captions-and-tables/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Every scientist should know how to properly write and format figure captions and tables, yet this topic is rarely taught properly. We just hope that students and postdocs pick up this skill by osmosis. However, in my experience, this doesn’t necessarily happen or it may take a long time. To speed up this process, I gave a brief lecture on this topic in my graduate class today. Here are the slides I used. I hope you will find them useful.&lt;/p&gt;
+&lt;p&gt;If anything is unclear, please ask questions in the comments!&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/jpHipDowm0Mk20&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/ClausWilke/writing-and-formatting-figure-captions-and-tables&#34;&gt;Writing and formatting figure captions and tables&lt;/a&gt; – Claus Wilke, Nov. 2015&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to not mess up your bibliographies with Bibtex</title>
+      <link>/blog/2015/10/02/bibtex/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/10/02/bibtex/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Bibtex is the reference manager for Latex. I have used it for 20 years, I have written over 100 papers with it, and I think it works really well. I have also rarely met anybody who could use it without messing up their bibliography in some way. Bibtex is an archaic program, written 30 years ago by a graduate student and never substantively changed or updated since. It uses an awkward database format for storing bibliographic entries and an atrocious, poorly-documented programming language for describing how bibliographic entries should be formatted. In fact, the most complete description of bibtex’s inner workings is aptly called &lt;a href=&#34;http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf&#34;&gt;Tame the BeaST.&lt;/a&gt; (This document is well worth the read for anybody using bibtex with some regularity.) To help ordinary mortals succeed with using Bibtex, I’m providing here a set of best practices and useful guidelines that help you steer clear of the worst pitfalls of Bibtex.&lt;/p&gt;
+&lt;p&gt;My guidelines are shaped by the following two insights, which I call the first and second law of Bibtex:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Nobody really understands Bibtex.&lt;/li&gt;
+&lt;li&gt;All bibliography managers that automatically generate Bibtex entries mess things up.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A corollary of the second law is that all Bibtex entries need to be hand-curated to work correctly.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; The following sections address some of the most common issues that I see in daily Bibtex use.&lt;/p&gt;
+&lt;div id=&#34;incorrectly-capitalized-article-titles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Incorrectly capitalized article titles&lt;/h2&gt;
+&lt;p&gt;Article titles in a reference list should be capitalized in sentence case. In a nutshell, this means that all words except the first one, proper nouns, and acronyms are spelled in lower case (see e.g. &lt;a href=&#34;http://blog.apastyle.org/apastyle/2012/03/title-case-and-sentence-case-capitalization-in-apa-style.html&#34;&gt;here&lt;/a&gt; for more details). Bibtex enforces this capitalization rule by automatically converting everything in the article title field to lower-case. This convention has the unfortunate side effect that proper nouns or acronyms, which should be capitalized, will be converted into lower-case as well. For example, the title “A review of HIV biology” will be typeset as “A review of hiv biology”. This conversion can be switched off by enclosing the words not to be converted into an extra pair of braces, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = {A review of {HIV} biology}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Many reference managers simply disable Bibtex’s conversion by enclosing the entire title in braces, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = {{A review of HIV biology}}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This seems like a smart idea, until you realize that the records that these reference managers pull are often capitalized in title case (all nouns capitalized), and this incorrect capitalization is then carried over to the bibliography. &lt;strong&gt;The only reliable solution is to manually curate all titles, enclose words with capital letters in braces, but otherwise do not use two pairs of braces around titles.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;incorrectly-abbreviated-first-names-and-missing-middle-initials&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Incorrectly abbreviated first names and missing middle initials&lt;/h2&gt;
+&lt;p&gt;Bibtex style files are inconsistent in how they handle author names. Most style files abbreviate author names, so that “John H. Smith” becomes “J. H. Smith” or “J H Smith” or “JH Smith”. However, some don’t. They leave the author names untouched and/or only add or remove periods. Yet we generally never want first names spelled out in a bibliography, they should always be abbreviated to initials only. Therefore, always abbreviate names in your Bibtex file, &lt;strong&gt;and leave a space between initials,&lt;/strong&gt; like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;author = {J. H. Smith}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;author = {Smith, J. H.}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you don’t leave a space between the initials, Bibtex will interpret the initials as a name and drop the second initial. For example, &lt;code&gt;author = {JH Smith}&lt;/code&gt; will for many style files be typeset as “J. Smith”.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; I also recommend to always add periods after initials, even if some styles don’t typeset periods in the final bibliography. In general, Bibtex style files are better at removing periods when they aren’t needed than at adding them when necessary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mangled-author-lists&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Mangled author lists&lt;/h2&gt;
+&lt;p&gt;In Bibtex’s author field, author names are separated by the key word &lt;code&gt;and&lt;/code&gt;. It is a common mistake to use a comma instead. Bibtex will then think that all the names separated by commas are actually part of one long name, and will produce a mangled author list. Usually, what it will do is turn the entire author list into middle initials for one author, so that you end up with something like “Smith, D. M. B. K. F. L. E. O. S.” Fortunately, it will produce a warning as it does so (&lt;code&gt;Too many commas in name...&lt;/code&gt;). Unfortunately, many Bibtex users ignore these warnings.&lt;/p&gt;
+&lt;p&gt;Ignoring warnings comes particularly easy when you use an integrated latex environment that compiles the text as you type. An example would be the online editor &lt;a href=&#34;https://www.overleaf.com/&#34; class=&#34;uri&#34;&gt;https://www.overleaf.com/&lt;/a&gt;. However, &lt;strong&gt;all&lt;/strong&gt; Latex editors do display errors and warnings when you look for them, so make it a habit to do so.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inconsistent-journal-names&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inconsistent journal names&lt;/h2&gt;
+&lt;p&gt;Bibtex will not abbreviate journal names for you. So you have to do this yourself, and do so consistently. I recommend to always add periods after abbreviated parts of journal names, even if the style you’re currently using doesn’t require periods there (i.e., write &lt;code&gt;journal = {Mol. Biol. Evol.}&lt;/code&gt;, not &lt;code&gt;journal = {Mol Biol Evol}&lt;/code&gt;). At some point you’ll use the Bibtex entry with a different style file that needs periods, and things will go wrong. Again, Bibtex is better at removing periods than it is at adding them.&lt;/p&gt;
+&lt;p&gt;Some people define Bibtex string variables for journal names to keep them consistent. This is a reasonable practice, but I personally don’t use it. If you want to learn how this works, read the &lt;a href=&#34;http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf&#34;&gt;Tame the BeaST&lt;/a&gt; document, page 21.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;superfluous-issue-numbers-publication-months-or-other-elements&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Superfluous issue numbers, publication months, or other elements&lt;/h2&gt;
+&lt;p&gt;Very few journals typeset issue numbers or publication months in their bibliographies. Yet reference managers like to populate the &lt;code&gt;number&lt;/code&gt; or &lt;code&gt;month&lt;/code&gt; fields that Bibtex provides. This leads to ugly and non-standard reference entries. Moreover, it’s rare that every entry in a Bibtex file has a completed &lt;code&gt;number&lt;/code&gt; field, with the result that some entries in the final bibliography will have numbers listed and others won’t. Therefore, as a matter of principle, I always delete all &lt;code&gt;number&lt;/code&gt; and &lt;code&gt;month&lt;/code&gt; fields in every Bibtex entry. I also delete all other fields that I don’t explicitly want to show up in the typeset reference.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;choosing-good-bibtex-reference-keys&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Choosing good Bibtex reference keys&lt;/h2&gt;
+&lt;p&gt;Finally, I would like to provide some thoughts regarding how to choose keys to refer to Bibtex references. (I.e., how do you choose the identifiers you use in the &lt;code&gt;\cite{}&lt;/code&gt; command in your Latex file.) Most importantly, it is a good idea to have a systematic approach to choosing keys. Ideally, you should be able to guess the key from looking at the reference. This rule protects you from accidentally duplicating a reference in the Bibtex file and referring to it under two different keys. I personally use keys that mirror a traditional author-year citation style, e.g. &lt;code&gt;SmithMiller2012&lt;/code&gt; or &lt;code&gt;Jonesetal2014&lt;/code&gt;. For papers with multiple authors, I would recommend against using just the first author name and the year, such as &lt;code&gt;Jones2014&lt;/code&gt;, because in my experience it is not unusual to have multiple papers from the same year with the same first author, and at that point the keys become confusing. Which paper was &lt;code&gt;Jones2014a&lt;/code&gt; again, and which one &lt;code&gt;Jones2014b&lt;/code&gt;? By contrast, &lt;code&gt;JonesSmith2014&lt;/code&gt; and &lt;code&gt;JonesMiller2014&lt;/code&gt; are much easier to keep apart.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;checklist&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Checklist&lt;/h2&gt;
+&lt;p&gt;Here is a final checklist you should go through every time you write a manuscript using Bibtex. (Some entries in the checklist also apply to Latex more broadly.) Most importantly, always read through the entire bibliography of your paper before submitting.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Capitalization&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all article titles typeset in sentence case, or do some remain in title case?&lt;/li&gt;
+&lt;li&gt;Are any proper nouns or abbreviations typeset in lower case even though they should be capitalized?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Author initials&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all author first names replaced by initials?&lt;/li&gt;
+&lt;li&gt;Are all middle initials present? (This may be cumbersome to check, but a warning sign would be the presence of multiple references in which no authors have middle initials. Most authors do have middle initials.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Author lists&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are author names showing up properly and completely? Warning signs would be papers that appear to be written by one or two people with way too many initials (four or more; few authors have four initials).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Journal names&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Are all journal names properly abbreviated?&lt;/li&gt;
+&lt;li&gt;Are journals named consistently throughout the bibliography?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Superfluous items in bibliography&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Do any references contain items that shouldn’t be there, such as issue numbers, months, ISSN or ISBN numbers, or article URLs?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Compilation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Do Latex and Bibtex run on your document without raising any errors or warnings?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Actually, the second law applies more generally to pretty much any reference manager, including Zotero, Mendeley, Endnote, and so on, but that is a topic for another blog post. If you use one of them and don’t believe me, check if your article titles are properly capitalized, using sentence case. And if you don’t know what that means, re-read the section on incorrectly capitalized article titles.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;To add insult to injury, on occasion I have encountered Bibtex style files that actually require initials to be listed &lt;em&gt;without&lt;/em&gt; space. Those style files would drop the second initial when there was a space. In the end, you’ll always have to check manually that everything is working as expected, and adjust Bibtex entries as necessary.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avoiding the official style</title>
+      <link>/blog/2015/08/26/avoiding-the-official-style/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015/08/26/avoiding-the-official-style/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Nobody turns into a good writer over night. Writing well takes a lot of dedicated practice, as well as mastery of many different topics, including grammar, punctuation, word choice, and document organization. However, if I had to name one single skill that likely makes the biggest difference in a person’s ability to write well, I would point to recognizing and avoiding the &lt;em&gt;official style&lt;/em&gt;. This style, named so by professor of rhetoric Richard Lanham, makes heavy use of passive voice, prepositional phrases, and complex, wordy expressions with little content. And it permeates the scientific literature.&lt;/p&gt;
+&lt;p&gt;To give you a concrete example of this style, consider the following excerpt. It comes from a paper describing the function of the gene &lt;em&gt;exon0&lt;/em&gt; in a baculovirus:&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The TEM results provide evidence that EXON0 is required for the efficient egress of nucleocapsids from the nucleus to the cytoplasm. The conservation of EXON0 in all lepidopteran nucleopolyhedroviruses suggests that it may play a role in facilitating a common transport pathway for nucleocapsid egress for this group of baculoviruses. However, &lt;em&gt;exon0&lt;/em&gt; is not strictly essential for the production of BV, since a few nucleocapsids in the cells transfected with &lt;em&gt;exon0&lt;/em&gt; KO virus did pass through the nuclear membrane, followed by transport through the cytoplasm and budding at the plasma membrane. Two possible explanations are that the EXON0-facilitated nucleocapsid transport process can be bypassed and that other viral and cellular proteins can replace EXON0, although extremely inefficiently.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this excerpt, we can identify all the major elements of the official style. First, we see extensive use of passive voice, such as “EXON0 is required,” “&lt;em&gt;exon0&lt;/em&gt; is not . . . essential,” and “the . . . nucleocapsid transport process can be bypassed.” Second, we see long strings of prepositional phrases, as in “. . . required &lt;strong&gt;for&lt;/strong&gt; the efficient egress &lt;strong&gt;of&lt;/strong&gt; nucleocapsids &lt;strong&gt;from&lt;/strong&gt; the nucleus &lt;strong&gt;to&lt;/strong&gt; the cytoplasm.” Third, we see wordy expressions with little content, as in “. . . suggests that it may play a role in facilitating. . .”&lt;/p&gt;
+&lt;p&gt;So what can we do to avoid this style? A set of five simple editing guidelines provides a handy toolkit for writing more pleasant, less official-sounding prose:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Locate prepositions and &lt;em&gt;is&lt;/em&gt; forms.&lt;/li&gt;
+&lt;li&gt;Identify the action and put it into a simple verb.&lt;/li&gt;
+&lt;li&gt;Get to the point quickly.&lt;/li&gt;
+&lt;li&gt;Read the passage aloud—does it flow?&lt;/li&gt;
+&lt;li&gt;Vary the sentence length.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By following these guidelines, anyone can turn a dry, official-sounding document into a much more engaging piece of text. I have based these guidelines loosely on those presented in Lanham’s book,&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; though none of them are particularly novel for experienced copy writers or editors.&lt;/p&gt;
+&lt;div id=&#34;locate-prepositions-and-is-forms&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;1. Locate prepositions and &lt;em&gt;is&lt;/em&gt; forms&lt;/h2&gt;
+&lt;p&gt;The official style makes heavy use of long strings of prepositional phrases. Prepositions are short words such as &lt;em&gt;in&lt;/em&gt;, &lt;em&gt;on&lt;/em&gt;, or &lt;em&gt;until&lt;/em&gt; that express relationships between objects, persons, times, or places (&lt;a href=&#34;#fig1&#34;&gt;Figure 1&lt;/a&gt;). They are tremendously useful. But, when used in excess, they lead to boring, cumbersome, and frequently imprecise prose. Consider the following example. (I have highlighted the &lt;em&gt;is&lt;/em&gt; form and the prepositions.)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The cells &lt;strong&gt;were&lt;/strong&gt; lysed &lt;strong&gt;with&lt;/strong&gt; 1% Triton X-100 &lt;strong&gt;after&lt;/strong&gt; 20 minutes incubation &lt;strong&gt;in&lt;/strong&gt; rich media prepared &lt;strong&gt;under&lt;/strong&gt; standard conditions &lt;strong&gt;with&lt;/strong&gt; continuous stirring &lt;strong&gt;of&lt;/strong&gt; the flask.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I am sure you recognize this as a standard sentence you might find in the methods section of any molecular biology paper. If you have read many such papers, you may even find this sentence sufficiently clear. But is it really? Were the cells incubated or lysed in rich media? Were the cells incubated with continuous stirring of the flask, or was the stirring instead part of the media preparation? Or was maybe the flask stirred during the lysing of the cells? We don’t really know. The prepositions cannot precisely convey the relationships of the involved objects.&lt;/p&gt;
+&lt;p&gt;The above example contains six prepositions. In general, three prepositions in a row cause problems, and four or more prepositions usually guarantee disaster. As the first order of business, therefore, we shorten and/or remove, as much as possible, any strings of prepositional phrases.&lt;/p&gt;
+&lt;p&gt;At this point, some readers might want to defend the use of prepositional phrases. They might say:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prepositional phrases are perfectly clear. A preposition connects the object, time, or place that immediately precedes it with the one that immediately follows it. As long as all the prepositional phrases are in the right order, everything is perfectly clear.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I disagree. Try to find the correct location for “with continuous stirring of the flask” if the flask was stirred during incubation. If you write “after 20 minutes incubation with continuous stirring of the flask in rich media,” then you are saying that the flask was in the media, when almost certainly the opposite was the case. If you write “after 20 minutes incubation in rich media with continuous stirring of the flask prepared under standard conditions,” then “prepared under standard conditions” seems to apply to the flask rather than the media. In addition, we often want to express that one thing is related to multiple others. In the above example, for instance, the authors might have meant to say that they carried out both lysing and incubation under standard conditions. The prepositions cannot unambiguously convey this meaning.&lt;/p&gt;
+&lt;p&gt;We can only eliminate strings of prepositional phrases if we can identify them. Therefore, Guideline 1 simply asks us to identify all prepositions and all &lt;em&gt;is&lt;/em&gt; forms in each sentence.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; The subsequent guidelines will help us with rephrasing.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;fig1&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;across, after, at, behind, by, during, from, for, in, in front of, into, of, off, on, onto, out, out of, to, under, until&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1: Common prepositions in the English language.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;identify-the-action-and-put-it-into-a-simple-verb&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;2. Identify the action and put it into a simple verb&lt;/h2&gt;
+&lt;p&gt;With the exception of definitions—&lt;em&gt;a chair is a piece of furniture to sit on&lt;/em&gt;—most sentences convey
+actions. Lots of them. Even the boring sentences in the methods sections of scientific papers. Actions are conveyed by verbs. Yet the most common verbs you will find in scientific texts are variants of &lt;em&gt;to be&lt;/em&gt;. The actions instead hide behind nouns and in prepositions. Consider the cell-lysation example. This example contains the following actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;to lyse&lt;/li&gt;
+&lt;li&gt;to incubate&lt;/li&gt;
+&lt;li&gt;to stir&lt;/li&gt;
+&lt;li&gt;to prepare&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yet none of these verbs actually occur in their active form in the example sentence. Instead they occur as participles or gerunds, that is, in the form of adjectives or nouns.&lt;/p&gt;
+&lt;p&gt;Let’s consider a second example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Animals are housed on individually ventilated cages stacked in multiple layers with HEPA-filtered air provided to each cage.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This example contains the following actions, again hidden in the form of participles or gerunds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;to house&lt;/li&gt;
+&lt;li&gt;to ventilate&lt;/li&gt;
+&lt;li&gt;to stack&lt;/li&gt;
+&lt;li&gt;to filter&lt;/li&gt;
+&lt;li&gt;to provide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you have identified the relevant actions in a sentence, you can then express them in simple verbs. To provide you with some examples, &lt;a href=&#34;#tab1&#34;&gt;Table 1&lt;/a&gt; shows several long-winded &lt;em&gt;is&lt;/em&gt; statements alongside their shorter, verb-based form.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;tab1&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 1: Equivalent long and short expressions of the same action.&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Long expression&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Short and simple form&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;is causing the removal of&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;removes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;is causing the modification of&lt;/td&gt;
+&lt;td&gt;      &lt;/td&gt;
+&lt;td&gt;modifies/alters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;results in the elimination of&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;eliminates&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;effects the increase of&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;increases&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;is 57 words in length&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;contains 57 words&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;is 100 meters long&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;spans 100 meters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;is greater than&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;exceeds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;is resulting in&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;yields&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;get-to-the-point-quickly&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;3. Get to the point quickly&lt;/h2&gt;
+&lt;p&gt;Under Guideline 2, you have learned how to identify the action in a sentence and put it into a simple verb. Guideline 3 instructs you to get to the point quickly. Your readers have only so much attention—don’t squander it by writing long-winded phrases with little content. As an example of long-winded text, consider the following abstract of a paper investigating the inhibitory role of the protein NifL on the protein NifA:&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;. . . we localized inhibition by NifL to its carboxy (C)-terminal domain . . . The first line of evidence for this is that internal deletions of NifL containing an intact C-terminal domain were able to inhibit transcriptional activation by NifA in a coupled transcription-translation system. The second line of evidence is that the isolated C-terminal domain of NifL (assayed as a fusion to the soluble maltose-binding protein [MBP]) was sufficient to inhibit transcriptional activation by the central domain of NifA in a purified transcription system. The final line of evidence is that an MBP fusion to the C-terminal domain of NifL inhibited transcriptional activation by NifA in vivo. (104 words)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This abstract contains the phrase “the . . . line of evidence . . . is that” three times, for a total of 23 words, 20% of the total text, with essentially no content. We can delete almost all these words without any loss of clarity or content:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;. . . we localized inhibition by NifL to its carboxy (C)-terminal domain . . . First, internal deletions of NifL containing an intact C-terminal domain were able to inhibit transcriptional activation by NifA in a coupled transcription-translation system. Second, the isolated C-terminal domain of NifL (assayed as a fusion to the soluble maltose-binding protein [MBP]) was sufficient to inhibit transcriptional activation by the central domain of NifA in a purified transcription system. Third, an MBP fusion to the C-terminal domain of NifL inhibited transcriptional activation by NifA in vivo. (84 words)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As a simple editing rule, eliminate all phrases of the form “&lt;em&gt;something something&lt;/em&gt; is that” (&lt;a href=&#34;#fig2&#34;&gt;Figure 2&lt;/a&gt;). In most cases, these phrases don’t contain any content anyways. And even if they do, there will usually be better ways to provide this content. For example, consider the opening of this abstract:&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Measurements of toxicity based on individuals . . . and effects on reproduction are used extensively in determining ecological risk . . . . An underlying assumption is that individual-based toxicity metrics for one species can be directly compared with that for another species. However, this assumption overlooks the fact that different species have different life-history strategies and variables, such as lifespan, time to first reproduction, and number of offspring produced over a lifetime. Using a simple model and laboratory-derived parameter values, we tested the impact of differences in life-history traits on predicted responses to stress. (89 words)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This abstract contains the phrases “an underlying assumption is that” and “however, this assumption overlooks the fact that.” We would like to delete both. The resulting text might read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Measurements of toxicity based on individuals . . . and effects on reproduction are used extensively in determining ecological risk . . . . Such risk assessments directly compare individual-based toxicity metrics for different species. But species differ in life-history strategies and variables, such as lifespan, time to first reproduction, and number of offspring produced over a lifetime. Using a simple model and laboratory-derived parameter values, we tested the impact of differences in life-history traits on predicted responses to stress. (73 words)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This version is quite a bit shorter, but it requires the reader to understand that life-history strategies and variables may affect the toxicity metrics and therefore may confound the comparison. This information was present in the original version of the abstract, if in a somewhat indirect way (“this assumption overlooks”). Therefore, in this particular case, I would opt for a slightly longer version. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Measurements of toxicity based on individuals . . . and effects on reproduction are used extensively in determining ecological risk . . . . Such risk assessments directly compare individual-based toxicity metrics for different species. But toxicity metrics may not be directly comparable, because species differ in life-history strategies and variables, such as lifespan, time to first reproduction, and number of offspring produced over a lifetime. Here, we tested the impact of differences in life-history traits on predicted responses to stress, using a simple model and laboratory-derived parameter values. (84 words)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This version is almost as long as the original one. However, I believe it flows better and is easier to understand.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;fig2&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The fact of the matter is that . . .&lt;br /&gt;
+The reasoning behind this statement is that . . .&lt;br /&gt;
+The general consensus is that . . .&lt;br /&gt;
+What most researchers believe is that . . .&lt;br /&gt;
+It is this fact that is . . .&lt;br /&gt;
+The conclusion is that . . .&lt;br /&gt;
+The result of this experiment was that . . .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2: Phrases of the form “&lt;em&gt;something something&lt;/em&gt; is that.”&lt;/strong&gt; These phrases generally convey no information and should be deleted.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;read-the-passage-alouddoes-it-flow&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;4. Read the passage aloud—does it flow?&lt;/h2&gt;
+&lt;p&gt;When we are composing and/or editing a piece of text, we often spend so much time on small segments, inidividual sentences or phrases, that we lose track of the big picture. After half an hour of tinkering, we may have a paragraph whose every individual sentence is fine, but in combination the sentences don’t work. Fortunately, there is an easy way to identify these cases. Take a clean printout of your manuscript, sit down in a comfortable chair or sofa, and read the entire piece—aloud.&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt; (If you are working on a long manuscript, such as a book or a thesis, you may want to do this exercise separately for individual chapters or major sections.) While you are reading, pay special attention to the sound of your prose. Does it flow easily, or does it feel like a tongue-twister? Do the sentences connect nicely to each other? Do you always know where a sentence is going, or do you sometimes have to backtrack half a sentence because you thought it would finish differently than it actually did? Mark any issues that you see, but don’t fix them immediately. The purpose of this exercise is to get a sense of the larger structure of the text. If you immediately start tinkering with the text, you will lose that sense.&lt;/p&gt;
+&lt;p&gt;After you have read your document carefully multiple times and marked all issues, go ahead and carry out the required edits.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;vary-the-sentence-length&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;5. Vary the sentence length&lt;/h2&gt;
+&lt;p&gt;The last guideline addresses sentence length. Consider the following paragraph from a paper on a new influenza treatment.&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; Read this paragraph aloud, and note what you experience while doing so:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Highly pathogenic avian influenza (HPAI) virus H5N1 strains are currently causing major morbidity and mortality in poultry populations across Asia, Europe, and Africa and have caused 385 confirmed human infections, with a fatality rate of 63.11%. Preventive and therapeutic measures against circulating H5N1 strains have received a lot of interest and effort globally to prevent another pandemic outbreak. Influenza A virus poses a challenge because it rapidly alters its appearance to the immune system by antigenic drift (mutating) and antigenic shift (exchanging its components). The current strategies to combat influenza include vaccination and antiviral drug treatment, with vaccination being the preferred option. The annual influenza vaccine aims to stimulate the generation of anti-hemagglutinin (anti-HA) neutralizing antibodies, which confer protection against homologous strains. Current vaccines have met with various degrees of success. The facts that these strategies target the highly variable HA determinant and that predicting the major HA types that pose the next epidemic threat is difficult are significant limitations to the current antiviral strategy. In the absence of an effective vaccine, therapy is the mainstay of control of influenza virus infection.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To me, the paragraph feels monotone. Only towards the end does it become a bit more lively. The feeling of monotonicity is created by two factors. First, most sentences contain approximately the same number of words. Second, none is very short. The one exception is sentence six, which contains only nine words:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Sentence&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Number of words&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Highly pathogenic avian influenza (HPAI) virus . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Preventive and therapeutic measures . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;22&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Influenza A virus poses a challenge . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;The current strategies to combat influenza . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;The annual influenza vaccine aims . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Current vaccines have met with . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;The facts that these strategies target . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;In the absence of an effective vaccine, . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As an alternative, consider this excerpt from an article on the effect of human activity on species diversity:&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No one denies that population size influences speciation rate. However, the direction of its effect is in doubt. At one time, many evolutionists, led by Ernst Mayr, believed that small isolated populations provide the crucible for evolution. They believed that getting speciation started is a matter of breaking up coadapted complexes of genes in geographical isolates. If that is correct, small populations would speed up speciation by enhancing statistical sampling accidents. But an alternative view exists. Called “centrifugal speciation,” it claims that large populations speed up speciation. Centrifugal speciation also begins with geographical separation of sister populations. But after separation, the larger isolates—not the smaller ones—do the changing. The small ones remain as evolutionary relicts.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We notice immediately that sentences in this paragraph are much shorter than they are in the previous example. And sentence length is also more varied. The shortest sentence has only five words. The third and fourth sentences are the longest. But with 19 words, they are still not overly long. And there is a good mix of short, medium, and long sentences in this paragraph. For example, after three moderately long sentences of 19, 19, and 15 words, the author placed a very short sentence of only five words:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Sentence&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Number of words&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;No one denies that population size influences . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;However, the direction of its effect is in doubt.&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;At one time, many evolutionists, led by Ernst . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;They believed that getting speciation started . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;If that is correct, small populations would . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;But an alternative view exists.&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Called “centrifugal speciation,” it claims that . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Centrifugal speciation also begins with . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;But after separation, the larger isolates . . .&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;The small ones remain as evolutionary relicts.&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thus we arrive at our take-home message, both for this section and for the entire blog post: Be bold. Write short sentences. And then vary the sentence length. Your readers won’t mind a somewhat lengthy sentence, with multiple dependent clauses, if you wrote a few very short sentences just beforehand.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;M. Fang, X. Dai, and D. A. Theilmann. &lt;em&gt;Autographa californica&lt;/em&gt; multiple nucleopolyhedrovirus EXON0 (ORF141) is required for efficient egress of nucleocapsids from the nucleus. &lt;em&gt;J. Virol.,&lt;/em&gt; 81:9859–9869, 2007.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;R. L. Lanham. &lt;em&gt;The Longman Guide to Revising Prose.&lt;/em&gt; Person Longman, New York, 2006.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;We identify the &lt;em&gt;is&lt;/em&gt; forms because prepositions and &lt;em&gt;is&lt;/em&gt; forms go hand in hand. Sentences with long strings of prepositional phrases almost invariably sport an &lt;em&gt;is&lt;/em&gt; form as the main verb.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;F. Narberhaus, H. S. Lee, R. A. Schmitz, L. He, and S. Kustu. The C-terminal domain of NifL is sufficient to inhibit NifA activity. &lt;em&gt;J. Bacteriol.,&lt;/em&gt; 177:5078–5087, 1995.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;J. D. Stark, J. E. Banks, and R. Vargas. How risky is risk assessment: The role that life history strategies play in susceptibility of species to stress. &lt;em&gt;Proc. Natl. Acad. Sci. USA,&lt;/em&gt; 101:732–736, 2004.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;For a more systematic approach to text flow, take a look at my blog post on the &lt;a href=&#34;/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position&#34;&gt;topic and stress positions&lt;/a&gt;. However, this approach doesn’t eliminate the &lt;a href=&#34;/blog/2013/10/8/to-write-well-learn-how-to-read&#34;&gt;need for careful reading.&lt;/a&gt;&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;N. Prabhu, M. Prabakaran, H.-T. Ho, S. Velumani, J. Qiang, M. Goutama, and J. Kwang. Monoclonal antibodies against the fusion peptide of hemagglutinin protect mice from lethal influenza A virus H5N1 infection. &lt;em&gt;J. Virol.,&lt;/em&gt; 83:2553–2562, 2009.&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;M. L. Rosenzweig. Loss of speciation rate will impoverish future diversity. &lt;em&gt;Proc. Natl. Acad. Sci. USA,&lt;/em&gt; 98:5404–5410, 2001.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To write well, learn how to read</title>
+      <link>/blog/2013/10/08/to-write-well-learn-how-to-read/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/08/to-write-well-learn-how-to-read/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As far as I can tell, one of the major impediments to writing well is an inability to read. I’m not talking about basic illiteracy here. I’m talking about the following tendency that I have seen in many literate people: reading what one thinks was written rather than what was actually written. If you have this tendency, you may subconsciously fix grammatical errors, insert words that aren’t actually on the page, or even fill in larger logical gaps. You may also subconsciously delete words that shouldn’t be there in the first place. You probably do this when you read other people’s prose, and you’ll do it even more so when you read your own prose. As a result, you won’t notice when your writing has issues. And hence you won’t fix the issues. Your readers, however, may notice them, or they may simply not understand what you’re trying to say. If you are interested in writing clear and understandable prose, make sure that you’re actually reading what you wrote, not what you think you wrote.&lt;/p&gt;
+&lt;div id=&#34;can-you-read&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Can you read?&lt;/h2&gt;
+&lt;p&gt;So, how do you know whether you’re reading sufficiently well? To a first approximation, I’d assume that nobody can read. I know that’s not true, but in my experience it’s an approximation that matches reality reasonably well. However, to be more constructive, let me offer some specific self-assessments for you.&lt;/p&gt;
+&lt;p&gt;First, in my previous blog post I purposefully introduced a few grammatical mistakes, as a pun. I pointed out the respective paragraph to a couple of students. Some got my pun immediately, but others didn’t notice that anything was wrong. Even when specifically searching for issues they couldn’t find them. Why don’t you &lt;a href=&#34;/blog/2013/10/1/articles&#34;&gt;check out that post right now and see if you notice anything?&lt;/a&gt; The specific sentence I’m talking about is in the second paragraph. What’s wrong with it is explained in the notes.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Second, read the present paragraph carefully.There are several typographic mistakes here. Do you notice them?. It’s very important  to  pay close attention to even the most minute details. You may think it doesn’t matter much, but some of your readers will pay close attention, and they will notice almost anything. For them, too many little mistakes and issues will make your writing unpalatable. Again, you can find an explanation of what’s wrong with this paragraph in the notes.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Third, let’s consider situations where grammatical mistakes actually alter the meaning of a sentence. For example, consider this sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Painted in exquisite detail, you can sell this painting for a high price.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What does this sentence tell you? Did you understand that you have a painting that is painted in exquisite detail, and that therefore you can sell it at a high price? If that’s what you read, I’ve got bad news for you: You need to work on your reading comprehension. That’s not what the sentence says at all. The sentence says that &lt;em&gt;you,&lt;/em&gt; the reader, have been painted in exquisite detail, and that therefore you can sell this painting (about which we know nothing) for a high price.&lt;/p&gt;
+&lt;p&gt;Let’s consider a different example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We found that lions do not generally like to eat ice cream which agrees with our prior expectations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What did this sentence tell you? Did you understand that we had a prior expectation that lions don’t eat ice cream, and that this expectation was confirmed in our experiment feeding ice cream to lions? If that’s what you got from this sentence then you have to pay closer attention to what is actually written. What the sentence actually says is that certain ice creams agree with our prior expectations. (Whatever they are. We are not told.) &lt;em&gt;Those&lt;/em&gt; specific ice creams are not palatable to lions. Other ice creams, those that don’t agree with our prior expectations, may well be palatable to lions, but we are not told anything about them.&lt;/p&gt;
+&lt;p&gt;You might think that there is a punctuation mistake, that a comma is needed after “ice cream.” Unfortunately, even with that comma, the sentence still doesn’t make sense. It just doesn’t make sense in a different way.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-to-improve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How to improve&lt;/h2&gt;
+&lt;p&gt;There are a couple of simple techniques and exercises that you can do to improve your reading. First, get a good book or two about the intricacies of the English language.&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; Go through the examples in these books, in particular the examples of how one should &lt;em&gt;not&lt;/em&gt; write, and try to figure out what’s wrong with them and how you could fix them. With practice, you’ll get quite good at recognizing problematic writing.&lt;/p&gt;
+&lt;p&gt;Second, it’s really important that you slow down your reading speed. If you frequently read over grammatical mistakes or logical gaps then you’re reading too fast. It’s Ok to read fast when you’re reading somebody else’s words, but when you proof-read your own you need to be slow. A simple way to slow down your reading speed is to sit down and read your text aloud. It’s really difficult to do that and not notice missing pieces or logical gaps.&lt;/p&gt;
+&lt;p&gt;Third, to assess overall flow and sentence connections, it’s important to read larger units of text. If you constantly go back and forth between reading and editing, you may be so focused on individual sentences that you’ll never notice larger issues that may exist in your prose. Make sure that when you proof-read you read larger chunks of text at once.&lt;/p&gt;
+&lt;p&gt;Fourth, I find it important to read a document multiple times exactly in the same format in which it will be seen by my readers. I can’t exactly pinpoint why it makes a difference but I know it does. For example, when I write scientific papers or grant proposals, I tend to do most of my proof-reading on printouts. On printouts, I always find issues that I didn’t see while editing. In these days of high-resolution screens and tablets, maybe you feel that printing documents shouldn’t be necessary anymore. And maybe you’re right. However, at a minimum, export the document from your word processor and read it on the screen just how your readers would. For example, create a pdf, open it on your tablet, and proof-read there. Make comments in longhand onto the pdf. (There are excellent apps for this purpose.) I proof-read all my blog posts on the web site, in the final format. I always find many minor issues that I didn’t see when I was composing the post.&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Students frequently hand me documents that look like they have never been proof-read. And when I ask the students whether they printed out the document and went over it slowly with a pen, the answer is usually “no.” Don’t be that student. Proof-read your documents carefully before giving them to somebody else. Don’t rely on others to find your writing mistakes, find them yourself.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;The last sentence is missing three articles. It should have read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But make one non-native mistake, such as not using &lt;strong&gt;an&lt;/strong&gt; article when &lt;strong&gt;an&lt;/strong&gt; article is needed, and you’ll immediately sound like &lt;strong&gt;a&lt;/strong&gt; person with poor English skills.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I thought that native English speakers would immediately notice the missing articles and get the impression that this sentence was written by a foreigner. Well, some did and some didn’t.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Issues in this paragraph:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Missing space after “carefully.” (1st sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Extra period in “Do you notice them?.” (3rd sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Excessive space around “to” (before and after) in “It’s very important  to  pay” (4th sentence)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;With the comma, the sentence says that lions don’t like to eat ice cream, and that ice cream typically doesn’t agree with our prior expectations. If you don’t see that, consider the following modification of the sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We found that lions do not generally like to eat ice cream, which is cold and full of sugar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;A couple of good ones are: Lyn Dupre, &lt;em&gt;BUGS in writing;&lt;/em&gt; Claire Kehrwald Cook, &lt;em&gt;Line by line;&lt;/em&gt; Lynne Truss, &lt;em&gt;Eats, shoots &amp;amp; leaves;&lt;/em&gt; Patricia T. O’Conner; &lt;em&gt;Woe is I.&lt;/em&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;I compose my posts in google docs and upload them once they’re done. Then I spend another hour or so copy-editing in the final format.&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Articles!</title>
+      <link>/blog/2013/10/01/articles/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/10/01/articles/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;After having authored thousands of printed pages and having taught writing at the graduate level, all in English (my third language), I’ve come to this conclusion: We non-native speakers have a major advantage over native speakers when it comes to writing in the English language. We may not know how to write properly, but at least &lt;em&gt;we know&lt;/em&gt; that we don’t know. Most native English speakers don’t know how to write properly either, but they &lt;em&gt;don’t know that they don’t know.&lt;/em&gt; Because we’re acutely aware of our language deficiencies, we non-native speakers will generally put much more effort into learning proper English than native speakers will.&lt;/p&gt;
+&lt;p&gt;However, I’ve often seen non-native speakers worry about grammatical subtleties that no (untrained) native speaker could discern while at the same time making mistakes that no native speaker would ever make. This can lead to the curious situation where a non-native speaker may actually have a pretty good command of the English grammar and yet his writing will be considered as “poor” and “full of errors.” I’ve thus concluded that it may not matter so much that we truly understand English grammar in all its subtleties.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; What matters most is that we don’t make the mistakes native English speakers &lt;em&gt;wouldn’t make.&lt;/em&gt; We can use dangling participles, missing antecedents, and comma splices all day long, and most people won’t hold it against us. But make one non-native mistake, such as not using article when article is needed, and you’ll immediately sound like person with poor English skills.&lt;/p&gt;
+&lt;p&gt;For example, consider the following atrocity of a sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a native speaker, writing grammatically correct sentences is difficult for me.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most native speakers would happily accept this sentence as correct, even though it has a glaring grammatical error.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; Now consider this sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As non-native speaker, I can write difficult sentence with only few minor errors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most native speakers would recoil in horror, yet all the second author is guilty of is omission of a few articles. Fix the articles, and the sentence is perfectly fine:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As &lt;strong&gt;a&lt;/strong&gt; non-native speaker, I can write &lt;strong&gt;a&lt;/strong&gt; difficult sentence with only &lt;strong&gt;a&lt;/strong&gt; few minor errors.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This simple example shows how important it is that you master proper use of articles. In particular, if you’re from Eastern Europe or from Asia and your mother tongue doesn’t have the concept of articles, you will have to put in some serious effort into understanding articles. Otherwise, your prose will always sound like it was written by a foreigner, regardless of how grammatically correct everything else is. So let me give you a brief primer on proper use of articles in the English language.&lt;/p&gt;
+&lt;div id=&#34;definite-vs-indefinite-articles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Definite vs indefinite articles&lt;/h2&gt;
+&lt;p&gt;The &lt;em&gt;definite article,&lt;/em&gt; which in English is “the”, refers to a particular member of a group. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The cat is on the roof.&lt;br /&gt;
+I have to feed the dogs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The author is talking about one specific cat, one specific roof, one specific dog. By contrast, the &lt;em&gt;indefinite article,&lt;/em&gt; which in English can be “a,” “an,” or no article, refers to any member of a group. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A cat is a fierce predator.&lt;br /&gt;
+An elephant eats foliage.&lt;br /&gt;
+Dogs give us unconditional love.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The author is now talking about any possible cat, any possible predator, any possible elephant, and any possible dogs. Note that the words “foliage” and “unconditional love” fall under the rule of “things that can’t be counted,” which I’ll discuss in the next subsection.&lt;/p&gt;
+&lt;p&gt;One thing that may be confusing is that in two subsequent sentences, the same word may need an indefinite and a definite article. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Yesterday, I saw a black cat. The cat crossed the street from left to right.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The first occurrence of the cat requires “a,” because we haven’t heard about the cat before. Thus, at this point in the story, we can only be talking about any arbitrary cat. By the second sentence, though, the cat has been defined. It’s the one that is black and that I saw. Hence, now I have to refer to it as “the cat.” Similarly, I wrote “the cat” throughout this paragraph because I kept referring to that same, black cat defined in the first sentence of the example.&lt;/p&gt;
+&lt;p&gt;If your native language doesn’t distinguish between definite and indefinite articles it may be difficult for you to get an intuitive sense of what it means to be talking about a specific member of a group or about any arbitrary member of a group. If you experience this problem, you will have to practice deliberately. Don’t think that you’ll just intuitively get it one day, because you won’t. You will have to analyze properly written sentences and for every noun in every sentence figure out exactly why it has the article it does. Then, in your own writing, you will have to go over every noun and determine whether it represents a specific member of a group or any arbitrary member of a group.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;names-countries-things-that-cant-be-counted&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Names, countries, things that can’t be counted&lt;/h2&gt;
+&lt;p&gt;Names, countries, and things that can’t be counted generally don’t have articles. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Martin likes ice cream.&lt;br /&gt;
+England borders Europe.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“Martin” is a name, “ice cream” cannot be counted, and “England” and “Europe” are countries. However, don’t get confused by country names that include an article, such as “The Netherlands.” The article is part of the name because the name originally referred to a geographic location, such as “the Alps” or “the Sierra Nevada.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;places-with-distinct-sets-of-social-behaviors&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Places with distinct sets of social behaviors&lt;/h2&gt;
+&lt;p&gt;Finally, here comes my favorite rule about articles. This rule is so awesome it needs to be printed in italics:&lt;br /&gt;
+&lt;em&gt;We don’t use articles in preprositional phrases referring to places that require a distinct set of social behaviors.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is such a mouthful, most people cannot even repeat it without error. Yet we all use it instinctively, when we say things like:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Where do you go to school?&lt;br /&gt;
+Hannah goes to college.&lt;br /&gt;
+I’ll see you in court.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here, “school,” “college,” and “court” are all places that require a distinct set of social behaviors. When you want to refer to the specific building, you might say “the school down the road,” but when you want to refer to the social construct of “school” you would always say that you “go to school down the road.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;concluding-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Concluding thoughts&lt;/h2&gt;
+&lt;p&gt;If you’re a non-native speaker and your mother tongue doesn’t use articles, you’ll almost certainly have difficulty with using articles properly. Invest some time and energy into getting articles right, because incorrect or missing articles will make your writing stick out like a sore thumb. Any native speaker will immediately notice issues with articles and will conclude that the text she’s reading is written poorly. (Even if, by absolute standards of grammatical correctness, that’s not the case.)&lt;/p&gt;
+&lt;p&gt;I’d also recommend that you, if you have any issues with articles, always do a proof-reading step dedicated specifically to articles. Read your entire document from cover to cover and verify that every single noun has whatever article it may need. It’s generally a good habit to do multiple proof-reading passes. Each pass should check for one specific mistake you tend to make. Just add that one more pass and check for articles. When following this recommendation, I expect that you’ll write documents in which all articles are right all the time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Of course, I’d still recommend that you write sentences that are largely free of grammatical errors. Just aim first for eliminating errors native speakers wouldn’t make. Then eliminate the errors that native speakers make all the time.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;If you don’t know what the error is you’re just demonstrating my point.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Silence your inner critic</title>
+      <link>/blog/2013/09/22/silence-your-inner-critic/</link>
+      <pubDate>Sun, 22 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/22/silence-your-inner-critic/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I wrote two blog posts recently that addressed the widespread issue of writer’s block. In the first, I suggested that &lt;a href=&#34;/blog/2013/9/16/warm-up-before-you-write&#34;&gt;warming up before writing is a good idea to get you into the zone.&lt;/a&gt; In the second, I argued that &lt;a href=&#34;/blog/2013/9/18/its-easier-to-write-when-you-know-what-you-want-to-say&#34;&gt;you need to figure out what the story is before you can write productively.&lt;/a&gt; There’s a third element to writing productively. Even if you have figured out your story and have warmed up properly, you may still find yourself staring at a blank page for extended periods of time. If this is the case, you are almost certainly operating with an inner critic that holds you back the moment you want to commit words to paper. You need to silence your inner critic to write effectively.&lt;/p&gt;
+&lt;p&gt;Before I discuss the inner critic in more detail, I want to frame this discussion within the concept of &lt;em&gt;writing modes.&lt;/em&gt; It is important to realize that there are two distinct writing modes, &lt;em&gt;contents generation&lt;/em&gt; and &lt;em&gt;copy-editing.&lt;/em&gt; They have distinct goals, and it is best to not muddle the waters between them. Every time you sit in front of a word processor, you should know exactly which mode you’re operating under. If I asked you “Sally, are you generating content or are you copy-editing?” you should answer immediately, without hesitation.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; In the next two paragraphs I give a brief description of each of these two writing modes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contents generation.&lt;/strong&gt; The sole purpose of contents generation is to get words onto the page. As quickly as possible, and as many words as possible. During contents generation, you should not worry too much about word choice, grammar, or even connection between sentences. Just create material to copy-edit later on.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Copy-editing.&lt;/strong&gt; The purpose of copy-editing is to polish your text. Fix all the grammatical mistakes you made. Make sure each sentence connects properly to the previous one. Fix all the awkward word choices you have made and eliminate all colloquialisms. Verify all punctuation. Copy-editing can be hard, and it is usually slow. I sometimes agonize 5–10 minutes over a single sentence I need to fix. Importantly, however, copy-editing is not about contents generation. As you copy-edit, you only work with the material you already have. You don’t try to add entire paragraphs of new material.&lt;/p&gt;
+&lt;p&gt;The inner critic is that inner voice that wants you to copy edit as you’re trying to generate contents. You have in your mind a picture of all these sentences you need to say, but the moment you try to commit them to paper the inner critic comes along and says: “Well, that doesn’t sound too smart. And it doesn’t connect to what you’ve written before. And anyway, who uses words like ‘fun’ in formal writing?” And there you go, switching from contents generation to copy-editing, trying to fix this one sentence you need to write before you can proceed to the next.&lt;/p&gt;
+&lt;p&gt;The problem with trying to copy-edit as you’re generating contents is that you’re constantly keeping yourself from getting into the zone where writing just flows effortlessly. This severely limits your overall productivity. You might think that it comes out the same either way, since yes you’re generating slower but you’re also writing higher-quality sentences. Unfortunately, that’s usually not the case. The secret about writing in the zone is that most sentences are spectacularly useful. With just a little copy-editing, they can generally be brought into a sufficiently decent shape that they can be published. The carefully copy-edited sentences your inner critic makes you write, on the other hand, may be beautiful by themselves but they tend to be poorly connected with their surrounding context. Because these sentences were not written quickly, your mind started to wander from topic to topic as you were writing, and hence the sentences don’t hang together. The latter sentences seem to be telling a totally different story than the earlier sentences. To fix this mess, you’ll need more copy-editing than you would have needed had you written quickly in the first place.&lt;/p&gt;
+&lt;p&gt;So how do you silence your inner critic? You just ignore it. When you know that you’re in contents generation mode, you cannot afford staring at blank paper for extended periods of time. Any time you detect yourself doing so, just write down the first sentence that comes to mind and then move on. Remember, you can always go back and copy-edit. In fact, you should do so anyway.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; When you’re in contents-generation mode, get comfortable with writing half-baked sentences. Just write it down how it is on your mind. If you can’t find the right word, write “that thing.” If you can’t find the correct phrasing, write a sentence that describes the actual sentence that should be there instead, such as “here I need to place a sentence that explains how the inner critic prevents me from writing effectively.” If you want, you can mark the sentence in italics or in a different color to indicate that it urgently needs revision. Either way, do everything you can to generate contents and to not be stuck.&lt;/p&gt;
+&lt;p&gt;To give you a frame of reference: It usually takes me about an hour to generate all the contents for a typical blog post such as this one and then another hour to copy-edit it. In practice, though, I don’t write the whole post before I do any copy-editing. I usually write about a paragraph, copy-edit it, write another paragraph, copy-edit that one, and so on. At the end, I copy-edit the whole post a couple more times before I publish it. During copy-editing, I end up modifying maybe 10% of the text. So you can see that the amount of writing I actually do during copy-editing is minimal compared to the amount of writing done during contents generation. Also, keep in mind that I don’t copy-edit posts on my blog as much as I would any formal writing. I want a raw and direct voice on my blog, more like a conversation than like formal writing, and so I leave copy-editing to a minimum. For example, this post contains a few instances of a dangling “this”—as in “This severely limits your overall productivity”—that I would edit out if this were a scientific paper and not a blog post.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If your name is not Sally it’s Ok to hesitate a bit and wonder who I might be talking to.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Please promise me that you won’t ever hand over your writing to anybody else unless you have gone through at least one serious round of copy-editing &lt;em&gt;after&lt;/em&gt; you had generated all the contents.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

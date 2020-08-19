@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heart disease on Claus O. Wilke</title>
+    <link>/tags/heart-disease/</link>
+    <description>Recent content in Heart disease on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/heart-disease/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The one time I failed to parasitize an established clinical researcher</title>
+      <link>/blog/2016/01/24/i-failed-to-parasitize-an-established-clinical-researcher/</link>
+      <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2016/01/24/i-failed-to-parasitize-an-established-clinical-researcher/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As regular readers of this blog probably know, I’m the paragon of a &lt;a href=&#34;https://twitter.com/hashtag/researchparasite&#34;&gt;research parasite.&lt;/a&gt; I’m a computational biologist, and all I ever do is publish my own analyses of other people’s data. Except that one time, a few years back, when a senior clinical researcher stopped me in my tracks. Thanks to his careful and guarded stewardship of his data, I have been saved from drawing incorrect conclusions from his data and from publicly embarrassing myself by claiming his analysis is complete nonsense.&lt;/p&gt;
+&lt;p&gt;The story happened a few years back, when a senior clinical researcher (let’s call him X) published a paper claiming that egg-yolk consumption is nearly as bad for cardiovascular disease (CVD) as is smoking. As an avid egg lover, I wondered whether I should be concerned. Unfortunately, the manuscript was opaque and used statistical techniques I don’t trust (&lt;a href=&#34;/blog/2013/8/18/common-errors-in-statistical-analyses&#34;&gt;quantiling&lt;/a&gt;), so I contacted X and asked to see the raw data. He made me state that I did not have any ties, financial or otherwise, to the egg industry (I don’t), and then he shared his raw data with me under the condition that I would keep the data confidential and that he would be a co-author on any resulting publications. I accepted these conditions and took a look at the data.&lt;/p&gt;
+&lt;p&gt;I quickly realized that X and his colleagues had made several statistical mistakes, and that in fact the data exonerated eggs as a culprit for CVD. I analyzed the data using a variety of different approaches, just to be sure, but the simplest and most obvious one was a principal components analysis (PCA). It showed clearly that the egg-consumption axis was orthogonal to the age/smoking/CVD axis. (To this day, it’s one of the cleanest examples I’ve ever seen of a PCA revealing distinct underlying trends in the data.)&lt;/p&gt;
+&lt;p&gt;I wrote a brief report and shared it with X, who forwarded it to a colleague of his in the biostatistics department. Let’s call him Y. The response I received was quite astonishing. (I’m paraphrasing from memory here.) First, Y said that “Claus Wilke is a strong student.” I was a tenured professor at the time. Second, Y said that “we don’t use PCA in clinical research.” Never mind that simple correlation tests, ordinary regressions, and regularized regressions all supported the results I had found with the PCA.&lt;/p&gt;
+&lt;p&gt;Now, since X and Y thought I was a good student who however didn’t understand how statistics work in the clinical practice, and since I thought X’s paper was a bunch of nonsense, writing a joint paper on this topic was out of the question. That’s alright by me. I don’t need to publish in nutrition, and I’m fine with not having to worry about being assassinated by the egg-substitutes industry. However, X’s paper is still out there, receiving almost 20 citations a year. And, more importantly, this paper and its associated data would serve as an ideal teaching tool for the dangers (and power) of multivariate statistics. Alas, I’ll have to let it go. I should probably just start collecting my own data set of carotid plaque thickness in patients that have or have not eaten eggs for many years.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you’re wondering what all of this is about, read &lt;a href=&#34;http://www.nejm.org/doi/full/10.1056/NEJMe1516564&#34;&gt;this editorial&lt;/a&gt; in the New England Journal of Medicine. You may also want to read &lt;a href=&#34;http://jonathanpeelle.net/blog/2016/1/22/translation-to-plain-english-of-selected-portions-of-longo-and-drazens-editorial-on-data-sharing&#34;&gt;this translation into English.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Do we know anything about nutrition?</title>
+      <link>/blog/2013/09/13/do-we-know-anything-about-nutrition/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/13/do-we-know-anything-about-nutrition/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I was pointed to this &lt;a href=&#34;http://www.informationisbeautiful.net/visualizations/snake-oil-superfoods/&#34;&gt;infographic on superfoods,&lt;/a&gt; which aims at summarizing the scientific information we have about the health benefits of specific foods. It ranks health claims about specific foods by the strength of scientific evidence for the claim, and provides direct links to the relevant studies. The first thing you’ll notice if you look at it is that most claims fall well below promising. However, there are a few that are listed as good or strong. Since I’m somewhat of a nutrition geek, I of course went immediately and looked at the claims that are supposed to be the strongest. I was dismayed to find that of the four claims listed as very strong, at least two are rather dubious. Those two are barley and oats. (I stopped reading after that. The other two may well be dubious as well.)&lt;/p&gt;
+
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:figure1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;superfoods.jpg&#34; alt=&#34;Interactive superfoods infographic from informationisbeautiful.net.&#34; width=&#34;60%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: &lt;a href=&#34;http://www.informationisbeautiful.net/visualizations/snake-oil-superfoods/&#34;&gt;Interactive superfoods infographic&lt;/a&gt; from informationisbeautiful.net.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;There are two issues with those two claims: First, there is no credible health claim. Second, regardless of the validity of the claim itself, the claim is not well supported by evidence. Let’s consider these two pieces in turn.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Credibility of the health claim:&lt;/strong&gt; Both oats and barley are listed for cholesterol. The problem is, cholesterol is not a disease. At best, cholesterol is a marker for a disease (cardiovascular disease, CVD). But it’s a really weak marker. It basically doesn’t work. The main reason we are obsessed with cholesterol is that in the 1950s, it was one of the first physiologic markers of CVD that could be easily measured. As a consequence, cholesterol testing became standard, and we all started to worry about cholesterol levels. But the science hasn’t held up. By now, it is pretty well established that CVD is caused primarily by inflammation, and inflammation is caused by an excess &lt;em&gt;number&lt;/em&gt; of oxidized Low-Density Lipoprotein particles (LDL particles). A standard cholesterol test measures the &lt;em&gt;amount&lt;/em&gt; of cholesterol carried by LDL particles. It is entirely possible to have a small number of particles carry a large amount of cholesterol (high cholesterol, low disease risk) or to have a large number of particles carry a small amount of cholesterol (low cholesterol, high disease risk). Thus, unless a food lowers the number of LDL particles, its effects on cholesterol levels are irrelevant. If this is news to you, read the nine-part series on cholesterol by Peter Attia, in particular &lt;a href=&#34;http://eatingacademy.com/nutrition/the-straight-dope-on-cholesterol-part-vi&#34;&gt;part vi&lt;/a&gt; and &lt;a href=&#34;http://eatingacademy.com/cholesterol-2/the-straight-dope-on-cholesterol-part-ix&#34;&gt;part ix.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strength of evidence supporting the claim:&lt;/strong&gt; The link between oats/barley and cholesterol is supported by nutritional epidemiology, a field that has largely failed to produce any useful insight. Nutritional epidemiology can reveal &lt;em&gt;associations&lt;/em&gt; between components of a diet and diseases/disease markers, but it cannot establish any causal relation. Further, because the number of potential confounding variables is huge, and the effect size generally small, nearly all results in nutritional epidemiology are driven by unobserved or uncontrolled confounders. Yes, you could use nutritional epidemiology to establish that eating potassium cyanide is bad, or even that eating arsenic in large quantities is bad, but you’ll generally not be able to ascribe specific health benefits to regular foods that people have eaten for generations.&lt;/p&gt;
+&lt;p&gt;The biggest confounder in nutritional epidemiology is the healthy person bias, which means that people who take good care of themselves will generally be healthier, and they will also do what is commonly believed to be healthy. At that point, nutritional epidemiology becomes a self-fulfilling prophecy. If we’re being told that oats and barley are good for us, then the most healthy-conscious people are going to eat more oats and barley, and hence we’ll see an association between consumption of oats and barley on the one hand and better health profiles on the other hand. The number of people who are like me, who are very health conscious but think that a diet of eggs, steak, and butter is healthy, is rather small. Therefore, I don’t expect any association study in the near future to support my view. But even if it did, it would be just as meaningless, for the same reasons. If you want to learn more about the problems with nutritional epidemiology, I recommend the work by Gary Taubes, in particular his book “Good Calories Bad Calories.” For a quick online read, check out &lt;a href=&#34;http://www.nytimes.com/2007/09/16/magazine/16epidemiology-t.html&#34;&gt;this article.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; I don’t think we know much about nutrition at all at this time. I’m generally sceptical of any health claim, unless it is linked to a solid, experimentally verified mechanistic explanation. (There can be little doubt, for example, that an &lt;em&gt;excess&lt;/em&gt; of refined carbohydrates is a main driver in Type-II diabetes.) But even if a mechanistic explanation is available, we all have different genetic backgrounds and react to food differently as a consequence of that. For example, some people can eat grains and sugar all their life and be fine, while others need only look at a slice of bread and develop insulin resistance.&lt;/p&gt;
+&lt;p&gt;For myself, I’ve come up with the following list of simple guidelines that I think are well supported and reasonable:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;If you eat something and it makes you feel bad, stop eating it.&lt;/li&gt;
+&lt;li&gt;If you’re frequently tired, have low energy, or have frequent digestive issues (heartburn, bloating, constipation, loose stools), you may be eating things your body can’t handle well. Try an elimination diet.&lt;/li&gt;
+&lt;li&gt;If you suffer from allergies, you may be eating things your body can’t handle well. Try an elimination diet.&lt;/li&gt;
+&lt;li&gt;If you frequently have energy supply problems, i.e., you easily get tired in the afternoon, or you frequently feel like your brain will shut off unless you eat something immediately, you lack metabolic flexibility. Play around with the macronutrient composition of your diet (more fat, more protein, fewer carbs) and see if it makes a difference.&lt;/li&gt;
+&lt;li&gt;If you feel great, have good energy, generally feel awake and productive, it’s very unlikely that your diet has major issues.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A year without breakfast</title>
+      <link>/blog/2013/09/04/a-year-without-breakfast/</link>
+      <pubDate>Wed, 04 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/04/a-year-without-breakfast/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;About a year ago, I gave up breakfast. The truth is, I’ve never liked breakfast. When I wake up, I’m not hungry. Why should I eat? However, breakfast is important, right? Everybody knows, breakfast is the most important meal of the day. Not eating breakfast is associated with all sorts of ills.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; It will &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/21448130&#34;&gt;make you fat.&lt;/a&gt; It will give you &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/23031568&#34;&gt;heart disease.&lt;/a&gt; Why would anybody in their right mind not have breakfast?&lt;/p&gt;
+&lt;p&gt;Well, two things happened about a year ago that made me change my mind. First, I learned about the recent trend of intermittent fasting, which basically amounts to not eating for extended periods of time on a somewhat regular schedule. One of the most popular schedules for intermittent fasting is 16 / 8, which means that every day you fast for 16 hours and then you have an 8 hour window in which you’re allowed to eat. If you do the math, if you skip breakfast, have lunch at noon, and finish dinner before 8pm, you’re on a 16 / 8 intermittent fasting schedule. So 16 / 8 intermittent fasting is really just a fancy term for “skipping breakfast.” Second, and more importantly, I read this life-changing article: &lt;a href=&#34;http://www.leangains.com/2012/06/why-does-breakfast-make-me-hungry.html&#34;&gt;“Why does breakfast make me hungry?”&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; This article, written by one of the leading intermittent fasting proponents, explains in detail the hormonal reasons that cause some people to get really hungry shortly after breakfast. In fact, I had always noticed that I got really hungry about an hour or so after having had breakfast. And it didn’t seem to matter much what I ate, or how much I ate, for breakfast. I would be reliably hungry around 10am–11am. (I’m not an early riser.) So clearly, what was written in this article held true for me.&lt;/p&gt;
+&lt;p&gt;Now, between having a solid scientific explanation for why breakfast seemed to make me more not less hungry and a cool name for my new habit of not eating breakfast, I decided to take the plunge with 16 / 8 intermittent fasting. I haven’t had more than maybe 5–10 breakfasts, total, over the last year. Well, technically, my &lt;em&gt;break fast&lt;/em&gt; is the first meal I eat after fasting, regardless of the time. So to be more precise, I haven’t eaten before noon more than maybe 5–10 times, total, over the last year. When I started out, I would have coffee with some cream in the morning, so I had a small caloric intake shortly after waking up. But lately I’ve given that up as well. I now take my coffee black.&lt;/p&gt;
+&lt;p&gt;What has been the outcome of this experiment? If you google “intermittent fasting,” you can read about all sorts of demonstrated or plausible health benefits, such as increased insulin sensitivity, improved body composition, or neuroprotection. But I don’t want to talk about that here. Instead, I want to talk about how it has affected me, personally, in my day-to-day life.&lt;/p&gt;
+&lt;p&gt;Most importantly, my dependency on regular feeding has gone way down. Do you ever have the sense of “I’m starving; my brain is going to stop functioning unless I get food right now?” I used to have these sensations all the time. But if you think about it, it can’t be true. Unless you’re anorexic, if you live in the civilized world you’re not about to starve. You’re not about to starve if you haven’t had food for a day. Realistically, you’re not about to starve if you haven’t had food for a week. You’re certainly not about to starve if you haven’t had food for a few hours. So why would your body tell you so? Because after years of around-the-clock feeding, after rarely if ever experiencing more than a few hours in the non-fed state, your body has forgotten how to make effective use of its energy reserves. The required genes are not turned on. You can’t burn the layer of fat on your belly, even though it’s there. So your body screams for food. I know mine used to. Now, after a year of intermittent fasting, I don’t usually have this issue anymore. I’m certainly not hungry during my regular fasting window. And even if I have to fast longer, for example because I really have to get something done and can’t eat at my regular lunch hour, it doesn’t really matter to me. I just keep going, and I eat when I can. I also don’t usually snack anymore. Why should I need a snack if I’ve just eaten a few hours earlier? My body isn’t even done digesting yet.&lt;/p&gt;
+&lt;p&gt;The other huge benefit is all the extra time I now have that I’m not spending on thinking about getting food, procuring food, preparing food, eating food. After getting out of bed, I usually have at least six waking hours before I first seriously think about eating. That’s a lot of productive time. Once you start cutting meals, you start realizing how much time and effort they require. Now mind you, I like to eat, and I like to prepare food. But once or twice a day is plenty.&lt;/p&gt;
+&lt;p&gt;I also don’t really experience afternoon slumps anymore. I feel overall much more awake. I have to add the caveat, though, that concomitantly with intermittent fasting I’ve also reduced my carb intake, a lot. Metabolically, the fasted state and the state on a low-carb, high-fat diet are very similar, so it’s hard to distinguish which intervention has caused what.&lt;/p&gt;
+&lt;p&gt;But intermittent fasting is not all unicorns and rainbows. There are a few clear downsides that need to be mentioned. First, it took me probably 6 months to get really comfortable with extended fasts (16+ hours). Initially, there were days when I felt quite hungry, when I was literally looking at the clock waiting for my feeding window to open up. Second, on an intermittent fasting protocol, when you eat, you need to EAT. I usually have two meals a day; hence, each meal needs to be around 1100 Cals or so. (I don’t really keep track, but I estimate that I eat around 2200 Cals a day. Definitely not less, maybe more.) I rarely worry about excess calories when I eat, but I frequently worry about not getting sufficiently many calories. As a regular faster, when you go out to eat with your friends and family, you may find that they think you’ve gone nuts. While they barely finish their chicken breast, you order a couple of appetizers, extra butter for your steak, and some extra sides. And still you leave the restaurant hungry. Third, if you have business or social meal events during your fasting window, you have to decide whether you want to be weird and watch your company eating or rather break your fast. I’ve gotten quite good with just having a black coffee during breakfast events, but depending on your job and social demands, it could be difficult.&lt;/p&gt;
+&lt;p&gt;So, has skipping breakfast made me fat and given me heart disease? Well, I have to admit that I’ve gained about eight pounds over the last year. And I’ve also lost about an inch around my waist. That’s what they mean when they say “improved body composition.” As to heart disease, so far I’m alive and kicking. Of course I can’t promise you that I won’t drop dead from a heart attack tomorrow. I’ll take my chances, though.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;That’s the kind of nonsense that frequently passes for science in the field of nutrition. Not eating breakfast is &lt;em&gt;associated&lt;/em&gt; with all sorts of ills, mostly because both skipping breakfast and the associated ills are indicators of a stressful lifestyle and of poor eating habits. There’s absolutely no evidence that skipping breakfast in the context of a well-formulated diet and otherwise healthy lifestyle is harmful. Controlled studies generally find the opposite. For example, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/23672851&#34;&gt;skipping breakfast is a simple method to control overall caloric intake.&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;The author of this article is quite a character. But the science is solid.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A review of the therapeutic uses of very-low-carbohydrate (ketogenic) diets</title>
+      <link>/blog/2013/09/01/a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2013/09/01/a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I just learned about this review article that was published earlier this summer in the European Journal of Clinical Nutrition:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A. Paoli, A. Rubini, J. S. Volek and K. A. Grimaldi. Beyond weight loss: a review of the therapeutic uses of very-low-carbohydrate (ketogenic) diets. &lt;em&gt;European Journal of Clinical Nutrition&lt;/em&gt; &lt;strong&gt;67&lt;/strong&gt;:789–796, 2013; &lt;a href=&#34;https://doi.org/10.1038/ejcn.2013.116&#34;&gt;doi:10.1038/ejcn.2013.116&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a fantastic article summarizing the current knowledge about ketogenic diets. Read it!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; The article lists the following as diseases with strong evidence that ketogenic diets can be beneficial: obesity, cardiovascular disease, Type II diabetes, epilepsy. The article lists the following as diseases with emerging evidence that ketogenic diets can be beneficial: acne, cancer, polycystic ovary syndrome, neurological diseases (e.g. Alzheimer’s).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

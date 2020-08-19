@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A paper does not have to be peer-reviewed to be citable.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2015/01/02/what-constitutes-a-citable-scientific-work/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2015/01/02/what-constitutes-a-citable-scientific-work/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2015/01/02/what-constitutes-a-citable-scientific-work/">
+  <meta property="og:title" content="What constitutes a citable scientific work? | Claus O. Wilke">
+  <meta property="og:description" content="A paper does not have to be peer-reviewed to be citable."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2015-01-02T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2015-01-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>What constitutes a citable scientific work? | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">What constitutes a citable scientific work?</h1>
+
+  
+  <p class="page-subtitle">A paper does not have to be peer-reviewed to be citable.</p>
+  
+
+  
+    
+
+
+
+<meta content="2015-01-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2015-01-02 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jan 2, 2015</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2015/01/02/what-constitutes-a-citable-scientific-work/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/academia/">Academia</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2015/01/02/what-constitutes-a-citable-scientific-work/&amp;text=What%20constitutes%20a%20citable%20scientific%20work?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2015/01/02/what-constitutes-a-citable-scientific-work/&amp;t=What%20constitutes%20a%20citable%20scientific%20work?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=What%20constitutes%20a%20citable%20scientific%20work?&amp;body=/blog/2015/01/02/what-constitutes-a-citable-scientific-work/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2015/01/02/what-constitutes-a-citable-scientific-work/&amp;title=What%20constitutes%20a%20citable%20scientific%20work?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=What%20constitutes%20a%20citable%20scientific%20work?%20/blog/2015/01/02/what-constitutes-a-citable-scientific-work/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2015/01/02/what-constitutes-a-citable-scientific-work/&amp;title=What%20constitutes%20a%20citable%20scientific%20work?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>There was a lively discussion on Twitter the other day regarding what constitutes a citable piece of scientific work. In particular, Matthew Hahn was concerned about where to draw the line, and he felt that unless something is traditionally published there’s <a href="https://twitter.com/3rdreviewer/status/549365313331290112">no need to cite it.</a> When reading this dicussion, I felt it was muddled by the lack of clear criteria separating citable works from other forms of scientific communication. In my mind, there is a clear distinction between preprints, which I consider to be citable works, and presentation slides or tweets, which are not. To formalize this distinction, I would like to propose four conditions that need to be satisfied for a document to be considered a citable piece of scientific work. The document needs to be: (i) uniquely and unambiguously citable; (ii) available in perpetuity, in unchanged form; (iii) accessible to the public; (iv) self-contained and complete.</p>
+<div id="uniquely-and-unambiguously-citable" class="section level2">
+<h2>1. Uniquely and unambiguously citable</h2>
+<p>It must be possible to uniquely and unambiguously refer to the particular work in question. This condition may seem trivial, but that’s not necessarily the case. For example, during the aforementioned Twitter conversation, Matthew Hahn brought up the case where somebody might <a href="https://twitter.com/3rdreviewer/status/549381166722469888">tweet an entire paper or talk.</a> Such a series of tweets would not be unambigously citable: One can cite an individual tweet but not a collection of tweets. While one could cite the first tweet in a series, assuming subsequent tweets were posted as replies, it would still remain ambiguous which specific tweets should be considered to comprise the entirety of the work. What if other users replied to the first tweet as well? And what if the original author then responded to them? The very nature of Twitter is such that the unique, citable unit is a single tweet, 140 characters or less, and that is not sufficient to convey a self-contained and complete scientific work. (Note that tweets also fail condition 2, since they can be deleted.)</p>
+</div>
+<div id="available-in-perpetuity-in-unchanged-form" class="section level2">
+<h2>2. Available in perpetuity, in unchanged form</h2>
+<p>There needs to be some guarantee that the referenced document will not change and will be available in perpetuity. While nothing is truly forever, and works tend to get lost over time, documents hosted according to industry standards by large and established non-profit or for-profit publishing operations are not likely to disappear any time soon. This certainly includes documents posted on the preprint server <a href="https://arxiv.org/">arxiv.org,</a> and probably also on the <a href="https://biorxiv.org/">biorxiv</a> server. Moreover, professional publishing operations generally do not allow changes to once-published documents, though they may allow for the publication of updates or revised article versions.</p>
+<p>Importantly, most privately hosted web sites and blogs do not satisfy this requirement.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> If I stop paying my web-hosting bill, this blog will disappear rather quickly. Similarly, any day I could decide that I didn’t like a particular post and rewrite or delete it, or I could delete the entire blog. And the same is true for institutionally hosted pages or lab web pages. Only those publishing platforms that are built with the express purpose of allowing perpetual access provide some amount of certainty that documents won’t just disappear or change.</p>
+</div>
+<div id="accessible-to-the-public" class="section level2">
+<h2>3. Accessible to the public</h2>
+<p>The document needs to be accessible to the public. This condition doesn’t necessarily require that access be free (though I personally would prefer it to be this way), since we have traditionally accepted that certain scientific works are only available after payment of a fee. However, anybody willing to pay the fee must be able to access the work, without any other conditions imposed. Also, libraries must be allowed to carry the work, and any library patrons must be able to peruse the work for free.</p>
+<p>The point of this condition is to exclude internal technical documents of companies or other organizations, in particular, documents that might require signing a non-disclosure agreement. Such documents may be useful but they do not belong into the scientific record.</p>
+</div>
+<div id="self-contained-and-complete" class="section level2">
+<h2>4. Self-contained and complete</h2>
+<p>The document needs to be self-contained and complete. In other words, whatever the novel contribution is of a given piece of work, that contribution needs to be fully and clearly explained within the document. Many forms of scientific communication violate this condition. Consider for example the slides of a scientific presentation. They are meant merely as support to the oral presentation, and usually they cannot be fully understood without the accompanying talk. Now, if one wanted to, one could certainly write slides that are self-contained and complete. However, those slides would make for a poor talk and also would be nothing more than an awkwardly formatted preprint.</p>
+<p>Even if a recording of the talk is provided alongside the slides, the completeness condition will usually remain violated. For example, methodological details are frequently glossed over in presentations, as are parts of mathematical derivations in theoretical talks. However, this doesn’t mean that only written works can be scientific documents. For example, the <a href="http://www.jove.com/">Journal of Visualized Experiments (JoVE)</a> publishes self-contained and complete video articles.</p>
+</div>
+<div id="but-if-it-hasnt-been-reviewed" class="section level2">
+<h2>But if it hasn’t been reviewed?</h2>
+<p>I am a strong proponent of pre-publication review. <a href="/blog/2013/12/21/the-value-of-pre-publication-peer-review">I have said so before.</a> At the same time, I am wary of what I’d like to call “the review fetish,” the attitude that scientific works can’t be trusted until they have been reviewed, at which point they become valid contributions to the scientific literature. Whether something has been reviewed has no bearing on its validity. A work is valid or it is not, period. We all know that flawed works pass peer review and valid works get rejected. In fact, the most influential and highly cited articles often get rejected initially.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> As working scientists, we need to personally judge the validity of each and every article we read, regardless of the article’s origin or review status.</p>
+<p>Also, the only logical reason to require citable works to be peer reviewed would be as a means of quality control, so that bad science doesn’t get cited. However, it then immediately follows that we would have to assess the quality of peer review at each journal. What if some journals carry out sub-standard review and basically print everything? Should they be put on a blacklist of journals we can’t cite? What about contributed papers to PNAS, many of which likely haven’t received the same kind of scrutiny as articles that get edited by independent third parties? What about journals that employ professional editors, who may make decisions that aren’t always entirely driven by scientific considerations? Should we put those journals on the blacklist? In my mind, insisting on peer review for quality control reasons opens a can of worms that simply can’t be dealt with in any reasonable manner.</p>
+<p>Further, while the current scientific culture expects that we submit all our articles to journals for review, I think scientists should be allowed to choose not to be subjected to this process. If some scientists prefer to skip peer review and simply post their work on a preprint server, it should be their prerogative to do so. And we should take their work seriously as long as it is worthwhile and of high quality. Clearly mathematicians do so. Consider the case of <a href="http://en.wikipedia.org/wiki/Grigori_Perelman">Grigori Perelman,</a> who was awarded a Fields Medal, the highest honor bestowed upon mathematicians, for work he had posted on a preprint server but never formally published.</p>
+<p>Finally, I would like to point out that there are document types that have traditionally been considered part of the scholarly literature, such as monographs or dissertations, that are not necessarily reviewed. <a href="http://haldanessieve.org/2013/08/26/thoughts-on-mbes-preprint-citation-policy/">Journals that forbid citations to preprints</a> do not usually impose similar restrictions on the citation of books or theses.</p>
+</div>
+<div id="concluding-thoughts" class="section level2">
+<h2>Concluding thoughts</h2>
+<p>With the four conditions I have outlined, we can easily test whether specific documents or works should be considered to be citable resources or not. Strings of tweets clearly fail the test, as do slides, recordings of talks, posters, tweets of photos of posters, or blog posts. Documents that pass the test are articles in traditional print journals, articles in most professionally operated online journals, books, book chapters, dissertations, and preprints deposited on professionally operated preprint servers. Interestingly, websites hosting scientific software will usually fail at least conditions 2 and 3, and thus would not be citable by my criteria. In fact, it is my opinion that scientific software should always be accompanied by an article introducing and explaining the software, and what we should cite is the article, not the website where the software is housed.</p>
+<p>Importantly, I can think of no principled test that would cleanly separate preprints from the rest of the scientific literature. The only such test I can think of is “has it been posted on a preprint server,” but it would be difficult to provide a logical reason for why this test should be applied to determine the citability of a document,<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> other than personal preference. I might just as well not cite articles published in journals that don’t use at least 3 reviewers, or in journals where editorial decisions are made by professional editors and not by working scientists, or in journals that typeset their articles in a sans-serif font.</p>
+<p><strong>Update 01/02/2015:</strong> Rafael Najmanovich <a href="https://twitter.com/RNajmanovich/status/551155998350901248">suggested an additional condition:</a> Attributable authorship. It should be clear who has written a specific document. While I agree with this condition in principle, I’m not sure yet whether I would go so far as arguing that anonymous documents should never be cited. If a document is anonymous but otherwise a valid contribution to science, should we ignore it? Probably not.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Klein et al. (2014) Scholarly context not found: One in five articles suffers from reference rot. PLoS ONE 9: e115253. <a href="https://doi.org/10.1371/journal.pone.0115253">doi:10.1371/journal.pone.0115253</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Siler et al. (2014) Measuring the effectiveness of scientific gatekeeping. PNAS, in press. <a href="https://doi.org/10.1073/pnas.1418218112">doi:10.1073/pnas.1418218112</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Keep in mind that this entire post is about the conditions that make a document a <em>citable</em> contribution to the scientific literature. This is different from the question of whether a document is a preprint or a formally published article. The main services that journals provide are (i) quality control, in the form of editorial and peer review, (ii) prestige, in proportion to how selective they are, and (iii) professional typesetting, though the quality of this service has declined in recent years. In return, journals demand exclusivity. Thus, it is natural for a journal to determine whether a document has been previously published by asking whether the document has previously undergone editorial and peer review and has been professionally typeset. Importantly, when journals make this assessment, they are not concerned with the quality of peer review. Any document that has been reviewed and accepted for publication elsewhere, no matter how low the standards, would violate the exclusivity clause and hence is going to be considered published.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/peer-review/">Peer review</a>
+  
+  <a class="badge badge-light" href="/tags/preprints/">Preprints</a>
+  
+  <a class="badge badge-light" href="/tags/pre-publication-review/">Pre-publication review</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2014/12/18/how-to-prepare-an-article-for-resubmission-part-ii/">How to prepare an article for resubmission, Part II</a></li>
+          
+          <li><a href="/blog/2014/12/02/how-google-scholar-discourages-young-scientists-from-posting-preprints/">How Google Scholar discourages young scientists from posting preprints</a></li>
+          
+          <li><a href="/blog/2014/11/16/how-to-prepare-an-article-for-resubmission/">How to prepare an article for resubmission</a></li>
+          
+          <li><a href="/blog/2014/11/01/the-google-scholar-preprint-bug/">The Google Scholar preprint bug</a></li>
+          
+          <li><a href="/blog/2014/10/18/should-peer-review-be-double-blind/">Should peer-review be double-blind?</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clauswilke" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//clauswilke.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

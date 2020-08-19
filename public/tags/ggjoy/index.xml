@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggjoy on Claus O. Wilke</title>
+    <link>/tags/ggjoy/</link>
+    <description>Recent content in ggjoy on Claus O. Wilke</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/ggjoy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goodbye joyplots</title>
+      <link>/blog/2017/09/15/goodbye-joyplots/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/09/15/goodbye-joyplots/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Anybody who has been paying any attention to the data visualization scene knows that the summer of 2017 was the summer of joyplots. This type of visualization turned viral, probably not in small part fueled by the R package &lt;a href=&#34;https://CRAN.R-project.org/package=ggjoy&#34;&gt;ggjoy&lt;/a&gt; that I wrote in July. However, I think it’s time to retire both the name “joyplot” and the ggjoy package, and as of today the ggjoy package is officially deprecated. A replacement package &lt;a href=&#34;https://CRAN.R-project.org/package=ggridges&#34;&gt;ggridges&lt;/a&gt; is in place and provides essentially the same functionality.&lt;/p&gt;
+&lt;p&gt;The term “joyplot” was coined by Jenny Bryan in a tweet on April 24, 2017:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+I hereby propose that we call these “joy plots” &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://t.co/uuLGpQLAwY&#34;&gt;https://t.co/uuLGpQLAwY&lt;/a&gt;
+&lt;/p&gt;
+— Jenny Bryan (&lt;span class=&#34;citation&#34;&gt;@JennyBryan&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/JennyBryan/status/856674638981550080&#34;&gt;April 25, 2017&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;The idea was to honor the band Joy Division, whose 1979 album &lt;a href=&#34;https://en.wikipedia.org/wiki/Unknown_Pleasures&#34;&gt;&lt;em&gt;Unknown Pleasures&lt;/em&gt;&lt;/a&gt; features on its cover a visualization of radio waves as staggered lines, creating a 3D-like effect. This seemed like a good idea and the name caught on like wildfire.&lt;/p&gt;
+&lt;p&gt;Unfortunately, when the name “joyplot” took off, nobody in the datascience community was aware of the origin of the name “Joy Division”. As described in the book &lt;a href=&#34;https://en.wikipedia.org/wiki/House_of_Dolls&#34;&gt;&lt;em&gt;House of Dolls,&lt;/em&gt;&lt;/a&gt; joy divisions were groups of Jewish women in Nazi concentration camps kept for the sexual pleasure of soldiers. The band Joy Division took their name directly from this book and even quoted from the book in one of their early songs.&lt;/p&gt;
+&lt;p&gt;Thus, as joyful as the name “joyplot” sounds to the uninformed, its history is rather dark, and we would do better using a different name. For this reason, I have decided to now call these plots “ridgeline plots”. Indeed, from day one, the ggjoy package contained a &lt;code&gt;geom_ridgeline()&lt;/code&gt;, so I’m just keeping in this tradition. The new ggridges package uses this naming convention throughout, and all functions have been renamed accordingly. For example, &lt;code&gt;geom_joy()&lt;/code&gt; is now called &lt;code&gt;geom_density_ridges()&lt;/code&gt;. A complete list of all name replacements is provided &lt;a href=&#34;https://github.com/clauswilke/ggjoy/blob/master/README.md&#34;&gt;here&lt;/a&gt;. Porting your code from ggjoy to ggridges should be as simple as a search-and-replace for all those functions in your code. If you run into any trouble, please let me know or open an &lt;a href=&#34;https://github.com/clauswilke/ggridges/issues&#34;&gt;issue on github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
