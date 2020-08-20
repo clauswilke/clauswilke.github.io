@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Claus O. Wilke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogging</title>
+      <link>/tags/blogging/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serial Mentor</title>
+      <link>/tags/serial-mentor/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/serial-mentor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web hosting</title>
+      <link>/tags/web-hosting/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web-hosting/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Books</title>
@@ -345,15 +390,6 @@
     </item>
     
     <item>
-      <title>Github</title>
-      <link>/tags/github/</link>
-      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jekyll</title>
       <link>/tags/jekyll/</link>
       <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
@@ -368,15 +404,6 @@
       <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>/tags/squarespace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web hosting</title>
-      <link>/tags/web-hosting/</link>
-      <pubDate>Thu, 06 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/web-hosting/</guid>
       <description></description>
     </item>
     
@@ -1326,15 +1353,6 @@
     </item>
     
     <item>
-      <title>Blogging</title>
-      <link>/tags/blogging/</link>
-      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/blogging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Exercise</title>
       <link>/tags/exercise/</link>
       <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
@@ -1349,15 +1367,6 @@
       <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>/tags/nutrition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Serial Mentor</title>
-      <link>/tags/serial-mentor/</link>
-      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/serial-mentor/</guid>
       <description></description>
     </item>
     

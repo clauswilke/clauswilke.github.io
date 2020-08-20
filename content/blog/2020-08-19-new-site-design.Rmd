@@ -1,0 +1,19 @@
+---
+authors:
+- admin
+title: "New site design"
+subtitle: "I have redesigned this site and moved it to a new location."
+summary: "I have redesigned this site and moved it to a new location."
+slug: new-site-design
+date: 2020-08-19
+categories: ["Miscellaneous"]
+tags: ["Blogdown", "Blogging", "Github", "Serial Mentor", "Web hosting"]
+---
+
+It was time for a redesign. The previous layout was five years old, and it was looking dated. More importantly, the framework I had used wasn't working for me anymore. I needed something simpler, more elegant, and more powerful.
+
+My previous redesign happened exactly [five years ago,](/blog/2015/08/06/goodbye-squarespace/) when I moved this site from Squarespace to GitHub Pages with Jekyll. The transition to the static site generator Jekyll served me well, as it allowed me to write sites in Markdown and made it easier (compared to Squarespace) to include code examples. However, in many ways it was still too cumbersome, and in the end I rarely blogged anymore. At the same time, I was increasingly using R Markdown, and I have now [written an entire book](/blog/2018/01/23/fundamentals-of-data-visualization/) using this technology. This made me realize that I needed an R Markdown-based blog as well. Thus, the latest iteration of this site is built with the [blogdown package,](https://bookdown.org/yihui/blogdown/) using the widely popular Hugo theme [Academic.](https://sourcethemes.com/academic/) 
+With the redesign also comes a move of the site from serialmentor.com to clauswilke.com. This was actually the original site location, though it existed only for a few days in August 2013. Going forward, I see this more as a personal site than a blog dedicated to a specific topic, and thus hosting it under my name seems the most appropriate. All the old posts will remain up, though, and links should automatically be forwarded.
+
+However, for technical reasons, it doesn't seem possible to forward links to the site for my dataviz book, now located at https://clauswilke.com/dataviz, formerly at https://serialmentor.com/dataviz. Thus, if you visit that site regularly, you'll have to update your bookmarks.
+

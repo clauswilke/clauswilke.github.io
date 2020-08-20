@@ -1,6 +1,6 @@
 ---
 date: "2020-08-19T00:00:00Z"  # date determines ordering on front page
-external_link: "https://serialmentor.com/dataviz"
+external_link: "https://clauswilke.com/dataviz"
 image:
   caption: ""
   focal_point: Smart
@@ -16,7 +16,7 @@ url_slides: ""
 url_video: ""
 ---
 
-Read the book for free here: https://serialmentor.com/dataviz
+Read the book for free here: https://clauswilke.com/dataviz
 
 Purchase the book on Amazon here: https://www.amazon.com/gp/product/1492031089
 
