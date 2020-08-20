@@ -25,6 +25,9 @@ disqusShortname = ""
 ## Advanced options below ##
 ############################
 
+# Don't convert URLs to lower case
+disablePathToLower = true
+
 # Name of Academic theme folder in `themes/`.
 theme = "hugo-academic"
 

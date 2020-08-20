@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Claus O. Wilke</title>
-    <link>/tags/github/</link>
+    <link>/tags/Github/</link>
     <description>Recent content in Github on Claus O. Wilke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="/tags/Github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
