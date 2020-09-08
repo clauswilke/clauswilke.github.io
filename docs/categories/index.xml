@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Claus O. Wilke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data science</title>
+      <link>/categories/Data-science/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/Data-science/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Miscellaneous</title>
@@ -80,15 +89,6 @@
       <pubDate>Sun, 24 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>/categories/Science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data science</title>
-      <link>/categories/Data-science/</link>
-      <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/Data-science/</guid>
       <description></description>
     </item>
     

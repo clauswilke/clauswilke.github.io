@@ -1,0 +1,149 @@
+---
+title: "PCA tidyverse style"
+subtitle: "I've finally figured out how to perform a PCA using the tidyverse."
+summary: "I've finally figured out how to perform a PCA using the tidyverse."
+date: 2020-09-07
+authors:
+ - admin
+slug: pca-tidyverse-style
+categories: ["Data science"]
+tags: ["Principal Components Analysis", "R", "tidyverse"]
+## For re-generating the md output from the original R code
+#output:
+#  html_document:
+#    keep_md: yes
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Doing a PCA in R is easy: Just run the function <code>prcomp()</code> on your matrix of scaled numeric predictor variables. There’s just one problem, however. The result is an object of class <code>prcomp</code> that doesn’t fit nicely into the tidyverse framework, e.g. for visualization. While it’s reasonably easy to extract the relevant info with <a href="https://wilkelab.org/classes/SDS348/2020_spring/worksheets/class9_solutions.html">some base-R manipulations,</a> I’ve never been happy with this approach. But now, I’ve realized that all the necessary functions to do this tidyverse-style are available in the broom package.</p>
+<p>For our PCA example, we’ll need the packages tidyverse and broom. Note that as of this writing, we need the current development version of broom <a href="https://github.com/tidymodels/broom/issues/923">because of a bug</a> in <code>tidy.prcomp()</code>. We’ll also use the cowplot package for plot themes.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code># ── Attaching packages ────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code># ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+# ✓ tibble  3.0.3     ✓ dplyr   1.0.2
+# ✓ tidyr   1.1.2     ✓ stringr 1.4.0
+# ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
+<pre><code># ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ──
+# x dplyr::filter() masks stats::filter()
+# x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(broom)  # devtools::install_github(&quot;tidymodels/broom&quot;)
+library(cowplot)</code></pre>
+<p>We’ll be analyzing the <code>biopsy</code> dataset, which comes originally from the MASS package. It is a breast cancer dataset from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He assessed biopsies of breast tumors for 699 patients; each of nine attributes was scored on a scale of 1 to 10. The true outcome (benign/malignant) is also known.</p>
+<pre class="r"><code>biopsy &lt;- read_csv(&quot;https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv&quot;)</code></pre>
+<pre><code># Parsed with column specification:
+# cols(
+#   clump_thickness = col_double(),
+#   uniform_cell_size = col_double(),
+#   uniform_cell_shape = col_double(),
+#   marg_adhesion = col_double(),
+#   epithelial_cell_size = col_double(),
+#   bare_nuclei = col_double(),
+#   bland_chromatin = col_double(),
+#   normal_nucleoli = col_double(),
+#   mitoses = col_double(),
+#   outcome = col_character()
+# )</code></pre>
+<p>In general, when performing PCA, we’ll want to do (at least) three things:</p>
+<ol style="list-style-type: decimal">
+<li>Look at the data in PC coordinates.</li>
+<li>Look at the rotation matrix.</li>
+<li>Look at the variance explained by each PC.</li>
+</ol>
+<p>Let’s do these three things in turn.</p>
+<div id="look-at-the-data-in-pc-coordinates" class="section level2">
+<h2>Look at the data in PC coordinates</h2>
+<p>We start by running the PCA and storing the result in a variable <code>pca_fit</code>. There are two issues to consider here. First, the <code>prcomp()</code> function can only deal with numeric columns, so we need to remove all non-numeric columns from the data. This is straightforward using the <code>where(is.numeric)</code> tidyselect construct. Second, we normally want to scale the data values to unit variance before PCA. We do so by using the argument <code>scale = TRUE</code> in <code>prcomp()</code>.</p>
+<pre class="r"><code>pca_fit &lt;- biopsy %&gt;% 
+  select(where(is.numeric)) %&gt;% # retain only numeric columns
+  prcomp(scale = TRUE) # do PCA on scaled data</code></pre>
+<p>As an alternative to <code>scale = TRUE</code>, we could also have scaled the data by explicitly invoking the <code>scale()</code> function.</p>
+<pre class="r"><code>pca_fit &lt;- biopsy %&gt;% 
+  select(where(is.numeric)) %&gt;% # retain only numeric columns
+  scale() %&gt;% # scale data
+  prcomp() # do PCA</code></pre>
+<p>Now, we want to plot the data in PC coordinates. In general, this means combining the PC coordinates with the original dataset, so we can color points by categorical variables present in the original data but removed for the PCA. We do this with the <code>augment()</code> function from broom, which takes as arguments the fitted model and the original data. The columns containing the fitted coordinates are called <code>.fittedPC1</code>, <code>.fittedPC2</code>, etc.</p>
+<pre class="r"><code>pca_fit %&gt;%
+  augment(biopsy) %&gt;% # add original dataset back in
+  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
+  geom_point(size = 1.5) +
+  scale_color_manual(
+    values = c(malignant = &quot;#D55E00&quot;, benign = &quot;#0072B2&quot;)
+  ) +
+  theme_half_open(12) + background_grid()</code></pre>
+<p><img src="figure-html/pc-scatter-plot-1.png" /><!-- --></p>
+</div>
+<div id="look-at-the-data-in-pc-coordinates-1" class="section level2">
+<h2>Look at the data in PC coordinates</h2>
+<p>Next, we plot the rotation matrix. The rotation matrix is stored as <code>pca_fit$rotation</code>, but here we’ll extract it using the <code>tidy()</code> function from broom. When applied to <code>prcomp</code> objects, the <code>tidy()</code> function takes an additional argument <code>matrix</code>, which we set to <code>matrix = "rotation"</code> to extract the rotation matrix.</p>
+<pre class="r"><code># extract rotation matrix
+pca_fit %&gt;%
+  tidy(matrix = &quot;rotation&quot;)</code></pre>
+<pre><code># # A tibble: 81 x 3
+#    column               PC    value
+#    &lt;chr&gt;             &lt;dbl&gt;    &lt;dbl&gt;
+#  1 clump_thickness       1 -0.302  
+#  2 clump_thickness       2 -0.141  
+#  3 clump_thickness       3  0.866  
+#  4 clump_thickness       4 -0.108  
+#  5 clump_thickness       5  0.0803 
+#  6 clump_thickness       6 -0.243  
+#  7 clump_thickness       7 -0.00852
+#  8 clump_thickness       8  0.248  
+#  9 clump_thickness       9 -0.00275
+# 10 uniform_cell_size     1 -0.381  
+# # … with 71 more rows</code></pre>
+<p>Now in the context of a plot:</p>
+<pre class="r"><code># define arrow style for plotting
+arrow_style &lt;- arrow(
+  angle = 20, ends = &quot;first&quot;, type = &quot;closed&quot;, length = grid::unit(8, &quot;pt&quot;)
+)
+
+# plot rotation matrix
+pca_fit %&gt;%
+  tidy(matrix = &quot;rotation&quot;) %&gt;%
+  pivot_wider(names_from = &quot;PC&quot;, names_prefix = &quot;PC&quot;, values_from = &quot;value&quot;) %&gt;%
+  ggplot(aes(PC1, PC2)) +
+  geom_segment(xend = 0, yend = 0, arrow = arrow_style) +
+  geom_text(
+    aes(label = column),
+    hjust = 1, nudge_x = -0.02, 
+    color = &quot;#904C2F&quot;
+  ) +
+  xlim(-1.25, .5) + ylim(-.5, 1) +
+  coord_fixed() + # fix aspect ratio to 1:1
+  theme_minimal_grid(12)</code></pre>
+<p><img src="figure-html/pc-rotation-plot-1.png" /><!-- --></p>
+</div>
+<div id="look-at-the-variance-explained-by-each-pc" class="section level2">
+<h2>Look at the variance explained by each PC</h2>
+<p>Finally, we’ll plot the variance explained by each PC. We can again extract this information using the <code>tidy()</code> function from broom, now by setting the <code>matrix</code> argument to <code>matrix = "eigenvalues"</code>.</p>
+<pre class="r"><code>pca_fit %&gt;%
+  tidy(matrix = &quot;eigenvalues&quot;)</code></pre>
+<pre><code># # A tibble: 9 x 4
+#      PC std.dev percent cumulative
+#   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;
+# 1     1   2.43  0.656        0.656
+# 2     2   0.881 0.0862       0.742
+# 3     3   0.734 0.0599       0.802
+# 4     4   0.678 0.0511       0.853
+# 5     5   0.617 0.0422       0.895
+# 6     6   0.549 0.0335       0.928
+# 7     7   0.543 0.0327       0.961
+# 8     8   0.511 0.0290       0.990
+# 9     9   0.297 0.00982      1</code></pre>
+<p>Now in the context of a plot.</p>
+<pre class="r"><code>pca_fit %&gt;%
+  tidy(matrix = &quot;eigenvalues&quot;) %&gt;%
+  ggplot(aes(PC, percent)) +
+  geom_col(fill = &quot;#56B4E9&quot;, alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  theme_minimal_hgrid(12)</code></pre>
+<p><img src="figure-html/pc-eigenvalues-1.png" /><!-- --></p>
+<p>The first component captures 65% of the variation in the data and, as we can see from the first plot in this post, nicely separates the benign samples from the malignant samples.</p>
+</div>
