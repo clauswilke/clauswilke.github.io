@@ -1,0 +1,182 @@
+---
+title: "Writing a blogdown post for the ages"
+subtitle: "How to write a blogdown post that will still render in a hundred years from now."
+summary: "How to write a blogdown post that will still render in a hundred years from now."
+date: 2020-09-08
+authors:
+ - admin
+slug: a-blogdown-post-for-the-ages
+categories: ["Blogging"]
+tags: ["Blogdown", "R", "Blogging", "Markdown", "R Markdown"]
+## For re-generating the md output from the original R code
+#output:
+#  bookdown::html_document2:
+#    keep_md: yes
+---
+
+```{r echo = FALSE}
+knitr::opts_chunk$set(comment = "#", fig.retina = 2)
+# comment out to regenerate plots, output, etc.
+knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+```
+
+
+
+See e.g. [here](https://yutani.rbind.io/post/2017-10-25-blogdown-custom/) or [here](https://github.com/r-lib/hugodown).
+
+I like footnotes, figure references, and math.[^1]
+
+I do not necessarily recommend the approach I'm taking here. This post is mostly for my own purposes, so I can retrace my steps in the future. 
+
+[^1]: This post has one figure, Figure \@ref(fig:map-Texas-income). It also has one equation, $a^2 + b^2 = c^2$. The equation serves no purpose here.
+
+(ref:map-Texas-income) Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, [Chapter 4.](https://clauswilke.com/dataviz/color-basics.html)
+
+```{r map-Texas-income, fig.width = 6, fig.asp = 0.75, fig.cap = '(ref:map-Texas-income)'}
+library(tidyverse)
+library(cowplot)
+library(colorspace)
+library(sf) 
+library(ggtext)
+
+# attach data set, requires practicalgg package
+# remotes::install_github("wilkelab/practicalgg")
+data(texas_income, package = "practicalgg")
+
+ggplot(texas_income, aes(fill = estimate)) + 
+  geom_sf(color = "white") +
+  coord_sf(xlim = c(538250, 2125629), crs = 3083) +
+  scale_fill_continuous_sequential(
+    palette = "Blues", rev = TRUE,
+    na.value = "grey60",
+    name = "annual median income (USD)",
+    limits = c(18000, 90000),
+    breaks = 20000*c(1:4),
+    labels = c("$20,000", "$40,000", "$60,000", "$80,000"),
+    guide = guide_colorbar(
+      direction = "horizontal",
+      label.position = "bottom",
+      title.position = "top",
+      barwidth = grid::unit(3.0, "in"),
+      barheight = grid::unit(0.2, "in")
+    )
+  ) +
+  labs(
+    caption = "
+<span style='font-family: \"Font Awesome 5 Brands\"'>&#xf099;</span>
+@clauswilke<br>
+<span style='font-family: \"Font Awesome 5 Free Solid\"'>&#xf781;</span>
+clauswilke.com
+"
+  ) +
+  theme_map(12, font_family = "Myriad Pro") +
+  theme(
+    legend.title.align = 0.5,
+    legend.text.align = 0.5,
+    legend.justification = c(0, 0),
+    legend.position = c(0.02, 0.1),
+    plot.caption = element_markdown()
+  )
+```
+
+
+```r
+library(tidyverse)
+library(cowplot)
+library(colorspace)
+library(sf) 
+library(ggtext)
+
+# attach data set, requires practicalgg package
+# remotes::install_github("wilkelab/practicalgg")
+data(texas_income, package = "practicalgg")
+
+ggplot(texas_income, aes(fill = estimate)) + 
+  geom_sf(color = "white") +
+  coord_sf(xlim = c(538250, 2125629), crs = 3083) +
+  scale_fill_continuous_sequential(
+    palette = "Blues", rev = TRUE,
+    na.value = "grey60",
+    name = "annual median income (USD)",
+    limits = c(18000, 90000),
+    breaks = 20000*c(1:4),
+    labels = c("$20,000", "$40,000", "$60,000", "$80,000"),
+    guide = guide_colorbar(
+      direction = "horizontal",
+      label.position = "bottom",
+      title.position = "top",
+      barwidth = grid::unit(3.0, "in"),
+      barheight = grid::unit(0.2, "in")
+    )
+  ) +
+  labs(caption = "
+<span style='font-family: \"Font Awesome 5 Brands\"'>&#xf099;</span>
+@clauswilke<br>
+<span style='font-family: \"Font Awesome 5 Free Solid\"'>&#xf781;</span>
+clauswilke.com
+") +
+  theme_map(12, font_family = "Myriad Pro") +
+  theme(
+    legend.title.align = 0.5,
+    legend.text.align = 0.5,
+    legend.justification = c(0, 0),
+    legend.position = c(0.02, 0.1),
+    plot.caption = element_markdown()
+  )
+```
+
+<div class="figure">
+<img src="figure-html/map-Texas-income-1.png" alt="(ref:map-Texas-income)" width="576" />
+<p class="caption">(\#fig:map-Texas-income)(ref:map-Texas-income)</p>
+</div>
+
+
+
+This code has various features that will likely generate issues in the future or in a blog with many posts:
+
+- It depends on a bunch of packages, including one only available from github.
+- It uses various fonts that need to be installed locally.
+- It is slow to render.
+
+## Step-by-step recipe for capturing rendered markdown and figures
+
+1. At the top of your `.Rmd` file, add an R chunk containing the following: 
+<pre><code>```{r echo = FALSE}
+knitr::opts_chunk$set(fig.retina = 2)
+`r ''````</code></pre>
+This will ensure that figures are rendered in high quality. Set `echo = FALSE` for this chunk so the code isn't included in the rendered output.
+
+2. Stop the blogdown server with `blogdown::stop_server()`. We don't want the server to try to create blog posts out of the intermediate files we'll be creating.
+
+3. Add the following to the yaml section of your post: 
+<pre><code>output:
+&nbsp;&nbsp;html_document:
+&nbsp;&nbsp;&nbsp;&nbsp;keep_md: yes
+</code></pre>
+If you want to use bookdown-style automated figure references, use this snippet instead:
+<pre><code>output:
+&nbsp;&nbsp;bookdown::html_document2:
+&nbsp;&nbsp;&nbsp;&nbsp;keep_md: yes
+</code></pre>
+This requires the bookdown package to be installed.
+
+4. Knit your post. You will end up with a new file `index.md` and a folder called `index_files`. The former contains the markdown code that knitr has generated and the latter contains any generated figures.
+
+5. Now you want to copy the generated code and output chunks from `index.md` back into `index.Rmd`. For each code chunk in your `.Rmd` file, there will be one or more markdown chunks, which are fenced with <code>&#96;&#96;&#96;r &#46;&#46;&#46;&#96;&#96;&#96;</code>. There will also be markdown or HTML code to include any generated figures. Place all of this material after the respective code chunk from which it originated, but **do not delete** the original code chunk. We want to keep the original code chunks around in case we do want to re-run some of the R code again in the future, e.g. if the post needs an update.
+
+6. Next, you need to move the generated figures into a safe location. This ensures that the generated figures will not be deleted when blogdown rebuilds the site the next time. I simply move the folder `index_files/figure-html` to `figure-html`. 
+
+7. Edit figure links to reflect the move from the previous step. Figure links may be included either as markdown links, such as `![](index_files/figure-html/map-Texas-income-1.png)`, or as html links, such as `<img src="index_files/figure-html/map-Texas-income-1.png" ...`. Which is the case depends on the exact chunk options you used to generate the figure. In either case, delete `index_files/` from all figure links.
+
+8. Delete the file `index.md`.
+
+9. Remove or comment out the `output:` block you added under step 3. 
+
+10. Add the following line to chunk added under step 1:  
+<pre><code>knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+</code></pre>
+This turns off all the R Markdown chunks in your post.
+
+11. Restart the blogdown server with `blogdown::serve_site()`.
+
+This may seem like a lot of steps and a lot of fiddling, but it's really not that much work once you get the hang of it. Most blog posts, even elaborate ones, don't have that many code chunks or figures, and manually copying and adjusting the markdown code takes much less time than writing the blog post in the first place.
