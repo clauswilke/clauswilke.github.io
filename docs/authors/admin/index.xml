@@ -6,10 +6,125 @@
     <description>Recent content on Claus O. Wilke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing a blogdown post for the ages</title>
+      <link>/blog/2020/09/08/a-blogdown-post-for-the-ages/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/09/08/a-blogdown-post-for-the-ages/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The R package &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; has become a widely popular solution to setting up personal blogs. It makes it super easy to set up quite elaborate websites, and to write posts that contain R code, generated output and figures, footnotes, figure references, and math.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; However, one problem with blogdown is that it likes to re-knit &lt;code&gt;.Rmd&lt;/code&gt; files.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; This may be fine if you’re just starting out with your site or if your posts generally don’t contain any sophisticated R code, but in a long-standing blog you’ll eventually run into trouble. First, re-knitting hundreds of posts may be quite slow. And second, if you’ve got a bunch of old posts chances are some will not knit anymore, and then you may have got a serious problem with no simple solution.&lt;/p&gt;
+&lt;p&gt;This problem has been recognized for a while, and the proposed solution is usually to knit only on demand. See e.g. &lt;a href=&#34;https://yutani.rbind.io/post/2017-10-25-blogdown-custom/&#34;&gt;here&lt;/a&gt;. The experimental &lt;a href=&#34;https://github.com/r-lib/hugodown&#34;&gt;hugodown package&lt;/a&gt; likewise aims to limit any unnecessary re-knitting. Here, I’m taking a different approach. My perspective is that I want to be able to re-knit any time without worrying that I’ll destroy anything of value, and I also want to be able to add code and output to posts containing prior code that doesn’t run anymore today.&lt;/p&gt;
+&lt;p&gt;My approach is to copy the knitted markdown code and output back into the &lt;code&gt;.Rmd&lt;/code&gt; file. This requires some amount of manual work, but it’s not that bad, and I value the benefits I get from this approach. Maybe at some point somebody will write a package that can automate this process.&lt;/p&gt;
+&lt;p&gt;I do not necessarily recommend the approach I’m taking here. This post is mostly for my own purposes, so I can retrace my steps in the future. If you want to see the source code resulting from this process, you can check out the &lt;a href=&#34;https://github.com/clauswilke/clauswilke.github.io/blob/master/content/blog/2020-09-08-a-blogdown-post-for-the-ages/index.Rmd&#34;&gt;source for this post&lt;/a&gt; on github.&lt;/p&gt;
+&lt;p&gt;To provide an example scenario, I include here one chunk of R code that generates a figure. This code has various features that will likely generate issues in the future or in a blog with many posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It depends on a bunch of packages, including one only available from github.&lt;/li&gt;
+&lt;li&gt;It uses various fonts that need to be installed locally.&lt;/li&gt;
+&lt;li&gt;It is slow to render.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So it is critical that we can capture the output and don’t ever have to re-render it again.&lt;/p&gt;
+&lt;p&gt;Here is the example:&lt;/p&gt;
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(cowplot)
+library(colorspace)
+library(sf) 
+library(ggtext)
+
+# attach data set, requires practicalgg package
+# remotes::install_github(&amp;quot;wilkelab/practicalgg&amp;quot;)
+data(texas_income, package = &amp;quot;practicalgg&amp;quot;)
+
+ggplot(texas_income, aes(fill = estimate)) + 
+  geom_sf(color = &amp;quot;white&amp;quot;) +
+  coord_sf(xlim = c(538250, 2125629), crs = 3083) +
+  scale_fill_continuous_sequential(
+    palette = &amp;quot;Blues&amp;quot;, rev = TRUE,
+    na.value = &amp;quot;grey60&amp;quot;,
+    name = &amp;quot;annual median income (USD)&amp;quot;,
+    limits = c(18000, 90000),
+    breaks = 20000*c(1:4),
+    labels = c(&amp;quot;$20,000&amp;quot;, &amp;quot;$40,000&amp;quot;, &amp;quot;$60,000&amp;quot;, &amp;quot;$80,000&amp;quot;),
+    guide = guide_colorbar(
+      direction = &amp;quot;horizontal&amp;quot;,
+      label.position = &amp;quot;bottom&amp;quot;,
+      title.position = &amp;quot;top&amp;quot;,
+      barwidth = grid::unit(3.0, &amp;quot;in&amp;quot;),
+      barheight = grid::unit(0.2, &amp;quot;in&amp;quot;)
+    )
+  ) +
+  labs(caption = &amp;quot;
+&amp;lt;span style=&amp;#39;font-family: \&amp;quot;Font Awesome 5 Brands\&amp;quot;&amp;#39;&amp;gt;&amp;amp;#xf099;&amp;lt;/span&amp;gt;
+@clauswilke&amp;lt;br&amp;gt;
+&amp;lt;span style=&amp;#39;font-family: \&amp;quot;Font Awesome 5 Free Solid\&amp;quot;&amp;#39;&amp;gt;&amp;amp;#xf781;&amp;lt;/span&amp;gt;
+clauswilke.com
+&amp;quot;) +
+  theme_map(12, font_family = &amp;quot;Myriad Pro&amp;quot;) +
+  theme(
+    legend.title.align = 0.5,
+    legend.text.align = 0.5,
+    legend.justification = c(0, 0),
+    legend.position = c(0.02, 0.1),
+    plot.caption = element_markdown()
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:map-Texas-income&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;figure-html/map-Texas-income-1.png&#34; alt=&#34;Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, Chapter 4.&#34; width=&#34;576&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, &lt;a href=&#34;https://clauswilke.com/dataviz/color-basics.html&#34;&gt;Chapter 4.&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Next I’ll provide the exact recipe I follow to capture the output from such code.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;At the top of your &lt;code&gt;.Rmd&lt;/code&gt; file, add an R chunk containing the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r echo = FALSE}
+knitr::opts_chunk$set(fig.retina = 2)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will ensure that figures are rendered in high quality. Set &lt;code&gt;echo = FALSE&lt;/code&gt; for this chunk so the code isn’t included in the rendered output.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Stop the blogdown server with &lt;code&gt;blogdown::stop_server()&lt;/code&gt;. We don’t want the server to try to create blog posts out of the intermediate files we’ll be creating.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add the following to the yaml section of your post:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output:
+&amp;nbsp;&amp;nbsp;html_document:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;keep_md: yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want to use bookdown-style automated figure references, use this snippet instead:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output:
+&amp;nbsp;&amp;nbsp;bookdown::html_document2:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;keep_md: yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This requires the bookdown package to be installed.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Knit your post. You will end up with a new file &lt;code&gt;index.md&lt;/code&gt; and a new folder called &lt;code&gt;index_files&lt;/code&gt;. The former contains the markdown code that knitr has generated and the latter contains any generated figures.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now you want to copy the generated code and output chunks from &lt;code&gt;index.md&lt;/code&gt; back into &lt;code&gt;index.Rmd&lt;/code&gt;. For each code chunk in your &lt;code&gt;.Rmd&lt;/code&gt; file, there will be one or more markdown chunks, which are fenced with &lt;code&gt;```r ...```&lt;/code&gt;. There will also be markdown or HTML code to include any generated figures. Place all of this material after the respective code chunk from which it originated, but &lt;strong&gt;do not delete&lt;/strong&gt; the original code chunk. We want to keep the original code chunks around in case we do want to re-run some of the R code again in the future, e.g. if the post needs an update.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Next, you need to move the generated figures into a safe location. This ensures that they won’t be deleted when blogdown rebuilds the site the next time. I simply move the folder &lt;code&gt;index_files/figure-html&lt;/code&gt; to &lt;code&gt;figure-html&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Edit figure links to reflect the move from the previous step. Figure links may be included either as markdown links, such as &lt;code&gt;![](index_files/figure-html/map-Texas-income-1.png)&lt;/code&gt;, or as html links, such as &lt;code&gt;&amp;lt;img src=&#34;/blog/2020-09-08-a-blogdown-post-for-the-ages/index_files/figure-html/map-Texas-income-1.png&#34; ...&lt;/code&gt;. Which is the case depends on the exact chunk options you used to generate the figure. In either case, delete &lt;code&gt;index_files/&lt;/code&gt; from all figure links.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Delete the file &lt;code&gt;index.md&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remove or comment out the &lt;code&gt;output:&lt;/code&gt; block you added under step 3.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add the following line to the code chunk added under step 1:&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This turns off all the R Markdown chunks in your post.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Restart the blogdown server with &lt;code&gt;blogdown::serve_site()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This may seem like a lot of steps and a lot of fiddling, but it’s really not that bad once you get the hang of it. Most blog posts, even elaborate ones, don’t have that many code chunks or figures, and manually copying and adjusting the markdown code takes much less time than writing the blog post in the first place.&lt;/p&gt;
+&lt;p&gt;In the future, if you need to update your post, you can either re-run all code by commenting out the line you added in step 10, or you can selectively turn on individual R chunks by setting their &lt;code&gt;echo&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt; options to &lt;code&gt;TRUE&lt;/code&gt;. Then you repeat steps 1 through 11, but copying only whichever output needs to be newly copied over. At the end make sure you disable all R chunks once again.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;This post has one figure, Figure &lt;a href=&#34;#fig:map-Texas-income&#34;&gt;1&lt;/a&gt;. It also has one equation, &lt;span class=&#34;math inline&#34;&gt;\(a^2 + b^2 = c^2\)&lt;/span&gt;. The equation serves no purpose here.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Throughout, I’m assuming you’re using &lt;code&gt;.Rmd&lt;/code&gt; files. Everything I say should be valid for &lt;code&gt;.Rmarkdown&lt;/code&gt; as well, though I haven’t tested this.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>PCA tidyverse style</title>
@@ -4057,7 +4172,7 @@ Figure 4: Mean &lt;em&gt;y&lt;/em&gt; (+/- standard error) as a function of quan
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;Claus Wilke is the Jane and Roland Blumberg Centennial Professor in Molecular Evolution at The University of Texas at Austin. He holds a PhD in Theoretical Physics from the University of Bochum in Germany, and he received postdoctoral training in biological physics in the lab of Chris Adami at Caltech. Claus Wilke has published extensively in the areas of computational biology, evolutionary biology, protein biochemistry, and virology. He has also authored several popular R packages used for data visualization, such as cowplot, ggridges, and ggtext, and he is a regular contributor to the package ggplot2.&lt;/p&gt;

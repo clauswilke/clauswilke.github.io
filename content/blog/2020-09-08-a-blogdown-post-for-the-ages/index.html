@@ -17,9 +17,18 @@ tags: ["Blogdown", "R", "Blogging", "Markdown", "R Markdown"]
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>See e.g. <a href="https://yutani.rbind.io/post/2017-10-25-blogdown-custom/">here</a> or <a href="https://github.com/r-lib/hugodown">here</a>.</p>
-<p>I like footnotes, figure references, and math.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<p>I do not necessarily recommend the approach I’m taking here. This post is mostly for my own purposes, so I can retrace my steps in the future.</p>
+<p>The R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> has become a widely popular solution to setting up personal blogs. It makes it super easy to set up quite elaborate websites, and to write posts that contain R code, generated output and figures, footnotes, figure references, and math.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> However, one problem with blogdown is that it likes to re-knit <code>.Rmd</code> files.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> This may be fine if you’re just starting out with your site or if your posts generally don’t contain any sophisticated R code, but in a long-standing blog you’ll eventually run into trouble. First, re-knitting hundreds of posts may be quite slow. And second, if you’ve got a bunch of old posts chances are some will not knit anymore, and then you may have got a serious problem with no simple solution.</p>
+<p>This problem has been recognized for a while, and the proposed solution is usually to knit only on demand. See e.g. <a href="https://yutani.rbind.io/post/2017-10-25-blogdown-custom/">here</a>. The experimental <a href="https://github.com/r-lib/hugodown">hugodown package</a> likewise aims to limit any unnecessary re-knitting. Here, I’m taking a different approach. My perspective is that I want to be able to re-knit any time without worrying that I’ll destroy anything of value, and I also want to be able to add code and output to posts containing prior code that doesn’t run anymore today.</p>
+<p>My approach is to copy the knitted markdown code and output back into the <code>.Rmd</code> file. This requires some amount of manual work, but it’s not that bad, and I value the benefits I get from this approach. Maybe at some point somebody will write a package that can automate this process.</p>
+<p>I do not necessarily recommend the approach I’m taking here. This post is mostly for my own purposes, so I can retrace my steps in the future. If you want to see the source code resulting from this process, you can check out the <a href="https://github.com/clauswilke/clauswilke.github.io/blob/master/content/blog/2020-09-08-a-blogdown-post-for-the-ages/index.Rmd">source for this post</a> on github.</p>
+<p>To provide an example scenario, I include here one chunk of R code that generates a figure. This code has various features that will likely generate issues in the future or in a blog with many posts:</p>
+<ul>
+<li>It depends on a bunch of packages, including one only available from github.</li>
+<li>It uses various fonts that need to be installed locally.</li>
+<li>It is slow to render.</li>
+</ul>
+<p>So it is critical that we can capture the output and don’t ever have to re-render it again.</p>
+<p>Here is the example:</p>
 
 <pre class="r"><code>library(tidyverse)
 library(cowplot)
@@ -69,14 +78,7 @@ clauswilke.com
 Figure 1: Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, <a href="https://clauswilke.com/dataviz/color-basics.html">Chapter 4.</a>
 </p>
 </div>
-<p>This code has various features that will likely generate issues in the future or in a blog with many posts:</p>
-<ul>
-<li>It depends on a bunch of packages, including one only available from github.</li>
-<li>It uses various fonts that need to be installed locally.</li>
-<li>It is slow to render.</li>
-</ul>
-<div id="step-by-step-recipe-for-capturing-rendered-markdown-and-figures" class="section level2">
-<h2>Step-by-step recipe for capturing rendered markdown and figures</h2>
+<p>Next I’ll provide the exact recipe I follow to capture the output from such code.</p>
 <ol style="list-style-type: decimal">
 <li><p>At the top of your <code>.Rmd</code> file, add an R chunk containing the following:</p>
 <pre><code>```{r echo = FALSE}
@@ -95,24 +97,25 @@ knitr::opts_chunk$set(fig.retina = 2)
 &nbsp;&nbsp;&nbsp;&nbsp;keep_md: yes
 </code></pre>
 <p>This requires the bookdown package to be installed.</p></li>
-<li><p>Knit your post. You will end up with a new file <code>index.md</code> and a folder called <code>index_files</code>. The former contains the markdown code that knitr has generated and the latter contains any generated figures.</p></li>
+<li><p>Knit your post. You will end up with a new file <code>index.md</code> and a new folder called <code>index_files</code>. The former contains the markdown code that knitr has generated and the latter contains any generated figures.</p></li>
 <li><p>Now you want to copy the generated code and output chunks from <code>index.md</code> back into <code>index.Rmd</code>. For each code chunk in your <code>.Rmd</code> file, there will be one or more markdown chunks, which are fenced with <code>```r ...```</code>. There will also be markdown or HTML code to include any generated figures. Place all of this material after the respective code chunk from which it originated, but <strong>do not delete</strong> the original code chunk. We want to keep the original code chunks around in case we do want to re-run some of the R code again in the future, e.g. if the post needs an update.</p></li>
-<li><p>Next, you need to move the generated figures into a safe location. This ensures that the generated figures will not be deleted when blogdown rebuilds the site the next time. I simply move the folder <code>index_files/figure-html</code> to <code>figure-html</code>.</p></li>
+<li><p>Next, you need to move the generated figures into a safe location. This ensures that they won’t be deleted when blogdown rebuilds the site the next time. I simply move the folder <code>index_files/figure-html</code> to <code>figure-html</code>.</p></li>
 <li><p>Edit figure links to reflect the move from the previous step. Figure links may be included either as markdown links, such as <code>![](index_files/figure-html/map-Texas-income-1.png)</code>, or as html links, such as <code>&lt;img src="/blog/2020-09-08-a-blogdown-post-for-the-ages/index_files/figure-html/map-Texas-income-1.png" ...</code>. Which is the case depends on the exact chunk options you used to generate the figure. In either case, delete <code>index_files/</code> from all figure links.</p></li>
 <li><p>Delete the file <code>index.md</code>.</p></li>
 <li><p>Remove or comment out the <code>output:</code> block you added under step 3.</p></li>
-<li><p>Add the following line to chunk added under step 1:<br />
+<li><p>Add the following line to the code chunk added under step 1:<br />
 </p>
 <pre><code>knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
 </code></pre>
 <p>This turns off all the R Markdown chunks in your post.</p></li>
 <li><p>Restart the blogdown server with <code>blogdown::serve_site()</code>.</p></li>
 </ol>
-<p>This may seem like a lot of steps and a lot of fiddling, but it’s really not that much work once you get the hang of it. Most blog posts, even elaborate ones, don’t have that many code chunks or figures, and manually copying and adjusting the markdown code takes much less time than writing the blog post in the first place.</p>
-</div>
+<p>This may seem like a lot of steps and a lot of fiddling, but it’s really not that bad once you get the hang of it. Most blog posts, even elaborate ones, don’t have that many code chunks or figures, and manually copying and adjusting the markdown code takes much less time than writing the blog post in the first place.</p>
+<p>In the future, if you need to update your post, you can either re-run all code by commenting out the line you added in step 10, or you can selectively turn on individual R chunks by setting their <code>echo</code> and <code>eval</code> options to <code>TRUE</code>. Then you repeat steps 1 through 11, but copying only whichever output needs to be newly copied over. At the end make sure you disable all R chunks once again.</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>This post has one figure, Figure <a href="#fig:map-Texas-income">1</a>. It also has one equation, <span class="math inline">\(a^2 + b^2 = c^2\)</span>. The equation serves no purpose here.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Throughout, I’m assuming you’re using <code>.Rmd</code> files. Everything I say should be valid for <code>.Rmarkdown</code> as well, though I haven’t tested this.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>

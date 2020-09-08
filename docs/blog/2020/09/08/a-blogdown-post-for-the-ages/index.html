@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Claus O. Wilke">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to write a blogdown post that will still render in a hundred years from now.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/2020/09/08/a-blogdown-post-for-the-ages/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43345810-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/blog/2020/09/08/a-blogdown-post-for-the-ages/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Claus O. Wilke">
+  <meta property="og:url" content="/blog/2020/09/08/a-blogdown-post-for-the-ages/">
+  <meta property="og:title" content="Writing a blogdown post for the ages | Claus O. Wilke">
+  <meta property="og:description" content="How to write a blogdown post that will still render in a hundred years from now."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-09-08T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-09-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Writing a blogdown post for the ages | Claus O. Wilke</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Claus O. Wilke</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Writing a blogdown post for the ages</h1>
+
+  
+  <p class="page-subtitle">How to write a blogdown post that will still render in a hundred years from now.</p>
+  
+
+  
+    
+
+
+
+<meta content="2020-09-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-09-08 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Claus O. Wilke</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sep 8, 2020</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/blog/2020/09/08/a-blogdown-post-for-the-ages/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/Blogging/">Blogging</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog/2020/09/08/a-blogdown-post-for-the-ages/&amp;text=Writing%20a%20blogdown%20post%20for%20the%20ages" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog/2020/09/08/a-blogdown-post-for-the-ages/&amp;t=Writing%20a%20blogdown%20post%20for%20the%20ages" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Writing%20a%20blogdown%20post%20for%20the%20ages&amp;body=/blog/2020/09/08/a-blogdown-post-for-the-ages/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog/2020/09/08/a-blogdown-post-for-the-ages/&amp;title=Writing%20a%20blogdown%20post%20for%20the%20ages" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Writing%20a%20blogdown%20post%20for%20the%20ages%20/blog/2020/09/08/a-blogdown-post-for-the-ages/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog/2020/09/08/a-blogdown-post-for-the-ages/&amp;title=Writing%20a%20blogdown%20post%20for%20the%20ages" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> has become a widely popular solution to setting up personal blogs. It makes it super easy to set up quite elaborate websites, and to write posts that contain R code, generated output and figures, footnotes, figure references, and math.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> However, one problem with blogdown is that it likes to re-knit <code>.Rmd</code> files.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> This may be fine if you’re just starting out with your site or if your posts generally don’t contain any sophisticated R code, but in a long-standing blog you’ll eventually run into trouble. First, re-knitting hundreds of posts may be quite slow. And second, if you’ve got a bunch of old posts chances are some will not knit anymore, and then you may have got a serious problem with no simple solution.</p>
+<p>This problem has been recognized for a while, and the proposed solution is usually to knit only on demand. See e.g. <a href="https://yutani.rbind.io/post/2017-10-25-blogdown-custom/">here</a>. The experimental <a href="https://github.com/r-lib/hugodown">hugodown package</a> likewise aims to limit any unnecessary re-knitting. Here, I’m taking a different approach. My perspective is that I want to be able to re-knit any time without worrying that I’ll destroy anything of value, and I also want to be able to add code and output to posts containing prior code that doesn’t run anymore today.</p>
+<p>My approach is to copy the knitted markdown code and output back into the <code>.Rmd</code> file. This requires some amount of manual work, but it’s not that bad, and I value the benefits I get from this approach. Maybe at some point somebody will write a package that can automate this process.</p>
+<p>I do not necessarily recommend the approach I’m taking here. This post is mostly for my own purposes, so I can retrace my steps in the future. If you want to see the source code resulting from this process, you can check out the <a href="https://github.com/clauswilke/clauswilke.github.io/blob/master/content/blog/2020-09-08-a-blogdown-post-for-the-ages/index.Rmd">source for this post</a> on github.</p>
+<p>To provide an example scenario, I include here one chunk of R code that generates a figure. This code has various features that will likely generate issues in the future or in a blog with many posts:</p>
+<ul>
+<li>It depends on a bunch of packages, including one only available from github.</li>
+<li>It uses various fonts that need to be installed locally.</li>
+<li>It is slow to render.</li>
+</ul>
+<p>So it is critical that we can capture the output and don’t ever have to re-render it again.</p>
+<p>Here is the example:</p>
+
+<pre class="r"><code>library(tidyverse)
+library(cowplot)
+library(colorspace)
+library(sf) 
+library(ggtext)
+
+# attach data set, requires practicalgg package
+# remotes::install_github(&quot;wilkelab/practicalgg&quot;)
+data(texas_income, package = &quot;practicalgg&quot;)
+
+ggplot(texas_income, aes(fill = estimate)) + 
+  geom_sf(color = &quot;white&quot;) +
+  coord_sf(xlim = c(538250, 2125629), crs = 3083) +
+  scale_fill_continuous_sequential(
+    palette = &quot;Blues&quot;, rev = TRUE,
+    na.value = &quot;grey60&quot;,
+    name = &quot;annual median income (USD)&quot;,
+    limits = c(18000, 90000),
+    breaks = 20000*c(1:4),
+    labels = c(&quot;$20,000&quot;, &quot;$40,000&quot;, &quot;$60,000&quot;, &quot;$80,000&quot;),
+    guide = guide_colorbar(
+      direction = &quot;horizontal&quot;,
+      label.position = &quot;bottom&quot;,
+      title.position = &quot;top&quot;,
+      barwidth = grid::unit(3.0, &quot;in&quot;),
+      barheight = grid::unit(0.2, &quot;in&quot;)
+    )
+  ) +
+  labs(caption = &quot;
+&lt;span style=&#39;font-family: \&quot;Font Awesome 5 Brands\&quot;&#39;&gt;&amp;#xf099;&lt;/span&gt;
+@clauswilke&lt;br&gt;
+&lt;span style=&#39;font-family: \&quot;Font Awesome 5 Free Solid\&quot;&#39;&gt;&amp;#xf781;&lt;/span&gt;
+clauswilke.com
+&quot;) +
+  theme_map(12, font_family = &quot;Myriad Pro&quot;) +
+  theme(
+    legend.title.align = 0.5,
+    legend.text.align = 0.5,
+    legend.justification = c(0, 0),
+    legend.position = c(0.02, 0.1),
+    plot.caption = element_markdown()
+  )</code></pre>
+<div class="figure"><span id="fig:map-Texas-income"></span>
+<img src="figure-html/map-Texas-income-1.png" alt="Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, Chapter 4." width="576" />
+<p class="caption">
+Figure 1: Median annual income in Texas counties. Figure redrawn from: Wilke (2019) Fundamentals of Data Visualization, <a href="https://clauswilke.com/dataviz/color-basics.html">Chapter 4.</a>
+</p>
+</div>
+<p>Next I’ll provide the exact recipe I follow to capture the output from such code.</p>
+<ol style="list-style-type: decimal">
+<li><p>At the top of your <code>.Rmd</code> file, add an R chunk containing the following:</p>
+<pre><code>```{r echo = FALSE}
+knitr::opts_chunk$set(fig.retina = 2)
+```</code></pre>
+<p>This will ensure that figures are rendered in high quality. Set <code>echo = FALSE</code> for this chunk so the code isn’t included in the rendered output.</p></li>
+<li><p>Stop the blogdown server with <code>blogdown::stop_server()</code>. We don’t want the server to try to create blog posts out of the intermediate files we’ll be creating.</p></li>
+<li><p>Add the following to the yaml section of your post:</p>
+<pre><code>output:
+&nbsp;&nbsp;html_document:
+&nbsp;&nbsp;&nbsp;&nbsp;keep_md: yes
+</code></pre>
+<p>If you want to use bookdown-style automated figure references, use this snippet instead:</p>
+<pre><code>output:
+&nbsp;&nbsp;bookdown::html_document2:
+&nbsp;&nbsp;&nbsp;&nbsp;keep_md: yes
+</code></pre>
+<p>This requires the bookdown package to be installed.</p></li>
+<li><p>Knit your post. You will end up with a new file <code>index.md</code> and a new folder called <code>index_files</code>. The former contains the markdown code that knitr has generated and the latter contains any generated figures.</p></li>
+<li><p>Now you want to copy the generated code and output chunks from <code>index.md</code> back into <code>index.Rmd</code>. For each code chunk in your <code>.Rmd</code> file, there will be one or more markdown chunks, which are fenced with <code>```r ...```</code>. There will also be markdown or HTML code to include any generated figures. Place all of this material after the respective code chunk from which it originated, but <strong>do not delete</strong> the original code chunk. We want to keep the original code chunks around in case we do want to re-run some of the R code again in the future, e.g. if the post needs an update.</p></li>
+<li><p>Next, you need to move the generated figures into a safe location. This ensures that they won’t be deleted when blogdown rebuilds the site the next time. I simply move the folder <code>index_files/figure-html</code> to <code>figure-html</code>.</p></li>
+<li><p>Edit figure links to reflect the move from the previous step. Figure links may be included either as markdown links, such as <code>![](index_files/figure-html/map-Texas-income-1.png)</code>, or as html links, such as <code>&lt;img src="/blog/2020-09-08-a-blogdown-post-for-the-ages/index_files/figure-html/map-Texas-income-1.png" ...</code>. Which is the case depends on the exact chunk options you used to generate the figure. In either case, delete <code>index_files/</code> from all figure links.</p></li>
+<li><p>Delete the file <code>index.md</code>.</p></li>
+<li><p>Remove or comment out the <code>output:</code> block you added under step 3.</p></li>
+<li><p>Add the following line to the code chunk added under step 1:<br />
+</p>
+<pre><code>knitr::opts_chunk$set(echo = FALSE, eval = FALSE)
+</code></pre>
+<p>This turns off all the R Markdown chunks in your post.</p></li>
+<li><p>Restart the blogdown server with <code>blogdown::serve_site()</code>.</p></li>
+</ol>
+<p>This may seem like a lot of steps and a lot of fiddling, but it’s really not that bad once you get the hang of it. Most blog posts, even elaborate ones, don’t have that many code chunks or figures, and manually copying and adjusting the markdown code takes much less time than writing the blog post in the first place.</p>
+<p>In the future, if you need to update your post, you can either re-run all code by commenting out the line you added in step 10, or you can selectively turn on individual R chunks by setting their <code>echo</code> and <code>eval</code> options to <code>TRUE</code>. Then you repeat steps 1 through 11, but copying only whichever output needs to be newly copied over. At the end make sure you disable all R chunks once again.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This post has one figure, Figure <a href="#fig:map-Texas-income">1</a>. It also has one equation, <span class="math inline">\(a^2 + b^2 = c^2\)</span>. The equation serves no purpose here.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Throughout, I’m assuming you’re using <code>.Rmd</code> files. Everything I say should be valid for <code>.Rmarkdown</code> as well, though I haven’t tested this.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/Blogdown/">Blogdown</a>
+  
+  <a class="badge badge-light" href="/tags/R/">R</a>
+  
+  <a class="badge badge-light" href="/tags/Blogging/">Blogging</a>
+  
+  <a class="badge badge-light" href="/tags/Markdown/">Markdown</a>
+  
+  <a class="badge badge-light" href="/tags/R-Markdown/">R Markdown</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu1a486d40a2e56e5e566a944bcb9f7468_63300_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Claus O. Wilke</a></h5>
+      <h6 class="card-subtitle">Professor of Integrative Biology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Nc8U6E4AAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/clauswilke" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/blog/2014/10/04/r-markdown-the-easiest-and-most-elegant-approach-to-writing-about-data-analysis-with-r/">R Markdown, the easiest and most elegant approach to writing about data analysis with R</a></li>
+          
+          <li><a href="/blog/2020/08/19/new-site-design/">New site design</a></li>
+          
+          <li><a href="/blog/2020/09/07/pca-tidyverse-style/">PCA tidyverse style</a></li>
+          
+          <li><a href="/blog/2018/01/23/fundamentals-of-data-visualization/">Fundamentals of Data Visualization</a></li>
+          
+          <li><a href="/blog/2017/09/15/goodbye-joyplots/">Goodbye joyplots</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "serialmentor" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//serialmentor.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.9ef1b53ee2bde6c7f33b150c6ba4d452.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
