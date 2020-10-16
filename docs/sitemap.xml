@@ -3,6 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-10-14T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-10-14T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/SFI_Oct_2020/</loc>
+    <lastmod>2020-10-14T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/admin/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
@@ -25,25 +41,19 @@
   </url>
   
   <url>
-    <loc>/categories/Blogging/</loc>
-    <lastmod>2020-09-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/Blogging/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/categories/Blogging/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -143,11 +153,6 @@
   <url>
     <loc>/project/virtual_books/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2020-01-30T13:23:00+00:00</lastmod>
   </url>
   
   <url>
