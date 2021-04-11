@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: clauswilke.com
-Token: 0cd19559c165833e9c724ab9aa1423e7f22868118340f312a5654fbe74c0d7f5
