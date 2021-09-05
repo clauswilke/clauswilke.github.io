@@ -53,7 +53,7 @@ Many of my blog posts can be considered sections in books that I might have writ
 
 #### Chapter 5: Miscellaneous topics
 
-1. [Move over Strunk and White: My all-time favorite books on writing](/blog/2017/11/12/move-over-Strunk-White)
+1. [Move over Strunk and White: My all-time favorite books on writing](/blog/2017/11/12/move-over-strunk-and-white)
 
 ## Professional Development as a Scientist
 
