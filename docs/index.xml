@@ -6,10 +6,19 @@
     <description>Recent content on Claus O. Wilke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2020 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generative art</title>
+      <link>/project/generative_art/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/project/generative_art/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Upping your Dataviz Game</title>
@@ -335,16 +344,6 @@ With the redesign also comes a move of the site from serialmentor.com to clauswi
       
       <guid>/talk/rstudio_conf_2019/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy_DISABLED/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/privacy_DISABLED/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -4926,7 +4925,7 @@ Figure 4: Mean &lt;em&gt;y&lt;/em&gt; (+/- standard error) as a function of quan
 &lt;h4 id=&#34;chapter-5-miscellaneous-topics&#34;&gt;Chapter 5: Miscellaneous topics&lt;/h4&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;/blog/2017/11/12/move-over-Strunk-White&#34;&gt;Move over Strunk and White: My all-time favorite books on writing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/blog/2017/11/12/move-over-strunk-and-white&#34;&gt;Move over Strunk and White: My all-time favorite books on writing&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;professional-development-as-a-scientist&#34;&gt;Professional Development as a Scientist&lt;/h2&gt;
