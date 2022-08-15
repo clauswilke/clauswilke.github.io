@@ -34,6 +34,8 @@ user_groups:
 ---
 
 
-Claus Wilke is the Jane and Roland Blumberg Centennial Professor in Molecular Evolution at The University of Texas at Austin. He holds a PhD in Theoretical Physics from the University of Bochum in Germany, and he received postdoctoral training in biological physics in the lab of Chris Adami at Caltech. Claus Wilke has published extensively in the areas of computational biology, evolutionary biology, protein biochemistry, and virology. He has also authored several popular R packages used for data visualization, such as cowplot, ggridges, and ggtext, and he is a regular contributor to the package ggplot2.
+Claus Wilke is the Jane and Roland Blumberg Centennial Professor in Molecular Evolution at The University of Texas at Austin. He holds a PhD in Theoretical Physics from the University of Bochum in Germany, and he received postdoctoral training in biological physics in the lab of Chris Adami at Caltech. Claus Wilke has published extensively in the areas of computational biology, molecular evolution, protein biochemistry, and virology. He has also authored several popular R packages used for data visualization, such as cowplot, ggridges, and ggtext, and he is a regular contributor to the package ggplot2. In 2019, Wilke published the book Fundamentals of Data Visualization, which provides a concise introduction to effectively visualizing many different types of data sets.
 
 Opinions expressed on this site are personal and are not meant to represent the official position of The University of Texas at Austin.
+
+High-resolution head shots: [Image 1](shot1.jpg), [Image 2](shot2.jpg)

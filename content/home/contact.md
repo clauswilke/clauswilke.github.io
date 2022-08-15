@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 130  # Order that this section will appear.
 
 title = "Contact"
-subtitle = ""
+subtitle = "This form is not meant for business related to UT Austin. For issues related to classes, research projects, letters of recommendation, etc., please use the official [UT Austin contact info.](https://integrativebio.utexas.edu/component/cobalt/item/7-integrative-biology/237-wilke-claus-o?Itemid=1224)"
 
 # Automatically link email and phone?
 autolink = true
