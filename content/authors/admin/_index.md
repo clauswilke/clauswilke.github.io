@@ -38,4 +38,4 @@ Claus Wilke is the Jane and Roland Blumberg Centennial Professor in Molecular Ev
 
 Opinions expressed on this site are personal and are not meant to represent the official position of The University of Texas at Austin.
 
-High-resolution head shots: [Image 1](shot1.jpg), [Image 2](shot2.jpg)
+High-resolution head shots: [Image 1](authors/admin/shot1.jpg), [Image 2](authors/admin/shot2.jpg)
