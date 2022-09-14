@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# site was last built with
+# hugo pinned at 0.55.6
+
 rm -rf ./docs/
 mkdir ./docs
 cp -r ./public/* ./docs/
