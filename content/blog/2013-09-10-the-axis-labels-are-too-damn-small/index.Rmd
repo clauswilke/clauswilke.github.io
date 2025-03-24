@@ -10,8 +10,6 @@ categories: ["Visualization"]
 tags: ["Data visualization", "Visual design"]
 aliases: [/blog/2013/9/10/the-axis-labels-are-too-damn-small]
 ---
-If I were king of the world, I would decree that every man or woman who releases a software product, for pay or for honor, with the purpose of graphing data, shall, upon pain of death, ensure that the default axis labels, axis tick labels, and legends are printed at a reasonable size, legible to your aging king’s declining eyesight. However, because I would be a fair and wise king, I would also decree that every such man or woman have a one-month grace period to bring their software into compliance. Without such a grace period, I’m afraid all authors of currently available graphing software would have to instantly lose their heads.
-
 I have been in science for almost 20 years, and I have used and seen used a myriad of different graphing programs. When I was a grad student, gnuplot was all the rage. As a postdoc, I mostly used xmgrace. These days, I rarely make figures myself, but my students use everything from R with various plotting libraries, python with matplotlib, to MATLAB and even Mathematica. (As an aside, MATLAB and Mathematica, the commercial products, are both strong contenders for ugliest default graphics, by a wide margin. Apparently neither of the parent companies can afford to employ a graphical designer.) NONE of these programs use sane defaults for axis labels. They don’t use sane defaults for other things either, but this post is about axis labels.
 
 (ref:figure1) Scatter plot created in R, using the functions `pdf()` and `plot()` with default options.

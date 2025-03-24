@@ -1113,47 +1113,6 @@
   </url>
   
   <url>
-    <loc>/categories/Fitness/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/Obesity/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/Overfat/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/Overweight/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/2013/10/30/weight-doesnt-matter/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/Weight-lifting/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/Weight-loss/</loc>
-    <lastmod>2013-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/Critical-need/</loc>
     <lastmod>2013-10-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1319,7 +1278,19 @@
   </url>
   
   <url>
+    <loc>/categories/Fitness/</loc>
+    <lastmod>2013-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/Resistance-training/</loc>
+    <lastmod>2013-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/Weight-lifting/</loc>
     <lastmod>2013-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1569,6 +1540,12 @@
   </url>
   
   <url>
+    <loc>/tags/Obesity/</loc>
+    <lastmod>2013-09-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/blog/2013/09/01/a-review-of-the-therapeutic-uses-of-very-low-carbohydrate-ketogenic-diets/</loc>
     <lastmod>2013-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -1688,6 +1665,12 @@
   </url>
   
   <url>
+    <loc>/tags/Weight-loss/</loc>
+    <lastmod>2013-08-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/Email-etiquette/</loc>
     <lastmod>2013-08-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1747,11 +1730,6 @@
     <loc>/tags/Social-networking/</loc>
     <lastmod>2013-08-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/blog/2013/08/19/the-emotional-distress-of-being-a-new-twitter-user/</loc>
-    <lastmod>2013-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>

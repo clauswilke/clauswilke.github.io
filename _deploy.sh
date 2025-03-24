@@ -2,6 +2,7 @@
 
 # site was last built with
 # hugo pinned at 0.55.6
+# stored locally in ~/bin
 
 rm -rf ./docs/
 mkdir ./docs
